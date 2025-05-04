@@ -23,7 +23,7 @@ const Hero = () => {
           Innovation, Engineering, Excellence
         </h2>
         <p className="text-lg md:text-xl text-gray-600 max-w-2xl mb-10 animate-fade-in">
-          Comprehensive industrial solutions for equipment dismantling, overhaul, and installation
+          Comprehensive industrial solutions for equipment installation, modernizaition and dismantling
         </p>
         <div className="flex flex-col sm:flex-row gap-4 animate-fade-in">
           <Button className="bg-inplast-teal hover:bg-inplast-darkgray text-white text-lg px-8 py-6">
