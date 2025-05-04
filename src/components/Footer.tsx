@@ -41,8 +41,10 @@ const Footer = () => {
           <div>
             <h4 className="text-lg font-semibold text-gray-800 mb-4">Group Companies</h4>
             <ul className="space-y-2">
-              <li><a href="#" className="text-gray-600 hover:text-inplast-teal transition-colors">Inplast</a></li>
+              <li><a href="#" className="text-gray-600 hover:text-inplast-teal transition-colors">Inplast Novex</a></li>
+              {/*
               <li><a href="#" className="text-gray-600 hover:text-inplast-teal transition-colors">Novex</a></li>
+              */}
               <li><a href="#" className="text-gray-600 hover:text-inplast-teal transition-colors">Visopack</a></li>
               <li><a href="#" className="text-gray-600 hover:text-inplast-teal transition-colors">Moplefan</a></li>
               <li><a href="#" className="text-gray-600 hover:text-inplast-teal transition-colors">InplastTech</a></li>
