@@ -20,15 +20,15 @@ const About = () => {
               <Factory className="mr-3 text-inplast-teal" size={32} />
               <h2 className="text-3xl font-bold text-gray-800">Who We Are</h2>
             </div>
-            {//
-            <div className="mb-8">
-              <img 
-                src="/lovable-uploads/079f33ef-c3b3-40b5-aa2a-9761afede7d0.png" 
-                alt="Inplast Novex Logo" 
-                className="h-12 mb-4"
-              />
-              <p className="text-gray-600 italic">Part of Inplast Holding</p>
-            </div>
+            {
+            //<div className="mb-8">
+             // <img 
+              //  src="/lovable-uploads/079f33ef-c3b3-40b5-aa2a-9761afede7d0.png" 
+               // alt="Inplast Novex Logo" 
+                //className="h-12 mb-4"
+              ///>
+              //<p className="text-gray-600 italic">Part of Inplast Holding</p>
+            //</div>
             }
             
             <p className="text-lg text-gray-600 mb-6">
