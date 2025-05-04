@@ -1,6 +1,6 @@
 
 import React from 'react';
-import { Truck, ArrowUpDown, Settings, Wrench, Building2, GanttChart, Hammer } from 'lucide-react';
+import { Truck, ArrowUpDown, Settings, Wrench, Building2, GanttChart, Hammer, Ship, CircuitBoard } from 'lucide-react';
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 
 const Services = () => {
@@ -12,7 +12,7 @@ const Services = () => {
       image: "/lovable-uploads/3c54f29a-ceed-4622-a80e-6ae838235b8f.png"
     },
     {
-      icon: Truck,
+      icon: Ship,
       title: "Seaworthy Packaging",
       description: "Protect your assets during long-distance transport. Our seaworthy packaging solutions ensure equipment withstands harsh maritime environments—designed for reliability and international shipping standards.",
       image: "/lovable-uploads/6a2dbc80-9d7f-4543-91be-9b69ad67abb0.png"
@@ -30,13 +30,13 @@ const Services = () => {
       image: "/lovable-uploads/fbb89a5f-8378-4330-8177-3469398d8d52.png"
     },
     {
-      icon: Wrench,
+      icon: CircuitBoard,
       title: "Electrical Engineering",
       description: "From design to deployment, our electrical engineering solutions support the safe, smart, and scalable control of your production infrastructure.",
       image: "/lovable-uploads/6bd81f03-5209-447a-a50f-d10785c56e75.png"
     },
     {
-      icon: Building2,
+      icon: Wrench,
       title: "Engineering & Manufacturing",
       description: "Every project is unique. That's why we offer custom engineering and in-house manufacturing, aligning with your technical specs, budget, and production goals.",
       image: "/lovable-uploads/f4facf59-8aa8-44a8-a2f3-45407f7dfc4f.png"
