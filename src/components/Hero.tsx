@@ -19,7 +19,7 @@ const Hero = () => {
           alt="Inplast Novex Logo" 
           className="h-20 md:h-24 mb-8 animate-fade-in"
         />
-        <h2 className="text-2xl md:text-3xl font-medium text-white mb-8 animate-fade-in">
+        <h2 className="text-2xl md:text-3xl font-medium text-gray-800 mb-8 animate-fade-in">
           Innovation, Engineering, Excellence
         </h2>
         <p className="text-lg md:text-xl text-gray-200 max-w-2xl mb-10 animate-fade-in">
