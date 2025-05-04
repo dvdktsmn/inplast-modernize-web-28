@@ -21,7 +21,7 @@ const About = () => {
               Who We Are
             </h2>
             <p className="text-lg text-gray-600 mb-6">
-              Inplast Holding brings together industry leaders—Inplast Novex, Visopack, Moplefan, and InplastTech — to deliver a full spectrum of industrial packaging and engineering solutions.
+              Inplast Holding brings together industry leaders—Inplast Novex, Visopack, Moplefan, and InplastTech—to deliver a full spectrum of industrial packaging and engineering solutions.
             </p>
             <p className="text-lg text-gray-600">
               Our expertise spans continents, with proven performance in relocation, installation, modernization and dismantling of manufacturing production systems.
