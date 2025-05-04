@@ -25,7 +25,7 @@ const About = () => {
               <img 
                 src="/lovable-uploads/6075f730-5298-4a9d-a8ae-c4f2a49a4896.png" 
                 alt="Inplast Novex Logo" 
-                className="h-12 mb-4"
+                className="h-12 w-auto mb-4 object-contain"
               />
               <p className="text-gray-600 italic">Part of Inplast Holding</p>
             </div>

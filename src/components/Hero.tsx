@@ -17,7 +17,7 @@ const Hero = () => {
         <img 
           src="/lovable-uploads/6075f730-5298-4a9d-a8ae-c4f2a49a4896.png" 
           alt="Inplast Novex Logo" 
-          className="h-20 md:h-24 mb-8 animate-fade-in"
+          className="h-20 md:h-24 w-auto mb-8 animate-fade-in object-contain"
         />
         <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-white mb-6 animate-fade-in">
           <span className="text-inplast-teal">Inplast Holding</span>
