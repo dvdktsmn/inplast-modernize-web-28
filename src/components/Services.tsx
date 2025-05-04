@@ -70,8 +70,8 @@ const Services = () => {
                 />
               </div>
               <CardHeader>
-                <CardTitle className="flex items-center text-xl text-inplast-darkblue">
-                  {React.createElement(service.icon, { className: "mr-2 text-inplast-blue", size: 24 })}
+                <CardTitle className="flex items-center text-xl text-inplast-darkgray">
+                  {React.createElement(service.icon, { className: "mr-2 text-inplast-teal", size: 24 })}
                   {service.title}
                 </CardTitle>
               </CardHeader>

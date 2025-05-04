@@ -17,7 +17,7 @@ const About = () => {
           
           <div className="w-full md:w-1/2">
             <div className="flex items-center mb-6">
-              <Factory className="mr-3 text-inplast-blue" size={32} />
+              <Factory className="mr-3 text-inplast-teal" size={32} />
               <h2 className="text-3xl font-bold text-gray-800">Who We Are</h2>
             </div>
             
@@ -39,19 +39,19 @@ const About = () => {
             
             <div className="grid grid-cols-2 gap-6 mt-10">
               <div className="flex flex-col items-center bg-white p-6 rounded-lg shadow-md transition-transform hover:transform hover:scale-105">
-                <span className="text-3xl font-bold text-inplast-blue mb-2">25+</span>
+                <span className="text-3xl font-bold text-inplast-teal mb-2">25+</span>
                 <span className="text-gray-600 text-center">Years Experience</span>
               </div>
               <div className="flex flex-col items-center bg-white p-6 rounded-lg shadow-md transition-transform hover:transform hover:scale-105">
-                <span className="text-3xl font-bold text-inplast-blue mb-2">100+</span>
+                <span className="text-3xl font-bold text-inplast-teal mb-2">100+</span>
                 <span className="text-gray-600 text-center">Projects Completed</span>
               </div>
               <div className="flex flex-col items-center bg-white p-6 rounded-lg shadow-md transition-transform hover:transform hover:scale-105">
-                <span className="text-3xl font-bold text-inplast-blue mb-2">4</span>
+                <span className="text-3xl font-bold text-inplast-teal mb-2">4</span>
                 <span className="text-gray-600 text-center">Industry Leaders</span>
               </div>
               <div className="flex flex-col items-center bg-white p-6 rounded-lg shadow-md transition-transform hover:transform hover:scale-105">
-                <span className="text-3xl font-bold text-inplast-blue mb-2">24/7</span>
+                <span className="text-3xl font-bold text-inplast-teal mb-2">24/7</span>
                 <span className="text-gray-600 text-center">Global Support</span>
               </div>
             </div>

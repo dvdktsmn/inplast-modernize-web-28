@@ -20,7 +20,7 @@ const Hero = () => {
           className="h-20 md:h-24 mb-8 animate-fade-in"
         />
         <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-white mb-6 animate-fade-in">
-          <span className="text-inplast-blue">Inplast Holding</span>
+          <span className="text-inplast-teal">Inplast Holding</span>
         </h1>
         <h2 className="text-2xl md:text-3xl font-medium text-white mb-8 animate-fade-in">
           Innovation, Engineering, Excellence
@@ -29,7 +29,7 @@ const Hero = () => {
           Comprehensive industrial solutions for equipment dismantling, overhaul, and installation
         </p>
         <div className="flex flex-col sm:flex-row gap-4 animate-fade-in">
-          <Button className="bg-inplast-blue hover:bg-inplast-darkblue text-white text-lg px-8 py-6">
+          <Button className="bg-inplast-teal hover:bg-inplast-darkgray text-white text-lg px-8 py-6">
             Our Services
           </Button>
           <Button variant="outline" className="bg-transparent border-white text-white hover:bg-white/10 text-lg px-8 py-6">

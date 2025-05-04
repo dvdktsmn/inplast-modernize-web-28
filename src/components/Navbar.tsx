@@ -15,12 +15,12 @@ const Navbar = () => {
         </div>
         
         <div className="hidden lg:flex space-x-8">
-          <a href="#about" className="text-inplast-darkgray hover:text-inplast-blue transition-colors">About</a>
-          <a href="#services" className="text-inplast-darkgray hover:text-inplast-blue transition-colors">Services</a>
-          <a href="#contact" className="text-inplast-darkgray hover:text-inplast-blue transition-colors">Contact</a>
+          <a href="#about" className="text-inplast-darkgray hover:text-inplast-teal transition-colors">About</a>
+          <a href="#services" className="text-inplast-darkgray hover:text-inplast-teal transition-colors">Services</a>
+          <a href="#contact" className="text-inplast-darkgray hover:text-inplast-teal transition-colors">Contact</a>
         </div>
         
-        <Button className="bg-inplast-blue hover:bg-inplast-darkblue text-white">
+        <Button className="bg-inplast-teal hover:bg-inplast-darkgray text-white">
           Get in Touch
         </Button>
       </div>
