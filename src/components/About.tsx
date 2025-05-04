@@ -21,10 +21,10 @@ const About = () => {
               Who We Are
             </h2>
             <p className="text-lg text-gray-600 mb-6">
-              Inplast Holding brings together industry leaders—Inplast, Novex, Visopack, Moplefan, and InplastTech—to deliver a full spectrum of industrial packaging and engineering solutions.
+              Inplast Holding brings together industry leaders—Inplast Novex, Visopack, Moplefan, and InplastTech — to deliver a full spectrum of industrial packaging and engineering solutions.
             </p>
             <p className="text-lg text-gray-600">
-              Our expertise spans continents, with proven performance in dismantling, modernization, and manufacturing of production systems.
+              Our expertise spans continents, with proven performance in relocation, installation, modernization and dismantling of manufacturing production systems.
             </p>
             
             <div className="grid grid-cols-2 gap-6 mt-10">
@@ -37,7 +37,7 @@ const About = () => {
                 <span className="text-gray-600 text-center">Projects Completed</span>
               </div>
               <div className="flex flex-col items-center bg-white p-6 rounded-lg shadow-md transition-transform hover:transform hover:scale-105">
-                <span className="text-3xl font-bold text-inplast-blue mb-2">5</span>
+                <span className="text-3xl font-bold text-inplast-blue mb-2">4</span>
                 <span className="text-gray-600 text-center">Industry Leaders</span>
               </div>
               <div className="flex flex-col items-center bg-white p-6 rounded-lg shadow-md transition-transform hover:transform hover:scale-105">
