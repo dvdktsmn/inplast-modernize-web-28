@@ -23,7 +23,7 @@ const About = () => {
             
             <div className="mb-8">
               <img 
-                src="/lovable-uploads/6075f730-5298-4a9d-a8ae-c4f2a49a4896.png" 
+                src="/lovable-uploads/079f33ef-c3b3-40b5-aa2a-9761afede7d0.png" 
                 alt="Inplast Novex Logo" 
                 className="h-12 mb-4"
               />
