@@ -22,7 +22,7 @@ const Hero = () => {
         <h2 className="text-2xl md:text-3xl font-medium text-gray-800 mb-8 animate-fade-in">
           Innovation, Engineering, Excellence
         </h2>
-        <p className="text-lg md:text-xl text-gray-200 max-w-2xl mb-10 animate-fade-in">
+        <p className="text-lg md:text-xl text-gray-600 max-w-2xl mb-10 animate-fade-in">
           Comprehensive industrial solutions for equipment dismantling, overhaul, and installation
         </p>
         <div className="flex flex-col sm:flex-row gap-4 animate-fade-in">
