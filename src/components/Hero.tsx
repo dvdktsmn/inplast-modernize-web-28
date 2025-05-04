@@ -32,7 +32,7 @@ const Hero = () => {
           <Button className="bg-inplast-teal hover:bg-inplast-darkgray text-white text-lg px-8 py-6">
             Our Services
           </Button>
-          <Button variant="outline" className="bg-inplast-teal hover:bg-white/10 text-lg px-8 py-6">
+          <Button variant="outline" className="bg-inplast-teal hover:bg-inplast-darkgray text-white text-lg px-8 py-6">
             Contact Us
           </Button>
         </div>
