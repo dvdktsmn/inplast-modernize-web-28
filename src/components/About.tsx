@@ -1,6 +1,6 @@
 
 import React from 'react';
-import { factory } from 'lucide-react';
+import { Factory } from 'lucide-react';
 
 const About = () => {
   return (
@@ -17,7 +17,7 @@ const About = () => {
           
           <div className="w-full md:w-1/2">
             <h2 className="text-3xl font-bold text-gray-800 mb-6 flex items-center">
-              <factory className="mr-3 text-inplast-blue" size={32} />
+              <Factory className="mr-3 text-inplast-blue" size={32} />
               Who We Are
             </h2>
             <p className="text-lg text-gray-600 mb-6">
