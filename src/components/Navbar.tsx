@@ -21,7 +21,7 @@ const Navbar = () => {
         </div>
         
         <Button className="bg-inplast-teal hover:bg-inplast-darkgray text-white">
-          Get in Touch
+          Get in touch
         </Button>
       </div>
     </div>

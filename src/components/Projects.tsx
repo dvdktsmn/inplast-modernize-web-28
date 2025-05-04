@@ -6,7 +6,7 @@ const Projects = () => {
   const projects = [
     {
       title: "BOPP Line Relocation",
-      location: "Hefei, China to Moscow, Russia",
+      location: "Hefei, China to Europe",
       image: "/lovable-uploads/4c257c37-8c64-4c31-bcea-916d3639fd25.png",
       description: "Complete disassembly, packaging, and relocation of a large-scale BOPP production line across continents."
     },
