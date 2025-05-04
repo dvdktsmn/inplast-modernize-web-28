@@ -8,7 +8,7 @@ const Navbar = () => {
       <div className="container mx-auto flex justify-between items-center py-2">
         <div className="flex items-center">
           <img 
-            src="/lovable-uploads/4a230efd-650f-40b3-ab51-458d4ff53ad8.png" 
+            src="/lovable-uploads/6075f730-5298-4a9d-a8ae-c4f2a49a4896.png" 
             alt="Inplast Novex Logo" 
             className="h-12 mr-3"
           />
