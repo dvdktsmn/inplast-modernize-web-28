@@ -10,7 +10,7 @@ const Navbar = () => {
           <img 
             src="/lovable-uploads/6075f730-5298-4a9d-a8ae-c4f2a49a4896.png" 
             alt="Inplast Novex Logo" 
-            className="h-12 w-auto mr-3 object-contain"
+            className="h-12 mr-3"
           />
         </div>
         
