@@ -10,7 +10,7 @@ const Footer = () => {
         <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
           <div>
             <img 
-              src="/lovable-uploads/079f33ef-c3b3-40b5-aa2a-9761afede7d0.png" 
+              src="/lovable-uploads/99a847fd-71f3-4e06-a241-fb9739d1979b.png" 
               alt="Inplast Novex Logo" 
               className="h-12 mb-4"
             />
