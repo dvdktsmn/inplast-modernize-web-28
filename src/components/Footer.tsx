@@ -9,7 +9,11 @@ const Footer = () => {
       <div className="container mx-auto px-4">
         <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
           <div>
-            <h3 className="text-xl font-bold text-inplast-blue mb-4">Inplast Holding</h3>
+            <img 
+              src="/lovable-uploads/4a230efd-650f-40b3-ab51-458d4ff53ad8.png" 
+              alt="Inplast Novex Logo" 
+              className="h-12 mb-4"
+            />
             <p className="text-gray-600 mb-4">
               Innovation, Engineering, Excellence in industrial equipment modernization and relocation.
             </p>

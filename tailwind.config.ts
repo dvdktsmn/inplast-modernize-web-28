@@ -66,6 +66,7 @@ export default {
 				inplast: {
 					blue: '#2563eb',
 					darkblue: '#1e40af',
+					teal: '#00A4B8', // Color from the Inplast Novex logo
 					gray: '#64748b',
 					darkgray: '#334155'
 				}

@@ -5,11 +5,13 @@ import { Button } from "@/components/ui/button";
 const Navbar = () => {
   return (
     <div className="fixed top-0 left-0 right-0 bg-white z-50 shadow-md">
-      <div className="container mx-auto flex justify-between items-center py-4">
+      <div className="container mx-auto flex justify-between items-center py-2">
         <div className="flex items-center">
-          <h1 className="text-xl md:text-2xl font-bold text-inplast-blue">
-            Inplast <span className="text-inplast-darkgray">Holding</span>
-          </h1>
+          <img 
+            src="/lovable-uploads/4a230efd-650f-40b3-ab51-458d4ff53ad8.png" 
+            alt="Inplast Novex Logo" 
+            className="h-12 mr-3"
+          />
         </div>
         
         <div className="hidden lg:flex space-x-8">

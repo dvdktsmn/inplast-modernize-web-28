@@ -14,6 +14,11 @@ const Hero = () => {
       ></div>
       
       <div className="relative z-10 flex flex-col justify-center items-center h-full container mx-auto text-center px-4">
+        <img 
+          src="/lovable-uploads/4a230efd-650f-40b3-ab51-458d4ff53ad8.png" 
+          alt="Inplast Novex Logo" 
+          className="h-20 md:h-24 mb-8 animate-fade-in"
+        />
         <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-white mb-6 animate-fade-in">
           <span className="text-inplast-blue">Inplast Holding</span>
         </h1>

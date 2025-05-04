@@ -16,10 +16,20 @@ const About = () => {
           </div>
           
           <div className="w-full md:w-1/2">
-            <h2 className="text-3xl font-bold text-gray-800 mb-6 flex items-center">
+            <div className="flex items-center mb-6">
               <Factory className="mr-3 text-inplast-blue" size={32} />
-              Who We Are
-            </h2>
+              <h2 className="text-3xl font-bold text-gray-800">Who We Are</h2>
+            </div>
+            
+            <div className="mb-8">
+              <img 
+                src="/lovable-uploads/4a230efd-650f-40b3-ab51-458d4ff53ad8.png" 
+                alt="Inplast Novex Logo" 
+                className="h-12 mb-4"
+              />
+              <p className="text-gray-600 italic">Part of Inplast Holding</p>
+            </div>
+            
             <p className="text-lg text-gray-600 mb-6">
               Inplast Holding brings together industry leaders—Inplast Novex, Visopack, Moplefan, and InplastTech—to deliver a full spectrum of industrial packaging and engineering solutions.
             </p>
