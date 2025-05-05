@@ -24,14 +24,14 @@ const Projects = () => {
       image: "/lovable-uploads/4c257c37-8c64-4c31-bcea-916d3639fd25.png",
       description: "Complete disassembly, relocation and reinstallation of a large-scale BOPP production line across continents.",
       beforeImages: [
-        "/placeholder.svg",
-        "/placeholder.svg",
-        "/placeholder.svg",
+        "/lovable-uploads/d8c9d55c-2e20-4b44-8d69-cf877a6c22d3.png",
+        "/lovable-uploads/22b5021e-4336-432d-88c2-bf9cb164f91e.png",
+        "/lovable-uploads/1cd4d9cf-1717-4710-a49b-4b41fc973da6.png",
       ],
       afterImages: [
-        "/placeholder.svg",
-        "/placeholder.svg",
-        "/placeholder.svg",
+        "/lovable-uploads/e42d7b0d-ec79-4a41-82b9-27dafabdfb9a.png",
+        "/lovable-uploads/fb4c7c14-fa91-430e-b052-a3ab24cbfa6d.png",
+        "/lovable-uploads/ddac229c-45ea-423a-96fb-5faedf762f2e.png",
       ]
     },
     {
