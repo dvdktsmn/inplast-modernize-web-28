@@ -22,7 +22,7 @@ const Projects = () => {
       title: "BOPP Line Relocation",
       location: "Hefei, China to Europe",
       image: "/lovable-uploads/4c257c37-8c64-4c31-bcea-916d3639fd25.png",
-      description: "Complete disassembly, packaging, and relocation of a large-scale BOPP production line across continents.",
+      description: "Complete disassembly, relocation and reinstallation of a large-scale BOPP production line across continents.",
       beforeImages: [
         "/placeholder.svg",
         "/placeholder.svg",
@@ -46,6 +46,7 @@ const Projects = () => {
         "/placeholder.svg",
       ]
     },
+    {/*
     {
       title: "Equipment Installation",
       location: "Bucharest, Romania",
@@ -64,6 +65,7 @@ const Projects = () => {
       image: "/lovable-uploads/69f9e44d-caa4-4361-8d49-190c6120084a.png",
       description: "Complete electrical and automation system upgrade for an aging manufacturing plant."
     }
+    */}
   ];
 
   const handleProjectChange = (index: number) => {
