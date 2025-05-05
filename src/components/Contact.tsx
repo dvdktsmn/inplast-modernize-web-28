@@ -20,7 +20,7 @@ const Contact = () => {
           <div className="bg-gray-50 p-8 rounded-lg shadow-md h-full flex flex-col">
             <h3 className="text-2xl font-bold text-gray-800 mb-6">Get In Touch</h3>
             
-            <form className="space-y-6 flex-grow flex flex-col">
+            <form className="flex flex-col h-full gap-6">
               <div className="space-y-2">
                 <Label htmlFor="name">Name</Label>
                 <Input id="name" placeholder="Your Name" />
@@ -31,12 +31,16 @@ const Contact = () => {
                 <Input id="email" type="email" placeholder="your.email@company.com" />
               </div>
               
-              <div className="space-y-2 flex-grow">
-                <Label htmlFor="message">Message</Label>
-                <Textarea id="message" placeholder="Tell us about your project requirements" rows={5} className="flex-grow" />
+              <div className="flex flex-col flex-grow">
+                <Label htmlFor="message" className="mb-2">Message</Label>
+                <Textarea 
+                  id="message" 
+                  placeholder="Tell us about your project requirements" 
+                  className="flex-grow resize-none" 
+                />
               </div>
               
-              <Button type="submit" className="w-full bg-inplast-teal hover:bg-inplast-darkgray text-white mt-auto">
+              <Button type="submit" className="w-full bg-inplast-teal hover:bg-inplast-darkgray text-white">
                 Send Message
               </Button>
             </form>
