@@ -60,7 +60,7 @@ const Projects = () => {
       image: "/lovable-uploads/cff828aa-5bb4-4bdd-b226-da4108c92879.png",
       description: "Specialized transport solutions for sensitive industrial equipment across European borders."
     },*/}
-   {/*
+    {/*
     {
       title: "Control System Upgrade",
       location: "Helsinki, Finland",
