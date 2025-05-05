@@ -3,6 +3,13 @@ import React from 'react';
 import { Button } from "@/components/ui/button";
 
 const Hero = () => {
+  const scrollToSection = (id: string) => {
+    const element = document.getElementById(id);
+    if (element) {
+      element.scrollIntoView({ behavior: 'smooth' });
+    }
+  };
+
   return (
     <div className="relative h-screen overflow-hidden">
       <div 
@@ -26,10 +33,17 @@ const Hero = () => {
           Comprehensive industrial solutions for equipment installation, modernizaition and dismantling
         </p>
         <div className="flex flex-col sm:flex-row gap-4 animate-fade-in">
-          <Button className="bg-inplast-teal hover:bg-inplast-darkgray text-white text-lg px-8 py-6">
+          <Button 
+            className="bg-inplast-teal hover:bg-inplast-darkgray text-white text-lg px-8 py-6"
+            onClick={() => scrollToSection('services')}
+          >
             Our Services
           </Button>
-          <Button variant="outline" className="bg-inplast-teal hover:bg-inplast-darkgray text-white text-lg px-8 py-6">
+          <Button 
+            variant="outline" 
+            className="bg-inplast-teal hover:bg-inplast-darkgray text-white text-lg px-8 py-6"
+            onClick={() => scrollToSection('contact')}
+          >
             Contact Us
           </Button>
         </div>
