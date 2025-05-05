@@ -38,7 +38,7 @@ const Projects = () => {
       title: "Factory Modernization",
       location: "Warsaw, Poland",
       image: "/lovable-uploads/58d6f434-7c79-4e4e-b8c9-e60fad6a246d.png",
-      description: "Full overhaul and modernization of outdated equipment to increase production efficiency by 35%.",
+      description: "Full overhaul and modernization of outdated equipment to increase production efficiency.",
       galleryImages: [
         "/placeholder.svg",
         "/placeholder.svg",
@@ -88,7 +88,7 @@ const Projects = () => {
                       <div className="h-64 overflow-hidden rounded-md">
                         <img 
                           src={image} 
-                          alt={`Before relocation ${i+1}`}
+                          alt={`Before${i+1}`}
                           className="w-full h-full object-cover" 
                         />
                       </div>
@@ -110,7 +110,7 @@ const Projects = () => {
                       <div className="h-64 overflow-hidden rounded-md">
                         <img 
                           src={image} 
-                          alt={`After relocation ${i+1}`}
+                          alt={`After${i+1}`}
                           className="w-full h-full object-cover" 
                         />
                       </div>
