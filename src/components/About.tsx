@@ -9,7 +9,8 @@ const About = () => {
         <div className="flex flex-col md:flex-row items-center">
           <div className="w-full md:w-1/2 md:pr-10 mb-10 md:mb-0">
             <img 
-              src="/lovable-uploads/547afc9b-beb9-4b1a-b05e-0844c12e35f0.png" 
+              src = "/placeholder.svg"
+              /*src="/lovable-uploads/547afc9b-beb9-4b1a-b05e-0844c12e35f0.png" */
               alt="Industrial production line" 
               className="rounded-lg shadow-xl w-full h-auto"
             />
@@ -45,7 +46,7 @@ const About = () => {
                 <span className="text-gray-600 text-center">Years Experience</span>
               </div>
               <div className="flex flex-col items-center bg-white p-6 rounded-lg shadow-md transition-transform hover:transform hover:scale-105">
-                <span className="text-3xl font-bold text-inplast-teal mb-2">100+</span>
+                <span className="text-3xl font-bold text-inplast-teal mb-2">10+</span>
                 <span className="text-gray-600 text-center">Projects Completed</span>
               </div>
               <div className="flex flex-col items-center bg-white p-6 rounded-lg shadow-md transition-transform hover:transform hover:scale-105">
