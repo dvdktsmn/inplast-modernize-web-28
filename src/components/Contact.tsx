@@ -49,7 +49,8 @@ const Contact = () => {
           <div className="flex flex-col h-full">
             <div className="flex-1 flex items-center mb-8">
               <img 
-                src="/lovable-uploads/129ca3ee-ca07-4fbf-b569-9f108d0b95fd.png" 
+                src = "/placeholder.svg"
+                /*src="/lovable-uploads/129ca3ee-ca07-4fbf-b569-9f108d0b95fd.png" */
                 alt="Manufacturing facility" 
                 className="rounded-lg shadow-xl w-full h-full object-cover"
               />
