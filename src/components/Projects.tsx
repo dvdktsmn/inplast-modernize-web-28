@@ -45,27 +45,28 @@ const Projects = () => {
         "/placeholder.svg",
         "/placeholder.svg",
       ]
-    }
+    },
     {/*
     {
       title: "Equipment Installation",
       location: "Bucharest, Romania",
       image: "/lovable-uploads/11e7e270-577f-48ad-b96c-d2396dcd6bc8.png",
       description: "Installation and commissioning of a new production line in a newly constructed facility."
-    },
+    },*/}
+    {/*
     {
       title: "Precision Machinery Transport",
       location: "Berlin, Germany",
       image: "/lovable-uploads/cff828aa-5bb4-4bdd-b226-da4108c92879.png",
       description: "Specialized transport solutions for sensitive industrial equipment across European borders."
-    },
+    },*/}
+   {/*
     {
       title: "Control System Upgrade",
       location: "Helsinki, Finland",
       image: "/lovable-uploads/69f9e44d-caa4-4361-8d49-190c6120084a.png",
       description: "Complete electrical and automation system upgrade for an aging manufacturing plant."
-    }
-    */}
+    }*/}
   ];
 
   const handleProjectChange = (index: number) => {
