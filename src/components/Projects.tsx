@@ -45,7 +45,7 @@ const Projects = () => {
         "/placeholder.svg",
         "/placeholder.svg",
       ]
-    },
+    }
     {/*
     {
       title: "Equipment Installation",
