@@ -88,7 +88,7 @@ const Projects = () => {
                       <div className="h-64 overflow-hidden rounded-md">
                         <img 
                           src={image} 
-                          alt={`Before${i+1}`}
+                          alt={`Before ${i+1}`}
                           className="w-full h-full object-cover" 
                         />
                       </div>
@@ -110,7 +110,7 @@ const Projects = () => {
                       <div className="h-64 overflow-hidden rounded-md">
                         <img 
                           src={image} 
-                          alt={`After${i+1}`}
+                          alt={`After ${i+1}`}
                           className="w-full h-full object-cover" 
                         />
                       </div>
