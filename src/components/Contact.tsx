@@ -44,7 +44,8 @@ const Contact = () => {
           
           <div>
             <img 
-              src="/lovable-uploads/129ca3ee-ca07-4fbf-b569-9f108d0b95fd.png" 
+              src = "/placeholder.svg"
+              /*src="/lovable-uploads/129ca3ee-ca07-4fbf-b569-9f108d0b95fd.png" */
               alt="Manufacturing facility" 
               className="rounded-lg shadow-xl w-full h-auto mb-8"
             />
