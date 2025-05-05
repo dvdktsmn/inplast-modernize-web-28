@@ -80,7 +80,7 @@ const Projects = () => {
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
             {/* Before Photos */}
             <div className="bg-white rounded-xl overflow-hidden shadow-md p-4">
-              <h4 className="text-lg font-semibold mb-4 text-inplast-teal">Before Relocation</h4>
+              <h4 className="text-lg font-semibold mb-4 text-inplast-teal">Before</h4>
               <Carousel className="w-full">
                 <CarouselContent>
                   {project.beforeImages.map((image: string, i: number) => (
@@ -88,7 +88,7 @@ const Projects = () => {
                       <div className="h-64 overflow-hidden rounded-md">
                         <img 
                           src={image} 
-                          alt={`Before ${i+1}`}
+                          alt={`Before relocation ${i+1}`}
                           className="w-full h-full object-cover" 
                         />
                       </div>
@@ -102,7 +102,7 @@ const Projects = () => {
             
             {/* After Photos */}
             <div className="bg-white rounded-xl overflow-hidden shadow-md p-4">
-              <h4 className="text-lg font-semibold mb-4 text-inplast-teal">After Relocation</h4>
+              <h4 className="text-lg font-semibold mb-4 text-inplast-teal">After</h4>
               <Carousel className="w-full">
                 <CarouselContent>
                   {project.afterImages.map((image: string, i: number) => (
@@ -110,7 +110,7 @@ const Projects = () => {
                       <div className="h-64 overflow-hidden rounded-md">
                         <img 
                           src={image} 
-                          alt={`After ${i+1}`}
+                          alt={`After relocation ${i+1}`}
                           className="w-full h-full object-cover" 
                         />
                       </div>
