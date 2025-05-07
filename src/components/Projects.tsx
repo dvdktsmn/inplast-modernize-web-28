@@ -89,7 +89,8 @@ const Projects = () => {
     timerRef.current = setInterval(() => {
       const timeSinceLastInteraction = Date.now() - interactionRef.current;
       if (timeSinceLastInteraction >= 5000) { // 5 seconds
-        goToNextProject();
+        // Use smooth transition for auto-scrolling
+        setCurrentProject((prev) => (prev === projects.length - 1 ? 0 : prev + 1));
       }
     }, 1000);
   };
@@ -228,19 +229,20 @@ const Projects = () => {
           </p>
         </div>
 
-        {/* Main Project Display with side navigation arrows */}
+        {/* Main Project Display with navigation arrows positioned outside */}
         <div className="max-w-5xl mx-auto relative">
+          {/* Left arrow moved outside */}
           <Button 
             variant="outline" 
             size="icon" 
-            className="absolute left-0 top-1/2 -translate-y-1/2 z-10 h-10 w-10 rounded-full -ml-5 bg-white shadow-md hover:bg-inplast-teal hover:text-white"
+            className="absolute left-0 top-1/2 -translate-y-1/2 z-10 h-10 w-10 rounded-full -ml-12 bg-white shadow-md hover:bg-inplast-teal hover:text-white"
             onClick={goToPrevProject}
           >
             <ArrowLeft className="h-4 w-4" />
             <span className="sr-only">Previous project</span>
           </Button>
           
-          <div className="bg-white rounded-xl overflow-hidden shadow-lg p-6">
+          <div className="bg-white rounded-xl overflow-hidden shadow-lg p-6 transition-all duration-500 ease-in-out">
             <h3 className="text-2xl font-bold text-inplast-teal mb-1">
               {projects[currentProject].title}
             </h3>
@@ -255,17 +257,18 @@ const Projects = () => {
             {renderProjectContent(projects[currentProject], currentProject)}
           </div>
           
+          {/* Right arrow moved outside */}
           <Button 
             variant="outline" 
             size="icon" 
-            className="absolute right-0 top-1/2 -translate-y-1/2 z-10 h-10 w-10 rounded-full -mr-5 bg-white shadow-md hover:bg-inplast-teal hover:text-white"
+            className="absolute right-0 top-1/2 -translate-y-1/2 z-10 h-10 w-10 rounded-full -mr-12 bg-white shadow-md hover:bg-inplast-teal hover:text-white"
             onClick={goToNextProject}
           >
             <ArrowRight className="h-4 w-4" />
             <span className="sr-only">Next project</span>
           </Button>
           
-          {/* Bullet point navigation instead of numbers */}
+          {/* Bullet point navigation */}
           <div className="mt-8 flex justify-center">
             <div className="flex gap-3">
               {projects.map((_, index) => (
