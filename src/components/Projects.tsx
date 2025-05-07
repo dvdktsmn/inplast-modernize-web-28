@@ -88,7 +88,7 @@ const Projects = () => {
     }
     timerRef.current = setInterval(() => {
       const timeSinceLastInteraction = Date.now() - interactionRef.current;
-      if (timeSinceLastInteraction >= 10000) { // 10 seconds
+      if (timeSinceLastInteraction >= 5000) { // 5 seconds
         goToNextProject();
       }
     }, 1000);
