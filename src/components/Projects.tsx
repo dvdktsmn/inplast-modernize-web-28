@@ -86,7 +86,7 @@ const Projects = () => {
         goToNextProject(); // Directly call goToNextProject for smoother transition
         
       }
-    }, 1000); // Check every 5 seconds instead of every 1 second
+    }, 3000); // Check every 5 seconds instead of every 1 second
   };
   
   useEffect(() => {
