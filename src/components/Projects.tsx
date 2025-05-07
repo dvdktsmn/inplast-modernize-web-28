@@ -91,7 +91,6 @@ const Projects = () => {
       if (timeSinceLastInteraction >= 5000) { // 5 seconds
         // Use smooth transition for auto-scrolling
         setCurrentProject((prev) => (prev === projects.length - 1 ? 0 : prev + 1));
-        interactionRef.current = Date.now()
       }
     }, 1000);
   };
@@ -243,7 +242,7 @@ const Projects = () => {
             <span className="sr-only">Previous project</span>
           </Button>
           
-          <div className="bg-white rounded-xl overflow-hidden shadow-lg p-6 transition-all duration-500 ease-in-out">
+          <div className="bg-white rounded-xl overflow-hidden shadow-lg p-6 transition-all duration-1200 ease-in-out">
             <h3 className="text-2xl font-bold text-inplast-teal mb-1">
               {projects[currentProject].title}
             </h3>
