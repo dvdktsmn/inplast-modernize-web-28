@@ -58,7 +58,7 @@ const Navbar = () => {
           className="bg-inplast-teal hover:bg-inplast-darkgray text-white"
           onClick={() => scrollToSection('contact')}
         >
-          Get In Touch
+          Contact Us
         </Button>
       </div>
     </div>

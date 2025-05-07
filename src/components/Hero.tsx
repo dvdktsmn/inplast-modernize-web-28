@@ -40,11 +40,11 @@ const Hero = () => {
             Our Services
           </Button>
           <Button 
-            variant="outline" 
+            /*variant="outline"*/ 
             className="bg-inplast-teal hover:bg-inplast-darkgray text-white text-lg px-8 py-6"
             onClick={() => scrollToSection('contact')}
           >
-            Contact Us
+            Project Highlights
           </Button>
         </div>
       </div>
