@@ -42,7 +42,7 @@ const Hero = () => {
           <Button 
             /*variant="outline"*/ 
             className="bg-inplast-teal hover:bg-inplast-darkgray text-white text-lg px-8 py-6"
-            onClick={() => scrollToSection('contact')}
+            onClick={() => scrollToSection('projects')}
           >
             Project Highlights
           </Button>
