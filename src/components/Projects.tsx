@@ -43,7 +43,7 @@ const Projects = () => {
     image: "/lovable-uploads/69f9e44d-caa4-4361-8d49-190c6120084a.png",
     description: "Complete electrical and automation system upgrade for an aging manufacturing plant."
   }
-  */
+  */]
   
   const handleProjectChange = (index: number) => {
     setCurrentProject(index);
