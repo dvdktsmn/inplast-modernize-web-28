@@ -1,5 +1,5 @@
 
-import React, { useState } from 'react';
+import React, { useState, useEffect, useRef } from 'react';
 import { 
   Carousel, 
   CarouselContent, 
@@ -7,15 +7,13 @@ import {
   CarouselNext, 
   CarouselPrevious 
 } from "@/components/ui/carousel";
-import { 
-  Pagination, 
-  PaginationContent, 
-  PaginationItem, 
-  PaginationLink 
-} from "@/components/ui/pagination";
+import { Button } from "@/components/ui/button";
+import { ArrowLeft, ArrowRight } from "lucide-react";
 
 const Projects = () => {
   const [currentProject, setCurrentProject] = useState(0);
+  const timerRef = useRef<NodeJS.Timeout | null>(null);
+  const interactionRef = useRef<number>(Date.now());
   
   const projects = [
     {
@@ -70,7 +68,59 @@ const Projects = () => {
 
   const handleProjectChange = (index: number) => {
     setCurrentProject(index);
+    resetAutoScroll();
   };
+
+  const goToNextProject = () => {
+    setCurrentProject((prev) => (prev === projects.length - 1 ? 0 : prev + 1));
+    resetAutoScroll();
+  };
+
+  const goToPrevProject = () => {
+    setCurrentProject((prev) => (prev === 0 ? projects.length - 1 : prev - 1));
+    resetAutoScroll();
+  };
+
+  const resetAutoScroll = () => {
+    interactionRef.current = Date.now();
+    if (timerRef.current) {
+      clearInterval(timerRef.current);
+    }
+    timerRef.current = setInterval(() => {
+      const timeSinceLastInteraction = Date.now() - interactionRef.current;
+      if (timeSinceLastInteraction >= 10000) { // 10 seconds
+        goToNextProject();
+      }
+    }, 1000);
+  };
+
+  useEffect(() => {
+    // Set up auto-scrolling timer
+    resetAutoScroll();
+    
+    // Handle user interaction to reset timer
+    const handleUserInteraction = () => {
+      interactionRef.current = Date.now();
+    };
+    
+    const projectsSection = document.getElementById('projects');
+    if (projectsSection) {
+      projectsSection.addEventListener('click', handleUserInteraction);
+      projectsSection.addEventListener('mousemove', handleUserInteraction);
+      projectsSection.addEventListener('touchstart', handleUserInteraction);
+    }
+    
+    return () => {
+      if (timerRef.current) {
+        clearInterval(timerRef.current);
+      }
+      if (projectsSection) {
+        projectsSection.removeEventListener('click', handleUserInteraction);
+        projectsSection.removeEventListener('mousemove', handleUserInteraction);
+        projectsSection.removeEventListener('touchstart', handleUserInteraction);
+      }
+    };
+  }, []);
 
   const renderProjectContent = (project: any, index: number) => {
     if (index === 0) {
@@ -169,7 +219,7 @@ const Projects = () => {
   };
 
   return (
-    <section id = "projects" className="py-20 bg-gray-50">
+    <section id="projects" className="py-20 bg-gray-50">
       <div className="container mx-auto px-4">
         <div className="text-center mb-16">
           <h2 className="text-3xl font-bold text-gray-800 mb-4">Featured Projects</h2>
@@ -178,8 +228,18 @@ const Projects = () => {
           </p>
         </div>
 
-        {/* Main Project Display */}
-        <div className="max-w-5xl mx-auto">
+        {/* Main Project Display with side navigation arrows */}
+        <div className="max-w-5xl mx-auto relative">
+          <Button 
+            variant="outline" 
+            size="icon" 
+            className="absolute left-0 top-1/2 -translate-y-1/2 z-10 h-10 w-10 rounded-full -ml-5 bg-white shadow-md hover:bg-inplast-teal hover:text-white"
+            onClick={goToPrevProject}
+          >
+            <ArrowLeft className="h-4 w-4" />
+            <span className="sr-only">Previous project</span>
+          </Button>
+          
           <div className="bg-white rounded-xl overflow-hidden shadow-lg p-6">
             <h3 className="text-2xl font-bold text-inplast-teal mb-1">
               {projects[currentProject].title}
@@ -195,22 +255,30 @@ const Projects = () => {
             {renderProjectContent(projects[currentProject], currentProject)}
           </div>
           
-          {/* Project Navigation */}
-          <div className="mt-8">
-            <Pagination>
-              <PaginationContent>
-                {projects.map((project, index) => (
-                  <PaginationItem key={index}>
-                    <PaginationLink
-                      isActive={currentProject === index}
-                      onClick={() => handleProjectChange(index)}
-                    >
-                      {index + 1}
-                    </PaginationLink>
-                  </PaginationItem>
-                ))}
-              </PaginationContent>
-            </Pagination>
+          <Button 
+            variant="outline" 
+            size="icon" 
+            className="absolute right-0 top-1/2 -translate-y-1/2 z-10 h-10 w-10 rounded-full -mr-5 bg-white shadow-md hover:bg-inplast-teal hover:text-white"
+            onClick={goToNextProject}
+          >
+            <ArrowRight className="h-4 w-4" />
+            <span className="sr-only">Next project</span>
+          </Button>
+          
+          {/* Bullet point navigation instead of numbers */}
+          <div className="mt-8 flex justify-center">
+            <div className="flex gap-3">
+              {projects.map((_, index) => (
+                <button
+                  key={index}
+                  onClick={() => handleProjectChange(index)}
+                  className={`w-3 h-3 rounded-full transition-all ${
+                    currentProject === index ? 'bg-inplast-teal scale-125' : 'bg-gray-300 hover:bg-gray-400'
+                  }`}
+                  aria-label={`Go to project ${index + 1}`}
+                />
+              ))}
+            </div>
           </div>
         </div>
       </div>
