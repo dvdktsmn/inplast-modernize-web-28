@@ -81,10 +81,11 @@ const Projects = () => {
     // Set up the timer to check every 5 seconds instead of every second
     timerRef.current = setInterval(() => {
       const timeSinceLastInteraction = Date.now() - interactionRef.current;
-      if (timeSinceLastInteraction >= 10000) { // Still wait 10 seconds of inactivity
+      if (timeSinceLastInteraction >= 3000) { // Still wait 3 seconds of inactivity
         goToNextProject(); // Directly call goToNextProject for smoother transition
+          interactionRef.current = Date.now(); //reset timer
       }
-    }, 5000); // Check every 5 seconds instead of every 1 second
+    }, 1000); // Check every 5 seconds instead of every 1 second
   };
   
   useEffect(() => {
