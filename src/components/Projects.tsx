@@ -1,3 +1,4 @@
+
 import React, { useState, useEffect, useRef } from 'react';
 import { Carousel, CarouselContent, CarouselItem, CarouselNext, CarouselPrevious } from "@/components/ui/carousel";
 import { Button } from "@/components/ui/button";
@@ -99,7 +100,7 @@ const Projects = () => {
             {/* Before Photos */}
             <div className="bg-white rounded-xl overflow-hidden shadow-md p-4">
               <h4 className="text-lg font-semibold mb-4 text-inplast-teal">Before</h4>
-              <Carousel className="w-full">
+              <Carousel className="w-full relative">
                 <CarouselContent>
                   {project.beforeImages.map((image: string, i: number) => <CarouselItem key={i} className="basis-full">
                       <div className="h-64 overflow-hidden rounded-md">
@@ -115,7 +116,7 @@ const Projects = () => {
             {/* After Photos */}
             <div className="bg-white rounded-xl overflow-hidden shadow-md p-4">
               <h4 className="text-lg font-semibold mb-4 text-inplast-teal">After</h4>
-              <Carousel className="w-full">
+              <Carousel className="w-full relative">
                 <CarouselContent>
                   {project.afterImages.map((image: string, i: number) => <CarouselItem key={i} className="basis-full">
                       <div className="h-64 overflow-hidden rounded-md">
@@ -134,7 +135,7 @@ const Projects = () => {
       return <div className="mt-8">
           <div className="bg-white rounded-xl overflow-hidden shadow-md p-4">
             <h4 className="text-lg font-semibold mb-4 text-inplast-teal">Modernization Gallery</h4>
-            <Carousel className="w-full">
+            <Carousel className="w-full relative">
               <CarouselContent>
                 {project.galleryImages.map((image: string, i: number) => <CarouselItem key={i} className="md:basis-1/2">
                     <div className="h-64 overflow-hidden rounded-md p-2">
@@ -167,10 +168,10 @@ const Projects = () => {
           </p>
         </div>
 
-        {/* Main Project Display with navigation arrows positioned at the middle edges */}
+        {/* Main Project Display with navigation arrows positioned completely outside the frame */}
         <div className="max-w-5xl mx-auto relative">
-          {/* Left arrow positioned at the middle left edge */}
-          <Button variant="outline" size="icon" onClick={goToPrevProject} className="absolute left-0 top-1/2 -translate-y-1/2 z-10 h-10 w-10 rounded-full -mr-5 bg-white shadow-md hover:bg-inplast-teal hover:text-white">
+          {/* Left arrow positioned at the middle left edge, further outside */}
+          <Button variant="outline" size="icon" onClick={goToPrevProject} className="absolute left-0 top-1/2 -translate-y-1/2 z-10 h-10 w-10 rounded-full -ml-16 bg-white shadow-md hover:bg-inplast-teal hover:text-white">
             <ArrowLeft className="h-4 w-4" />
             <span className="sr-only">Previous project</span>
           </Button>
@@ -192,8 +193,8 @@ const Projects = () => {
             {renderProjectContent(projects[currentProject], currentProject)}
           </div>
           
-          {/* Right arrow positioned at the middle right edge */}
-          <Button variant="outline" size="icon" className="absolute right-0 top-1/2 -translate-y-1/2 z-10 h-10 w-10 rounded-full -mr-5 bg-white shadow-md hover:bg-inplast-teal hover:text-white" onClick={goToNextProject}>
+          {/* Right arrow positioned at the middle right edge, further outside */}
+          <Button variant="outline" size="icon" className="absolute right-0 top-1/2 -translate-y-1/2 z-10 h-10 w-10 rounded-full -mr-16 bg-white shadow-md hover:bg-inplast-teal hover:text-white" onClick={goToNextProject}>
             <ArrowRight className="h-4 w-4" />
             <span className="sr-only">Next project</span>
           </Button>
