@@ -42,6 +42,7 @@ const Navbar = () => {
           >
             Services
           </a>
+          {/*
           <a 
             href="#contact" 
             onClick={(e) => {
@@ -52,6 +53,7 @@ const Navbar = () => {
           >
             Contact
           </a>
+          */}
         </div>
         
         <Button 
