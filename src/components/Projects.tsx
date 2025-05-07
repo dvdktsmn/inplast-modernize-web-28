@@ -91,6 +91,7 @@ const Projects = () => {
       if (timeSinceLastInteraction >= 5000) { // 5 seconds
         // Use smooth transition for auto-scrolling
         setCurrentProject((prev) => (prev === projects.length - 1 ? 0 : prev + 1));
+        interactionRef.current = Date.now()
       }
     }, 1000);
   };
