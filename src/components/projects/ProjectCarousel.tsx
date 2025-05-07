@@ -23,7 +23,7 @@ const ProjectCarousel = ({ projects }: ProjectCarouselProps) => {
   const timerRef = useRef<NodeJS.Timeout | null>(null);
   const interactionRef = useRef<number>(Date.now());
   const [emblaRef, emblaApi] = useEmblaCarousel({ loop: true });
-  const checkInterval = 1000
+  const checkInterval = 7000 //scroll projects every 7 seconds
   
   const handleProjectChange = (index: number) => {
     setCurrentProject(index);
