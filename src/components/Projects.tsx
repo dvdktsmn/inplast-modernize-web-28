@@ -88,7 +88,7 @@ const Projects = () => {
     }
     timerRef.current = setInterval(() => {
       const timeSinceLastInteraction = Date.now() - interactionRef.current;
-      if (timeSinceLastInteraction >= 5000) { // 5 seconds
+      if (timeSinceLastInteraction >= 10000) { // 10 seconds
         // Use smooth transition for auto-scrolling
         setCurrentProject((prev) => (prev === projects.length - 1 ? 0 : prev + 1));
       }
@@ -99,7 +99,7 @@ const Projects = () => {
     // Set up auto-scrolling timer
     resetAutoScroll();
     
-    // Handle user interaction to reset timer
+    // Handle user interaction to reset timer - only clicks and touches, not mouse movement
     const handleUserInteraction = () => {
       interactionRef.current = Date.now();
     };
@@ -107,8 +107,9 @@ const Projects = () => {
     const projectsSection = document.getElementById('projects');
     if (projectsSection) {
       projectsSection.addEventListener('click', handleUserInteraction);
-      projectsSection.addEventListener('mousemove', handleUserInteraction);
       projectsSection.addEventListener('touchstart', handleUserInteraction);
+      
+      // No longer listening for 'mousemove' events
     }
     
     return () => {
@@ -117,7 +118,6 @@ const Projects = () => {
       }
       if (projectsSection) {
         projectsSection.removeEventListener('click', handleUserInteraction);
-        projectsSection.removeEventListener('mousemove', handleUserInteraction);
         projectsSection.removeEventListener('touchstart', handleUserInteraction);
       }
     };
@@ -229,20 +229,23 @@ const Projects = () => {
           </p>
         </div>
 
-        {/* Main Project Display with navigation arrows positioned outside */}
+        {/* Main Project Display with navigation arrows positioned at the middle edges */}
         <div className="max-w-5xl mx-auto relative">
-          {/* Left arrow moved outside */}
+          {/* Left arrow positioned at the middle left edge */}
           <Button 
             variant="outline" 
             size="icon" 
-            className="absolute left-0 top-1/2 -translate-y-1/2 z-10 h-10 w-10 rounded-full -ml-12 bg-white shadow-md hover:bg-inplast-teal hover:text-white"
+            className="absolute left-0 top-1/2 -translate-y-1/2 z-10 h-10 w-10 rounded-full -ml-5 bg-white shadow-md hover:bg-inplast-teal hover:text-white"
             onClick={goToPrevProject}
           >
             <ArrowLeft className="h-4 w-4" />
             <span className="sr-only">Previous project</span>
           </Button>
           
-          <div className="bg-white rounded-xl overflow-hidden shadow-lg p-6 transition-all duration-1200 ease-in-out">
+          <div 
+            className="bg-white rounded-xl overflow-hidden shadow-lg p-6 transition-all duration-700 ease-in-out"
+            style={{ transform: `translateX(0)` }}
+          >
             <h3 className="text-2xl font-bold text-inplast-teal mb-1">
               {projects[currentProject].title}
             </h3>
@@ -257,11 +260,11 @@ const Projects = () => {
             {renderProjectContent(projects[currentProject], currentProject)}
           </div>
           
-          {/* Right arrow moved outside */}
+          {/* Right arrow positioned at the middle right edge */}
           <Button 
             variant="outline" 
             size="icon" 
-            className="absolute right-0 top-1/2 -translate-y-1/2 z-10 h-10 w-10 rounded-full -mr-12 bg-white shadow-md hover:bg-inplast-teal hover:text-white"
+            className="absolute right-0 top-1/2 -translate-y-1/2 z-10 h-10 w-10 rounded-full -mr-5 bg-white shadow-md hover:bg-inplast-teal hover:text-white"
             onClick={goToNextProject}
           >
             <ArrowRight className="h-4 w-4" />
