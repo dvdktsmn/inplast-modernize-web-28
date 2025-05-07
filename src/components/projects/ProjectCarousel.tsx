@@ -23,6 +23,7 @@ const ProjectCarousel = ({ projects }: ProjectCarouselProps) => {
   const timerRef = useRef<NodeJS.Timeout | null>(null);
   const interactionRef = useRef<number>(Date.now());
   const [emblaRef, emblaApi] = useEmblaCarousel({ loop: true });
+  const checkInterval = 7000
   
   const handleProjectChange = (index: number) => {
     setCurrentProject(index);
@@ -61,7 +62,7 @@ const ProjectCarousel = ({ projects }: ProjectCarouselProps) => {
     // Set up the auto-scroll timer
     timerRef.current = setInterval(() => {
       const timeSinceLastInteraction = Date.now() - interactionRef.current;
-      if (timeSinceLastInteraction >= 3000) { // Wait 3 seconds of inactivity
+      if (timeSinceLastInteraction >= checkInterval) { // Wait 3 seconds of inactivity
         // Explicitly handle looping back to the first project
         const nextIndex = currentProject === projects.length - 1 ? 0 : currentProject + 1;
         setCurrentProject(nextIndex);
@@ -71,7 +72,7 @@ const ProjectCarousel = ({ projects }: ProjectCarouselProps) => {
         // Reset the interaction time to prevent immediate next scroll
         interactionRef.current = Date.now();
       }
-    }, 3000); // Check every 3 seconds
+    }, checkInterval); // Check every 7 seconds
   };
   
   useEffect(() => {
