@@ -82,7 +82,7 @@ const Projects = () => {
     timerRef.current = setInterval(() => {
       const timeSinceLastInteraction = Date.now() - interactionRef.current;
       if (timeSinceLastInteraction >= 3000) { // Still wait 3 seconds of inactivity
-        interactionRef.current = Date.now(); //reset timer
+        //interactionRef.current = Date.now(); //reset timer
         goToNextProject(); // Directly call goToNextProject for smoother transition
         
       }
