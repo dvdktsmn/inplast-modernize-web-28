@@ -62,7 +62,14 @@ const ProjectCarousel = ({ projects }: ProjectCarouselProps) => {
     timerRef.current = setInterval(() => {
       const timeSinceLastInteraction = Date.now() - interactionRef.current;
       if (timeSinceLastInteraction >= 3000) { // Wait 3 seconds of inactivity
-        goToNextProject();
+        // Explicitly handle looping back to the first project
+        const nextIndex = currentProject === projects.length - 1 ? 0 : currentProject + 1;
+        setCurrentProject(nextIndex);
+        if (emblaApi) {
+          emblaApi.scrollTo(nextIndex);
+        }
+        // Reset the interaction time to prevent immediate next scroll
+        interactionRef.current = Date.now();
       }
     }, 3000); // Check every 3 seconds
   };
@@ -108,7 +115,7 @@ const ProjectCarousel = ({ projects }: ProjectCarouselProps) => {
         emblaApi.off('select', onEmblaSelect);
       }
     };
-  }, [emblaApi]); // Only re-run when emblaApi changes
+  }, [emblaApi, currentProject, projects.length]); // Added currentProject and projects.length as dependencies
   
   return (
     <div className="max-w-5xl mx-auto relative">
