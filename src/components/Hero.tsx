@@ -34,14 +34,13 @@ const Hero = () => {
         </p>
         <div className="flex flex-col sm:flex-row gap-4 animate-fade-in">
           <Button 
-            className="bg-inplast-teal hover:bg-inplast-darkgray text-white text-lg px-8 py-6"
+            className="bg-inplast-teal hover:bg-inplast-darkgray text-white text-lg px-8 py-6 w-full sm:w-[200px]"
             onClick={() => scrollToSection('services')}
           >
             Our Services
           </Button>
           <Button 
-            /*variant="outline"*/ 
-            className="bg-inplast-teal hover:bg-inplast-darkgray text-white text-lg px-8 py-6"
+            className="bg-inplast-teal hover:bg-inplast-darkgray text-white text-lg px-8 py-6 w-full sm:w-[200px]"
             onClick={() => scrollToSection('projects')}
           >
             Project Highlights
