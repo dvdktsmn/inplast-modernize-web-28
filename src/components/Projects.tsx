@@ -170,7 +170,7 @@ const Projects = () => {
         {/* Main Project Display with navigation arrows positioned at the middle edges */}
         <div className="max-w-5xl mx-auto relative">
           {/* Left arrow positioned at the middle left edge */}
-          <Button variant="outline" size="icon" onClick={goToPrevProject} className="absolute left-0 top-1/2 -translate-y-1/2 z-10 h-10 w-10 rounded-full -ml--5 bg-white shadow-md hover:bg-inplast-teal hover:text-white">
+          <Button variant="outline" size="icon" onClick={goToPrevProject} className="absolute left-0 top-1/2 -translate-y-1/2 z-10 h-10 w-10 rounded-full -mr-5 bg-white shadow-md hover:bg-inplast-teal hover:text-white">
             <ArrowLeft className="h-4 w-4" />
             <span className="sr-only">Previous project</span>
           </Button>
