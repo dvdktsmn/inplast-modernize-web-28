@@ -3,10 +3,14 @@ import React, { useState, useEffect, useRef } from 'react';
 import { Carousel, CarouselContent, CarouselItem, CarouselNext, CarouselPrevious } from "@/components/ui/carousel";
 import { Button } from "@/components/ui/button";
 import { ArrowLeft, ArrowRight } from "lucide-react";
+import useEmblaCarousel from 'embla-carousel-react';
+
 const Projects = () => {
   const [currentProject, setCurrentProject] = useState(0);
   const timerRef = useRef<NodeJS.Timeout | null>(null);
   const interactionRef = useRef<number>(Date.now());
+  const [emblaRef, emblaApi] = useEmblaCarousel({ loop: true });
+  
   const projects = [{
     title: "BOPP Line Relocation",
     location: "Hefei, China to Europe",
@@ -41,32 +45,48 @@ const Projects = () => {
     description: "Complete electrical and automation system upgrade for an aging manufacturing plant."
   }
   */];
+  
   const handleProjectChange = (index: number) => {
     setCurrentProject(index);
+    if (emblaApi) {
+      emblaApi.scrollTo(index);
+    }
     resetAutoScroll();
   };
+  
   const goToNextProject = () => {
-    setCurrentProject(prev => prev === projects.length - 1 ? 0 : prev + 1);
+    const nextIndex = currentProject === projects.length - 1 ? 0 : currentProject + 1;
+    setCurrentProject(nextIndex);
+    if (emblaApi) {
+      emblaApi.scrollTo(nextIndex);
+    }
     resetAutoScroll();
   };
+  
   const goToPrevProject = () => {
-    setCurrentProject(prev => prev === 0 ? projects.length - 1 : prev - 1);
+    const prevIndex = currentProject === 0 ? projects.length - 1 : currentProject - 1;
+    setCurrentProject(prevIndex);
+    if (emblaApi) {
+      emblaApi.scrollTo(prevIndex);
+    }
     resetAutoScroll();
   };
+  
   const resetAutoScroll = () => {
     interactionRef.current = Date.now();
     if (timerRef.current) {
       clearInterval(timerRef.current);
     }
+    
+    // Set up the timer to check every 5 seconds instead of every second
     timerRef.current = setInterval(() => {
       const timeSinceLastInteraction = Date.now() - interactionRef.current;
-      if (timeSinceLastInteraction >= 10000) {
-        // 10 seconds
-        // Use smooth transition for auto-scrolling
-        setCurrentProject(prev => prev === projects.length - 1 ? 0 : prev + 1);
+      if (timeSinceLastInteraction >= 10000) { // Still wait 10 seconds of inactivity
+        goToNextProject(); // Directly call goToNextProject for smoother transition
       }
-    }, 1000);
+    }, 5000); // Check every 5 seconds instead of every 1 second
   };
+  
   useEffect(() => {
     // Set up auto-scrolling timer
     resetAutoScroll();
@@ -75,13 +95,25 @@ const Projects = () => {
     const handleUserInteraction = () => {
       interactionRef.current = Date.now();
     };
+    
     const projectsSection = document.getElementById('projects');
     if (projectsSection) {
       projectsSection.addEventListener('click', handleUserInteraction);
       projectsSection.addEventListener('touchstart', handleUserInteraction);
-
-      // No longer listening for 'mousemove' events
     }
+    
+    // Handle carousel changes
+    const onEmblaSelect = () => {
+      if (emblaApi) {
+        const selectedIndex = emblaApi.selectedScrollSnap();
+        setCurrentProject(selectedIndex);
+      }
+    };
+    
+    if (emblaApi) {
+      emblaApi.on('select', onEmblaSelect);
+    }
+    
     return () => {
       if (timerRef.current) {
         clearInterval(timerRef.current);
@@ -90,8 +122,12 @@ const Projects = () => {
         projectsSection.removeEventListener('click', handleUserInteraction);
         projectsSection.removeEventListener('touchstart', handleUserInteraction);
       }
+      if (emblaApi) {
+        emblaApi.off('select', onEmblaSelect);
+      }
     };
-  }, []);
+  }, [emblaApi]);
+  
   const renderProjectContent = (project: any, index: number) => {
     if (index === 0) {
       // BOPP Line Relocation - Two Carousels (Before/After)
@@ -159,6 +195,7 @@ const Projects = () => {
         </div>
       </div>;
   };
+  
   return <section id="projects" className="py-20 bg-gray-50">
       <div className="container mx-auto px-4">
         <div className="text-center mb-16">
@@ -176,21 +213,31 @@ const Projects = () => {
             <span className="sr-only">Previous project</span>
           </Button>
           
-          <div className="bg-white rounded-xl overflow-hidden shadow-lg p-6 transition-all duration-700 ease-in-out" style={{
-          transform: `translateX(0)`
-        }}>
-            <h3 className="text-2xl font-bold text-inplast-teal mb-1">
-              {projects[currentProject].title}
-            </h3>
-            <p className="text-sm text-gray-500 mb-4">
-              {projects[currentProject].location}
-            </p>
-            <p className="text-gray-600 mb-4">
-              {projects[currentProject].description}
-            </p>
-            
-            {/* Dynamic content based on project type */}
-            {renderProjectContent(projects[currentProject], currentProject)}
+          {/* Main carousel for project transitions */}
+          <div ref={emblaRef} className="overflow-hidden">
+            <div className="flex">
+              {projects.map((project, index) => (
+                <div 
+                  key={index} 
+                  className={`flex-[0_0_100%] min-w-0 transition-opacity duration-500 ${currentProject === index ? 'opacity-100' : 'opacity-0'}`}
+                >
+                  <div className="bg-white rounded-xl overflow-hidden shadow-lg p-6">
+                    <h3 className="text-2xl font-bold text-inplast-teal mb-1">
+                      {project.title}
+                    </h3>
+                    <p className="text-sm text-gray-500 mb-4">
+                      {project.location}
+                    </p>
+                    <p className="text-gray-600 mb-4">
+                      {project.description}
+                    </p>
+                    
+                    {/* Dynamic content based on project type */}
+                    {renderProjectContent(project, index)}
+                  </div>
+                </div>
+              ))}
+            </div>
           </div>
           
           {/* Right arrow positioned at the middle right edge, further outside */}
@@ -209,4 +256,5 @@ const Projects = () => {
       </div>
     </section>;
 };
+
 export default Projects;
