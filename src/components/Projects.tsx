@@ -1,4 +1,3 @@
-
 import React, { useState, useEffect, useRef } from 'react';
 import { Carousel, CarouselContent, CarouselItem, CarouselNext, CarouselPrevious } from "@/components/ui/carousel";
 import { Button } from "@/components/ui/button";
@@ -44,7 +43,7 @@ const Projects = () => {
     image: "/lovable-uploads/69f9e44d-caa4-4361-8d49-190c6120084a.png",
     description: "Complete electrical and automation system upgrade for an aging manufacturing plant."
   }
-  */];
+  */;
   
   const handleProjectChange = (index: number) => {
     setCurrentProject(index);
@@ -74,19 +73,19 @@ const Projects = () => {
   
   const resetAutoScroll = () => {
     interactionRef.current = Date.now();
+    
+    // Clear any existing timer to prevent multiple timers running simultaneously
     if (timerRef.current) {
       clearInterval(timerRef.current);
     }
     
-    // Set up the timer to check every 5 seconds instead of every second
+    // Set up the auto-scroll timer
     timerRef.current = setInterval(() => {
       const timeSinceLastInteraction = Date.now() - interactionRef.current;
-      if (timeSinceLastInteraction >= 3000) { // Still wait 3 seconds of inactivity
-        //interactionRef.current = Date.now(); //reset timer
-        goToNextProject(); // Directly call goToNextProject for smoother transition
-        
+      if (timeSinceLastInteraction >= 3000) { // Wait 3 seconds of inactivity
+        goToNextProject();
       }
-    }, 3000); // Check every 5 seconds instead of every 1 second
+    }, 3000); // Check every 3 seconds
   };
   
   useEffect(() => {
@@ -117,6 +116,7 @@ const Projects = () => {
     }
     
     return () => {
+      // Important: Clear the interval when component unmounts
       if (timerRef.current) {
         clearInterval(timerRef.current);
       }
@@ -128,7 +128,7 @@ const Projects = () => {
         emblaApi.off('select', onEmblaSelect);
       }
     };
-  }, [emblaApi]);
+  }, [emblaApi]); // Only re-run when emblaApi changes
   
   const renderProjectContent = (project: any, index: number) => {
     if (index === 0) {
