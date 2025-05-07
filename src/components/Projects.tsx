@@ -108,8 +108,8 @@ const Projects = () => {
                       </div>
                     </CarouselItem>)}
                 </CarouselContent>
-                <CarouselPrevious className="left-0" />
-                <CarouselNext className="right-0" />
+                <CarouselPrevious className="left-2" />
+                <CarouselNext className="right-2" />
               </Carousel>
             </div>
             
@@ -124,8 +124,8 @@ const Projects = () => {
                       </div>
                     </CarouselItem>)}
                 </CarouselContent>
-                <CarouselPrevious className="left-0" />
-                <CarouselNext className="right-0" />
+                <CarouselPrevious className="left-2" />
+                <CarouselNext className="right-2" />
               </Carousel>
             </div>
           </div>
