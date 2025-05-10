@@ -51,12 +51,8 @@ Our services include custom electrical and mechanical design, advanced control a
                 <span className="text-gray-600 text-center">Years Experience</span>
               </div>
               <div className="flex flex-col items-center bg-white p-6 rounded-lg shadow-md transition-transform hover:transform hover:scale-105">
-                <span className="text-3xl font-bold text-inplast-teal mb-2">10+</span>
+                <span className="text-3xl font-bold text-inplast-teal mb-2">50+</span>
                 <span className="text-gray-600 text-center">Projects Completed</span>
-              </div>
-              <div className="flex flex-col items-center bg-white p-6 rounded-lg shadow-md transition-transform hover:transform hover:scale-105">
-                <span className="text-3xl font-bold text-inplast-teal mb-2">4</span>
-                <span className="text-gray-600 text-center">Industry Leaders</span>
               </div>
               <div className="flex flex-col items-center bg-white p-6 rounded-lg shadow-md transition-transform hover:transform hover:scale-105">
                 <span className="text-3xl font-bold text-inplast-teal mb-2">24/7</span>
