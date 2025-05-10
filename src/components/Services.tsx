@@ -61,7 +61,7 @@ const Services = () => {
         <div className="text-center mb-16">
           <h2 className="text-3xl font-bold text-gray-800 mb-4">What We Do</h2>
           <p className="text-xl text-gray-600 max-w-3xl mx-auto">
-            Our comprehensive range of industrial services spans from equipment dismantling to full production line installation.
+            Our comprehensive range of industrial services spans from equipment modernization and upgrading to full production line installation and turnkey projects.
           </p>
         </div>
 
