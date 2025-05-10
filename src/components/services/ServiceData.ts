@@ -65,7 +65,7 @@ export const serviceDetails: ServiceDetails[] = [
   {
     id: "relocation",
     title: "Equipment Relocation",
-    description: "We specialize in the safe and efficient dismantling of industrial equipment, including full production lines. Our global project experience ensures your assets arrive safely at their new location.",
+    description: "We specialize in the safe and efficient dismantling, relocation and assembly of industrial equipment, including full production lines. Our global project experience ensures your assets arrive safely at their new location.",
     fullDescription: [
       "Relocating industrial equipment demands precision, expertise, and meticulous planning. Our comprehensive equipment relocation services ensure minimal downtime and maximum efficiency, whether you're moving a single machine or an entire facility."
     ],
