@@ -35,16 +35,14 @@ const About = () => {
             
             <p className="text-lg text-gray-600 mb-6">
               
-            We specialize in delivering complete industrial solutions designed to optimize and future-proof your operations. From equipment modernization and control system upgrades to full-scale equipment relocation and turnkey installation projects, we are your trusted partner for reliable and efficient execution across every phase of your production lifecycle.
+            We provide a complete suite of industrial solutions designed to optimize and future-proof your operations. From single piece equipment modernization and control system upgrades to turnkey installation projects and full-scale production line assembly, we are your trusted partner for reliable and efficient execution across every phase of your production lifecycle.
               </p>
               <p className="text-lg text-gray-600 mb-6">
-Our services include custom electrical and mechanical design, advanced control and automation system integration, precision motion control, equipment dismantling and reassembly, transportation logistics, and energy efficiency monitoring. We also provide complete equipment overhauls and upgrades, including retrofitting and performance validation, to help you extend the life and productivity of your existing assets.
+Our services include custom electrical and mechanical design, advanced control and automation system integration, precision motion control, equipment dismantling and reassembly, transportation logistics, and energy efficiency monitoring. We also provide complete equipment upgrades and overhauls, including retrofitting and performance validation, to help you extend the life and productivity of your existing assets.
               </p>
-            <p className="text-lg text-gray-600 mb-6">
-With decades of industry experience and a focus on safety, quality, and innovation, we deliver tailored engineering solutions that minimize downtime, maximize performance, and ensure your operations meet the demands of modern manufacturing environments.  
-            </p>
+
             <p className="text-lg text-gray-600">
-              Our expertise spans continents, with proven performance in relocation, installation, modernization and dismantling of manufacturing production systems.
+       we deliver tailored engineering solutions that minimize downtime, maximize performance, and ensure your operations meet the demands of modern manufacturing environments.
             </p>
             
             <div className="grid grid-cols-2 gap-6 mt-10">
