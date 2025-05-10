@@ -35,15 +35,12 @@ const About = () => {
             
             <p className="text-lg text-gray-600 mb-6">
               
-            We provide a complete suite of industrial solutions designed to optimize and future-proof your operations. From single piece equipment modernization and control system upgrades to turnkey installation projects and full-scale production line assembly, we are your trusted partner for reliable and efficient execution across every phase of your production lifecycle.
-              </p>
+           At Inplast Novex, we provide specialized industrial services that support the full lifecycle of your production equipment. Our expertise includes equipment modernization, relocation, complete overhauls, and turnkey project execution to help you enhance productivity, improve efficiency, and extend the life of your assets.   </p>
               <p className="text-lg text-gray-600 mb-6">
-Our services include custom electrical and mechanical design, advanced control and automation system integration, precision motion control, equipment dismantling and reassembly, transportation logistics, and energy efficiency monitoring. We also provide complete equipment upgrades and overhauls, including retrofitting and performance validation, to help you extend the life and productivity of your existing assets.
-              </p>
+Our services include comprehensive engineering and control system upgrades, covering electrical cabinet design and assembly, control and motion systems integration, SCADA and HMI implementation, and energy efficiency monitoring. Our equipment relocation services manage every step—from safe dismantling and seaworthy packaging to oversized equipment handling, transportation, and full reassembly and commissioning at the new location.     </p>
 
             <p className="text-lg text-gray-600">
-       We deliver tailored engineering solutions that minimize downtime, maximize performance, and ensure your operations meet the demands of modern manufacturing environments.
-            </p>
+       we deliver complete equipment overhaul and upgrade solutions, including condition assessments, retrofitting, modernization of mechanical and control systems, and thorough performance validation. We also execute full turnkey installation and commissioning projects, with system design, project management, installation, automation integration, and operator training to ensure smooth and reliable startup.      </p>
             
             <div className="grid grid-cols-2 gap-6 mt-10">
               <div className="flex flex-col items-center bg-white p-6 rounded-lg shadow-md transition-transform hover:transform hover:scale-105">
