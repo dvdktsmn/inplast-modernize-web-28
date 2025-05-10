@@ -42,7 +42,7 @@ const ServiceDetail = () => {
             </div>
             
             <div>
-              <h2 className="text-2xl font-bold text-gray-800 mb-4">Our Services Include:</h2>
+              <h2 className="text-2xl font-bold text-gray-800 mb-4">Our services include:</h2>
               <ul className="list-disc pl-5 space-y-2">
                 {serviceDetail.process.map((item, index) => (
                   <li key={index} className="text-gray-700">
@@ -79,7 +79,7 @@ const ServiceDetail = () => {
             </div>
             
             <div>
-              <h2 className="text-2xl font-bold text-gray-800 mb-4">Our Relocation Services</h2>
+              <h2 className="text-2xl font-bold text-gray-800 mb-4">Our services include:</h2>
               <ul className="list-disc pl-5 space-y-2">
                 {serviceDetail.process.map((item, index) => (
                   <li key={index} className="text-gray-700">
