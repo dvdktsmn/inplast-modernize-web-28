@@ -83,7 +83,7 @@ const ServiceDetail = () => {
               <ul className="list-disc pl-5 space-y-2">
                 {serviceDetail.process.map((item, index) => (
                   <li key={index} className="text-gray-700">
-                    <span className="font-semibold">{item.title}</span>
+                    <span className="font-semibold">{item.title}</span> - {item.description}
                   </li>
                 ))}
               </ul>
