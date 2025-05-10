@@ -61,8 +61,16 @@ export const featuredProjectsData: FeaturedProject[] = [
     description: "Complete electrical system upgrade for a BOPP line: installation of new motors, drives, control and SCADA systems.",
     images: ["/placeholder.svg"],
     isLarge: false,
-    beforeImages: ["/lovable-uploads/8dd8c29d-908f-48e0-8ab5-7ab38d1b2241.png"],
-    afterImages: ["/lovable-uploads/d2ea6e72-45e4-4847-83a8-fdca2f046b5d.png"]
+    beforeImages: [
+      "/lovable-uploads/bc259862-7ad5-4230-863a-71c8c4aace70.png",
+      "/lovable-uploads/a3939ff9-7351-4e7a-9f54-d3b8acc18320.png",
+      "/lovable-uploads/73452c3d-0601-4271-a578-a4059ce5af93.png"
+    ],
+    afterImages: [
+      "/lovable-uploads/181cb4de-b07e-4ac1-b737-1e767ca94fb7.png",
+      "/lovable-uploads/8c3f7074-b3d0-4eea-8cae-bd97537b13a5.png",
+      "/lovable-uploads/1a3bdb23-45e2-43a6-82e4-dd2ebf315b75.png"
+    ]
   },
   {
     id: "chill-roll-retrofit",
