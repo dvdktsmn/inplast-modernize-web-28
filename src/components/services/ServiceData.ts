@@ -1,4 +1,3 @@
-
 export interface ServiceDetails {
   id: string;
   title: string;
@@ -66,9 +65,7 @@ export const serviceDetails: ServiceDetails[] = [
     title: "Equipment Relocation",
     description: "We specialize in the safe and efficient dismantling of industrial equipment, including full production lines. Our global project experience ensures your assets arrive safely at their new location.",
     fullDescription: [
-      "Our Equipment Relocation services provide comprehensive solutions for moving industrial machinery and entire production lines across facilities, countries, or continents.",
-      "We handle every aspect of the relocation process, from initial planning and dismantling to transportation logistics, reinstallation, and commissioning at the new location.",
-      "With decades of experience in global relocations, we understand the complex challenges involved and have developed proven methodologies to ensure successful outcomes."
+      "Relocating industrial equipment demands precision, expertise, and meticulous planning. Our comprehensive equipment relocation services ensure minimal downtime and maximum efficiency, whether you're moving a single machine or an entire facility."
     ],
     benefits: [
       "Minimized production downtime during transition",
@@ -79,28 +76,24 @@ export const serviceDetails: ServiceDetails[] = [
     ],
     process: [
       {
-        title: "Pre-Relocation Assessment",
-        description: "Detailed evaluation of equipment condition, documentation requirements, and logistical challenges."
+        title: "Dismantling",
+        description: ""
       },
       {
-        title: "Planning & Documentation",
-        description: "Comprehensive planning of dismantling sequence, labeling systems, and detailed documentation."
+        title: "Seaworthy Packaging",
+        description: ""
       },
       {
-        title: "Dismantling & Packaging",
-        description: "Methodical disassembly and specialized packaging of components for safe transport."
+        title: "Oversized Equipment Handling",
+        description: ""
       },
       {
-        title: "Logistics & Transport",
-        description: "Coordination of shipping, customs clearance, and specialized transport for oversized components."
+        title: "Transportation Logistics",
+        description: ""
       },
       {
-        title: "Reinstallation",
-        description: "Precision reassembly at the new location, including alignment and calibration."
-      },
-      {
-        title: "Commissioning & Optimization",
-        description: "Systematic testing, commissioning, and optimization for peak performance."
+        title: "Rigging and Lifting",
+        description: ""
       }
     ],
     images: [

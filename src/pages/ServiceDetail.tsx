@@ -65,6 +65,43 @@ const ServiceDetail = () => {
       );
     }
     
+    // Special layout for relocation service page
+    if (serviceId === 'relocation') {
+      return (
+        <>
+          <div className="space-y-8">
+            <div>
+              {serviceDetail.fullDescription.map((paragraph, index) => (
+                <p key={index} className="text-gray-700 mb-4 leading-relaxed">
+                  {paragraph}
+                </p>
+              ))}
+            </div>
+            
+            <div>
+              <h2 className="text-2xl font-bold text-gray-800 mb-4">Our Relocation Services</h2>
+              <ul className="list-disc pl-5 space-y-2">
+                {serviceDetail.process.map((item, index) => (
+                  <li key={index} className="text-gray-700">
+                    <span className="font-semibold">{item.title}</span>
+                  </li>
+                ))}
+              </ul>
+            </div>
+            
+            <div className="pt-6">
+              <Button 
+                onClick={() => navigate('/contact')}
+                className="bg-inplast-teal hover:bg-inplast-teal/90"
+              >
+                Request a Consultation
+              </Button>
+            </div>
+          </div>
+        </>
+      );
+    }
+    
     // Default layout for other service pages
     return (
       <>
