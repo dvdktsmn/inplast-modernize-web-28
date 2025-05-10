@@ -27,7 +27,7 @@ const Services = () => {
         "/lovable-uploads/3c54f29a-ceed-4622-a80e-6ae838235b8f.png",
         "/lovable-uploads/fbb89a5f-8378-4330-8177-3469398d8d52.png"
       ]
-    }
+    },
     {
       id: "installation",
       title: "Installation and Commissioning",
@@ -50,7 +50,7 @@ const Services = () => {
         "/lovable-uploads/6075f730-5298-4a9d-a8ae-c4f2a49a4896.png",
         "/lovable-uploads/f4facf59-8aa8-44a8-a2f3-45407f7dfc4f.png"
       ]
-    },
+    }
 
 
   ];
