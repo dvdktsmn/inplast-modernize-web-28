@@ -59,25 +59,29 @@ const Services = () => {
           </p>
         </div>
 
-        <div className="space-y-20">
-          {serviceCategories.map((category, index) => (
-            <div key={category.id} className={`flex flex-col ${index % 2 === 1 ? 'md:flex-row-reverse' : 'md:flex-row'} gap-8 items-center`}>
-              <div className="w-full md:w-1/2">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-12">
+          {serviceCategories.map((category) => (
+            <div key={category.id} className="flex flex-col h-full">
+              <div className="mb-6">
                 <ServiceCarousel images={category.images} />
               </div>
               
-              <div className="w-full md:w-1/2 space-y-4">
+              <div className="flex flex-col flex-grow">
                 <Link to={`/services/${category.id}`}>
-                  <h3 className="text-2xl font-bold text-inplast-teal hover:underline transition-all">
+                  <h3 className="text-2xl font-bold text-inplast-teal hover:underline transition-all mb-4">
                     {category.title}
                   </h3>
                 </Link>
-                <p className="text-gray-600">{category.description}</p>
-                <Link to={`/services/${category.id}`}>
-                  <Button variant="outline" className="text-inplast-teal border-inplast-teal hover:bg-inplast-teal/10">
-                    Learn More <ArrowRight className="ml-2" size={16} />
-                  </Button>
-                </Link>
+                
+                <p className="text-gray-600 mb-6">{category.description}</p>
+                
+                <div className="mt-auto">
+                  <Link to={`/services/${category.id}`}>
+                    <Button variant="outline" className="text-inplast-teal border-inplast-teal hover:bg-inplast-teal/10">
+                      Learn More <ArrowRight className="ml-2" size={16} />
+                    </Button>
+                  </Link>
+                </div>
               </div>
             </div>
           ))}
