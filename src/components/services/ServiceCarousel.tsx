@@ -1,5 +1,5 @@
 
-import React, { useState } from 'react';
+import React, { useState, useEffect, useRef } from 'react';
 import {
   Carousel,
   CarouselContent,
@@ -16,13 +16,57 @@ interface ServiceCarouselProps {
 }
 
 const ServiceCarousel = ({ images }: ServiceCarouselProps) => {
-  // Use Autoplay plugin with embla carousel
-  const [emblaRef, emblaApi] = useEmblaCarousel({ loop: true }, [
-    Autoplay({ delay: 5000, stopOnInteraction: false })
-  ]);
+  const autoplayRef = useRef<ReturnType<typeof setTimeout> | null>(null);
+  const [emblaRef, emblaApi] = useEmblaCarousel({ loop: true });
+  
+  // Initialize auto-scroll after inactivity
+  useEffect(() => {
+    if (!emblaApi) return;
+    
+    // Function to start auto-scrolling
+    const startAutoScroll = () => {
+      if (autoplayRef.current) {
+        clearInterval(autoplayRef.current);
+      }
+      
+      autoplayRef.current = setInterval(() => {
+        emblaApi.scrollNext();
+      }, 7000); // 7 seconds interval
+    };
+    
+    // Timer for inactivity detection
+    let inactivityTimer: ReturnType<typeof setTimeout>;
+    
+    // Start the inactivity timer initially
+    inactivityTimer = setTimeout(startAutoScroll, 7000);
+    
+    // Add event listeners for user interaction with the carousel
+    const handleCarouselInteraction = () => {
+      // Clear the auto-scrolling
+      if (autoplayRef.current) {
+        clearInterval(autoplayRef.current);
+        autoplayRef.current = null;
+      }
+      
+      // Reset the inactivity timer
+      clearTimeout(inactivityTimer);
+      inactivityTimer = setTimeout(startAutoScroll, 7000);
+    };
+    
+    // Only listen for carousel interaction events (not mouse move or scroll)
+    emblaApi.on('select', handleCarouselInteraction);
+    
+    // Clean up
+    return () => {
+      if (autoplayRef.current) clearInterval(autoplayRef.current);
+      clearTimeout(inactivityTimer);
+      emblaApi.off('select', handleCarouselInteraction);
+    };
+  }, [emblaApi]);
 
   return (
     <Carousel 
+      ref={emblaRef}
       opts={{ loop: true }}
       className="w-full"
     >
