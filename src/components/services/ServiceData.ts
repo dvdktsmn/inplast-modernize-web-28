@@ -18,9 +18,9 @@ export const serviceDetails: ServiceDetails[] = [
     title: "Installation and Commissioning",
     description: "Ensure seamless operation from day one. Our experts manage the installation and commissioning process end-to-end, offering localized support and global experience.",
     fullDescription: [
-      "Our Installation and Commissioning services provide end-to-end solutions for integrating new equipment into your existing operations. From initial planning to final handover, we manage every aspect of the process.",
-      "With a team of expert engineers and technicians, we ensure your equipment is installed correctly, operates efficiently, and meets all regulatory requirements and industry standards.",
-      "We understand the complexities of industrial installations and provide tailored solutions that minimize disruption to your operations while maximizing productivity."
+      "Successful industrial operations depend on the flawless installation and commissioning of equipment and systems. We provide comprehensive turnkey solutions—from full project design and planning to equipment overhaul and final commissioning—ensuring your operations are running at peak performance from day one.",
+      "Our experience across industries allows us to deliver seamless project execution with minimal disruption to your business.",
+      "From start to finish, we deliver reliable installation and commissioning services designed to optimize your production capabilities and support long-term operational excellence."
     ],
     benefits: [
       "Reduced downtime and faster time to production",
@@ -31,28 +31,28 @@ export const serviceDetails: ServiceDetails[] = [
     ],
     process: [
       {
-        title: "Site Assessment",
-        description: "Comprehensive evaluation of installation location, infrastructure requirements, and potential challenges."
+        title: "Turnkey Project Execution",
+        description: "We manage every stage of your project, from initial concept and engineering to complete installation and operational handover."
       },
       {
-        title: "Installation Planning",
-        description: "Detailed planning of equipment placement, utility connections, and integration with existing systems."
+        title: "Full System Design and Engineering",
+        description: "Our experts design fully customized system layouts, electrical and mechanical schematics, and control architectures to meet your unique operational requirements."
       },
       {
         title: "Equipment Installation",
-        description: "Precision placement and assembly of all components according to manufacturer specifications."
+        description: "Precise mechanical and electrical installation of all machinery and support systems, carried out to international safety and quality standards."
       },
       {
-        title: "System Integration",
-        description: "Seamless integration with existing production systems and infrastructure."
+        title: "Control System Integration",
+        description: "We integrate advanced control and automation systems to ensure optimal machine performance and smooth coordination across your production lines."
       },
       {
-        title: "Testing & Commissioning",
-        description: "Rigorous testing of all functions and gradual commissioning to ensure optimal performance."
+        title: "Equipment Overhaul and Upgrades",
+        description: "Our team refurbishes, upgrades, or retrofits your existing equipment to extend its lifespan, improve reliability, and adapt to new production demands."
       },
       {
-        title: "Training & Handover",
-        description: "Comprehensive training for operators and maintenance staff, followed by formal handover."
+        title: "Commissioning and Operator Training",
+        description: "We carry out thorough functional testing, calibration, and system verification, and provide comprehensive training to your personnel for safe and efficient operation."
       }
     ],
     images: [

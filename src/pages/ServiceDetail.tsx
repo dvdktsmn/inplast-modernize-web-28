@@ -1,4 +1,3 @@
-
 import React, { useEffect } from 'react';
 import { useParams, useNavigate } from 'react-router-dom';
 import { serviceDetails } from '../components/services/ServiceData';
@@ -28,6 +27,44 @@ const ServiceDetail = () => {
   }
 
   const renderServiceContent = () => {
+    // Special layout for installation service page
+    if (serviceId === 'installation') {
+      return (
+        <>
+          <div className="space-y-8">
+            <div>
+              {serviceDetail.fullDescription.map((paragraph, index) => (
+                <p key={index} className="text-gray-700 mb-4 leading-relaxed">
+                  {paragraph}
+                </p>
+              ))}
+            </div>
+            
+            <div>
+              <h2 className="text-2xl font-bold text-gray-800 mb-4">Our Services Include:</h2>
+              <div className="space-y-4">
+                {serviceDetail.process.map((item, index) => (
+                  <div key={index} className="bg-gray-50 p-4 rounded-lg">
+                    <h3 className="font-bold text-inplast-teal mb-2">{item.title}</h3>
+                    <p className="text-gray-700">{item.description}</p>
+                  </div>
+                ))}
+              </div>
+            </div>
+            
+            <div className="pt-6">
+              <Button 
+                onClick={() => navigate('/contact')}
+                className="bg-inplast-teal hover:bg-inplast-teal/90"
+              >
+                Request a Consultation
+              </Button>
+            </div>
+          </div>
+        </>
+      );
+    }
+    
     // Special layout for engineering service page
     if (serviceId === 'engineering') {
       return (
