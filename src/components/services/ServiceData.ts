@@ -162,9 +162,8 @@ export const serviceDetails: ServiceDetails[] = [
     title: "Engineering and Control Systems Upgrade",
     description: "From design to deployment, our electrical engineering solutions support the safe, smart, and scalable control of your production infrastructure, enhancing efficiency and reducing downtime.",
     fullDescription: [
-      "Our Engineering and Control Systems Upgrade services modernize the brain of your industrial operations, bringing outdated control systems into the digital age.",
-      "We combine expertise in electrical engineering, automation, and industrial networking to create integrated control solutions that improve productivity, reliability, and data visibility.",
-      "Our approach seamlessly bridges legacy equipment with modern control architectures, allowing for phased implementation that minimizes disruption to ongoing operations."
+      "In today's industrial landscape, performance, reliability, and energy efficiency are critical to staying competitive. Whether you operate in film production, packaging, or other manufacturing sectors, upgrading your engineering and control systems is essential to maximize uptime, optimize processes, and meet modern safety and quality standards.",
+      "Our comprehensive Engineering and Control Systems Upgrade services provide complete modernization solutions—from electrical and mechanical upgrades to advanced automation and software development. We partner closely with you to tailor solutions that integrate seamlessly with your existing equipment and operational goals."
     ],
     benefits: [
       "Improved process control and production consistency",
@@ -175,28 +174,32 @@ export const serviceDetails: ServiceDetails[] = [
     ],
     process: [
       {
-        title: "System Assessment",
-        description: "Comprehensive evaluation of existing control systems, pain points, and improvement opportunities."
+        title: "Electrical Cabinet Design and Assembly",
+        description: "Custom electrical cabinet design and professional assembly for your specific control requirements."
       },
       {
-        title: "Solution Design",
-        description: "Custom engineering of control solutions aligned with operational requirements and future needs."
+        title: "Control Systems Integration",
+        description: "Seamless integration of control systems with existing equipment and infrastructure."
       },
       {
-        title: "Component Selection",
-        description: "Careful selection of hardware and software components based on reliability and longevity."
+        title: "Mechanical Systems Upgrades",
+        description: "Enhancement of mechanical components for improved performance and reliability."
       },
       {
-        title: "Implementation Planning",
-        description: "Detailed planning of upgrade sequence to minimize production disruption."
+        title: "Motion Control Solutions",
+        description: "Precision motion control implementations for better accuracy and speed."
       },
       {
-        title: "Installation & Integration",
-        description: "Precision installation of new components and integration with existing systems."
+        title: "Custom Software Development",
+        description: "Tailored software solutions designed for your specific operational needs."
       },
       {
-        title: "Commissioning & Training",
-        description: "Systematic testing, fine-tuning, and comprehensive operator training."
+        title: "SCADA & HMI Systems",
+        description: "Advanced monitoring and control interfaces for improved operator efficiency."
+      },
+      {
+        title: "Energy Efficiency Monitoring and Control",
+        description: "Systems to track and optimize energy usage across your production environment."
       }
     ],
     images: [
