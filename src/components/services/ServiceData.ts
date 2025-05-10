@@ -92,10 +92,6 @@ export const serviceDetails: ServiceDetails[] = [
         title: "Transportation Logistics",
         description: "Coordinated logistics planning to ensure timely and secure delivery of equipment to its new location."
       },
-      {
-        title: "Rigging and Lifting",
-        description: "Professional rigging services for safe and precise positioning of heavy equipment."
-      }
     ],
     images: [
       "/lovable-uploads/ddac229c-45ea-423a-96fb-5faedf762f2e.png",
