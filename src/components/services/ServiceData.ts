@@ -179,11 +179,11 @@ export const serviceDetails: ServiceDetails[] = [
       },
       {
         title: "Control Systems Integration",
-        description: "Seamless integration of control systems with existing equipment and infrastructure."
+        description: "We integrate modern PLCs and automation technologies to streamline and enhance your production processes."
       },
       {
         title: "Mechanical Systems Upgrades",
-        description: "Enhancement of mechanical components for improved performance and reliability."
+        description: "Upgrade and retrofit mechanical components to improve equipment reliability and performance."
       },
       {
         title: "Motion Control Solutions",
@@ -195,7 +195,7 @@ export const serviceDetails: ServiceDetails[] = [
       },
       {
         title: "SCADA & HMI Systems",
-        description: "Advanced monitoring and control interfaces for improved operator efficiency."
+        description: "We design advanced monitoring and control interfaces for improved operator efficiency."
       },
       {
         title: "Energy Efficiency Monitoring and Control",
