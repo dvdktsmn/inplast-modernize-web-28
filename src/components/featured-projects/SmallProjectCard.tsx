@@ -84,10 +84,10 @@ const SmallProjectCard = ({ project }: SmallProjectCardProps) => {
           </div>
         </div>
       ) : project.images.length > 1 ? (
-        <Carousel className="w-full">
-          <CarouselContent>
+        <Carousel className="w-full" opts={{ slidesToScroll: 2 }}>
+          <CarouselContent className="-ml-2">
             {project.images.map((image, index) => (
-              <CarouselItem key={index} className="basis-full">
+              <CarouselItem key={index} className="pl-2 basis-1/2 min-w-0">
                 <AspectRatio ratio={16 / 9}>
                   <img 
                     src={image} 
