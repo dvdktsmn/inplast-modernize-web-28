@@ -32,6 +32,18 @@ export const projectsData: Project[] = [
     image: "/lovable-uploads/58d6f434-7c79-4e4e-b8c9-e60fad6a246d.png",
     description: "Full overhaul and modernization of outdated equipment to increase production efficiency.",
     galleryImages: ["/placeholder.svg", "/placeholder.svg", "/placeholder.svg", "/placeholder.svg"]
+  },
+  {
+    title: "Extruder Retrofit",
+    location: "Manufacturing Facility",
+    image: "/lovable-uploads/2343d9d3-823a-459d-8eca-893ffd5bf54b.png",
+    description: "Complete overhaul of heating, cooling, and lubrication systems for a polypropylene extruder.",
+    beforeImages: [
+      "/lovable-uploads/2343d9d3-823a-459d-8eca-893ffd5bf54b.png"
+    ],
+    afterImages: [
+      "/lovable-uploads/d4c61cfb-8c3b-4d89-a1af-4caf655311eb.png"
+    ]
   }
   /* Commented out projects
   {
@@ -50,7 +62,7 @@ export const projectsData: Project[] = [
     title: "Control System Upgrade",
     location: "Helsinki, Finland",
     image: "/lovable-uploads/69f9e44d-caa4-4361-8d49-190c6120084a.png",
-    description: "Complete electrical and automation system upgrade for an aging manufacturing plant."
+    description: "Complete electrical and control system upgrade for an aging manufacturing plant."
   }
   */
 ];
