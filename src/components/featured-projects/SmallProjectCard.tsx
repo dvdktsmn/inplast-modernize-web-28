@@ -72,7 +72,15 @@ const SmallProjectCard = ({ project }: SmallProjectCardProps) => {
             </div>
             
             {/* Right navigation arrow */}
-            
+            {(project.beforeImages!.length > 1 || project.afterImages!.length > 1) && (
+              <button 
+                onClick={() => navigateImages('next')} 
+                className="absolute right-2 top-1/2 -translate-y-1/2 z-10 bg-white hover:bg-inplast-teal hover:text-white h-8 w-8 rounded-full border border-input flex items-center justify-center shadow-md"
+                aria-label="Next images"
+              >
+                <ChevronRight className="h-4 w-4" />
+              </button>
+            )}
           </div>
         </div>
       ) : project.images.length > 1 ? (
