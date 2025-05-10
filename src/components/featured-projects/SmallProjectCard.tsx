@@ -10,15 +10,45 @@ import {
   CarouselPrevious 
 } from "@/components/ui/carousel";
 import { AspectRatio } from "@/components/ui/aspect-ratio";
+import { ScrollArea } from "@/components/ui/scroll-area";
 
 interface SmallProjectCardProps {
   project: FeaturedProject;
 }
 
 const SmallProjectCard = ({ project }: SmallProjectCardProps) => {
+  const hasBeforeAfterImages = project.beforeImages && project.beforeImages.length > 0 && 
+                              project.afterImages && project.afterImages.length > 0;
+  
   return (
     <Card className="overflow-hidden hover:shadow-lg transition-shadow">
-      {project.images.length > 1 ? (
+      {hasBeforeAfterImages ? (
+        <div className="grid grid-cols-1 gap-4 p-4">
+          <h4 className="text-sm font-medium text-gray-500">Before and After</h4>
+          <div className="grid grid-cols-2 gap-2">
+            <div className="space-y-2">
+              <p className="text-xs font-medium text-gray-500">Before</p>
+              <AspectRatio ratio={16/9}>
+                <img 
+                  src={project.beforeImages![0]} 
+                  alt={`${project.title} before`}
+                  className="object-cover w-full h-full rounded-md"
+                />
+              </AspectRatio>
+            </div>
+            <div className="space-y-2">
+              <p className="text-xs font-medium text-gray-500">After</p>
+              <AspectRatio ratio={16/9}>
+                <img 
+                  src={project.afterImages![0]} 
+                  alt={`${project.title} after`}
+                  className="object-cover w-full h-full rounded-md"
+                />
+              </AspectRatio>
+            </div>
+          </div>
+        </div>
+      ) : project.images.length > 1 ? (
         <Carousel className="w-full">
           <CarouselContent>
             {project.images.map((image, index) => (

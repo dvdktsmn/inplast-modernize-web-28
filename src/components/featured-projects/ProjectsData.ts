@@ -8,6 +8,8 @@ export interface FeaturedProject {
   isLarge: boolean;
   tags?: string[];
   completionDate?: string;
+  beforeImages?: string[];
+  afterImages?: string[];
 }
 
 export const featuredProjectsData: FeaturedProject[] = [
@@ -53,12 +55,14 @@ export const featuredProjectsData: FeaturedProject[] = [
     images: ["/placeholder.svg", "/placeholder.svg"],
     isLarge: false
   },
-    {
+  {
     id: "electrical-system-upgrade",
     title: "Electrical System Upgrade",
     description: "Complete electrical system upgrade for a BOPP line: installation of new motors, drives, control and SCADA systems.",
     images: ["/placeholder.svg"],
-    isLarge: false
+    isLarge: false,
+    beforeImages: ["/lovable-uploads/8dd8c29d-908f-48e0-8ab5-7ab38d1b2241.png"],
+    afterImages: ["/lovable-uploads/d2ea6e72-45e4-4847-83a8-fdca2f046b5d.png"]
   },
   {
     id: "chill-roll-retrofit",
