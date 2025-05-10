@@ -94,11 +94,11 @@ const ServiceDetail = () => {
           <div className="bg-white rounded-xl shadow-md overflow-hidden">
             <div className="relative">
               <div className="max-w-5xl mx-auto p-6 lg:p-8">
-                <h1 className="text-3xl md:text-4xl font-bold text-inplast-teal mb-4">
+                <h1 className="text-3xl md:text-4xl font-bold text-inplast-teal mb-8">
                   {serviceDetail.title}
                 </h1>
                 
-                <div className="mb-10" ref={carouselRef}>
+                <div className="mb-8" ref={carouselRef}>
                   <ServiceCarousel images={serviceDetail.images} />
                 </div>
                 
