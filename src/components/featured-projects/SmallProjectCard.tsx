@@ -44,7 +44,7 @@ const SmallProjectCard = ({ project }: SmallProjectCardProps) => {
             {(project.beforeImages!.length > 1 || project.afterImages!.length > 1) && (
               <button 
                 onClick={() => navigateImages('prev')} 
-                className="absolute left-2 top-1/2 -translate-y-1/2 z-10 bg-white hover:bg-inplast-teal hover:text-white h-8 w-8 rounded-full border border-input flex items-center justify-center shadow-md"
+                className="right-2 bg-white/80 hover:bg-white" 
                 aria-label="Previous images"
               >
                 <ChevronLeft className="h-4 w-4" />
@@ -75,7 +75,7 @@ const SmallProjectCard = ({ project }: SmallProjectCardProps) => {
             {(project.beforeImages!.length > 1 || project.afterImages!.length > 1) && (
               <button 
                 onClick={() => navigateImages('next')} 
-                className="absolute right-2 top-1/2 -translate-y-1/2 z-10 bg-white hover:bg-inplast-teal hover:text-white h-8 w-8 rounded-full border border-input flex items-center justify-center shadow-md"
+                className="right-2 bg-white/80 hover:bg-white" 
                 aria-label="Next images"
               >
                 <ChevronRight className="h-4 w-4" />
