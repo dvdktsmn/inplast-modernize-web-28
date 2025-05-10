@@ -93,7 +93,7 @@ export const serviceDetails: ServiceDetails[] = [
       },
       {
         title: "Reassembly and Alignment",
-        desciption: "Comprehensive reassembly of machinery by experienced technicians, including mechanical, electrical, and control system reconnections, precision alignment, and functional testing to ensure full operational readiness."
+        description: "Comprehensive reassembly of machinery by experienced technicians, including mechanical, electrical, and control system reconnections, precision alignment, and functional testing to ensure full operational readiness."
       }
     ],
     images: [
