@@ -60,9 +60,7 @@ const SmallProjectCard = ({ project }: SmallProjectCardProps) => {
             </div>
             
  
-          </div>
 
-      ) : (
         <div className="relative">
           <Carousel className="w-full" opts={{ slidesToScroll: 2, loop: true }}>
             <CarouselContent className="">
