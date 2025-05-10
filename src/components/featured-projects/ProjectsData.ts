@@ -51,7 +51,7 @@ export const featuredProjectsData: FeaturedProject[] = [
   {
     id: "extruder-retrofit",
     title: "Extruder Retrofit",
-    description: "Complete overhaul of heating, cooling, and lubrication systems for a PP extruder.",
+    description: "Complete overhaul of heating, cooling, and lubrication systems for a polypropylene extruder.",
     images: ["/placeholder.svg", "/placeholder.svg"],
     isLarge: false
   },
