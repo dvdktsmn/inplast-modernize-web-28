@@ -77,7 +77,13 @@ export const featuredProjectsData: FeaturedProject[] = [
     title: "Chill Roll Retrofit",
     description: "Replacement of conventional gearmotor with direct drive torque motor.",
     images: ["/placeholder.svg"],
-    isLarge: false
+    isLarge: false,
+    beforeImages: [
+      "/lovable-uploads/f8ba37ed-9f8a-494f-9e09-dc917f00149b.png"
+    ],
+    afterImages: [
+      "/lovable-uploads/07eea950-4ca8-4fa4-95ed-3ad4ce58177c.png"
+    ]
   },
   {
     id: "metalliser-revamping",

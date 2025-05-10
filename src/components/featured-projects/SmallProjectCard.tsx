@@ -1,4 +1,3 @@
-
 import React, { useState } from 'react';
 import { FeaturedProject } from './ProjectsData';
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
@@ -41,7 +40,6 @@ const SmallProjectCard = ({ project }: SmallProjectCardProps) => {
         <div className="grid grid-cols-1 gap-4 p-4">
           <div className="grid grid-cols-2 gap-2">
             <div className="relative">
-              
               <AspectRatio ratio={16/9}>
                 <img 
                   src={project.beforeImages![imageIndex]} 
