@@ -90,6 +90,10 @@ export const serviceDetails: ServiceDetails[] = [
       {
         title: "Transportation Logistics",
         description: "Coordinated logistics planning to ensure timely and secure delivery of equipment to its new location."
+      },
+      {
+        title: "Reassembly and Alignment",
+        desciption: "Comprehensive reassembly of machinery by experienced technicians, including mechanical, electrical, and control system reconnections, precision alignment, and functional testing to ensure full operational readiness."
       }
     ],
     images: [
