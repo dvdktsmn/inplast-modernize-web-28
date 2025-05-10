@@ -45,7 +45,7 @@ Our services include custom electrical and mechanical design, advanced control a
        We deliver tailored engineering solutions that minimize downtime, maximize performance, and ensure your operations meet the demands of modern manufacturing environments.
             </p>
             
-            <div className="grid grid-cols-2 gap-6 mt-10">
+            <div className="grid grid-cols-3 gap-6 mt-10">
               <div className="flex flex-col items-center bg-white p-6 rounded-lg shadow-md transition-transform hover:transform hover:scale-105">
                 <span className="text-3xl font-bold text-inplast-teal mb-2">25+</span>
                 <span className="text-gray-600 text-center">Years Experience</span>
