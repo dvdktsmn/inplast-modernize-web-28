@@ -37,19 +37,7 @@ const SmallProjectCard = ({ project }: SmallProjectCardProps) => {
   
   return (
     <Card className="overflow-hidden hover:shadow-lg transition-shadow">
-      {hasBeforeAfterImages ? (
-        <div className="grid grid-cols-1 gap-4 p-4">
-          <div className="grid grid-cols-2 gap-2 relative">
-            {/* Left navigation arrow */}
-            {(project.beforeImages!.length > 1 || project.afterImages!.length > 1) && (
-              <button 
-                onClick={() => navigateImages('prev')} 
-                className="absolute left-2 top-1/2 -translate-y-1/2 z-10 bg-white hover:bg-inplast-teal hover:text-white h-8 w-8 rounded-full border border-input flex items-center justify-center shadow-md"
-                aria-label="Previous images"
-              >
-                <ChevronLeft className="h-4 w-4" />
-              </button>
-            )}
+      
             
             <div className="relative">
               <AspectRatio ratio={16/9}>
@@ -71,18 +59,9 @@ const SmallProjectCard = ({ project }: SmallProjectCardProps) => {
               </AspectRatio>
             </div>
             
-            {/* Right navigation arrow */}
-            {(project.beforeImages!.length > 1 || project.afterImages!.length > 1) && (
-              <button 
-                onClick={() => navigateImages('next')} 
-                className="absolute right-2 top-1/2 -translate-y-1/2 z-10 bg-white hover:bg-inplast-teal hover:text-white h-8 w-8 rounded-full border border-input flex items-center justify-center shadow-md"
-                aria-label="Next images"
-              >
-                <ChevronRight className="h-4 w-4" />
-              </button>
-            )}
+ 
           </div>
-        </div>
+
       ) : (
         <div className="relative">
           <Carousel className="w-full" opts={{ slidesToScroll: 2, loop: true }}>
