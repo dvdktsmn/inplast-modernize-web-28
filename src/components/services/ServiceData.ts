@@ -77,23 +77,19 @@ export const serviceDetails: ServiceDetails[] = [
     process: [
       {
         title: "Dismantling",
-        description: ""
+        description: "Expert disassembly of machinery and equipment, ensuring safe handling and preparation for transport."
       },
       {
         title: "Seaworthy Packaging",
-        description: ""
+        description: "Robust packaging solutions that protect your equipment against environmental factors during maritime transit."
       },
       {
         title: "Oversized Equipment Handling",
-        description: ""
+        description: "Specialized techniques and equipment to manage the relocation of large or heavy machinery safely and efficiently."
       },
       {
         title: "Transportation Logistics",
-        description: ""
-      },
-      {
-        title: "Rigging and Lifting",
-        description: ""
+        description: "Coordinated logistics planning to ensure timely and secure delivery of equipment to its new location."
       }
     ],
     images: [
