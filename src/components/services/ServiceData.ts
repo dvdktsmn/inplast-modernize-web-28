@@ -116,8 +116,9 @@ export const serviceDetails: ServiceDetails[] = [
     title: "Complete Equipment Overhaul",
     description: "Restore and modernize your assets. We perform full equipment overhauls to increase longevity, energy efficiency, and operational performance—bringing outdated systems up to today's standards.",
     fullDescription: [
-      "Our Complete Equipment Overhaul services extend the life of your valuable machinery while introducing modern features and improved efficiency.",
-      "We combine deep mechanical expertise with advanced engineering capabilities to thoroughly assess, repair, refurbish, and upgrade your production equipment.",
+      "Maximize the value and performance of your existing assets with our comprehensive equipment overhaul and upgrade services. We help you extend equipment lifespan, improve operational efficiency, and meet current production standards without the need for full replacement. Our approach combines deep technical expertise with a structured process to minimize downtime and ensure consistent results.",
+      /*"Our Complete Equipment Overhaul services extend the life of your valuable machinery while introducing modern features and improved efficiency.",
+      */"We combine deep mechanical expertise with advanced engineering capabilities to thoroughly assess, repair, refurbish, and upgrade your production equipment.",
       "Every overhaul project is customized to address your specific needs, whether it's addressing worn components, upgrading control systems, or improving overall performance metrics."
     ],
     benefits: [
@@ -129,19 +130,15 @@ export const serviceDetails: ServiceDetails[] = [
     ],
     process: [
       {
-        title: "Condition Assessment",
+        title: "Condition Assessment and Diagnostics",
         description: "Comprehensive evaluation of current equipment condition, performance metrics, and failure points."
-      },
-      {
-        title: "Overhaul Planning",
-        description: "Detailed planning of refurbishment scope, upgrade opportunities, and project timeline."
       },
       {
         title: "Disassembly & Inspection",
         description: "Methodical disassembly and detailed inspection of all components and subsystems."
       },
       {
-        title: "Refurbishment & Upgrades",
+        title: "Retrofitting and Modernization",
         description: "Precision repair, replacement of worn components, and implementation of approved upgrades."
       },
       {
@@ -151,6 +148,10 @@ export const serviceDetails: ServiceDetails[] = [
       {
         title: "Performance Validation",
         description: "Rigorous validation of performance improvements against baseline metrics and targets."
+      },
+      {
+        title :"Ongoing Support and Optimization",
+        description: "We offer continued technical support, preventive maintenance recommendations, and process optimization services to maintain peak performance over time."
       }
     ],
     images: [
