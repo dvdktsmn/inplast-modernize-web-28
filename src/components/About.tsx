@@ -42,7 +42,7 @@ Our services include custom electrical and mechanical design, advanced control a
               </p>
 
             <p className="text-lg text-gray-600">
-       we deliver tailored engineering solutions that minimize downtime, maximize performance, and ensure your operations meet the demands of modern manufacturing environments.
+       We deliver tailored engineering solutions that minimize downtime, maximize performance, and ensure your operations meet the demands of modern manufacturing environments.
             </p>
             
             <div className="grid grid-cols-2 gap-6 mt-10">
