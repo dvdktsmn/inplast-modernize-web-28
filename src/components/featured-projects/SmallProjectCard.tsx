@@ -10,24 +10,18 @@ import {
   CarouselPrevious 
 } from "@/components/ui/carousel";
 import { AspectRatio } from "@/components/ui/aspect-ratio";
-import { ArrowLeft, ArrowRight } from "lucide-react";
 
 interface SmallProjectCardProps {
   project: FeaturedProject;
 }
 
 const SmallProjectCard = ({ project }: SmallProjectCardProps) => {
-  // Use beforeImages and afterImages if available, otherwise use regular images
-  const displayImages = project.beforeImages && project.afterImages 
-    ? [...project.beforeImages, ...project.afterImages] 
-    : project.images;
-    
   return (
     <Card className="overflow-hidden hover:shadow-lg transition-shadow">
-      <div className="relative">
-        <Carousel className="w-full" opts={{ loop: true }}>
+      {project.images.length > 1 ? (
+        <Carousel className="w-full">
           <CarouselContent>
-            {displayImages.map((image, index) => (
+            {project.images.map((image, index) => (
               <CarouselItem key={index} className="basis-full">
                 <AspectRatio ratio={16 / 9}>
                   <img 
@@ -39,16 +33,20 @@ const SmallProjectCard = ({ project }: SmallProjectCardProps) => {
               </CarouselItem>
             ))}
           </CarouselContent>
-          <div className="absolute z-10 flex items-center justify-between w-full h-full pointer-events-none">
-            <CarouselPrevious className="left-2 pointer-events-auto bg-white/80 hover:bg-inplast-teal hover:text-white">
-              <ArrowLeft className="h-4 w-4" />
-            </CarouselPrevious>
-            <CarouselNext className="right-2 pointer-events-auto bg-white/80 hover:bg-inplast-teal hover:text-white">
-              <ArrowRight className="h-4 w-4" />
-            </CarouselNext>
+          <div className="absolute z-10 flex items-center justify-between w-full h-full px-2 pointer-events-none">
+            <CarouselPrevious className="relative pointer-events-auto" />
+            <CarouselNext className="relative pointer-events-auto" />
           </div>
         </Carousel>
-      </div>
+      ) : (
+        <AspectRatio ratio={16 / 9}>
+          <img 
+            src={project.images[0]} 
+            alt={project.title} 
+            className="object-cover w-full h-full"
+          />
+        </AspectRatio>
+      )}
       
       <CardHeader className="pb-2">
         <CardTitle className="text-xl text-inplast-teal">{project.title}</CardTitle>

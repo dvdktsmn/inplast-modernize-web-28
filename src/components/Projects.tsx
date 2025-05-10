@@ -1,6 +1,7 @@
 
 import React from 'react';
-import FeaturedProjects from './featured-projects/FeaturedProjects';
+import ProjectCarousel from './projects/ProjectCarousel';
+import { projectsData } from './projects/ProjectData';
 
 const Projects = () => {
   return (
@@ -13,7 +14,7 @@ const Projects = () => {
           </p>
         </div>
 
-        <FeaturedProjects />
+        <ProjectCarousel projects={projectsData} />
       </div>
     </section>
   );
