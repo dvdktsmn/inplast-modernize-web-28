@@ -70,7 +70,7 @@ export const featuredProjectsData: FeaturedProject[] = [
   {
     id: "electrical-system-upgrade",
     title: "Electrical System Upgrade",
-    description: "Implementation of new high-efficiency motors and variable frequency drives across a manufacturing plant.",
+    description: "Complete electrical system upgrade for a BOPP line: installation of new motors, drives, control and SCADA systems.",
     images: ["/placeholder.svg"],
     isLarge: false
   }
