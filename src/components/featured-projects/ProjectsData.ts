@@ -53,6 +53,13 @@ export const featuredProjectsData: FeaturedProject[] = [
     images: ["/placeholder.svg", "/placeholder.svg"],
     isLarge: false
   },
+    {
+    id: "electrical-system-upgrade",
+    title: "Electrical System Upgrade",
+    description: "Complete electrical system upgrade for a BOPP line: installation of new motors, drives, control and SCADA systems.",
+    images: ["/placeholder.svg"],
+    isLarge: false
+  },
   {
     id: "chill-roll-retrofit",
     title: "Chill Roll Retrofit",
@@ -65,13 +72,6 @@ export const featuredProjectsData: FeaturedProject[] = [
     title: "Metalliser Revamp",
     description: "Comprehensive revitalization of an aging metalliser.",
     images: ["/placeholder.svg", "/placeholder.svg"],
-    isLarge: false
-  },
-  {
-    id: "electrical-system-upgrade",
-    title: "Electrical System Upgrade",
-    description: "Complete electrical system upgrade for a BOPP line: installation of new motors, drives, control and SCADA systems.",
-    images: ["/placeholder.svg"],
     isLarge: false
   }
 ];
