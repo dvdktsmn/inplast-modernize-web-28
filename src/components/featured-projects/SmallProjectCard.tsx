@@ -41,7 +41,7 @@ const SmallProjectCard = ({ project }: SmallProjectCardProps) => {
         <div className="grid grid-cols-1 gap-4 p-4">
           <div className="grid grid-cols-2 gap-2">
             <div className="relative">
-              <p className="text-xs font-medium text-gray-500">Before</p>
+              
               <AspectRatio ratio={16/9}>
                 <img 
                   src={project.beforeImages![imageIndex]} 
