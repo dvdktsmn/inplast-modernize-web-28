@@ -93,6 +93,14 @@ export const serviceDetails: ServiceDetails[] = [
         title: "Transportation Logistics",
         description: "Coordinated logistics planning to ensure timely and secure delivery of equipment to its new location."
       },
+      {
+        title: "Reassembly and Alignment at New Location",
+        description: "Comprehensive reassembly of machinery by experienced technicians, including mechanical, electrical, and control system reconnections, precision alignment, and functional testing to ensure full operational readiness."
+      },
+      {
+        title: "Installation and Commissioning",
+        description: "Final setup and fine-tuning of systems so your equipment is fully integrated and ready for immediate production."
+      }
     ],
     images: [
       "/lovable-uploads/ddac229c-45ea-423a-96fb-5faedf762f2e.png",
