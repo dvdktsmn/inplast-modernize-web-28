@@ -47,43 +47,43 @@ export const featuredProjectsData: FeaturedProject[] = [
   
   // Small Projects
   {
-    id: "equipment-installation",
-    title: "Equipment Installation",
-    location: "Bucharest, Romania",
-    description: "Installation and commissioning of a new production line in a newly constructed facility, completed ahead of schedule.",
+    id: "extruder-retrofit",
+    title: "Retrofit of the Extruder",
+    location: "Barcelona, Spain",
+    description: "Complete overhaul of heating, cooling, and lubrication systems for a PP extruder, resulting in 22% increased throughput and enhanced product quality with minimal downtime during installation.",
     images: ["/placeholder.svg", "/placeholder.svg"],
     isLarge: false,
-    tags: ["Installation", "New Equipment"],
-    completionDate: "2024-03-20"
+    tags: ["Retrofit", "Extruder", "Process Improvement"],
+    completionDate: "2024-01-15"
   },
   {
-    id: "precision-machinery-transport",
-    title: "Precision Machinery Transport",
-    location: "Berlin, Germany",
-    description: "Specialized transport solutions for sensitive industrial equipment across European borders with zero damage.",
+    id: "chill-roll-retrofit",
+    title: "Chill Roll Retrofit",
+    location: "Lyon, France",
+    description: "Replacement of conventional gearmotor with direct drive torque motor for chill roll system, eliminating mechanical backlash and significantly improving film gauge uniformity while reducing maintenance requirements.",
     images: ["/placeholder.svg"],
     isLarge: false,
-    tags: ["Transport", "Sensitive Equipment"],
-    completionDate: "2023-09-15"
+    tags: ["Retrofit", "Drive System", "Precision Control"],
+    completionDate: "2023-08-22"
   },
   {
-    id: "control-system-upgrade",
-    title: "Control System Upgrade",
-    location: "Helsinki, Finland",
-    description: "Complete electrical and automation system upgrade for an aging manufacturing plant, resulting in 28% increased throughput.",
-    images: ["/placeholder.svg"],
-    isLarge: false,
-    tags: ["Automation", "System Upgrade"],
-    completionDate: "2024-01-10"
-  },
-  {
-    id: "robotic-integration",
-    title: "Robotic Integration Project",
-    location: "Milan, Italy",
-    description: "Integration of robotic automation into existing production line, improving safety and reducing manual labor requirements.",
+    id: "metalliser-revamping",
+    title: "Metalliser Revamping Project",
+    location: "Manchester, UK",
+    description: "Comprehensive revitalization of an aging metalliser including vacuum system overhaul, new control interfaces, and modernized process monitoring capabilities that extended equipment lifespan by an estimated 10+ years.",
     images: ["/placeholder.svg", "/placeholder.svg"],
     isLarge: false,
-    tags: ["Robotics", "Automation"],
-    completionDate: "2023-10-05"
+    tags: ["Revamping", "Vacuum Systems", "Control Upgrade"],
+    completionDate: "2023-11-05"
+  },
+  {
+    id: "electrical-system-upgrade",
+    title: "Electrical System Upgrade",
+    location: "Prague, Czech Republic",
+    description: "Implementation of new high-efficiency motors and variable frequency drives across a manufacturing plant, resulting in 18% energy savings and significant improvement in production line speed control accuracy.",
+    images: ["/placeholder.svg"],
+    isLarge: false,
+    tags: ["Electrical Upgrade", "Energy Efficiency", "Motor Control"],
+    completionDate: "2024-03-10"
   }
 ];
