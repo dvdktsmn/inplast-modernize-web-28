@@ -99,8 +99,8 @@ const SmallProjectCard = ({ project }: SmallProjectCardProps) => {
             ))}
           </CarouselContent>
           <div className="absolute z-10 flex items-center justify-between w-full h-full px-2 pointer-events-none">
-            <CarouselPrevious className="relative pointer-events-auto bg-white hover:bg-inplast-teal hover:text-white" />
-            <CarouselNext className="relative pointer-events-auto bg-white hover:bg-inplast-teal hover:text-white" />
+            <CarouselPrevious className="right-2 bg-white/80 hover:bg-white"  />
+            <CarouselNext className="right-2 bg-white/80 hover:bg-white" />
           </div>
         </Carousel>
       ) : (
