@@ -89,7 +89,7 @@ const ServiceDetail = () => {
       <Navbar />
       
       {/* Added pt-16 to account for the fixed navbar height and some extra space */}
-      <main className="flex-grow bg-gray-50 py-12 pt-16">
+      <main className="flex-grow bg-gray-50 py-12 pt-20">
         <div className="container mx-auto px-4">
           <div className="bg-white rounded-xl shadow-md overflow-hidden">
             <div className="relative">
