@@ -90,6 +90,12 @@ export const featuredProjectsData: FeaturedProject[] = [
     title: "Metalliser Revamp",
     description: "Comprehensive revitalization of an aging metalliser.",
     images: ["/placeholder.svg", "/placeholder.svg"],
-    isLarge: false
+    isLarge: false,
+    beforeImages: [
+      "/lovable-uploads/b3415be0-4ca1-4001-8082-51de06218330.png"
+    ],
+    afterImages: [
+      "/lovable-uploads/62991f2f-c650-47a9-a9a9-fe485bd8100d.png"
+    ]
   }
 ];
