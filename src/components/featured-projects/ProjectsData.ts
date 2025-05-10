@@ -48,29 +48,29 @@ export const featuredProjectsData: FeaturedProject[] = [
   // Small Projects
   {
     id: "extruder-retrofit",
-    title: "Retrofit of the Extruder",
-    description: "Complete overhaul of heating, cooling, and lubrication systems for a PP extruder, resulting in 22% increased throughput and enhanced product quality with minimal downtime during installation.",
+    title: "Extruder Retrofit",
+    description: "Complete overhaul of heating, cooling, and lubrication systems for a PP extruder.",
     images: ["/placeholder.svg", "/placeholder.svg"],
     isLarge: false
   },
   {
     id: "chill-roll-retrofit",
     title: "Chill Roll Retrofit",
-    description: "Replacement of conventional gearmotor with direct drive torque motor for chill roll system, eliminating mechanical backlash and significantly improving film gauge uniformity while reducing maintenance requirements.",
+    description: "Replacement of conventional gearmotor with direct drive torque motor.",
     images: ["/placeholder.svg"],
     isLarge: false
   },
   {
     id: "metalliser-revamping",
-    title: "Metalliser Revamping Project",
-    description: "Comprehensive revitalization of an aging metalliser including vacuum system overhaul, new control interfaces, and modernized process monitoring capabilities that extended equipment lifespan by an estimated 10+ years.",
+    title: "Metalliser Revamp",
+    description: "Comprehensive revitalization of an aging metalliser.",
     images: ["/placeholder.svg", "/placeholder.svg"],
     isLarge: false
   },
   {
     id: "electrical-system-upgrade",
     title: "Electrical System Upgrade",
-    description: "Implementation of new high-efficiency motors and variable frequency drives across a manufacturing plant, resulting in 18% energy savings and significant improvement in production line speed control accuracy.",
+    description: "Implementation of new high-efficiency motors and variable frequency drives across a manufacturing plant.",
     images: ["/placeholder.svg"],
     isLarge: false
   }
