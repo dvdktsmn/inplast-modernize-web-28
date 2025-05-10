@@ -16,12 +16,17 @@ interface SmallProjectCardProps {
 }
 
 const SmallProjectCard = ({ project }: SmallProjectCardProps) => {
+  // Use beforeImages and afterImages if available, otherwise use regular images
+  const displayImages = project.beforeImages && project.afterImages 
+    ? [...project.beforeImages, ...project.afterImages] 
+    : project.images;
+    
   return (
     <Card className="overflow-hidden hover:shadow-lg transition-shadow">
       <div className="relative">
         <Carousel className="w-full" opts={{ loop: true }}>
           <CarouselContent>
-            {project.images.map((image, index) => (
+            {displayImages.map((image, index) => (
               <CarouselItem key={index} className="basis-full">
                 <AspectRatio ratio={16 / 9}>
                   <img 
