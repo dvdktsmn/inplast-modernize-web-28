@@ -22,9 +22,12 @@ const Services = () => {
       title: "Equipment Relocation",
       description: "We specialize in the safe and efficient dismantling of industrial equipment, including full production lines. Our global project experience ensures your assets arrive safely at their new location.",
       images: [
-        "/lovable-uploads/4c257c37-8c64-4c31-bcea-916d3639fd25.png",
-        "/lovable-uploads/cff828aa-5bb4-4bdd-b226-da4108c92879.png",
-        "/lovable-uploads/d8c9d55c-2e20-4b44-8d69-cf877a6c22d3.png"
+        "/lovable-uploads/c48d2e60-553a-4a7b-b8ce-8443d8aaac8f.png",
+        "/lovable-uploads/409060eb-bdb3-4305-9d96-361bc14d771b.png",
+        "/lovable-uploads/d2b32799-149b-462e-945a-73d1c8257892.png",
+        "/lovable-uploads/baa026f7-d296-43cb-a825-e885784cb04d.png",
+        "/lovable-uploads/33858292-5858-451c-9c4b-ceb9b1faea93.png",
+        "/lovable-uploads/13dcb9a0-8e4d-48f2-a3bd-52b5b40a2396.png"
       ]
     },
     {
@@ -42,9 +45,11 @@ const Services = () => {
       title: "Engineering and Control Systems Upgrade",
       description: "From design to deployment, our electrical engineering solutions support the safe, smart, and scalable control of your production infrastructure, enhancing efficiency and reducing downtime.",
       images: [
-        "/lovable-uploads/69f9e44d-caa4-4361-8d49-190c6120084a.png",
-        "/lovable-uploads/6075f730-5298-4a9d-a8ae-c4f2a49a4896.png",
-        "/lovable-uploads/6a2dbc80-9d7f-4543-91be-9b69ad67abb0.png"
+        "/lovable-uploads/b6e3954e-26c0-4ca9-83fb-6a9c0f0113dc.png",
+        "/lovable-uploads/cc68e7e0-36f2-4c1b-8fa7-b080687470d6.png",
+        "/lovable-uploads/1fa7f7db-cd38-45f3-ae7f-b5bd8eaadfbc.png",
+        "/lovable-uploads/dbdad23e-3f0d-4489-8871-82b0643b4991.png",
+        "/lovable-uploads/b9311985-7c0e-4bd7-a5e2-f67dfbaf4f99.png"
       ]
     }
   ];
