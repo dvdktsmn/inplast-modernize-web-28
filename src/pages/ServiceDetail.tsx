@@ -81,15 +81,6 @@ const ServiceDetail = () => {
               ))}
             </div>
           </div>
-          
-          <div className="pt-6">
-            <Button 
-              onClick={() => navigate('/contact')}
-              className="bg-inplast-teal hover:bg-inplast-teal/90"
-            >
-              Request a Consultation
-            </Button>
-          </div>
         </div>
       </>
     );
