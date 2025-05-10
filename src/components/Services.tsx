@@ -1,3 +1,4 @@
+
 import React from 'react';
 import { Link } from 'react-router-dom';
 import ServiceCarousel from './services/ServiceCarousel';
@@ -43,12 +44,11 @@ const Services = () => {
       title: "Equipment Relocation",
       description: "We specialize in the safe and efficient dismantling of industrial equipment, including full production lines. Our global project experience ensures your assets arrive safely at their new location.",
       images: [
-        "/lovable-uploads/ddac229c-45ea-423a-96fb-5faedf762f2e.png",
-        "/lovable-uploads/f2ff3edd-250c-48e5-a3b2-86ff136b2a51.png",
-        "/lovable-uploads/4c257c37-8c64-4c31-bcea-916d3639fd25.png",
-        "/lovable-uploads/22b5021e-4336-432d-88c2-bf9cb164f91e.png",
-        "/lovable-uploads/6075f730-5298-4a9d-a8ae-c4f2a49a4896.png",
-        "/lovable-uploads/f4facf59-8aa8-44a8-a2f3-45407f7dfc4f.png"
+        "/lovable-uploads/c22e4bb3-b9fb-43cd-b0f2-550573a5f443.png",
+        "/lovable-uploads/66647945-3588-4d51-9ca0-452fc17469df.png",
+        "/lovable-uploads/768a2ff2-bf72-42c2-84f9-bce62a9cdc34.png",
+        "/lovable-uploads/3d1a36d3-0355-4c6f-bc11-bc36b4d54a2a.png",
+        "/lovable-uploads/0e072492-f758-4d94-8516-a3df563c55d4.png"
       ]
     }
 
