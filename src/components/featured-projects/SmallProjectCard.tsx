@@ -10,6 +10,7 @@ import {
   CarouselPrevious 
 } from "@/components/ui/carousel";
 import { AspectRatio } from "@/components/ui/aspect-ratio";
+import { ArrowLeft, ArrowRight } from "lucide-react";
 
 interface SmallProjectCardProps {
   project: FeaturedProject;
@@ -39,8 +40,12 @@ const SmallProjectCard = ({ project }: SmallProjectCardProps) => {
             ))}
           </CarouselContent>
           <div className="absolute z-10 flex items-center justify-between w-full h-full pointer-events-none">
-            <CarouselPrevious className="left-2 pointer-events-auto bg-white hover:bg-inplast-teal hover:text-white" />
-            <CarouselNext className="right-2 pointer-events-auto bg-white hover:bg-inplast-teal hover:text-white" />
+            <CarouselPrevious className="left-2 pointer-events-auto bg-white/80 hover:bg-inplast-teal hover:text-white">
+              <ArrowLeft className="h-4 w-4" />
+            </CarouselPrevious>
+            <CarouselNext className="right-2 pointer-events-auto bg-white/80 hover:bg-inplast-teal hover:text-white">
+              <ArrowRight className="h-4 w-4" />
+            </CarouselNext>
           </div>
         </Carousel>
       </div>
