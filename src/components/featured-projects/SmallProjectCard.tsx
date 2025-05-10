@@ -44,10 +44,10 @@ const SmallProjectCard = ({ project }: SmallProjectCardProps) => {
             {(project.beforeImages!.length > 1 || project.afterImages!.length > 1) && (
               <button 
                 onClick={() => navigateImages('prev')} 
-                className="absolute left-1 top-1/2 -translate-y-1/2 z-10 bg-inplast-teal hover:bg-inplast-teal/80 text-white rounded-full p-1 shadow-md"
+                className="absolute left-2 top-1/2 -translate-y-1/2 z-10 bg-white hover:bg-inplast-teal hover:text-white h-8 w-8 rounded-full border border-input flex items-center justify-center shadow-md"
                 aria-label="Previous images"
               >
-                <ChevronLeft className="h-5 w-5" />
+                <ChevronLeft className="h-4 w-4" />
               </button>
             )}
             
@@ -75,10 +75,10 @@ const SmallProjectCard = ({ project }: SmallProjectCardProps) => {
             {(project.beforeImages!.length > 1 || project.afterImages!.length > 1) && (
               <button 
                 onClick={() => navigateImages('next')} 
-                className="absolute right-1 top-1/2 -translate-y-1/2 z-10 bg-inplast-teal hover:bg-inplast-teal/80 text-white rounded-full p-1 shadow-md"
+                className="absolute right-2 top-1/2 -translate-y-1/2 z-10 bg-white hover:bg-inplast-teal hover:text-white h-8 w-8 rounded-full border border-input flex items-center justify-center shadow-md"
                 aria-label="Next images"
               >
-                <ChevronRight className="h-5 w-5" />
+                <ChevronRight className="h-4 w-4" />
               </button>
             )}
           </div>
@@ -99,8 +99,8 @@ const SmallProjectCard = ({ project }: SmallProjectCardProps) => {
             ))}
           </CarouselContent>
           <div className="absolute z-10 flex items-center justify-between w-full h-full px-2 pointer-events-none">
-            <CarouselPrevious className="relative pointer-events-auto" />
-            <CarouselNext className="relative pointer-events-auto" />
+            <CarouselPrevious className="relative pointer-events-auto bg-white hover:bg-inplast-teal hover:text-white" />
+            <CarouselNext className="relative pointer-events-auto bg-white hover:bg-inplast-teal hover:text-white" />
           </div>
         </Carousel>
       ) : (
