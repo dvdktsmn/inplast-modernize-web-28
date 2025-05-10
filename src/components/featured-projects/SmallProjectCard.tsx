@@ -83,34 +83,28 @@ const SmallProjectCard = ({ project }: SmallProjectCardProps) => {
             )}
           </div>
         </div>
-      ) : project.images.length > 1 ? (
-        <Carousel className="w-full" opts={{ slidesToScroll: 2 }}>
-          <CarouselContent className="-ml-2">
-            {project.images.map((image, index) => (
-              <CarouselItem key={index} className="pl-2 basis-1/2 min-w-0">
-                <AspectRatio ratio={16 / 9}>
-                  <img 
-                    src={image} 
-                    alt={`${project.title} - image ${index + 1}`} 
-                    className="object-cover w-full h-full"
-                  />
-                </AspectRatio>
-              </CarouselItem>
-            ))}
-          </CarouselContent>
-          <div className="absolute z-10 flex items-center justify-between w-full h-full px-2 pointer-events-none">
-            <CarouselPrevious className="right-2 bg-white/80 hover:bg-white"  />
-            <CarouselNext className="right-2 bg-white/80 hover:bg-white" />
-          </div>
-        </Carousel>
       ) : (
-        <AspectRatio ratio={16 / 9}>
-          <img 
-            src={project.images[0]} 
-            alt={project.title} 
-            className="object-cover w-full h-full"
-          />
-        </AspectRatio>
+        <div className="relative">
+          <Carousel className="w-full" opts={{ slidesToScroll: 2, loop: true }}>
+            <CarouselContent className="">
+              {project.images.map((image, index) => (
+                <CarouselItem key={index} className="basis-1/2 min-w-0">
+                  <AspectRatio ratio={16 / 9}>
+                    <img 
+                      src={image} 
+                      alt={`${project.title} - image ${index + 1}`} 
+                      className="object-cover w-full h-full"
+                    />
+                  </AspectRatio>
+                </CarouselItem>
+              ))}
+            </CarouselContent>
+            <div className="absolute z-10 flex items-center justify-between w-full h-full pointer-events-none">
+              <CarouselPrevious className="left-2 pointer-events-auto bg-white hover:bg-inplast-teal hover:text-white" />
+              <CarouselNext className="right-2 pointer-events-auto bg-white hover:bg-inplast-teal hover:text-white" />
+            </div>
+          </Carousel>
+        </div>
       )}
       
       <CardHeader className="pb-2">
