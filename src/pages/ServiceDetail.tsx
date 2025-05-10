@@ -1,4 +1,5 @@
-import React, { useEffect } from 'react';
+
+import React, { useEffect, useRef } from 'react';
 import { useParams, useNavigate } from 'react-router-dom';
 import { serviceDetails } from '../components/services/ServiceData';
 import Navbar from '../components/Navbar';
@@ -11,6 +12,8 @@ import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from '@/
 const ServiceDetail = () => {
   const { serviceId } = useParams<{ serviceId: string }>();
   const navigate = useNavigate();
+  const carouselRef = useRef<HTMLDivElement>(null);
+  const timeoutRef = useRef<number | null>(null);
   
   // Find the service details based on the ID from the URL
   const serviceDetail = serviceDetails.find(service => service.id === serviceId);
@@ -21,125 +24,41 @@ const ServiceDetail = () => {
       navigate('/');
     }
   }, [serviceDetail, navigate]);
+
+  // Auto scrolling effect with inactivity detection
+  useEffect(() => {
+    const startAutoScroll = () => {
+      if (timeoutRef.current !== null) {
+        window.clearTimeout(timeoutRef.current);
+      }
+      
+      timeoutRef.current = window.setTimeout(() => {
+        if (carouselRef.current) {
+          const scrollableArea = carouselRef.current.querySelector('.embla__container');
+          const emblaApi = (carouselRef.current as any).__emblaApi;
+          
+          if (emblaApi && typeof emblaApi.scrollNext === 'function') {
+            emblaApi.scrollNext();
+          }
+        }
+        startAutoScroll();
+      }, 7000);
+    };
+
+    startAutoScroll();
+
+    return () => {
+      if (timeoutRef.current !== null) {
+        window.clearTimeout(timeoutRef.current);
+      }
+    };
+  }, [serviceId]);
   
   if (!serviceDetail) {
     return null; // This will be handled by the useEffect redirect
   }
 
   const renderServiceContent = () => {
-    // Special layout for installation service page
-    if (serviceId === 'installation') {
-      return (
-        <>
-          <div className="space-y-8">
-            <div>
-              {serviceDetail.fullDescription.map((paragraph, index) => (
-                <p key={index} className="text-gray-700 mb-4 leading-relaxed">
-                  {paragraph}
-                </p>
-              ))}
-            </div>
-            
-            <div>
-              <h2 className="text-2xl font-bold text-gray-800 mb-4">Our Services Include:</h2>
-              <div className="space-y-4">
-                {serviceDetail.process.map((item, index) => (
-                  <div key={index} className="bg-gray-50 p-4 rounded-lg">
-                    <h3 className="font-bold text-inplast-teal mb-2">{item.title}</h3>
-                    <p className="text-gray-700">{item.description}</p>
-                  </div>
-                ))}
-              </div>
-            </div>
-            
-            <div className="pt-6">
-              <Button 
-                onClick={() => navigate('/contact')}
-                className="bg-inplast-teal hover:bg-inplast-teal/90"
-              >
-                Request a Consultation
-              </Button>
-            </div>
-          </div>
-        </>
-      );
-    }
-    
-    // Special layout for engineering service page
-    if (serviceId === 'engineering') {
-      return (
-        <>
-          <div className="space-y-8">
-            <div>
-              {serviceDetail.fullDescription.map((paragraph, index) => (
-                <p key={index} className="text-gray-700 mb-4 leading-relaxed">
-                  {paragraph}
-                </p>
-              ))}
-            </div>
-            
-            <div>
-              <h2 className="text-2xl font-bold text-gray-800 mb-4">Our services include:</h2>
-              <ul className="list-disc pl-5 space-y-2">
-                {serviceDetail.process.map((item, index) => (
-                  <li key={index} className="text-gray-700">
-                    <span className="font-semibold">{item.title}</span> - {item.description}
-                  </li>
-                ))}
-              </ul>
-            </div>
-            
-            <div className="pt-6">
-              <Button 
-                onClick={() => navigate('/contact')}
-                className="bg-inplast-teal hover:bg-inplast-teal/90"
-              >
-                Request a Consultation
-              </Button>
-            </div>
-          </div>
-        </>
-      );
-    }
-    
-    // Special layout for relocation service page
-    if (serviceId === 'relocation') {
-      return (
-        <>
-          <div className="space-y-8">
-            <div>
-              {serviceDetail.fullDescription.map((paragraph, index) => (
-                <p key={index} className="text-gray-700 mb-4 leading-relaxed">
-                  {paragraph}
-                </p>
-              ))}
-            </div>
-            
-            <div>
-              <h2 className="text-2xl font-bold text-gray-800 mb-4">Our services include:</h2>
-              <ul className="list-disc pl-5 space-y-2">
-                {serviceDetail.process.map((item, index) => (
-                  <li key={index} className="text-gray-700">
-                    <span className="font-semibold">{item.title}</span> - {item.description}
-                  </li>
-                ))}
-              </ul>
-            </div>
-            
-            <div className="pt-6">
-              <Button 
-                onClick={() => navigate('/contact')}
-                className="bg-inplast-teal hover:bg-inplast-teal/90"
-              >
-                Request a Consultation
-              </Button>
-            </div>
-          </div>
-        </>
-      );
-    }
-    
-    // Default layout for other service pages
     return (
       <>
         <div className="space-y-8">
@@ -152,21 +71,12 @@ const ServiceDetail = () => {
           </div>
           
           <div>
-            <h2 className="text-2xl font-bold text-gray-800 mb-4">Key Benefits</h2>
-            <ul className="list-disc pl-5 space-y-2">
-              {serviceDetail.benefits.map((benefit, index) => (
-                <li key={index} className="text-gray-700">{benefit}</li>
-              ))}
-            </ul>
-          </div>
-          
-          <div>
-            <h2 className="text-2xl font-bold text-gray-800 mb-4">Our Process</h2>
+            <h2 className="text-2xl font-bold text-gray-800 mb-4">Our Services Include:</h2>
             <div className="grid md:grid-cols-2 gap-4">
-              {serviceDetail.process.map((step, index) => (
+              {serviceDetail.process.map((item, index) => (
                 <div key={index} className="bg-gray-50 p-4 rounded-lg">
-                  <h3 className="font-bold text-inplast-darkgray mb-2">{index + 1}. {step.title}</h3>
-                  <p className="text-gray-600">{step.description}</p>
+                  <h3 className="font-bold text-inplast-teal mb-2">{item.title}</h3>
+                  <p className="text-gray-700">{item.description}</p>
                 </div>
               ))}
             </div>
@@ -206,7 +116,7 @@ const ServiceDetail = () => {
                   {serviceDetail.title}
                 </h1>
                 
-                <div className="mb-10">
+                <div className="mb-10" ref={carouselRef}>
                   <ServiceCarousel images={serviceDetail.images} />
                 </div>
                 
