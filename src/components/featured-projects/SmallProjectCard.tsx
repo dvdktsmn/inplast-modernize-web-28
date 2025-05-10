@@ -1,3 +1,4 @@
+
 import React, { useState } from 'react';
 import { FeaturedProject } from './ProjectsData';
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
@@ -38,12 +39,23 @@ const SmallProjectCard = ({ project }: SmallProjectCardProps) => {
     <Card className="overflow-hidden hover:shadow-lg transition-shadow">
       {hasBeforeAfterImages ? (
         <div className="grid grid-cols-1 gap-4 p-4">
-          <div className="grid grid-cols-2 gap-2">
+          <div className="grid grid-cols-2 gap-2 relative">
+            {/* Left navigation arrow */}
+            {(project.beforeImages!.length > 1 || project.afterImages!.length > 1) && (
+              <button 
+                onClick={() => navigateImages('prev')} 
+                className="absolute left-1 top-1/2 -translate-y-1/2 z-10 bg-inplast-teal hover:bg-inplast-teal/80 text-white rounded-full p-1 shadow-md"
+                aria-label="Previous images"
+              >
+                <ChevronLeft className="h-5 w-5" />
+              </button>
+            )}
+            
             <div className="relative">
               <AspectRatio ratio={16/9}>
                 <img 
                   src={project.beforeImages![imageIndex]} 
-                  alt={`${project.title} before (${imageIndex + 1}/${project.beforeImages!.length})`}
+                  alt={`${project.title} before`}
                   className="object-cover w-full h-full rounded-md"
                 />
               </AspectRatio>
@@ -53,34 +65,23 @@ const SmallProjectCard = ({ project }: SmallProjectCardProps) => {
               <AspectRatio ratio={16/9}>
                 <img 
                   src={project.afterImages![imageIndex]} 
-                  alt={`${project.title} after (${imageIndex + 1}/${project.afterImages!.length})`}
+                  alt={`${project.title} after`}
                   className="object-cover w-full h-full rounded-md"
                 />
               </AspectRatio>
             </div>
-          </div>
-          
-          {(project.beforeImages!.length > 1 || project.afterImages!.length > 1) && (
-            <div className="flex justify-center gap-2 mt-2">
-              <button 
-                onClick={() => navigateImages('prev')} 
-                className="bg-inplast-teal hover:bg-inplast-teal/80 text-white rounded-full p-1"
-                aria-label="Previous images"
-              >
-                <ChevronLeft className="h-5 w-5" />
-              </button>
+            
+            {/* Right navigation arrow */}
+            {(project.beforeImages!.length > 1 || project.afterImages!.length > 1) && (
               <button 
                 onClick={() => navigateImages('next')} 
-                className="bg-inplast-teal hover:bg-inplast-teal/80 text-white rounded-full p-1"
+                className="absolute right-1 top-1/2 -translate-y-1/2 z-10 bg-inplast-teal hover:bg-inplast-teal/80 text-white rounded-full p-1 shadow-md"
                 aria-label="Next images"
               >
                 <ChevronRight className="h-5 w-5" />
               </button>
-              <span className="text-sm text-gray-500 self-center">
-                {imageIndex + 1}/{Math.min(project.beforeImages!.length, project.afterImages!.length)}
-              </span>
-            </div>
-          )}
+            )}
+          </div>
         </div>
       ) : project.images.length > 1 ? (
         <Carousel className="w-full">

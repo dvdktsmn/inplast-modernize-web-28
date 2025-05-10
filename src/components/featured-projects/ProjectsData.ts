@@ -70,12 +70,16 @@ export const featuredProjectsData: FeaturedProject[] = [
     beforeImages: [
       "/lovable-uploads/bc259862-7ad5-4230-863a-71c8c4aace70.png",
       "/lovable-uploads/a3939ff9-7351-4e7a-9f54-d3b8acc18320.png",
-      "/lovable-uploads/73452c3d-0601-4271-a578-a4059ce5af93.png"
+      "/lovable-uploads/73452c3d-0601-4271-a578-a4059ce5af93.png",
+      "/lovable-uploads/a02aa896-9a40-425b-9813-d14d8b5720b9.png",
+      "/lovable-uploads/6b991abd-6698-4364-b070-9fe35422ba6e.png"
     ],
     afterImages: [
       "/lovable-uploads/181cb4de-b07e-4ac1-b737-1e767ca94fb7.png",
       "/lovable-uploads/8c3f7074-b3d0-4eea-8cae-bd97537b13a5.png",
-      "/lovable-uploads/1a3bdb23-45e2-43a6-82e4-dd2ebf315b75.png"
+      "/lovable-uploads/1a3bdb23-45e2-43a6-82e4-dd2ebf315b75.png",
+      "/lovable-uploads/ad21568c-10c9-46f9-8658-20dd9c5dede2.png",
+      "/lovable-uploads/6e6803fc-3f60-4df7-9db8-f7cf179a94fc.png"
     ]
   },
   {
