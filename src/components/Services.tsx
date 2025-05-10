@@ -6,6 +6,28 @@ import { ArrowRight } from 'lucide-react';
 
 const Services = () => {
   const serviceCategories = [
+        {
+      id: "overhaul",
+      title: "Complete Equipment Overhaul",
+      description: "Restore and modernize your assets. We perform full equipment overhauls to increase longevity, energy efficiency, and operational performance—bringing outdated systems up to today's standards.",
+      images: [
+        "/lovable-uploads/58d6f434-7c79-4e4e-b8c9-e60fad6a246d.png",
+        "/lovable-uploads/e42d7b0d-ec79-4a41-82b9-27dafabdfb9a.png",
+        "/lovable-uploads/fb4c7c14-fa91-430e-b052-a3ab24cbfa6d.png"
+      ]
+    },
+        {
+      id: "engineering",
+      title: "Engineering and Control Systems Upgrade",
+      description: "From design to deployment, our electrical engineering solutions support the safe, smart, and scalable control of your production infrastructure, enhancing efficiency and reducing downtime.",
+      images: [
+        "/lovable-uploads/cff828aa-5bb4-4bdd-b226-da4108c92879.png",
+        "/lovable-uploads/1cd4d9cf-1717-4710-a49b-4b41fc973da6.png",
+        "/lovable-uploads/d8c9d55c-2e20-4b44-8d69-cf877a6c22d3.png",
+        "/lovable-uploads/3c54f29a-ceed-4622-a80e-6ae838235b8f.png",
+        "/lovable-uploads/fbb89a5f-8378-4330-8177-3469398d8d52.png"
+      ]
+    }
     {
       id: "installation",
       title: "Installation and Commissioning",
@@ -29,28 +51,8 @@ const Services = () => {
         "/lovable-uploads/f4facf59-8aa8-44a8-a2f3-45407f7dfc4f.png"
       ]
     },
-    {
-      id: "overhaul",
-      title: "Complete Equipment Overhaul",
-      description: "Restore and modernize your assets. We perform full equipment overhauls to increase longevity, energy efficiency, and operational performance—bringing outdated systems up to today's standards.",
-      images: [
-        "/lovable-uploads/58d6f434-7c79-4e4e-b8c9-e60fad6a246d.png",
-        "/lovable-uploads/e42d7b0d-ec79-4a41-82b9-27dafabdfb9a.png",
-        "/lovable-uploads/fb4c7c14-fa91-430e-b052-a3ab24cbfa6d.png"
-      ]
-    },
-    {
-      id: "engineering",
-      title: "Engineering and Control Systems Upgrade",
-      description: "From design to deployment, our electrical engineering solutions support the safe, smart, and scalable control of your production infrastructure, enhancing efficiency and reducing downtime.",
-      images: [
-        "/lovable-uploads/cff828aa-5bb4-4bdd-b226-da4108c92879.png",
-        "/lovable-uploads/1cd4d9cf-1717-4710-a49b-4b41fc973da6.png",
-        "/lovable-uploads/d8c9d55c-2e20-4b44-8d69-cf877a6c22d3.png",
-        "/lovable-uploads/3c54f29a-ceed-4622-a80e-6ae838235b8f.png",
-        "/lovable-uploads/fbb89a5f-8378-4330-8177-3469398d8d52.png"
-      ]
-    }
+
+
   ];
 
   return (
