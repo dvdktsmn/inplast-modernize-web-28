@@ -5,8 +5,6 @@ import { serviceDetails } from '../components/services/ServiceData';
 import Navbar from '../components/Navbar';
 import Footer from '../components/Footer';
 import ServiceCarousel from '../components/services/ServiceCarousel';
-import { ArrowLeft } from 'lucide-react';
-import { Button } from '@/components/ui/button';
 import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from '@/components/ui/accordion';
 
 const ServiceDetail = () => {
@@ -92,14 +90,6 @@ const ServiceDetail = () => {
       
       <main className="flex-grow bg-gray-50 py-12">
         <div className="container mx-auto px-4">
-          <Button 
-            variant="outline" 
-            onClick={() => navigate('/#services')} 
-            className="mb-6"
-          >
-            <ArrowLeft className="mr-2" size={16} /> Back to Services
-          </Button>
-          
           <div className="bg-white rounded-xl shadow-md overflow-hidden">
             <div className="relative">
               <div className="max-w-5xl mx-auto p-6 lg:p-8">
