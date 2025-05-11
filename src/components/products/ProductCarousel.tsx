@@ -43,7 +43,7 @@ const ProductCarousel = () => {
     { 
       loop: true,
       align: "start",
-      slidesToScroll: 4,
+      slidesToScroll: 1, // Changed to scroll 1 product at a time
     },
     [autoplayPlugin.current] // Pass plugin as part of the array
   );
