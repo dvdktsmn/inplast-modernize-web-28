@@ -41,7 +41,7 @@ const ProductCarousel = () => {
   return (
     <section id="products" className="py-10 bg-gray-50">
       <div className="container mx-auto px-4">
-        <h2 className="text-3xl font-bold text-center text-text-gray-800 mb-8">
+        <h2 className="text-3xl font-bold text-center text-gray-800 mb-8">
           Products We Support
         </h2>
 
