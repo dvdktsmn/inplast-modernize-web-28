@@ -43,7 +43,7 @@ const ProductCarousel = () => {
     { 
       loop: true,
       align: "start",
-      slidesToScroll: 1,
+      slidesToScroll: 4, // Changed to scroll 4 items at once
     },
     [autoplayPlugin.current] // Pass plugin as part of the array
   );
@@ -63,7 +63,7 @@ const ProductCarousel = () => {
           <div className="w-full" ref={emblaRef}>
             <div className="flex -ml-2 md:-ml-4">
               {products.map((product, index) => (
-                <div key={index} className="pl-2 md:pl-4 basis-full sm:basis-1/2 md:basis-1/4 min-w-0 shrink-0 grow-0">
+                <div key={index} className="pl-2 md:pl-4 basis-1/4 min-w-0 shrink-0 grow-0">
                   <Card className="border-0 shadow-sm overflow-hidden">
                     <div className="aspect-[4/3] overflow-hidden">
                       <img
