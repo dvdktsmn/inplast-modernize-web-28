@@ -27,61 +27,38 @@ const products: Product[] = [
 ];
 
 const ProductCarousel = () => {
-  // Create autoplay plugin with fixed 2-second interval
-  const autoplayPlugin = useRef(
+  // Create a ref for the autoplay plugin
+  const autoplay = useRef(
     Autoplay({
-      delay: 2000,
-      stopOnLastSnap: false,
+      delay: 3000,
       stopOnInteraction: false,
-      rootNode: (emblaRoot) => emblaRoot
     })
   );
   
-  // Initialize the embla carousel with autoplay
+  // Initialize the embla carousel with autoplay plugin
   const [emblaRef, emblaApi] = useEmblaCarousel(
-    { 
+    {
       loop: true,
       align: "start",
       slidesToScroll: 1,
-      skipSnaps: false,
-    }, 
-    [autoplayPlugin.current]
+    },
+    [autoplay.current]
   );
-
-  // Ensure autoplay is properly initialized and runs
-  useEffect(() => {
-    if (emblaApi) {
-      // Force a reinitialization which can help activate autoplay
-      emblaApi.reInit();
-    }
-    
-    return () => {
-      // Cleanup on component unmount
-      if (autoplayPlugin.current && autoplayPlugin.current.stop) {
-        autoplayPlugin.current.stop();
-      }
-    };
-  }, [emblaApi]);
 
   return (
     <section id="products" className="py-20 bg-gray-50">
       <div className="container mx-auto px-4">
         <div className="text-center mb-12">
-        <h2 className="text-3xl font-bold text-gray-800 mb-4">
-          Our Know-How Systems and Equipment
-        </h2>
-        <p className="text-xl text-gray-600 max-w-3xl mx-auto">
-          Explore the equipment types we service with proven expertise.      
-        </p>
+          <h2 className="text-3xl font-bold text-gray-800 mb-4">
+            Our Know-How Systems and Equipment
+          </h2>
+          <p className="text-xl text-gray-600 max-w-3xl mx-auto">
+            Explore the equipment types we service with proven expertise.      
+          </p>
         </div>
         <div className="max-w-7xl mx-auto">
           <Carousel 
             ref={emblaRef}
-            opts={{ 
-              loop: true,
-              align: "start",
-              slidesToScroll: 1,
-            }}
             className="w-full"
           >
             <CarouselContent className="-ml-2 md:-ml-4">
