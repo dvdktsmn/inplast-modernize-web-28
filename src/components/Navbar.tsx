@@ -33,7 +33,17 @@ const Navbar = () => {
             }}
             className="text-inplast-darkgray hover:text-inplast-teal transition-colors cursor-pointer"
           >
-            About
+            Mission
+          </a>
+          <a 
+            href="/#about" 
+            onClick={(e) => {
+              e.preventDefault();
+              scrollToSection('products');
+            }}
+            className="text-inplast-darkgray hover:text-inplast-teal transition-colors cursor-pointer"
+          >
+            Products
           </a>
           <a 
             href="/#services" 
