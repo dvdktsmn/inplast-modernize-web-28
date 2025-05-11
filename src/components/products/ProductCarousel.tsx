@@ -1,5 +1,5 @@
 
-import React, { useEffect, useRef } from 'react';
+import React, { useRef } from 'react';
 import {
   Carousel,
   CarouselContent,
@@ -28,7 +28,7 @@ const products: Product[] = [
 
 const ProductCarousel = () => {
   // Create autoplay plugin with options
-  const autoplayPlugin = React.useRef(
+  const autoplayPlugin = useRef(
     Autoplay({
       delay: 2000,
       stopOnInteraction: false,
@@ -43,7 +43,7 @@ const ProductCarousel = () => {
     { 
       loop: true,
       align: "start",
-      slidesToScroll: 1,
+      slidesToScroll: 4,
     },
     [autoplayPlugin.current] // Pass plugin as part of the array
   );
