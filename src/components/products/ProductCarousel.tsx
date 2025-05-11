@@ -27,43 +27,26 @@ const products: Product[] = [
 ];
 
 const ProductCarousel = () => {
-  // Create a reference for the Embla API
+  // Create autoplay plugin with options
+  const autoplayPlugin = React.useRef(
+    Autoplay({
+      delay: 2000,
+      stopOnInteraction: false,
+      stopOnMouseEnter: false,
+      stopOnLastSnap: false,
+      playOnInit: true
+    })
+  );
+
+  // Initialize Embla carousel with the autoplay plugin
   const [emblaRef, emblaApi] = useEmblaCarousel(
     { 
       loop: true,
       align: "start",
       slidesToScroll: 1,
-    }
+    },
+    [autoplayPlugin.current] // Pass plugin as part of the array
   );
-
-  // Create a separate reference for the autoplay plugin
-  const autoplayOptions = {
-    delay: 2000,
-    stopOnInteraction: false,
-    stopOnMouseEnter: false,
-    stopOnLastSnap: false,
-    playOnInit: true
-  };
-  
-  // Use useEffect to initialize and control autoplay
-  useEffect(() => {
-    if (emblaApi) {
-      // Create the autoplay instance
-      const autoplay = Autoplay(autoplayOptions);
-      
-      // Add the plugin to the emblaApi
-      emblaApi.plugins().add(autoplay);
-      
-      // Make sure it starts playing
-      autoplay.play();
-      
-      return () => {
-        // Clean up by stopping autoplay and removing the plugin
-        autoplay.stop();
-        emblaApi.plugins().remove(autoplay);
-      };
-    }
-  }, [emblaApi]);
 
   return (
     <section id="products" className="py-20 bg-gray-50">
