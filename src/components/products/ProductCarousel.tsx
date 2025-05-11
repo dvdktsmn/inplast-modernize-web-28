@@ -27,7 +27,13 @@ const products: Product[] = [
 ];
 
 const ProductCarousel = () => {
-  const autoplayRef = useRef(Autoplay({ delay: 3000, stopOnInteraction: false }));
+  const autoplayRef = useRef(
+    Autoplay({ 
+      delay: 2000, // Changed from 3000 to 2000 for 2-second intervals
+      stopOnInteraction: false // Setting this to false ensures continuous autoplay regardless of user interaction
+    })
+  );
+  
   const [emblaRef, emblaApi] = useEmblaCarousel(
     { 
       loop: true,
@@ -41,7 +47,7 @@ const ProductCarousel = () => {
   return (
     <section id="products" className="py-20 bg-gray-50">
       <div className="container mx-auto px-4">
-        <div className="text-center mb-16">
+        <div className="text-center mb-12">
         <h2 className="text-3xl font-bold text-gray-800 mb-4">
           Our Know-How Systems and Equipment
         </h2>
