@@ -27,13 +27,17 @@ const products: Product[] = [
 ];
 
 const ProductCarousel = () => {
-  const autoplayRef = useRef(
-    Autoplay({ 
-      delay: 2000, // Changed from 3000 to 2000 for 2-second intervals
-      stopOnInteraction: false // Setting this to false ensures continuous autoplay regardless of user interaction
+  // Create autoplay plugin with fixed 2-second interval
+  const autoplayPlugin = useRef(
+    Autoplay({
+      delay: 2000,
+      stopOnLastSnap: false,
+      stopOnInteraction: false,
+      rootNode: (emblaRoot) => emblaRoot
     })
   );
   
+  // Initialize the embla carousel with autoplay
   const [emblaRef, emblaApi] = useEmblaCarousel(
     { 
       loop: true,
@@ -41,8 +45,23 @@ const ProductCarousel = () => {
       slidesToScroll: 1,
       skipSnaps: false,
     }, 
-    [autoplayRef.current]
+    [autoplayPlugin.current]
   );
+
+  // Ensure autoplay is properly initialized and runs
+  useEffect(() => {
+    if (emblaApi) {
+      // Force a reinitialization which can help activate autoplay
+      emblaApi.reInit();
+    }
+    
+    return () => {
+      // Cleanup on component unmount
+      if (autoplayPlugin.current && autoplayPlugin.current.stop) {
+        autoplayPlugin.current.stop();
+      }
+    };
+  }, [emblaApi]);
 
   return (
     <section id="products" className="py-20 bg-gray-50">
@@ -63,7 +82,6 @@ const ProductCarousel = () => {
               align: "start",
               slidesToScroll: 1,
             }}
-            plugins={[autoplayRef.current]}
             className="w-full"
           >
             <CarouselContent className="-ml-2 md:-ml-4">
