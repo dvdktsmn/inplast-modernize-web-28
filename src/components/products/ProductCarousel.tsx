@@ -32,6 +32,7 @@ const ProductCarousel = () => {
     Autoplay({
       delay: 3000,
       stopOnInteraction: false,
+      playOnInit: true,
     })
   );
   
