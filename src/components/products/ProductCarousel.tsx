@@ -27,66 +27,60 @@ const products: Product[] = [
 ];
 
 const ProductCarousel = () => {
-  // Create autoplay plugin with fixed 2-second interval
-  const autoplayPlugin = useRef(
-    Autoplay({
-      delay: 2000,
-      stopOnLastSnap: false,
-      stopOnInteraction: false,
-      rootNode: (emblaRoot) => emblaRoot
-    })
-  );
-  
-  // Initialize the embla carousel with autoplay
+  // Create a reference for the Embla API
   const [emblaRef, emblaApi] = useEmblaCarousel(
     { 
       loop: true,
       align: "start",
       slidesToScroll: 1,
-      skipSnaps: false,
-    }, 
-    [autoplayPlugin.current]
+    }
   );
 
-  // Ensure autoplay is properly initialized and runs
+  // Create a separate reference for the autoplay plugin
+  const autoplayOptions = {
+    delay: 2000,
+    stopOnInteraction: false,
+    stopOnMouseEnter: false,
+    stopOnLastSnap: false,
+    playOnInit: true
+  };
+  
+  // Use useEffect to initialize and control autoplay
   useEffect(() => {
     if (emblaApi) {
-      // Force a reinitialization which can help activate autoplay
-      emblaApi.reInit();
+      // Create the autoplay instance
+      const autoplay = Autoplay(autoplayOptions);
+      
+      // Add the plugin to the emblaApi
+      emblaApi.plugins().add(autoplay);
+      
+      // Make sure it starts playing
+      autoplay.play();
+      
+      return () => {
+        // Clean up by stopping autoplay and removing the plugin
+        autoplay.stop();
+        emblaApi.plugins().remove(autoplay);
+      };
     }
-    
-    return () => {
-      // Cleanup on component unmount
-      if (autoplayPlugin.current && autoplayPlugin.current.stop) {
-        autoplayPlugin.current.stop();
-      }
-    };
   }, [emblaApi]);
 
   return (
     <section id="products" className="py-20 bg-gray-50">
       <div className="container mx-auto px-4">
         <div className="text-center mb-12">
-        <h2 className="text-3xl font-bold text-gray-800 mb-4">
-          Our Know-How Systems and Equipment
-        </h2>
-        <p className="text-xl text-gray-600 max-w-3xl mx-auto">
-          Explore the equipment types we service with proven expertise.      
-        </p>
+          <h2 className="text-3xl font-bold text-gray-800 mb-4">
+            Our Know-How Systems and Equipment
+          </h2>
+          <p className="text-xl text-gray-600 max-w-3xl mx-auto">
+            Explore the equipment types we service with proven expertise.      
+          </p>
         </div>
         <div className="max-w-7xl mx-auto">
-          <Carousel 
-            ref={emblaRef}
-            opts={{ 
-              loop: true,
-              align: "start",
-              slidesToScroll: 1,
-            }}
-            className="w-full"
-          >
-            <CarouselContent className="-ml-2 md:-ml-4">
+          <div className="w-full" ref={emblaRef}>
+            <div className="flex -ml-2 md:-ml-4">
               {products.map((product, index) => (
-                <CarouselItem key={index} className="pl-2 md:pl-4 basis-full sm:basis-1/2 md:basis-1/4">
+                <div key={index} className="pl-2 md:pl-4 basis-full sm:basis-1/2 md:basis-1/4 min-w-0 shrink-0 grow-0">
                   <Card className="border-0 shadow-sm overflow-hidden">
                     <div className="aspect-[4/3] overflow-hidden">
                       <img
@@ -101,12 +95,30 @@ const ProductCarousel = () => {
                       </h3>
                     </CardContent>
                   </Card>
-                </CarouselItem>
+                </div>
               ))}
-            </CarouselContent>
-            <CarouselPrevious className="left-2 bg-white/80 hover:bg-white" />
-            <CarouselNext className="right-2 bg-white/80 hover:bg-white" />
-          </Carousel>
+            </div>
+          </div>
+          <div className="flex justify-center mt-4">
+            <button 
+              className="mx-2 p-2 rounded-full bg-white/80 hover:bg-white shadow-sm"
+              onClick={() => emblaApi?.scrollPrev()}
+            >
+              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+                <path d="m15 18-6-6 6-6"/>
+              </svg>
+              <span className="sr-only">Previous</span>
+            </button>
+            <button 
+              className="mx-2 p-2 rounded-full bg-white/80 hover:bg-white shadow-sm"
+              onClick={() => emblaApi?.scrollNext()}
+            >
+              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+                <path d="m9 18 6-6-6-6"/>
+              </svg>
+              <span className="sr-only">Next</span>
+            </button>
+          </div>
         </div>
       </div>
     </section>
