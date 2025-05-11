@@ -44,7 +44,9 @@ const ProductCarousel = () => {
         <h2 className="text-3xl font-bold text-center text-gray-800 mb-8">
           Our Know-How Systems and Equipment
         </h2>
-        
+        <p className="text-lg text-gray-600 mb-6">
+          Explore the equipment types we service with proven expertise.      
+        </p>
         <div className="max-w-7xl mx-auto">
           <Carousel 
             ref={emblaRef}
