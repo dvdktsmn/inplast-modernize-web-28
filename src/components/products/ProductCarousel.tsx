@@ -26,43 +26,6 @@ const products: Product[] = [
   { name: "MES Systems", image: "/lovable-uploads/2d246b46-3ba2-4cdb-bca5-1e159a6ec659.png" },
 ];
 
-const ProductCarousel = () => {
-  // Create autoplay plugin with fixed 2-second interval
-  const autoplayPlugin = useRef(
-    Autoplay({
-      delay: 2000,
-      stopOnLastSnap: false,
-      stopOnInteraction: false,
-      rootNode: (emblaRoot) => emblaRoot
-    })
-  );
-  
-  // Initialize the embla carousel with autoplay
-  const [emblaRef, emblaApi] = useEmblaCarousel(
-    { 
-      loop: true,
-      align: "start",
-      slidesToScroll: 1,
-      skipSnaps: false,
-    }, 
-    [autoplayPlugin.current]
-  );
-
-  // Ensure autoplay is properly initialized and runs
-  useEffect(() => {
-    if (emblaApi) {
-      // Force a reinitialization which can help activate autoplay
-      emblaApi.reInit();
-    }
-    
-    return () => {
-      // Cleanup on component unmount
-      if (autoplayPlugin.current && autoplayPlugin.current.stop) {
-        autoplayPlugin.current.stop();
-      }
-    };
-  }, [emblaApi]);
-
   return (
     <section id="products" className="py-20 bg-gray-50">
       <div className="container mx-auto px-4">
