@@ -1,5 +1,5 @@
 
-import React, { useRef, useEffect } from 'react';
+import React from 'react';
 import {
   Carousel,
   CarouselContent,
@@ -27,35 +27,21 @@ const products: Product[] = [
 ];
 
 const ProductCarousel = () => {
-  // Create a proper autoplay plugin instance with the desired settings
-  const autoplayPlugin = useRef(
-    Autoplay({
-      delay: 3000, // 3 seconds between slides
-      stopOnInteraction: true, // Stop autoplay on user interaction
-      rootNode: (emblaRoot) => emblaRoot.parentElement, // Necessary for proper event listeners
-      playOnInit: true, // Start playing as soon as the carousel initializes
-    })
-  );
-
-  // Initialize the carousel with the autoplay plugin
-  const [emblaRef, emblaApi] = useEmblaCarousel(
+  // Initialize the carousel with the autoplay plugin directly
+  const [emblaRef] = useEmblaCarousel(
     {
       loop: true,
       align: "start",
       slidesToScroll: 1, // Scroll 1 product at a time
     },
-    [autoplayPlugin.current] // Pass the autoplay plugin
+    [
+      // Initialize Autoplay as a direct plugin instance, not as a ref
+      Autoplay({
+        delay: 3000, // 3 seconds delay
+        stopOnInteraction: false, // Don't stop on interaction to ensure continuous playback
+      })
+    ]
   );
-
-  // Make sure the autoplay works correctly by resetting it when the component unmounts
-  useEffect(() => {
-    return () => {
-      // Cleanup function to stop autoplay when component unmounts
-      if (autoplayPlugin.current && autoplayPlugin.current.stop) {
-        autoplayPlugin.current.stop();
-      }
-    };
-  }, []);
 
   return (
     <section id="products" className="py-20 bg-gray-50">
