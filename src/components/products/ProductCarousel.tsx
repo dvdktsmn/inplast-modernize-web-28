@@ -1,5 +1,5 @@
 
-import React, { useEffect, useRef } from 'react';
+import React, { useRef, useEffect } from 'react';
 import {
   Carousel,
   CarouselContent,
@@ -27,24 +27,35 @@ const products: Product[] = [
 ];
 
 const ProductCarousel = () => {
-  // Create a ref for the autoplay plugin
-  const autoplay = useRef(
+  // Create a proper autoplay plugin instance with the desired settings
+  const autoplayPlugin = useRef(
     Autoplay({
-      delay: 3000,
-      stopOnInteraction: false,
-      playOnInit: true,
+      delay: 3000, // 3 seconds between slides
+      stopOnInteraction: true, // Stop autoplay on user interaction
+      rootNode: (emblaRoot) => emblaRoot.parentElement, // Necessary for proper event listeners
+      playOnInit: true, // Start playing as soon as the carousel initializes
     })
   );
-  
-  // Initialize the embla carousel with autoplay plugin
+
+  // Initialize the carousel with the autoplay plugin
   const [emblaRef, emblaApi] = useEmblaCarousel(
     {
       loop: true,
       align: "start",
-      slidesToScroll: 1,
+      slidesToScroll: 1, // Scroll 1 product at a time
     },
-    [autoplay.current]
+    [autoplayPlugin.current] // Pass the autoplay plugin
   );
+
+  // Make sure the autoplay works correctly by resetting it when the component unmounts
+  useEffect(() => {
+    return () => {
+      // Cleanup function to stop autoplay when component unmounts
+      if (autoplayPlugin.current && autoplayPlugin.current.stop) {
+        autoplayPlugin.current.stop();
+      }
+    };
+  }, []);
 
   return (
     <section id="products" className="py-20 bg-gray-50">
@@ -64,7 +75,7 @@ const ProductCarousel = () => {
           >
             <CarouselContent className="-ml-2 md:-ml-4">
               {products.map((product, index) => (
-                <CarouselItem key={index} className="pl-2 md:pl-4 basis-full sm:basis-1/2 md:basis-1/4">
+                <CarouselItem key={index} className="pl-2 md:pl-4 basis-1/4 min-w-0">
                   <Card className="border-0 shadow-sm overflow-hidden">
                     <div className="aspect-[4/3] overflow-hidden">
                       <img
