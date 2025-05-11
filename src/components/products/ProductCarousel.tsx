@@ -1,4 +1,3 @@
-
 import React, { useEffect, useRef } from 'react';
 import {
   Carousel,
@@ -45,7 +44,7 @@ const ProductCarousel = () => {
         <h2 className="text-3xl font-bold text-center text-gray-800 mb-4">
           Our Know-How Systems and Equipment
         </h2>
-        <p className="text-center text-gray-600 max-w-3xl mx-auto">
+        <p className="text-center text-gray-600 max-w-3xl mx-auto text-lg">
           Explore the equipment types we service with proven expertise.      
         </p>
         </div>
