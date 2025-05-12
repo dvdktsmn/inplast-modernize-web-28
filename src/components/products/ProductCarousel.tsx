@@ -19,9 +19,9 @@ const products: Product[] = [
 ];
 
 const ProductCarousel = () => {
-  // Calculate how many rows we need (assuming 4 items per row)
-  const rowCount = Math.ceil(products.length / 4);
-  const rows = Array.from({ length: rowCount }, (_, i) => i);
+  // First row has 4 products, second row has 3
+  const firstRowProducts = products.slice(0, 4);
+  const secondRowProducts = products.slice(4);
   
   return (
     <section id="products" className="py-20 bg-gray-50">
@@ -35,30 +35,51 @@ const ProductCarousel = () => {
           </p>
         </div>
         <div className="max-w-7xl mx-auto">
-          {rows.map((rowIndex) => (
-            <div key={`row-${rowIndex}`} className="flex justify-center mb-4">
-              <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
-                {products.slice(rowIndex * 4, (rowIndex + 1) * 4).map((product, index) => (
-                  <Card key={`product-${rowIndex}-${index}`} className="border-0 shadow-sm overflow-hidden">
-                    <div className="aspect-[4/3] overflow-hidden">
-                      <img
-                        src={product.image}
-                        alt={product.name}
-                        className="w-full h-full object-cover transition-transform duration-300 hover:scale-105"
-                      />
-                    </div>
-                    <CardContent className="p-4 text-center bg-white">
-                      <Link to="/projects" className="hover:underline">
-                        <h3 className="text-lg font-medium text-inplast-teal">
-                          {product.name}
-                        </h3>
-                      </Link>
-                    </CardContent>
-                  </Card>
-                ))}
-              </div>
+          {/* Top row - 4 products */}
+          <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-4 mb-4">
+            {firstRowProducts.map((product, index) => (
+              <Card key={`product-top-${index}`} className="border-0 shadow-sm overflow-hidden">
+                <div className="aspect-[4/3] overflow-hidden">
+                  <img
+                    src={product.image}
+                    alt={product.name}
+                    className="w-full h-full object-cover transition-transform duration-300 hover:scale-105"
+                  />
+                </div>
+                <CardContent className="p-4 text-center bg-white">
+                  <Link to="/projects" className="hover:underline">
+                    <h3 className="text-lg font-medium text-inplast-teal">
+                      {product.name}
+                    </h3>
+                  </Link>
+                </CardContent>
+              </Card>
+            ))}
+          </div>
+
+          {/* Bottom row - 3 products centered */}
+          <div className="flex justify-center">
+            <div className="grid grid-cols-1 sm:grid-cols-3 gap-4 max-w-3xl">
+              {secondRowProducts.map((product, index) => (
+                <Card key={`product-bottom-${index}`} className="border-0 shadow-sm overflow-hidden">
+                  <div className="aspect-[4/3] overflow-hidden">
+                    <img
+                      src={product.image}
+                      alt={product.name}
+                      className="w-full h-full object-cover transition-transform duration-300 hover:scale-105"
+                    />
+                  </div>
+                  <CardContent className="p-4 text-center bg-white">
+                    <Link to="/projects" className="hover:underline">
+                      <h3 className="text-lg font-medium text-inplast-teal">
+                        {product.name}
+                      </h3>
+                    </Link>
+                  </CardContent>
+                </Card>
+              ))}
             </div>
-          ))}
+          </div>
         </div>
       </div>
     </section>
