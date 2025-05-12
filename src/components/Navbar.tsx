@@ -117,35 +117,20 @@ const Navbar = () => {
               Projects
             </Link>
           )}
-          {/*
-          <a 
-            href="#contact" 
-            onClick={(e) => {
-              e.preventDefault();
-              scrollToSection('contact');
-            }}
+          <Link 
+            to="/contact" 
             className="text-inplast-darkgray hover:text-inplast-teal transition-colors cursor-pointer"
           >
             Contact
-          </a>
-          */}
+          </Link>
         </div>
         
         <div className="flex items-center space-x-4">
-          {isHomePage ? (
-            <Button 
-              className="bg-inplast-teal hover:bg-inplast-darkgray text-white"
-              onClick={() => scrollToSection('contact')}
-            >
+          <Link to="/contact">
+            <Button className="bg-inplast-teal hover:bg-inplast-darkgray text-white">
               Contact Us
             </Button>
-          ) : (
-            <Link to="/#contact">
-              <Button className="bg-inplast-teal hover:bg-inplast-darkgray text-white">
-                Contact Us
-              </Button>
-            </Link>
-          )}
+          </Link>
           
           <DropdownMenu>
             <DropdownMenuTrigger asChild>
@@ -167,20 +152,7 @@ const Navbar = () => {
                 <Link to="/projects" className="w-full">Projects</Link>
               </DropdownMenuItem>
               <DropdownMenuItem>
-                {isHomePage ? (
-                  <a 
-                    href="#contact" 
-                    onClick={(e) => {
-                      e.preventDefault();
-                      scrollToSection('contact');
-                    }}
-                    className="w-full"
-                  >
-                    Contact
-                  </a>
-                ) : (
-                  <Link to="/#contact" className="w-full">Contact</Link>
-                )}
+                <Link to="/contact" className="w-full">Contact</Link>
               </DropdownMenuItem>
             </DropdownMenuContent>
           </DropdownMenu>
