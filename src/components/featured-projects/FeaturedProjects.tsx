@@ -5,9 +5,10 @@ import SmallProjectCard from './SmallProjectCard';
 import { featuredProjectsData } from './ProjectsData';
 
 const FeaturedProjects = () => {
-  // Separate first project (large) from the rest (small)
-  const firstProject = featuredProjectsData.length > 0 ? featuredProjectsData[0] : null;
-  const smallProjects = featuredProjectsData.slice(1);
+  // Get the first two projects for large display
+  const largeProjects = featuredProjectsData.slice(0, 2);
+  // Get the rest for small card display
+  const smallProjects = featuredProjectsData.slice(2);
 
   return (
     <>
@@ -18,10 +19,14 @@ const FeaturedProjects = () => {
         </p>
       </div>
 
-      {/* Large project card - full width */}
-      {firstProject && (
-        <div className="mb-10">
-          <LargeProjectCard project={firstProject} />
+      {/* Large project cards - one per row */}
+      {largeProjects.length > 0 && (
+        <div className="space-y-10">
+          {largeProjects.map((project, index) => (
+            <div key={index} className="mb-10">
+              <LargeProjectCard project={project} reverseLayout={index % 2 === 1} />
+            </div>
+          ))}
         </div>
       )}
 
