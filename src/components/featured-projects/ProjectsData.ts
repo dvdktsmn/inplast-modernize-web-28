@@ -7,7 +7,6 @@ export interface FeaturedProject {
   images: string[];
   isLarge: boolean;
   tags?: string[];
-  completionDate?: string;
 }
 
 export const featuredProjectsData: FeaturedProject[] = [
@@ -19,15 +18,25 @@ export const featuredProjectsData: FeaturedProject[] = [
     description: "Complete disassembly, relocation, and reinstallation of a large-scale BOPP production line across continents. The project involved complex logistics planning, specialized transportation solutions, and comprehensive reinstallation services. Our team managed every aspect from initial site assessment to final commissioning, ensuring minimal downtime and optimal performance at the new location.",
     images: [
       "/lovable-uploads/4c257c37-8c64-4c31-bcea-916d3639fd25.png",
-      "/lovable-uploads/d8c9d55c-2e20-4b44-8d69-cf877a6c22d3.png",
-      "/lovable-uploads/22b5021e-4336-432d-88c2-bf9cb164f91e.png",
-      "/lovable-uploads/1cd4d9cf-1717-4710-a49b-4b41fc973da6.png",
-      "/lovable-uploads/e42d7b0d-ec79-4a41-82b9-27dafabdfb9a.png",
-      "/lovable-uploads/fb4c7c14-fa91-430e-b052-a3ab24cbfa6d.png"
+      "/lovable-uploads/91e587fb-4c00-46b1-80d1-bd90c401bc95.png",
+      "/lovable-uploads/1578a116-7962-49ae-a3ad-3f09928ab06b.png",
+      "/lovable-uploads/5a1295fa-e1a2-4fa7-9040-af2ae43ef2f4.png",
+      "/lovable-uploads/bc1579f4-de79-45ae-a4c4-ec4693e5c62a.png", 
+      "/lovable-uploads/93958ee0-2942-4295-aaec-7d8baadc4203.png",
+      "/lovable-uploads/77ca2960-f976-4a79-8837-d1722aba2bce.png",
+      "/lovable-uploads/7b6b6ab0-8a79-44ea-aaca-5edd3ad5e243.png",
+      "/lovable-uploads/d51699ee-1192-4907-a479-037e66693776.png",
+      "/lovable-uploads/f5df3110-e434-4145-9c71-2a4e62ecc6ad.png",
+      "/lovable-uploads/650e8d7b-abac-4081-b625-0dbc92db7f3b.png",
+      "/lovable-uploads/0a01b4c1-195e-462f-ae34-976a43e2c5ab.png",
+      "/lovable-uploads/e36799dd-059e-4bc0-bca0-9bd4f837bd9b.png",
+      "/lovable-uploads/e0de7c2b-622d-4eb7-8caf-74469d4e733b.png",
+      "/lovable-uploads/2d5b85a9-b9b4-4e9a-bc12-88a3fcb6cd5b.png",
+      "/lovable-uploads/0edc4beb-8484-4ee5-8225-1d22abd35d55.png",
+      "/lovable-uploads/25b7ff67-2316-4830-9bea-17c18382f88f.png"
     ],
     isLarge: true,
-    tags: ["Equipment Relocation", "Production Line", "Cross-Continental"],
-    completionDate: "2024-02-15"
+    tags: ["Equipment Relocation", "Production Line", "Cross-Continental"]
   },
   {
     id: "factory-modernization",
@@ -41,8 +50,7 @@ export const featuredProjectsData: FeaturedProject[] = [
       "/placeholder.svg"
     ],
     isLarge: true,
-    tags: ["Modernization", "Efficiency Improvement", "Control Systems"],
-    completionDate: "2023-11-30"
+    tags: ["Modernization", "Efficiency Improvement", "Control Systems"]
   },
   
   // Small Projects
@@ -63,7 +71,7 @@ export const featuredProjectsData: FeaturedProject[] = [
   {
     id: "chill-roll-retrofit",
     title: "Chill Roll Retrofit",
-    description: "Replacement of conventional gearmotor with direct drive torque motor.",
+    description: "Replacement of conventional gearmotor with direct torque motor.",
     images: ["/placeholder.svg"],
     isLarge: false
   },

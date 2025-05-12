@@ -16,14 +16,14 @@ export const projectsData: Project[] = [
     image: "/lovable-uploads/4c257c37-8c64-4c31-bcea-916d3639fd25.png",
     description: "Complete disassembly, relocation and reinstallation of a large-scale BOPP production line across continents.",
     beforeImages: [
-      "/lovable-uploads/d8c9d55c-2e20-4b44-8d69-cf877a6c22d3.png", 
-      "/lovable-uploads/22b5021e-4336-432d-88c2-bf9cb164f91e.png", 
-      "/lovable-uploads/1cd4d9cf-1717-4710-a49b-4b41fc973da6.png"
+      "/lovable-uploads/77ca2960-f976-4a79-8837-d1722aba2bce.png", 
+      "/lovable-uploads/7b6b6ab0-8a79-44ea-aaca-5edd3ad5e243.png", 
+      "/lovable-uploads/e0de7c2b-622d-4eb7-8caf-74469d4e733b.png"
     ],
     afterImages: [
-      "/lovable-uploads/e42d7b0d-ec79-4a41-82b9-27dafabdfb9a.png", 
-      "/lovable-uploads/fb4c7c14-fa91-430e-b052-a3ab24cbfa6d.png", 
-      "/lovable-uploads/ddac229c-45ea-423a-96fb-5faedf762f2e.png"
+      "/lovable-uploads/93958ee0-2942-4295-aaec-7d8baadc4203.png", 
+      "/lovable-uploads/5a1295fa-e1a2-4fa7-9040-af2ae43ef2f4.png", 
+      "/lovable-uploads/0edc4beb-8484-4ee5-8225-1d22abd35d55.png"
     ]
   }, 
   {
