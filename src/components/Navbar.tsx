@@ -117,12 +117,6 @@ const Navbar = () => {
               Projects
             </Link>
           )}
-          <Link 
-            to="/contact" 
-            className="text-inplast-darkgray hover:text-inplast-teal transition-colors cursor-pointer"
-          >
-            Contact
-          </Link>
         </div>
         
         <div className="flex items-center space-x-4">
