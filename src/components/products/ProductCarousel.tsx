@@ -35,30 +35,40 @@ const ProductCarousel = () => {
           </p>
         </div>
         <div className="max-w-7xl mx-auto">
-          {rows.map((rowIndex) => (
-            <div key={`row-${rowIndex}`} className="flex justify-center mb-4">
-              <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
-                {products.slice(rowIndex * 4, (rowIndex + 1) * 4).map((product, index) => (
-                  <Card key={`product-${rowIndex}-${index}`} className="border-0 shadow-sm overflow-hidden">
-                    <div className="aspect-[4/3] overflow-hidden">
-                      <img
-                        src={product.image}
-                        alt={product.name}
-                        className="w-full h-full object-cover transition-transform duration-300 hover:scale-105"
-                      />
-                    </div>
-                    <CardContent className="p-4 text-center bg-white">
-                      <Link to="/projects" className="hover:underline">
-                        <h3 className="text-lg font-medium text-inplast-teal">
-                          {product.name}
-                        </h3>
-                      </Link>
-                    </CardContent>
-                  </Card>
-                ))}
+          {rows.map((rowIndex) => {
+            // Get products for this specific row
+            const rowProducts = products.slice(rowIndex * 4, (rowIndex + 1) * 4);
+            return (
+              <div key={`row-${rowIndex}`} className="flex justify-center mb-4">
+                <div className={`grid gap-4 ${
+                  // Adjust grid columns based on number of items in this row
+                  rowProducts.length === 1 ? 'grid-cols-1' :
+                  rowProducts.length === 2 ? 'grid-cols-2' :
+                  rowProducts.length === 3 ? 'grid-cols-3' :
+                  'grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4'
+                }`}>
+                  {rowProducts.map((product, index) => (
+                    <Card key={`product-${rowIndex}-${index}`} className="border-0 shadow-sm overflow-hidden">
+                      <div className="aspect-[4/3] overflow-hidden">
+                        <img
+                          src={product.image}
+                          alt={product.name}
+                          className="w-full h-full object-cover transition-transform duration-300 hover:scale-105"
+                        />
+                      </div>
+                      <CardContent className="p-4 text-center bg-white">
+                        <Link to="/projects" className="hover:underline">
+                          <h3 className="text-lg font-medium text-inplast-teal">
+                            {product.name}
+                          </h3>
+                        </Link>
+                      </CardContent>
+                    </Card>
+                  ))}
+                </div>
               </div>
-            </div>
-          ))}
+            );
+          })}
         </div>
       </div>
     </section>
