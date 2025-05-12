@@ -1,5 +1,5 @@
 
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import { Dialog, DialogContent } from "@/components/ui/dialog";
 import { Carousel, CarouselContent, CarouselItem, CarouselNext, CarouselPrevious } from "@/components/ui/carousel";
 import { X } from "lucide-react";
@@ -10,6 +10,7 @@ interface StandardGalleryProps {
 
 const StandardGallery = ({ galleryImages }: StandardGalleryProps) => {
   const [selectedImageIndex, setSelectedImageIndex] = useState<number | null>(null);
+  const [api, setApi] = useState<any>(null);
   
   const openCarousel = (index: number) => {
     setSelectedImageIndex(index);
@@ -18,6 +19,16 @@ const StandardGallery = ({ galleryImages }: StandardGalleryProps) => {
   const closeCarousel = () => {
     setSelectedImageIndex(null);
   };
+
+  // Use useEffect to set the initial slide when the carousel opens
+  useEffect(() => {
+    if (api && selectedImageIndex !== null) {
+      // Wait for the carousel to initialize
+      setTimeout(() => {
+        api.scrollTo(selectedImageIndex);
+      }, 0);
+    }
+  }, [api, selectedImageIndex]);
 
   return (
     <div className="mt-8">
@@ -52,7 +63,7 @@ const StandardGallery = ({ galleryImages }: StandardGalleryProps) => {
               <X size={24} />
             </button>
             
-            <Carousel className="w-full h-full" defaultIndex={selectedImageIndex || 0}>
+            <Carousel className="w-full h-full" setApi={setApi}>
               <CarouselContent className="h-full">
                 {galleryImages.map((image, i) => (
                   <CarouselItem key={i} className="h-full flex items-center justify-center">
