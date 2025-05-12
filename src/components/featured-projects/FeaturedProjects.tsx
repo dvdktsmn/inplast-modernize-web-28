@@ -30,6 +30,9 @@ const FeaturedProjects = () => {
         </div>
       )}
 
+      {/* Add spacing between large and small project sections */}
+      <div className="mb-16"></div>
+
       {/* Small project cards - 2 per row on medium screens and up */}
       {smallProjects.length > 0 && (
         <div className="grid grid-cols-1 md:grid-cols-2 gap-10">
