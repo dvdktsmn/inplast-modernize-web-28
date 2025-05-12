@@ -10,7 +10,7 @@ const FeaturedProjects = () => {
   const smallProjects = featuredProjectsData.filter(project => !project.isLarge);
 
   return (
-    <div className="bg-gray-50 py-16">
+    <div className="bg-gray-50 py-8 pt-4">
       <div className="container mx-auto px-4">
         {/* Large Projects Section */}
         <div className="mb-16">
