@@ -45,16 +45,12 @@ const Navbar = () => {
           >
             Products
           </a>
-          <a 
-            href="/#services" 
-            onClick={(e) => {
-              e.preventDefault();
-              scrollToSection('services');
-            }}
+          <Link 
+            to="/services"
             className="text-inplast-darkgray hover:text-inplast-teal transition-colors cursor-pointer"
           >
             Services
-          </a>
+          </Link>
           <a 
             href="/#projects" 
             onClick={(e) => {
