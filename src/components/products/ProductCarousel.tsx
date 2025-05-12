@@ -59,7 +59,7 @@ const ProductCarousel = () => {
 
           {/* Bottom row - 3 products centered */}
           <div className="flex justify-center">
-            <div className="grid grid-cols-1 sm:grid-cols-3 gap-4 max-w-3xl">
+            <div className="grid grid-cols-1 sm:grid-cols-3 gap-4" style={{ width: "calc(75% + 1rem)" }}>
               {secondRowProducts.map((product, index) => (
                 <Card key={`product-bottom-${index}`} className="border-0 shadow-sm overflow-hidden">
                   <div className="aspect-[4/3] overflow-hidden">
