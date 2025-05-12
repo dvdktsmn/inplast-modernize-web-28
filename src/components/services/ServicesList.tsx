@@ -38,9 +38,11 @@ const ServicesList = ({ isStandalone = false }: ServicesListProps) => {
       title: "Installation and Commissioning",
       description: "Ensure seamless operation from day one. Our experts manage the installation and commissioning process end-to-end, offering localized support and global experience.",
       images: [
-        "/lovable-uploads/11e7e270-577f-48ad-b96c-d2396dcd6bc8.png",
-        "/lovable-uploads/69f9e44d-caa4-4361-8d49-190c6120084a.png",
-        "/lovable-uploads/143d0504-0382-4d33-a174-3bb4928f22d5.png"
+        "/lovable-uploads/8527f32f-6f15-4f6b-9bb2-baec7fd5b497.png",
+        "/lovable-uploads/2cbd6041-5819-4f3c-afe9-162b2080c7b7.png",
+        "/lovable-uploads/e41d37fe-a111-4f09-9d3f-81b90123a72a.png",
+        "/lovable-uploads/50beace4-a86d-4334-ac2b-c04ba9b9b231.png",
+        "/lovable-uploads/d23db893-c5a3-4dc1-8eba-2a6ce3c7ceba.png"
       ]
     },
     {
