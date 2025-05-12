@@ -14,7 +14,7 @@ export const featuredProjectsData: FeaturedProject[] = [
   // Large Projects
   {
     id: "bopp-line-relocation",
-    title: "BOPP Line Relocation",
+    title: "BOPP Line Relocation with Refurbishment and Upgrades",
     location: "Hefei, China to Europe",
     description: "Complete disassembly, relocation, and reinstallation of a large-scale BOPP production line across continents. The project involved complex logistics planning, specialized transportation solutions, and comprehensive reinstallation services. Our team managed every aspect from initial site assessment to final commissioning, ensuring minimal downtime and optimal performance at the new location.",
     images: [
