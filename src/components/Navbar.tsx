@@ -53,18 +53,44 @@ const Navbar = () => {
               Mission
             </Link>
           )}
+          {isHomePage ? (
+            <a 
+              href="/#products" 
+              onClick={(e) => {
+                e.preventDefault();
+                scrollToSection('products');
+              }}
+              className="text-inplast-darkgray hover:text-inplast-teal transition-colors cursor-pointer"
+            >
+              Products
+            </a>
+          ) : (
           <Link 
             to="/products"
             className="text-inplast-darkgray hover:text-inplast-teal transition-colors cursor-pointer"
           >
             Products
           </Link>
+          )}
+          {isHomePage ? (
+            <a 
+              href="/#services" 
+              onClick={(e) => {
+                e.preventDefault();
+                scrollToSection('services');
+              }}
+              className="text-inplast-darkgray hover:text-inplast-teal transition-colors cursor-pointer"
+            >
+              Services
+            </a>
+          ) : (
           <Link 
             to="/services"
             className="text-inplast-darkgray hover:text-inplast-teal transition-colors cursor-pointer"
           >
             Services
           </Link>
+          )}
           {isHomePage ? (
             <a 
               href="/#projects" 
