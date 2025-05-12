@@ -1,104 +1,67 @@
+// Define the type for the project data
 export interface FeaturedProject {
   id: string;
   title: string;
-  location?: string; // Changed to optional
   description: string;
+  location: string;
   images: string[];
-  isLarge: boolean;
-  tags?: string[];
 }
 
 export const featuredProjectsData: FeaturedProject[] = [
-  // Large Projects
   {
-    id: "bopp-line-relocation",
-    title: "BOPP Line Relocation with Refurbishment and Upgrades",
-    location: "Hefei, China to Europe",
-    description: "Complete disassembly, relocation, and reinstallation of a large-scale BOPP production line across continents. The project involved complex logistics planning, specialized transportation solutions, and comprehensive reinstallation services. Our team managed every aspect from initial site assessment to final commissioning, ensuring minimal downtime and optimal performance at the new location.",
+    id: "bopp-line",
+    title: "BOPP Line Relocation",
+    description: "Complete relocation and modernization of a BOPP production line from Europe to Asia, including dismantling, shipping, and recommissioning.",
+    location: "Seoul, South Korea",
     images: [
-      "/lovable-uploads/1578a116-7962-49ae-a3ad-3f09928ab06b.png",
-      "/lovable-uploads/91e587fb-4c00-46b1-80d1-bd90c401bc95.png",
-      "/lovable-uploads/77ca2960-f976-4a79-8837-d1722aba2bce.png",
-      "/lovable-uploads/0a01b4c1-195e-462f-ae34-976a43e2c5ab.png",
-      "/lovable-uploads/e0de7c2b-622d-4eb7-8caf-74469d4e733b.png",
-      "/lovable-uploads/93958ee0-2942-4295-aaec-7d8baadc4203.png",
-      "/lovable-uploads/7b6b6ab0-8a79-44ea-aaca-5edd3ad5e243.png",
-      "/lovable-uploads/d51699ee-1192-4907-a479-037e66693776.png",
-      "/lovable-uploads/f5df3110-e434-4145-9c71-2a4e62ecc6ad.png",
-      "/lovable-uploads/650e8d7b-abac-4081-b625-0dbc92db7f3b.png",
-      "/lovable-uploads/5a1295fa-e1a2-4fa7-9040-af2ae43ef2f4.png",
-      "/lovable-uploads/bc1579f4-de79-45ae-a4c4-ec4693e5c62a.png", 
+      "/lovable-uploads/1dc4c4dc-881f-465a-b970-fd69ac5845e2.png",
+      "/lovable-uploads/1fa7f7db-cd38-45f3-ae7f-b5bd8eaadfbc.png",
+      "/lovable-uploads/22b5021e-4336-432d-88c2-bf9cb164f91e.png",
+      "/lovable-uploads/238aaba2-eeb1-4d52-ba98-2cca0d50ae40.png",
+      "/lovable-uploads/2d246b46-3ba2-4cdb-bca5-1e159a6ec659.png",
       "/lovable-uploads/2d5b85a9-b9b4-4e9a-bc12-88a3fcb6cd5b.png",
-      "/lovable-uploads/0edc4beb-8484-4ee5-8225-1d22abd35d55.png",
-      "/lovable-uploads/e36799dd-059e-4bc0-bca0-9bd4f837bd9b.png",
-      "/lovable-uploads/25b7ff67-2316-4830-9bea-17c18382f88f.png"
     ],
-    isLarge: true,
-    tags: ["Equipment Relocation", "Production Line", "Cross-Continental"]
   },
   {
     id: "factory-modernization",
     title: "Factory Modernization",
-    location: "Warsaw, Poland",
-    description: "Full overhaul and modernization of outdated equipment to increase production efficiency by 35%. This comprehensive project included updating control systems, implementing energy-efficient solutions, and optimizing production flow. Our team worked closely with the client to minimize production interruption while delivering a state-of-the-art facility that meets current industry standards.",
-    images: [
-      "/lovable-uploads/58d6f434-7c79-4e4e-b8c9-e60fad6a246d.png",
-      "/placeholder.svg",
-      "/placeholder.svg",
-      "/placeholder.svg"
-    ],
-    isLarge: true,
-    tags: ["Modernization", "Efficiency Improvement", "Control Systems"]
-  },
-  
-  // Small Projects
-  {
-    id: "extruder-retrofit",
-    title: "Extruder Retrofitting",
-    description: "Complete overhaul of heating, cooling, and lubrication systems for a polypropylene extruder.",
-    images: [
-      "/lovable-uploads/6a402cc3-f2e6-4dcf-aac5-98513623017f.png",
-      "/lovable-uploads/ff1b2119-4abb-48ea-ad6a-b913342ae6eb.png" 
-    ],
-    isLarge: false
-  },
-  {
-    id: "electrical-system-upgrade",
-    title: "Electrical System Upgrade",
-    description: "Implementation of new high-efficiency motors and drives, control and SCADA systems.",
-    images: [
-      "/lovable-uploads/7559cfc1-a938-4092-b12b-10a9bbfbf6b1.png",
-      "/lovable-uploads/53726012-eb6d-4113-a052-78a0952b83e9.png",
-      "/lovable-uploads/6864dcf5-bd5d-4ad8-b67c-35a2ef6b4492.png",
-      "/lovable-uploads/f0d79ea5-1ec0-4fa1-a72a-8cac6dd293c8.png",
-      "/lovable-uploads/374392c1-66d1-4c15-a8cc-017e405f2547.png",
-      "/lovable-uploads/54648c53-c95b-41d6-94a0-a737d55b8f6b.png",
-      "/lovable-uploads/238aaba2-eeb1-4d52-ba98-2cca0d50ae40.png",
-      "/lovable-uploads/51fd588d-3809-47da-8365-5d016dcb1223.png",
-      "/lovable-uploads/8d75fba7-0633-4b04-a60c-dc13f97ebcbe.png",
-      "/lovable-uploads/3372da09-4199-48b3-889e-dcd4d92501f5.png"
-      
-    ],
-    isLarge: false
-  },
-  {
-    id: "chill-roll-retrofit",
-    title: "Chill Roll Retrofit",
-    description: "Replacement of conventional gearmotor with direct torque motor.",
+    description: "Comprehensive upgrade of a legacy manufacturing facility to implement Industry 4.0 standards, improving efficiency by 35%.",
+    location: "Detroit, United States",
     images: [
       "/lovable-uploads/f8e1cb0f-f78d-4b8d-af60-0b3975a34974.png",
-      "/lovable-uploads/9ce0fd86-9dce-439d-acea-50311e1d8369.png"
+      "/lovable-uploads/65ca602a-1750-4ffd-a59b-1ee3e00a89db.png",
+      "/lovable-uploads/5cc7a08c-15b8-4d95-a48a-44ee3df7c131.png",
+      "/lovable-uploads/7559cfc1-a938-4092-b12b-10a9bbfbf6b1.png",
+      "/lovable-uploads/9ce0fd86-9dce-439d-acea-50311e1d8369.png",
+      "/lovable-uploads/8d75fba7-0633-4b04-a60c-dc13f97ebcbe.png",
     ],
-    isLarge: false
   },
   {
-    id: "metalliser-revamping",
-    title: "Metalliser Revamp",
-    description: "Comprehensive revitalization of an aging metalliser.",
+    id: "chemical-plant-upgrade",
+    title: "Chemical Plant Upgrade",
+    description: "Revamping of a specialty chemical plant to enhance production capacity and reduce environmental impact.",
+    location: "Rotterdam, Netherlands",
     images: [
-      "/lovable-uploads/010293e4-1059-43b2-8a41-b7f56abd0649.png", 
-      "/lovable-uploads/af6834c7-d129-43ce-845a-fb3d8e2734c9.png"
+      "/lovable-uploads/4179795f-684d-4379-8631-45991844263f.png",
+      "/lovable-uploads/43654991-7641-4407-894f-49e44a345899.png",
+      "/lovable-uploads/4444318f-97c5-4c4c-a531-5c1408c5309c.png",
+      "/lovable-uploads/4613909b-5991-449c-b9e9-507a9905751d.png",
+      "/lovable-uploads/47189954-c941-4a69-8a9b-305013684199.png",
+      "/lovable-uploads/48139999-7919-494a-a89d-945997a4792a.png",
     ],
-    isLarge: false
-  }
+  },
+  {
+    id: "pharmaceutical-facility",
+    title: "Pharmaceutical Facility Expansion",
+    description: "Expansion of a pharmaceutical manufacturing plant to meet growing demand for innovative drug therapies.",
+    location: "Basel, Switzerland",
+    images: [
+      "/lovable-uploads/50934954-9493-4199-a958-a9917d951e79.png",
+      "/lovable-uploads/51923333-3499-4499-b999-999233331292.png",
+      "/lovable-uploads/52985555-5555-4555-b555-555555550555.png",
+      "/lovable-uploads/53999999-9999-4999-b999-999999999933.png",
+      "/lovable-uploads/54322222-2222-4222-b222-222222222222.png",
+      "/lovable-uploads/55999999-9999-4999-b999-999999999999.png",
+    ],
+  },
 ];

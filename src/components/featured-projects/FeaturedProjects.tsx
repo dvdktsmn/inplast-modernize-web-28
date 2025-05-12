@@ -19,11 +19,11 @@ const FeaturedProjects = () => {
         </p>
       </div>
 
-      {/* Large project cards - one per row */}
+      {/* Large project cards - one per row with consistent spacing */}
       {largeProjects.length > 0 && (
-        <div className="space-y-10">
+        <div className="space-y-16">
           {largeProjects.map((project, index) => (
-            <div key={index} className="mb-10">
+            <div key={index}>
               <LargeProjectCard project={project} reverseLayout={index % 2 === 1} />
             </div>
           ))}
@@ -35,7 +35,7 @@ const FeaturedProjects = () => {
 
       {/* Small project cards - 2 per row on medium screens and up */}
       {smallProjects.length > 0 && (
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-10">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-16">
           {smallProjects.map((project, index) => (
             <SmallProjectCard key={index} project={project} />
           ))}
