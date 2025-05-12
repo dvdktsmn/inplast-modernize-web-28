@@ -10,14 +10,14 @@ const StandardGallery = ({ galleryImages }: StandardGalleryProps) => {
   return (
     <div className="mt-8">
       <div className="bg-white rounded-xl overflow-hidden shadow-md p-4">
-        <h4 className="text-lg font-semibold mb-4 text-inplast-teal">Modernization Gallery</h4>
+        <h4 className="text-lg font-semibold mb-4 text-inplast-teal">Project Gallery</h4>
         <div className="relative">
           <Carousel className="w-full">
             <CarouselContent>
               {galleryImages.map((image, i) => (
                 <CarouselItem key={i} className="md:basis-1/2">
                   <div className="h-64 overflow-hidden rounded-md p-2">
-                    <img src={image} alt={`Modernization photo ${i + 1}`} className="w-full h-full object-cover" />
+                    <img src={image} alt={`Project photo ${i + 1}`} className="w-full h-full object-cover" />
                   </div>
                 </CarouselItem>
               ))}

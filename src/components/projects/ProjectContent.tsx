@@ -1,7 +1,6 @@
 
 import React from 'react';
 import { Link } from 'react-router-dom';
-import BeforeAfterGallery from './BeforeAfterGallery';
 import StandardGallery from './StandardGallery';
 import DefaultProjectView from './DefaultProjectView';
 
@@ -21,7 +20,14 @@ interface ProjectContentProps {
 }
 
 const ProjectContent = ({ project, index }: ProjectContentProps) => {
-  if (index === 0 && project.beforeImages && project.afterImages) {
+  // Combine beforeImages and afterImages into a single gallery array if they exist
+  if ((index === 0) && (project.beforeImages || project.afterImages)) {
+    // Create a combined array of images from beforeImages and afterImages
+    const combinedImages = [
+      ...(project.beforeImages || []), 
+      ...(project.afterImages || [])
+    ];
+    
     return (
       <>
         <Link to="/projects" className="inline-block">
@@ -29,7 +35,7 @@ const ProjectContent = ({ project, index }: ProjectContentProps) => {
             {project.title}
           </h3>
         </Link>
-        <BeforeAfterGallery beforeImages={project.beforeImages} afterImages={project.afterImages} />
+        <StandardGallery galleryImages={combinedImages} />
       </>
     );
   } else if (index === 1 && project.galleryImages) {
