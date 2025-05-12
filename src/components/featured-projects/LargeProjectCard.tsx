@@ -1,12 +1,12 @@
-
-import React, { useState } from 'react';
+import React, { useState, useEffect, useRef } from 'react';
 import { FeaturedProject } from './ProjectsData';
 import { 
   Carousel, 
   CarouselContent, 
   CarouselItem, 
   CarouselNext, 
-  CarouselPrevious 
+  CarouselPrevious,
+  type CarouselApi
 } from "@/components/ui/carousel";
 import { Badge } from "@/components/ui/badge";
 import { AspectRatio } from "@/components/ui/aspect-ratio";
@@ -23,6 +23,7 @@ const LargeProjectCard = ({ project, reverseLayout = false }: LargeProjectCardPr
   const [isExpanded, setIsExpanded] = useState(false);
   const [lightboxOpen, setLightboxOpen] = useState(false);
   const [activeImageIndex, setActiveImageIndex] = useState(0);
+  const [carouselApi, setCarouselApi] = useState<CarouselApi>();
   
   const toggleExpand = () => {
     setIsExpanded(!isExpanded);
@@ -32,6 +33,13 @@ const LargeProjectCard = ({ project, reverseLayout = false }: LargeProjectCardPr
     setActiveImageIndex(index);
     setLightboxOpen(true);
   };
+  
+  // Effect to scroll to the initial slide when the lightbox opens
+  useEffect(() => {
+    if (carouselApi && lightboxOpen) {
+      carouselApi.scrollTo(activeImageIndex);
+    }
+  }, [carouselApi, lightboxOpen, activeImageIndex]);
   
   return (
     <div className="bg-white rounded-xl shadow-lg overflow-hidden">
@@ -205,7 +213,7 @@ const LargeProjectCard = ({ project, reverseLayout = false }: LargeProjectCardPr
               <X className="h-6 w-6" />
             </Button>
             
-            <Carousel className="w-full h-full" defaultIndex={activeImageIndex}>
+            <Carousel className="w-full h-full" setApi={setCarouselApi}>
               <CarouselContent className="h-full">
                 {project.images.map((image, index) => (
                   <CarouselItem key={`lightbox-${index}`} className="h-full flex items-center justify-center">
