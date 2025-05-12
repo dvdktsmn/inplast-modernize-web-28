@@ -19,20 +19,8 @@ interface ProjectContentProps {
 }
 
 const ProjectContent = ({ project, index }: ProjectContentProps) => {
-  // Combine beforeImages and afterImages into a single gallery array if they exist
-  if ((index === 0) && (project.beforeImages || project.afterImages)) {
-    // Create a combined array of images from beforeImages and afterImages
-    const combinedImages = [
-      ...(project.beforeImages || []), 
-      ...(project.afterImages || [])
-    ];
-    
-    return (
-      <>
-        <StandardGallery galleryImages={combinedImages} />
-      </>
-    );
-  } else if (index === 1 && project.galleryImages) {
+  // Check if the project has a galleryImages array
+  if (project.galleryImages) {
     return (
       <>
         <StandardGallery galleryImages={project.galleryImages} />
@@ -40,7 +28,7 @@ const ProjectContent = ({ project, index }: ProjectContentProps) => {
     );
   }
 
-  // Default for other projects
+  // Fallback for other projects without gallery images
   return (
     <>
       <DefaultProjectView image={project.image} title={project.title} />
