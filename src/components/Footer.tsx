@@ -16,7 +16,7 @@ const Footer = () => {
               className="h-12 mb-4"
             />
             <p className="text-gray-600 mb-4">
-              Innovation, Engineering, Excellence in industrial equipment modernization and relocation.
+              Innovation, Engineering, Excellence in industrial solutions for equipment installation, modernization and dismantling.
             </p>
           </div>
           
