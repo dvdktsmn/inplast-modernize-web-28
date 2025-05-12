@@ -83,9 +83,9 @@ const LargeProjectCard = ({ project, reverseLayout = false }: LargeProjectCardPr
             </Button>
           </CollapsibleTrigger>
           <CollapsibleContent className="mt-6">
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
-              {/* Additional Photos Column */}
-              <div>
+            <div className={`md:grid md:grid-cols-2 md:gap-8 ${reverseLayout ? 'md:flex-row-reverse' : ''}`}>
+              {/* Photos Column - Always on the same side as the main carousel */}
+              <div className={`${reverseLayout ? 'md:order-2' : 'md:order-1'}`}>
                 <h4 className="text-xl font-semibold mb-4 text-inplast-teal">Project Gallery</h4>
                 <div className="space-y-4">
                   {project.images.map((image, index) => (
@@ -100,8 +100,8 @@ const LargeProjectCard = ({ project, reverseLayout = false }: LargeProjectCardPr
                 </div>
               </div>
               
-              {/* Additional Text Column */}
-              <div>
+              {/* Additional Text Column - Always on the same side as the main text */}
+              <div className={`mt-8 md:mt-0 ${reverseLayout ? 'md:order-1' : 'md:order-2'}`}>
                 <h4 className="text-xl font-semibold mb-4 text-inplast-teal">Project Details</h4>
                 
                 <h5 className="font-semibold text-lg mb-2 text-gray-800">Challenge</h5>
