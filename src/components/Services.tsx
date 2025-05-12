@@ -13,7 +13,9 @@ const Services = () => {
           </p>
         </div>
 
-        <ServicesList />
+        <div className="mt-16">
+          <ServicesList />
+        </div>
       </div>
     </section>
   );

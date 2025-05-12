@@ -20,7 +20,7 @@ const Contact = ({ isStandalone = false }: ContactProps) => {
           </p>
         </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-10">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-10 mt-16">
           <div className="bg-gray-50 p-8 rounded-lg shadow-md h-full flex flex-col">
             <h3 className="text-2xl font-bold text-gray-800 mb-6">Get In Touch</h3>
             
