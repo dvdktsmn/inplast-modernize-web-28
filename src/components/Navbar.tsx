@@ -1,5 +1,5 @@
 
-import React, { useState, useEffect } from 'react';
+import React, { useState } from 'react';
 import { Button } from "@/components/ui/button";
 import { Link, useLocation } from 'react-router-dom';
 import { 
@@ -13,36 +13,6 @@ import { Menu } from 'lucide-react';
 const Navbar = () => {
   const location = useLocation();
   const isHomePage = location.pathname === '/';
-  const [scrollbarWidth, setScrollbarWidth] = useState(0);
-  
-  // Calculate scrollbar width on mount
-  useEffect(() => {
-    const scrollDiv = document.createElement('div');
-    scrollDiv.style.width = '100px';
-    scrollDiv.style.height = '100px';
-    scrollDiv.style.overflow = 'scroll';
-    scrollDiv.style.position = 'absolute';
-    scrollDiv.style.top = '-9999px';
-    document.body.appendChild(scrollDiv);
-    
-    const scrollbarWidth = scrollDiv.offsetWidth - scrollDiv.clientWidth;
-    setScrollbarWidth(scrollbarWidth);
-    
-    document.body.removeChild(scrollDiv);
-  }, []);
-
-  // Handle dropdown open/close
-  const handleDropdownOpenChange = (open: boolean) => {
-    if (open) {
-      // When dropdown opens - add padding to prevent shift
-      document.body.style.paddingRight = `${scrollbarWidth}px`;
-      document.body.style.overflowY = 'hidden';
-    } else {
-      // When dropdown closes - remove padding
-      document.body.style.paddingRight = '0';
-      document.body.style.overflowY = 'auto';
-    }
-  };
   
   const scrollToSection = (id: string) => {
     const element = document.getElementById(id);
@@ -170,7 +140,7 @@ const Navbar = () => {
             </Button>
           </Link>
           )}
-          <DropdownMenu onOpenChange={handleDropdownOpenChange}>
+          <DropdownMenu>
             <DropdownMenuTrigger asChild>
               <Button variant="outline" size="icon">
                 <Menu className="h-5 w-5" />
