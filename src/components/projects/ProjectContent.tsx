@@ -1,5 +1,6 @@
 
 import React from 'react';
+import { Link } from 'react-router-dom';
 import BeforeAfterGallery from './BeforeAfterGallery';
 import StandardGallery from './StandardGallery';
 import DefaultProjectView from './DefaultProjectView';

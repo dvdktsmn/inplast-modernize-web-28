@@ -1,7 +1,10 @@
 
 import React from 'react';
+import { Link } from 'react-router-dom';
 import ProjectCarousel from './projects/ProjectCarousel';
 import { projectsData } from './projects/ProjectData';
+import { Button } from "@/components/ui/button";
+import { ArrowRight } from 'lucide-react';
 
 const Projects = () => {
   return (
@@ -15,6 +18,14 @@ const Projects = () => {
         </div>
 
         <ProjectCarousel projects={projectsData} />
+        
+        <div className="text-center mt-12">
+          <Link to="/projects">
+            <Button variant="outline" className="text-inplast-teal border-inplast-teal hover:bg-inplast-teal/10">
+              Learn more about our projects <ArrowRight className="ml-2" size={16} />
+            </Button>
+          </Link>
+        </div>
       </div>
     </section>
   );

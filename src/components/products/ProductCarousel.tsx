@@ -1,5 +1,6 @@
 
 import React, { useEffect, useRef } from 'react';
+import { Link } from 'react-router-dom';
 import {
   Carousel,
   CarouselContent,
@@ -89,9 +90,11 @@ const ProductCarousel = () => {
                       />
                     </div>
                     <CardContent className="p-4 text-center bg-white">
-                      <h3 className="text-lg font-medium text-inplast-teal">
-                        {product.name}
-                      </h3>
+                      <Link to="/projects" className="hover:underline">
+                        <h3 className="text-lg font-medium text-inplast-teal">
+                          {product.name}
+                        </h3>
+                      </Link>
                     </CardContent>
                   </Card>
                 </CarouselItem>
