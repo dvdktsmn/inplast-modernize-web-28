@@ -22,13 +22,40 @@ interface ProjectContentProps {
 
 const ProjectContent = ({ project, index }: ProjectContentProps) => {
   if (index === 0 && project.beforeImages && project.afterImages) {
-    return <BeforeAfterGallery beforeImages={project.beforeImages} afterImages={project.afterImages} />;
+    return (
+      <>
+        <Link to="/projects" className="inline-block">
+          <h3 className="text-2xl font-bold text-inplast-teal mb-1 hover:underline">
+            {project.title}
+          </h3>
+        </Link>
+        <BeforeAfterGallery beforeImages={project.beforeImages} afterImages={project.afterImages} />
+      </>
+    );
   } else if (index === 1 && project.galleryImages) {
-    return <StandardGallery galleryImages={project.galleryImages} />;
+    return (
+      <>
+        <Link to="/projects" className="inline-block">
+          <h3 className="text-2xl font-bold text-inplast-teal mb-1 hover:underline">
+            {project.title}
+          </h3>
+        </Link>
+        <StandardGallery galleryImages={project.galleryImages} />
+      </>
+    );
   }
 
   // Default for other projects
-  return <DefaultProjectView image={project.image} title={project.title} />;
+  return (
+    <>
+      <Link to="/projects" className="inline-block">
+        <h3 className="text-2xl font-bold text-inplast-teal mb-1 hover:underline">
+          {project.title}
+        </h3>
+      </Link>
+      <DefaultProjectView image={project.image} title={project.title} />
+    </>
+  );
 };
 
 export default ProjectContent;
