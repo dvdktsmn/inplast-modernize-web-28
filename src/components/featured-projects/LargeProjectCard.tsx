@@ -130,56 +130,64 @@ const LargeProjectCard = ({ project, reverseLayout = false }: LargeProjectCardPr
           <div className="md:w-1/2 p-6">
             <div className="space-y-6">
               <section>
-                <h4 className="text-xl font-semibold text-inplast-teal mb-2">Project Overview</h4>
+                <h4 className="text-xl font-semibold text-inplast-teal mb-2">Initial Condition Assessment</h4>
                 <p className="text-gray-700">
-                  The {project.title} project represents a significant achievement in industrial equipment 
-                  relocation and modernization. Our team worked diligently to ensure all specifications were 
-                  met while maintaining the highest standards of quality and safety.
+                  The project began with a detailed technical inspection of the BOPP line at its original site. 
+                  The team evaluated the condition of extruders, chill rolls, T-dies, tenter frames, rewinders, 
+                  and associated auxiliary systems. Key components were tested for mechanical integrity and wear. 
+                  This assessment formed the basis for the dismantling strategy and refurbishment plan, ensuring the 
+                  equipment could be safely transported and effectively reinstalled.
                 </p>
               </section>
               
               <section>
-                <h4 className="text-xl font-semibold text-inplast-teal mb-2">Technical Challenges</h4>
+                <h4 className="text-xl font-semibold text-inplast-teal mb-2">Dismantling and Transportation Logistics</h4>
                 <p className="text-gray-700">
-                  One of the primary challenges we faced was the complex logistics of transporting sensitive 
-                  equipment across international borders. We developed a comprehensive transportation plan that 
-                  minimized risks and ensured the equipment arrived in optimal condition.
+                  Following the assessment, the team conducted a structured dismantling process. Over 1,200 mechanical, 
+                  electrical, and control system components were carefully removed, labeled, and packed. Particular attention 
+                  was given to critical parts such as the film stretching units and precision rollers. The transport phase involved 
+                  significant logistical planning due to the equipment size. The team managed the safe transfer of components via sea 
+                  freight and road transport, coordinating with customs and regulatory authorities to minimize delays. 
+                  All packaging and securing methods followed international standards to prevent transit damage.
                 </p>
               </section>
               
               <section>
-                <h4 className="text-xl font-semibold text-inplast-teal mb-2">Implementation Process</h4>
+                <h4 className="text-xl font-semibold text-inplast-teal mb-2">Repairs, Refurbishment and Upgrades at the New Site</h4>
                 <p className="text-gray-700">
-                  Our implementation strategy was divided into three phases: disassembly, transport, and 
-                  reinstallation. Each phase was carefully planned and executed by our specialized teams, 
-                  ensuring minimal downtime and maximum efficiency throughout the project lifecycle.
+                  Upon arrival at the new facility, the team carried out the planned refurbishment. Worn and obsolete components 
+                  were replaced, and mechanical alignments were re-established. Electrical and safety systems were brought up to 
+                  modern standards. Energy-saving improvements and modern automation technologies were 
+                  integrated to enhance the efficiency and reliability of the line.
                 </p>
               </section>
               
               <section>
-                <h4 className="text-xl font-semibold text-inplast-teal mb-2">Equipment Specifications</h4>
+                <h4 className="text-xl font-semibold text-inplast-teal mb-2">Assembly and Software Modernization</h4>
                 <p className="text-gray-700">
-                  The equipment included cutting-edge technology with precise specifications that required 
-                  expert handling. Our technical team conducted thorough assessments before, during, and 
-                  after relocation to ensure all systems functioned according to manufacturer standards.
+                  The line was reassembled by the team with precision to restore full functionality. Controls engineers 
+                  installed updated PLC and SCADA systems, adding new diagnostics, improved process controls, and modern 
+                  operator interfaces. These upgrades provided the client with better monitoring and operational capabilities 
+                  for future production.
                 </p>
               </section>
               
               <section>
-                <h4 className="text-xl font-semibold text-inplast-teal mb-2">Client Benefits</h4>
+                <h4 className="text-xl font-semibold text-inplast-teal mb-2">Commissioning and Performance Optimization</h4>
                 <p className="text-gray-700">
-                  Following project completion, our client experienced a significant increase in production 
-                  efficiency and reduced operational costs. The modernized equipment also improved energy 
-                  efficiency, contributing to the client's sustainability goals and reducing their carbon footprint.
+                  The commissioning phase included a systematic approach to testing each component and system. Initial runs were 
+                  conducted to verify film thickness accuracy, material strength, and quality consistency. The team worked closely 
+                  with the client to make fine adjustments to ensure the line met international production standards for BOPP film products.
                 </p>
               </section>
               
               <section>
-                <h4 className="text-xl font-semibold text-inplast-teal mb-2">Future Considerations</h4>
+                <h4 className="text-xl font-semibold text-inplast-teal mb-2">Training and Knowledge Transfer</h4>
                 <p className="text-gray-700">
-                  As part of our commitment to ongoing support, we've developed a maintenance schedule and 
-                  training program for the client's technical staff. This ensures the equipment will continue 
-                  to operate at peak efficiency for years to come, maximizing the return on investment.
+                  The final phase involved training the client’s operational and maintenance staff. The team provided instructions
+                  and practical, on-machine training. Topics included safe operation, 
+                  routine maintenance, troubleshooting, and system optimization. This ensured the client’s personnel 
+                  were fully prepared to operate the line independently and safely.
                 </p>
               </section>
             </div>
