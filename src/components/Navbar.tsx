@@ -120,6 +120,18 @@ const Navbar = () => {
         </div>
         
         <div className="flex items-center space-x-4">
+          {isHomePage ? (
+            <a 
+              href="/#contact" 
+              onClick={(e) => {
+                e.preventDefault();
+                scrollToSection('contact');
+              }}
+              className="text-inplast-darkgray hover:text-inplast-teal transition-colors cursor-pointer"
+            >
+              Contact Us
+            </a>
+          ) : (
           <Link to="/contact">
             <Button className="bg-inplast-teal hover:bg-inplast-darkgray text-white">
               Contact Us
