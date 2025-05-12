@@ -9,7 +9,6 @@ import {
   CarouselPrevious,
   type CarouselApi
 } from "@/components/ui/carousel";
-import { Badge } from "@/components/ui/badge";
 import { AspectRatio } from "@/components/ui/aspect-ratio";
 import { Button } from "@/components/ui/button";
 import { ChevronDown, ChevronUp, X } from "lucide-react";
@@ -71,11 +70,8 @@ const LargeProjectCard = ({ project, reverseLayout = false }: LargeProjectCardPr
         
         {/* Project details - 50% width on desktop, full width on mobile */}
         <div className="p-6 md:p-8 md:w-1/2">
-          <div className="flex justify-between items-start mb-4">
+          <div className="mb-4">
             <h3 className="text-3xl font-bold text-inplast-teal">{project.title}</h3>
-            {project.completionDate && (
-              <span className="text-sm text-gray-500">Completed: {project.completionDate}</span>
-            )}
           </div>
           
           <div className="flex items-center mb-6">
@@ -83,16 +79,6 @@ const LargeProjectCard = ({ project, reverseLayout = false }: LargeProjectCardPr
           </div>
           
           <p className="text-gray-700 mb-6 leading-relaxed">{project.description}</p>
-          
-          {project.tags && (
-            <div className="flex flex-wrap gap-2 mt-4">
-              {project.tags.map(tag => (
-                <Badge key={tag} variant="outline" className="bg-gray-50">
-                  {tag}
-                </Badge>
-              ))}
-            </div>
-          )}
         </div>
       </div>
 
