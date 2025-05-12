@@ -13,7 +13,7 @@ const FeaturedProjects = () => {
     <div className="bg-gray-50 py-8 pt-4">
       <div className="container mx-auto px-4">
         {/* Large Projects Section */}
-        <div className="mb-16">
+        <div className="mb-8">
           <h2 className="text-2xl font-semibold text-inplast-teal mb-8 border-b pb-2">Major Projects</h2>
           <div className="space-y-8">
             {largeProjects.map((project, index) => (
