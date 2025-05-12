@@ -11,7 +11,8 @@ import {
 import { Badge } from "@/components/ui/badge";
 import { AspectRatio } from "@/components/ui/aspect-ratio";
 import { Button } from "@/components/ui/button";
-import { ChevronDown, ChevronUp } from "lucide-react";
+import { ChevronDown, ChevronUp, X } from "lucide-react";
+import { Dialog, DialogContent } from "@/components/ui/dialog";
 
 interface LargeProjectCardProps {
   project: FeaturedProject;
@@ -20,9 +21,16 @@ interface LargeProjectCardProps {
 
 const LargeProjectCard = ({ project, reverseLayout = false }: LargeProjectCardProps) => {
   const [isExpanded, setIsExpanded] = useState(false);
+  const [lightboxOpen, setLightboxOpen] = useState(false);
+  const [activeImageIndex, setActiveImageIndex] = useState(0);
   
   const toggleExpand = () => {
     setIsExpanded(!isExpanded);
+  };
+  
+  const openLightbox = (index: number) => {
+    setActiveImageIndex(index);
+    setLightboxOpen(true);
   };
   
   return (
@@ -101,27 +109,25 @@ const LargeProjectCard = ({ project, reverseLayout = false }: LargeProjectCardPr
       {/* Expanded Content */}
       {isExpanded && (
         <div className={`border-t border-gray-100 ${reverseLayout ? 'md:flex-row-reverse' : ''} md:flex`}>
-          {/* Vertical Image Gallery - follows same side as the carousel above */}
+          {/* Two-column Image Gallery - follows same side as the carousel above */}
           <div className="md:w-1/2 p-6">
             <h4 className="text-xl font-semibold text-inplast-teal mb-4">Project Gallery</h4>
-            <div className="h-auto">
-              <Carousel orientation="vertical" className="w-full h-full">
-                <CarouselContent className="h-full">
-                  {project.images.map((image, index) => (
-                    <CarouselItem key={`expanded-${index}`} className="h-full pt-4 md:pt-6">
-                      <AspectRatio ratio={4 / 3} className="h-full">
-                        <img 
-                          src={image} 
-                          alt={`${project.title} - detail ${index + 1}`}
-                          className="rounded-lg object-cover w-full h-full"
-                        />
-                      </AspectRatio>
-                    </CarouselItem>
-                  ))}
-                </CarouselContent>
-                <CarouselPrevious />
-                <CarouselNext />
-              </Carousel>
+            <div className="grid grid-cols-2 gap-4">
+              {project.images.map((image, index) => (
+                <div 
+                  key={`gallery-${index}`} 
+                  className="cursor-pointer rounded-lg overflow-hidden transition-transform hover:scale-105"
+                  onClick={() => openLightbox(index)}
+                >
+                  <AspectRatio ratio={3 / 2}>
+                    <img 
+                      src={image} 
+                      alt={`${project.title} - detail ${index + 1}`}
+                      className="object-cover w-full h-full"
+                    />
+                  </AspectRatio>
+                </div>
+              ))}
             </div>
           </div>
           
@@ -185,6 +191,40 @@ const LargeProjectCard = ({ project, reverseLayout = false }: LargeProjectCardPr
           </div>
         </div>
       )}
+
+      {/* Full-screen Image Lightbox */}
+      <Dialog open={lightboxOpen} onOpenChange={setLightboxOpen}>
+        <DialogContent className="max-w-[95vw] w-[95vw] max-h-[95vh] h-[95vh] p-0 bg-black border-none">
+          <div className="relative w-full h-full flex items-center justify-center">
+            <Button 
+              variant="outline" 
+              size="icon" 
+              className="absolute top-4 right-4 z-50 bg-black/50 hover:bg-black/70 border-none text-white"
+              onClick={() => setLightboxOpen(false)}
+            >
+              <X className="h-6 w-6" />
+            </Button>
+            
+            <Carousel className="w-full h-full" defaultIndex={activeImageIndex}>
+              <CarouselContent className="h-full">
+                {project.images.map((image, index) => (
+                  <CarouselItem key={`lightbox-${index}`} className="h-full flex items-center justify-center">
+                    <div className="relative w-full h-full flex items-center justify-center p-4">
+                      <img 
+                        src={image} 
+                        alt={`${project.title} - large view ${index + 1}`}
+                        className="max-h-full max-w-full object-contain"
+                      />
+                    </div>
+                  </CarouselItem>
+                ))}
+              </CarouselContent>
+              <CarouselPrevious className="left-4 bg-black/50 hover:bg-black/70 border-none text-white" />
+              <CarouselNext className="right-4 bg-black/50 hover:bg-black/70 border-none text-white" />
+            </Carousel>
+          </div>
+        </DialogContent>
+      </Dialog>
     </div>
   );
 };
