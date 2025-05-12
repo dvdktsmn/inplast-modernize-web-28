@@ -1,6 +1,5 @@
 
 import React from 'react';
-import { Link } from 'react-router-dom';
 import { Card, CardContent } from "@/components/ui/card";
 
 interface Product {
@@ -47,11 +46,9 @@ const ProductCarousel = () => {
                   />
                 </div>
                 <CardContent className="p-4 text-center bg-white">
-                  <Link to="/projects" className="hover:underline">
-                    <h3 className="text-lg font-medium text-inplast-teal">
-                      {product.name}
-                    </h3>
-                  </Link>
+                  <h3 className="text-lg font-medium text-inplast-teal">
+                    {product.name}
+                  </h3>
                 </CardContent>
               </Card>
             ))}
@@ -70,11 +67,9 @@ const ProductCarousel = () => {
                     />
                   </div>
                   <CardContent className="p-4 text-center bg-white">
-                    <Link to="/projects" className="hover:underline">
-                      <h3 className="text-lg font-medium text-inplast-teal">
-                        {product.name}
-                      </h3>
-                    </Link>
+                    <h3 className="text-lg font-medium text-inplast-teal">
+                      {product.name}
+                    </h3>
                   </CardContent>
                 </Card>
               ))}
