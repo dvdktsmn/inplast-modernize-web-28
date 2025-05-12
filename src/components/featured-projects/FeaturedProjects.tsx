@@ -5,6 +5,10 @@ import SmallProjectCard from './SmallProjectCard';
 import { featuredProjectsData } from './ProjectsData';
 
 const FeaturedProjects = () => {
+  // Separate first project (large) from the rest (small)
+  const firstProject = featuredProjectsData.length > 0 ? featuredProjectsData[0] : null;
+  const smallProjects = featuredProjectsData.slice(1);
+
   return (
     <>
       <div className="text-center mb-16">
@@ -14,15 +18,21 @@ const FeaturedProjects = () => {
         </p>
       </div>
 
-      <div className="grid grid-cols-1 md:grid-cols-2 gap-10">
-        {featuredProjectsData.map((project, index) => 
-          index === 0 ? (
-            <LargeProjectCard key={index} project={project} />
-          ) : (
+      {/* Large project card - full width */}
+      {firstProject && (
+        <div className="mb-10">
+          <LargeProjectCard project={firstProject} />
+        </div>
+      )}
+
+      {/* Small project cards - 2 per row on medium screens and up */}
+      {smallProjects.length > 0 && (
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-10">
+          {smallProjects.map((project, index) => (
             <SmallProjectCard key={index} project={project} />
-          )
-        )}
-      </div>
+          ))}
+        </div>
+      )}
     </>
   );
 };
