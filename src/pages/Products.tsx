@@ -107,34 +107,36 @@ const ProductsPage = () => {
             </p>
           </div>
 
-          <div className="max-w-7xl mx-auto space-y-12">
+          <div className="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-8">
             {products.map((product, index) => (
-              <Card key={index} className="border-0 shadow-md overflow-hidden">
-                <div className="grid md:grid-cols-2 gap-6">
-                  <div className="overflow-hidden">
+              <Card key={index} className="border-0 shadow-md overflow-hidden h-full">
+                <div className="grid grid-cols-1 h-full">
+                  <div className="overflow-hidden h-64">
                     <img
                       src={product.image}
                       alt={product.name}
                       className="w-full h-full object-cover object-center"
                     />
                   </div>
-                  <CardContent className="p-8 flex flex-col justify-center">
-                    <h2 className="text-2xl font-bold text-inplast-teal mb-4">
-                      {product.name}
-                    </h2>
-                    <p className="text-gray-700 mb-6">
-                      {product.description}
-                    </p>
-                    <div className="space-y-2">
-                      <h3 className="font-semibold text-gray-800">Key Features:</h3>
-                      <ul className="space-y-2">
-                        {product.features.map((feature, featureIndex) => (
-                          <li key={featureIndex} className="flex items-start">
-                            <ArrowRight className="h-5 w-5 text-inplast-teal mr-2 mt-0.5 flex-shrink-0" />
-                            <span>{feature}</span>
-                          </li>
-                        ))}
-                      </ul>
+                  <CardContent className="p-6 flex flex-col justify-between">
+                    <div>
+                      <h2 className="text-2xl font-bold text-inplast-teal mb-4">
+                        {product.name}
+                      </h2>
+                      <p className="text-gray-700 mb-4">
+                        {product.description}
+                      </p>
+                      <div className="space-y-2">
+                        <h3 className="font-semibold text-gray-800">Key Features:</h3>
+                        <ul className="space-y-2">
+                          {product.features.map((feature, featureIndex) => (
+                            <li key={featureIndex} className="flex items-start">
+                              <ArrowRight className="h-5 w-5 text-inplast-teal mr-2 mt-0.5 flex-shrink-0" />
+                              <span>{feature}</span>
+                            </li>
+                          ))}
+                        </ul>
+                      </div>
                     </div>
                   </CardContent>
                 </div>
