@@ -137,7 +137,7 @@ const Navbar = () => {
               Contact Us
             </Button>
           </Link>
-          
+          )}
           <DropdownMenu>
             <DropdownMenuTrigger asChild>
               <Button variant="outline" size="icon">
