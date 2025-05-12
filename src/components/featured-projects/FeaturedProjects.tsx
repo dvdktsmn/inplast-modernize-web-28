@@ -1,47 +1,45 @@
 
 import React from 'react';
+import { featuredProjectsData } from './ProjectsData';
 import LargeProjectCard from './LargeProjectCard';
 import SmallProjectCard from './SmallProjectCard';
-import { featuredProjectsData } from './ProjectsData';
 
 const FeaturedProjects = () => {
-  // Get the first two projects for large display
-  const largeProjects = featuredProjectsData.slice(0, 2);
-  // Get the rest for small card display
-  const smallProjects = featuredProjectsData.slice(2);
+  // Separate large and small projects
+  const largeProjects = featuredProjectsData.filter(project => project.isLarge);
+  const smallProjects = featuredProjectsData.filter(project => !project.isLarge);
 
   return (
-    <>
-      <div className="text-center mb-16">
-        <h1 className="text-4xl font-bold text-gray-800 mb-4">Our Projects</h1>
-        <p className="text-xl text-gray-600 max-w-3xl mx-auto">
-          Discover our portfolio of successful industrial projects from around the world.
-        </p>
+    <div className="bg-gray-50 py-16">
+      <div className="container mx-auto px-4">
+        <div className="text-center mb-12">
+          <h1 className="text-4xl font-bold text-gray-800 mb-4">Featured Projects</h1>
+          <p className="text-lg text-gray-600 max-w-3xl mx-auto">
+            Explore our completed industrial projects showcasing our expertise across the world.
+          </p>
+        </div>
+        
+        {/* Large Projects Section */}
+        <div className="mb-16">
+          <h2 className="text-2xl font-semibold text-inplast-teal mb-8 border-b pb-2">Major Projects</h2>
+          <div className="space-y-12">
+            {largeProjects.map((project, index) => (
+              <LargeProjectCard key={project.id} project={project} reverseLayout={index % 2 !== 0} />
+            ))}
+          </div>
+        </div>
+        
+        {/* Small Projects Section */}
+        <div>
+          <h2 className="text-2xl font-semibold text-inplast-teal mb-8 border-b pb-2">Other Projects</h2>
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+            {smallProjects.map((project) => (
+              <SmallProjectCard key={project.id} project={project} />
+            ))}
+          </div>
+        </div>
       </div>
-
-      {/* Large project cards - one per row with consistent spacing */}
-      {largeProjects.length > 0 && (
-        <div className="space-y-16">
-          {largeProjects.map((project, index) => (
-            <div key={index}>
-              <LargeProjectCard project={project} reverseLayout={index % 2 === 1} />
-            </div>
-          ))}
-        </div>
-      )}
-
-      {/* Add spacing between large and small project sections */}
-      <div className="mb-16"></div>
-
-      {/* Small project cards - 2 per row on medium screens and up */}
-      {smallProjects.length > 0 && (
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-16">
-          {smallProjects.map((project, index) => (
-            <SmallProjectCard key={index} project={project} />
-          ))}
-        </div>
-      )}
-    </>
+    </div>
   );
 };
 

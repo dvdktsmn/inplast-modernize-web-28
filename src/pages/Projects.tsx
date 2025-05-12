@@ -8,11 +8,9 @@ const ProjectsPage = () => {
   return (
     <div className="min-h-screen flex flex-col">
       <Navbar />
-      <main className="flex-grow py-20 pt-24 bg-gray-50"> {/* Updated padding to match other pages */}
-        <div className="container mx-auto px-4">
-          <FeaturedProjects />
-        </div>
-      </main>
+      <div className="pt-20"> {/* Add padding to account for fixed navbar */}
+        <FeaturedProjects />
+      </div>
       <Footer />
     </div>
   );
