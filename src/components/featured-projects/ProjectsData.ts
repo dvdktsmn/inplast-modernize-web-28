@@ -1,4 +1,3 @@
-
 export interface FeaturedProject {
   id: string;
   title: string;
@@ -83,7 +82,10 @@ export const featuredProjectsData: FeaturedProject[] = [
     id: "chill-roll-retrofit",
     title: "Chill Roll Retrofit",
     description: "Replacement of conventional gearmotor with direct torque motor.",
-    images: ["/placeholder.svg"],
+    images: [
+      "/lovable-uploads/f8e1cb0f-f78d-4b8d-af60-0b3975a34974.png",
+      "/lovable-uploads/9ce0fd86-9dce-439d-acea-50311e1d8369.png"
+    ],
     isLarge: false
   },
   {
