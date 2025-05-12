@@ -14,14 +14,9 @@ const ServicesPage = () => {
       title: "Complete Equipment Overhaul",
       description: "Restore and modernize your assets. We perform full equipment overhauls to increase longevity, energy efficiency, and operational performance—bringing outdated systems up to today's standards.",
       images: [
-        "/lovable-uploads/68cc1f5f-3a69-40a0-a103-867399eed289.png",
-        "/lovable-uploads/3b0653b5-eb67-44fb-9ccf-b7d0fe8f77d0.png",
-        "/lovable-uploads/8ed38d79-1922-40dd-96e8-e399790a3d96.png",
-        "/lovable-uploads/419a4706-4c5f-4192-866c-44fe76de2ff9.png",
-        "/lovable-uploads/e52ddccb-3501-42dc-a65a-40e7ac740632.png",
-        "/lovable-uploads/c2fc1549-81c9-4c4e-8b4c-f964b765911d.png",
-        "/lovable-uploads/a357439d-7cc2-4384-917a-b9ff4fee2569.png",
-        "/lovable-uploads/5adfd9c1-78e7-46bb-9fcc-614cb352da4b.png"
+        "/lovable-uploads/a17dac29-f4c7-4237-ab06-5d0799b14a6a.png",
+        "/lovable-uploads/17d841d8-3fc7-4df6-8c44-020d76dceca6.png",
+        "/lovable-uploads/c00e5eb6-4f48-412b-b0bc-01c5e3872e50.png"
       ]
     },
     {
