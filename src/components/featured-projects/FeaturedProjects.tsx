@@ -1,13 +1,13 @@
 
 import React from 'react';
-import { featuredProjects } from './ProjectsData';
+import { featuredProjectsData } from './ProjectsData';
 import LargeProjectCard from './LargeProjectCard';
 import SmallProjectCard from './SmallProjectCard';
 
 const FeaturedProjects = () => {
   // Separate large and small projects
-  const largeProjects = featuredProjects.filter(project => project.isLarge);
-  const smallProjects = featuredProjects.filter(project => !project.isLarge);
+  const largeProjects = featuredProjectsData.filter(project => project.isLarge);
+  const smallProjects = featuredProjectsData.filter(project => !project.isLarge);
 
   return (
     <div className="bg-gray-50 py-8 pt-4">
