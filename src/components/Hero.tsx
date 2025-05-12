@@ -13,7 +13,7 @@ const Hero = () => {
   };
   
   return (
-    <div className="relative h-[33vh] overflow-hidden">
+    <div className="relative h-[50vh] overflow-hidden">
       <div 
         className="absolute inset-0 bg-cover bg-center bg-no-repeat" 
         style={{
@@ -22,16 +22,16 @@ const Hero = () => {
         }}
       ></div>
       
-      <div className="relative z-10 flex flex-col justify-center items-center h-full container mx-auto text-center px-4">
+      <div className="relative z-10 flex flex-col justify-center items-center h-full container mx-auto text-center px-4 py-8">
         <img 
           src="/lovable-uploads/99a847fd-71f3-4e06-a241-fb9739d1979b.png" 
           alt="Inplast Novex Logo" 
-          className="h-16 md:h-20 mb-4 animate-fade-in" 
+          className="h-16 md:h-20 mb-6 animate-fade-in" 
         />
         <h2 className="text-xl md:text-2xl font-medium text-white mb-4 animate-fade-in">
           Innovation, Engineering, Excellence
         </h2>
-        <p className="text-base md:text-lg text-white max-w-2xl mb-6 animate-fade-in">
+        <p className="text-base md:text-lg text-white max-w-2xl mb-8 animate-fade-in">
           Comprehensive industrial solutions for equipment installation, modernization and dismantling
         </p>
         <div className="flex flex-col sm:flex-row gap-4 animate-fade-in">
