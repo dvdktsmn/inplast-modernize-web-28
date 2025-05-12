@@ -75,14 +75,12 @@ const ProductCarousel = () => {
             </Card>
           ))}
           
-          {/* Button in the 4th position */}
-          <div className="border-0 shadow-sm rounded-lg flex items-center justify-center bg-white">
-            <Link to="/products" className="h-full w-full p-4 flex flex-col items-center justify-center">
-              <div className="flex-grow flex items-center justify-center">
-                <Button variant="outline" className="text-inplast-teal border-inplast-teal hover:bg-inplast-teal/10">
-                  Discover our expertise <ArrowRight className="ml-2" size={16} />
-                </Button>
-              </div>
+          {/* Button in the 4th position - modified to be smaller */}
+          <div className="flex items-center justify-center">
+            <Link to="/products">
+              <Button variant="outline" className="text-inplast-teal border-inplast-teal hover:bg-inplast-teal/10">
+                Discover our expertise <ArrowRight className="ml-2" size={16} />
+              </Button>
             </Link>
           </div>
         </div>
