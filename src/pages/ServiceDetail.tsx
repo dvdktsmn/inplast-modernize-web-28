@@ -67,17 +67,7 @@ const ServiceDetail = () => {
               </p>
             ))}
           </div>
-          
-          {serviceDetail.id === "overhaul" && serviceDetail.beforeAfterImages && (
-            <div className="mt-8">
-              <h2 className="text-2xl font-bold text-gray-800 mb-4">Before & After Transformation</h2>
-              <BeforeAfterGallery 
-                beforeImages={serviceDetail.beforeAfterImages.before}
-                afterImages={serviceDetail.beforeAfterImages.after}
-              />
-            </div>
-          )}
-          
+
           <div>
             <h2 className="text-2xl font-bold text-gray-800 mb-4">Our Services Include:</h2>
             <div className="grid md:grid-cols-2 gap-4">
