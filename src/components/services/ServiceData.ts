@@ -156,9 +156,9 @@ export const serviceDetails: ServiceDetails[] = [
       }
     ],
     images: [
-      "/lovable-uploads/a17dac29-f4c7-4237-ab06-5d0799b14a6a.png",
-      "/lovable-uploads/17d841d8-3fc7-4df6-8c44-020d76dceca6.png",
-      "/lovable-uploads/c00e5eb6-4f48-412b-b0bc-01c5e3872e50.png"
+      "/lovable-uploads/350dd277-f7cc-4d6b-820a-509a0abb73b2.png",
+      "/lovable-uploads/d2cac722-6099-4ee3-948f-7fceb3e46adb.png",
+      "/lovable-uploads/90641cd1-bfd6-4841-ad84-24f3158ea5d1.png"
     ]
   },
   {
