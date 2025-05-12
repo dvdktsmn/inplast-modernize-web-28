@@ -155,9 +155,10 @@ export const serviceDetails: ServiceDetails[] = [
       }
     ],
     images: [
+      "/lovable-uploads/2585e457-92bb-4935-988a-2ba961e8fe45.png",
       "/lovable-uploads/ab933664-5aaf-4814-9d9d-4e20cb1782b8.png",
-      "/lovable-uploads/4755188e-0b4e-4dc1-9560-e26b19187d4d.png",
-      "/lovable-uploads/2585e457-92bb-4935-988a-2ba961e8fe45.png"
+      "/lovable-uploads/4755188e-0b4e-4dc1-9560-e26b19187d4d.png"
+      
     ]
   },
   {
