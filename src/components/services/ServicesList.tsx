@@ -69,7 +69,7 @@ const ServicesList = ({ isStandalone = false }: ServicesListProps) => {
               
               <div className="flex flex-col flex-grow">
                 <Link to={`/services/${category.id}`}>
-                  <h3 className="text-2xl font-bold text-inplast-teal hover:underline transition-all mb-4">
+                  <h3 className="text-2xl font-bold text-gray-800 hover:underline transition-all mb-4">
                     {category.title}
                   </h3>
                 </Link>
