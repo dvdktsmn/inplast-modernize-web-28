@@ -1,6 +1,5 @@
 
 import React from 'react';
-import { Link } from 'react-router-dom';
 import StandardGallery from './StandardGallery';
 import DefaultProjectView from './DefaultProjectView';
 
@@ -30,22 +29,12 @@ const ProjectContent = ({ project, index }: ProjectContentProps) => {
     
     return (
       <>
-        <Link to="/projects" className="inline-block">
-          <h3 className="text-2xl font-bold text-inplast-teal mb-1 hover:underline">
-            {project.title}
-          </h3>
-        </Link>
         <StandardGallery galleryImages={combinedImages} />
       </>
     );
   } else if (index === 1 && project.galleryImages) {
     return (
       <>
-        <Link to="/projects" className="inline-block">
-          <h3 className="text-2xl font-bold text-inplast-teal mb-1 hover:underline">
-            {project.title}
-          </h3>
-        </Link>
         <StandardGallery galleryImages={project.galleryImages} />
       </>
     );
@@ -54,11 +43,6 @@ const ProjectContent = ({ project, index }: ProjectContentProps) => {
   // Default for other projects
   return (
     <>
-      <Link to="/projects" className="inline-block">
-        <h3 className="text-2xl font-bold text-inplast-teal mb-1 hover:underline">
-          {project.title}
-        </h3>
-      </Link>
       <DefaultProjectView image={project.image} title={project.title} />
     </>
   );

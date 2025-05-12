@@ -3,6 +3,7 @@ import React, { useState, useEffect, useRef } from 'react';
 import useEmblaCarousel from 'embla-carousel-react';
 import ProjectNavigation from './ProjectNavigation';
 import ProjectContent from './ProjectContent';
+import { Link } from 'react-router-dom';
 
 interface Project {
   title: string;
@@ -129,9 +130,11 @@ const ProjectCarousel = ({ projects }: ProjectCarouselProps) => {
               className={`flex-[0_0_100%] min-w-0 transition-opacity duration-500 ${currentProject === index ? 'opacity-100' : 'opacity-0'}`}
             >
               <div className="bg-white rounded-xl overflow-hidden shadow-lg p-6">
-                <h3 className="text-2xl font-bold text-inplast-teal mb-1">
-                  {project.title}
-                </h3>
+                <Link to="/projects" className="inline-block">
+                  <h3 className="text-2xl font-bold text-inplast-teal mb-1 hover:underline">
+                    {project.title}
+                  </h3>
+                </Link>
                 <p className="text-sm text-gray-500 mb-4">
                   {project.location}
                 </p>
