@@ -1,13 +1,22 @@
 
 import React from 'react';
 import { Button } from "@/components/ui/button";
-import { Link } from 'react-router-dom';
+import { Link, useLocation } from 'react-router-dom';
 
 const Navbar = () => {
+  const location = useLocation();
+  const isHomePage = location.pathname === '/';
+  
   const scrollToSection = (id: string) => {
     const element = document.getElementById(id);
     if (element) {
       element.scrollIntoView({ behavior: 'smooth' });
+    }
+  };
+  
+  const handleNavigation = (sectionId: string) => {
+    if (isHomePage) {
+      scrollToSection(sectionId);
     }
   };
   
@@ -25,16 +34,25 @@ const Navbar = () => {
         </div>
         
         <div className="hidden lg:flex space-x-8">
-          <a 
-            href="/#about" 
-            onClick={(e) => {
-              e.preventDefault();
-              scrollToSection('about');
-            }}
-            className="text-inplast-darkgray hover:text-inplast-teal transition-colors cursor-pointer"
-          >
-            Mission
-          </a>
+          {isHomePage ? (
+            <a 
+              href="/#about" 
+              onClick={(e) => {
+                e.preventDefault();
+                scrollToSection('about');
+              }}
+              className="text-inplast-darkgray hover:text-inplast-teal transition-colors cursor-pointer"
+            >
+              Mission
+            </a>
+          ) : (
+            <Link 
+              to="/" 
+              className="text-inplast-darkgray hover:text-inplast-teal transition-colors cursor-pointer"
+            >
+              Mission
+            </Link>
+          )}
           <Link 
             to="/products"
             className="text-inplast-darkgray hover:text-inplast-teal transition-colors cursor-pointer"
@@ -47,16 +65,25 @@ const Navbar = () => {
           >
             Services
           </Link>
-          <a 
-            href="/#projects" 
-            onClick={(e) => {
-              e.preventDefault();
-              scrollToSection('projects');
-            }}
-            className="text-inplast-darkgray hover:text-inplast-teal transition-colors cursor-pointer"
-          >
-            Projects
-          </a>
+          {isHomePage ? (
+            <a 
+              href="/#projects" 
+              onClick={(e) => {
+                e.preventDefault();
+                scrollToSection('projects');
+              }}
+              className="text-inplast-darkgray hover:text-inplast-teal transition-colors cursor-pointer"
+            >
+              Projects
+            </a>
+          ) : (
+            <Link 
+              to="/projects" 
+              className="text-inplast-darkgray hover:text-inplast-teal transition-colors cursor-pointer"
+            >
+              Projects
+            </Link>
+          )}
           {/*
           <a 
             href="#contact" 
@@ -71,12 +98,20 @@ const Navbar = () => {
           */}
         </div>
         
-        <Button 
-          className="bg-inplast-teal hover:bg-inplast-darkgray text-white"
-          onClick={() => scrollToSection('contact')}
-        >
-          Contact Us
-        </Button>
+        {isHomePage ? (
+          <Button 
+            className="bg-inplast-teal hover:bg-inplast-darkgray text-white"
+            onClick={() => scrollToSection('contact')}
+          >
+            Contact Us
+          </Button>
+        ) : (
+          <Link to="/#contact">
+            <Button className="bg-inplast-teal hover:bg-inplast-darkgray text-white">
+              Contact Us
+            </Button>
+          </Link>
+        )}
       </div>
     </div>
   );
