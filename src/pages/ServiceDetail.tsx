@@ -5,7 +5,7 @@ import { serviceDetails } from '../components/services/ServiceData';
 import Navbar from '../components/Navbar';
 import Footer from '../components/Footer';
 import ServiceCarousel from '../components/services/ServiceCarousel';
-import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from '@/components/ui/accordion';
+import BeforeAfterGallery from '../components/projects/BeforeAfterGallery';
 
 const ServiceDetail = () => {
   const { serviceId } = useParams<{ serviceId: string }>();
@@ -67,6 +67,16 @@ const ServiceDetail = () => {
               </p>
             ))}
           </div>
+          
+          {serviceDetail.id === "overhaul" && serviceDetail.beforeAfterImages && (
+            <div className="mt-8">
+              <h2 className="text-2xl font-bold text-gray-800 mb-4">Before & After Transformation</h2>
+              <BeforeAfterGallery 
+                beforeImages={serviceDetail.beforeAfterImages.before}
+                afterImages={serviceDetail.beforeAfterImages.after}
+              />
+            </div>
+          )}
           
           <div>
             <h2 className="text-2xl font-bold text-gray-800 mb-4">Our Services Include:</h2>
