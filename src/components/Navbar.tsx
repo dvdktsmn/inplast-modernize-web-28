@@ -129,7 +129,9 @@ const Navbar = () => {
               }}
               className="text-inplast-darkgray hover:text-inplast-teal transition-colors cursor-pointer"
             >
+              <Button className="bg-inplast-teal hover:bg-inplast-darkgray text-white">
               Contact Us
+                </Button>
             </a>
           ) : (
           <Link to="/contact">
