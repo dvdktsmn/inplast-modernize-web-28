@@ -1,7 +1,14 @@
 
-import React from 'react';
+import React, { useState } from 'react';
 import { Button } from "@/components/ui/button";
 import { Link, useLocation } from 'react-router-dom';
+import { 
+  DropdownMenu, 
+  DropdownMenuContent, 
+  DropdownMenuItem, 
+  DropdownMenuTrigger 
+} from "@/components/ui/dropdown-menu";
+import { Menu } from 'lucide-react';
 
 const Navbar = () => {
   const location = useLocation();
@@ -124,20 +131,60 @@ const Navbar = () => {
           */}
         </div>
         
-        {isHomePage ? (
-          <Button 
-            className="bg-inplast-teal hover:bg-inplast-darkgray text-white"
-            onClick={() => scrollToSection('contact')}
-          >
-            Contact Us
-          </Button>
-        ) : (
-          <Link to="/#contact">
-            <Button className="bg-inplast-teal hover:bg-inplast-darkgray text-white">
+        <div className="flex items-center space-x-4">
+          {isHomePage ? (
+            <Button 
+              className="bg-inplast-teal hover:bg-inplast-darkgray text-white"
+              onClick={() => scrollToSection('contact')}
+            >
               Contact Us
             </Button>
-          </Link>
-        )}
+          ) : (
+            <Link to="/#contact">
+              <Button className="bg-inplast-teal hover:bg-inplast-darkgray text-white">
+                Contact Us
+              </Button>
+            </Link>
+          )}
+          
+          <DropdownMenu>
+            <DropdownMenuTrigger asChild>
+              <Button variant="outline" size="icon">
+                <Menu className="h-5 w-5" />
+              </Button>
+            </DropdownMenuTrigger>
+            <DropdownMenuContent align="end" className="w-56 bg-white">
+              <DropdownMenuItem>
+                <Link to="/" className="w-full">Home</Link>
+              </DropdownMenuItem>
+              <DropdownMenuItem>
+                <Link to="/products" className="w-full">Products</Link>
+              </DropdownMenuItem>
+              <DropdownMenuItem>
+                <Link to="/services" className="w-full">Services</Link>
+              </DropdownMenuItem>
+              <DropdownMenuItem>
+                <Link to="/projects" className="w-full">Projects</Link>
+              </DropdownMenuItem>
+              <DropdownMenuItem>
+                {isHomePage ? (
+                  <a 
+                    href="#contact" 
+                    onClick={(e) => {
+                      e.preventDefault();
+                      scrollToSection('contact');
+                    }}
+                    className="w-full"
+                  >
+                    Contact
+                  </a>
+                ) : (
+                  <Link to="/#contact" className="w-full">Contact</Link>
+                )}
+              </DropdownMenuItem>
+            </DropdownMenuContent>
+          </DropdownMenu>
+        </div>
       </div>
     </div>
   );
