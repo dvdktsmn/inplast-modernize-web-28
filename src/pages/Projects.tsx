@@ -8,9 +8,20 @@ const ProjectsPage = () => {
   return (
     <div className="min-h-screen flex flex-col">
       <Navbar />
-      <div className="pt-20"> {/* Add padding to account for fixed navbar */}
-        <FeaturedProjects />
-      </div>
+      
+      <main className="flex-grow py-20 pt-24 bg-gray-50">
+        <div className="container mx-auto px-4">
+          <div className="text-center mb-16">
+            <h1 className="text-4xl font-bold text-gray-800 mb-4">Featured Projects</h1>
+            <p className="text-xl text-gray-600 max-w-3xl mx-auto">
+              Explore our completed industrial projects showcasing our expertise across the world.
+            </p>
+          </div>
+
+          <FeaturedProjects />
+        </div>
+      </main>
+      
       <Footer />
     </div>
   );
