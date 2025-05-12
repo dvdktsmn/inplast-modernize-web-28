@@ -74,5 +74,4 @@ export const featuredProjectsData: FeaturedProject[] = [
     images: ["/placeholder.svg", "/placeholder.svg"],
     isLarge: false
   }
-
 ];
