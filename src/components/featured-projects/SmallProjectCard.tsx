@@ -36,41 +36,45 @@ const SmallProjectCard = ({ project }: SmallProjectCardProps) => {
   return (
     <Card className="overflow-hidden hover:shadow-lg transition-shadow">
       {project.images.length > 0 ? (
-        <Carousel className="w-full">
-          <CarouselContent>
-            {imagePairs.map((pair, pairIndex) => (
-              <CarouselItem key={pairIndex} className="basis-full">
-                <div className="flex gap-1">
-                  {pair.map((image, imageIndex) => (
-                    <div key={`${pairIndex}-${imageIndex}`} className="flex-1">
-                      <AspectRatio ratio={16 / 9}>
-                        <img 
-                          src={image} 
-                          alt={`${project.title} - image ${pairIndex * 2 + imageIndex + 1}`} 
-                          className="object-cover w-full h-full"
-                        />
-                      </AspectRatio>
-                    </div>
-                  ))}
-                  {/* If we have a single image in the pair, add an empty div to maintain layout */}
-                  {pair.length === 1 && (
-                    <div className="flex-1">
-                      <AspectRatio ratio={16 / 9}>
-                        <div className="bg-gray-100 w-full h-full"></div>
-                      </AspectRatio>
-                    </div>
-                  )}
-                </div>
-              </CarouselItem>
-            ))}
-          </CarouselContent>
-          {imagePairs.length > 1 && (
-            <div className="absolute z-10 flex items-center justify-between w-full h-full px-2 pointer-events-none">
-              <CarouselPrevious className="relative pointer-events-auto" />
-              <CarouselNext className="relative pointer-events-auto" />
-            </div>
-          )}
-        </Carousel>
+        <div className="relative">
+          <Carousel className="w-full">
+            <CarouselContent>
+              {imagePairs.map((pair, pairIndex) => (
+                <CarouselItem key={pairIndex} className="basis-full">
+                  <div className="flex gap-1">
+                    {pair.map((image, imageIndex) => (
+                      <div key={`${pairIndex}-${imageIndex}`} className="flex-1">
+                        <AspectRatio ratio={16 / 9}>
+                          <img 
+                            src={image} 
+                            alt={`${project.title} - image ${pairIndex * 2 + imageIndex + 1}`} 
+                            className="object-cover w-full h-full"
+                          />
+                        </AspectRatio>
+                      </div>
+                    ))}
+                    {/* If we have a single image in the pair, add an empty div to maintain layout */}
+                    {pair.length === 1 && (
+                      <div className="flex-1">
+                        <AspectRatio ratio={16 / 9}>
+                          <div className="bg-gray-100 w-full h-full"></div>
+                        </AspectRatio>
+                      </div>
+                    )}
+                  </div>
+                </CarouselItem>
+              ))}
+            </CarouselContent>
+            
+            {/* Always show navigation arrows when there are images */}
+            {project.images.length > 0 && (
+              <>
+                <CarouselPrevious className="absolute left-2 top-1/2 -translate-y-1/2 z-10" />
+                <CarouselNext className="absolute right-2 top-1/2 -translate-y-1/2 z-10" />
+              </>
+            )}
+          </Carousel>
+        </div>
       ) : (
         <AspectRatio ratio={16 / 9}>
           <div className="bg-gray-100 w-full h-full"></div>
