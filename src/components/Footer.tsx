@@ -1,5 +1,6 @@
 
 import React from 'react';
+import { Link } from 'react-router-dom';
 
 const Footer = () => {
   const currentYear = new Date().getFullYear();
@@ -22,19 +23,21 @@ const Footer = () => {
           <div>
             <h4 className="text-lg font-semibold text-gray-800 mb-4">Quick Links</h4>
             <ul className="space-y-2">
-              <li><a href="#about" className="text-gray-600 hover:text-inplast-teal transition-colors">About Us</a></li>
-              <li><a href="#services" className="text-gray-600 hover:text-inplast-teal transition-colors">Services</a></li>
-              <li><a href="#contact" className="text-gray-600 hover:text-inplast-teal transition-colors">Contact</a></li>
+              <li><Link to="/" className="text-gray-600 hover:text-inplast-teal transition-colors">Home</Link></li>
+              <li><Link to="/products" className="text-gray-600 hover:text-inplast-teal transition-colors">Products</Link></li>
+              <li><Link to="/services" className="text-gray-600 hover:text-inplast-teal transition-colors">Services</Link></li>
+              <li><Link to="/projects" className="text-gray-600 hover:text-inplast-teal transition-colors">Projects</Link></li>
+              <li><Link to="/contact" className="text-gray-600 hover:text-inplast-teal transition-colors">Contact</Link></li>
             </ul>
           </div>
           
           <div>
             <h4 className="text-lg font-semibold text-gray-800 mb-4">Services</h4>
             <ul className="space-y-2">
-              <li><a href="#" className="text-gray-600 hover:text-inplast-teal transition-colors">Dismantling</a></li>
-              <li><a href="#" className="text-gray-600 hover:text-inplast-teal transition-colors">Packaging</a></li>
-              <li><a href="#" className="text-gray-600 hover:text-inplast-teal transition-colors">Equipment Overhaul</a></li>
-              <li><a href="#" className="text-gray-600 hover:text-inplast-teal transition-colors">Installation</a></li>
+              <li><Link to="/services/overhaul" className="text-gray-600 hover:text-inplast-teal transition-colors">Equipment Overhaul</Link></li>
+              <li><Link to="/services/engineering" className="text-gray-600 hover:text-inplast-teal transition-colors">Engineering & Control Systems</Link></li>
+              <li><Link to="/services/installation" className="text-gray-600 hover:text-inplast-teal transition-colors">Installation & Commissioning</Link></li>
+              <li><Link to="/services/relocation" className="text-gray-600 hover:text-inplast-teal transition-colors">Equipment Relocation</Link></li>
             </ul>
           </div>
           
