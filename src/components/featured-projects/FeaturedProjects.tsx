@@ -15,7 +15,7 @@ const FeaturedProjects = () => {
         {/* Large Projects Section */}
         <div className="mb-16">
           <h2 className="text-2xl font-semibold text-inplast-teal mb-8 border-b pb-2">Major Projects</h2>
-          <div className="space-y-12">
+          <div className="space-y-8">
             {largeProjects.map((project, index) => (
               <LargeProjectCard key={project.id} project={project} reverseLayout={index % 2 !== 0} />
             ))}
