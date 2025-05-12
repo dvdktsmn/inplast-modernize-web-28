@@ -1,3 +1,4 @@
+
 import React, { useState, useEffect, useRef } from 'react';
 import { FeaturedProject } from './ProjectsData';
 import { 
@@ -202,18 +203,18 @@ const LargeProjectCard = ({ project, reverseLayout = false }: LargeProjectCardPr
 
       {/* Full-screen Image Lightbox */}
       <Dialog open={lightboxOpen} onOpenChange={setLightboxOpen}>
-        <DialogContent className="max-w-[95vw] w-[95vw] max-h-[95vh] h-[95vh] p-0 bg-black border-none">
+        <DialogContent className="max-w-[95vw] w-[95vw] max-h-[95vh] h-[95vh] p-0 bg-white border-none">
           <div className="relative w-full h-full flex items-center justify-center">
             <Button 
               variant="outline" 
               size="icon" 
-              className="absolute top-4 right-4 z-50 bg-black/50 hover:bg-black/70 border-none text-white"
+              className="absolute top-4 right-4 z-50 bg-white hover:bg-gray-100 border-gray-300 text-gray-700"
               onClick={() => setLightboxOpen(false)}
             >
               <X className="h-6 w-6" />
             </Button>
             
-            <Carousel className="w-full h-full" setApi={setCarouselApi}>
+            <Carousel className="w-full h-full" setApi={setCarouselApi} opts={{ loop: true }}>
               <CarouselContent className="h-full">
                 {project.images.map((image, index) => (
                   <CarouselItem key={`lightbox-${index}`} className="h-full flex items-center justify-center">
@@ -227,8 +228,8 @@ const LargeProjectCard = ({ project, reverseLayout = false }: LargeProjectCardPr
                   </CarouselItem>
                 ))}
               </CarouselContent>
-              <CarouselPrevious className="left-4 bg-black/50 hover:bg-black/70 border-none text-white" />
-              <CarouselNext className="right-4 bg-black/50 hover:bg-black/70 border-none text-white" />
+              <CarouselPrevious className="left-4 bg-white hover:bg-gray-100 border-gray-300 text-gray-700" />
+              <CarouselNext className="right-4 bg-white hover:bg-gray-100 border-gray-300 text-gray-700" />
             </Carousel>
           </div>
         </DialogContent>
