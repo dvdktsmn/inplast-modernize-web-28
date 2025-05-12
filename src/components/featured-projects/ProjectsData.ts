@@ -58,8 +58,8 @@ export const featuredProjectsData: FeaturedProject[] = [
     title: "Extruder Retrofitting",
     description: "Complete overhaul of heating, cooling, and lubrication systems for a polypropylene extruder.",
     images: [
-      "/lovable-uploads/ff1b2119-4abb-48ea-ad6a-b913342ae6eb.png", 
-      "/lovable-uploads/6a402cc3-f2e6-4dcf-aac5-98513623017f.png"
+      "/lovable-uploads/6a402cc3-f2e6-4dcf-aac5-98513623017f.png",
+      "/lovable-uploads/ff1b2119-4abb-48ea-ad6a-b913342ae6eb.png" 
     ],
     isLarge: false
   },
