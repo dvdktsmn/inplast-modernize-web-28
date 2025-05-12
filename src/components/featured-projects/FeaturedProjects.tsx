@@ -2,7 +2,7 @@
 import React from 'react';
 import LargeProjectCard from './LargeProjectCard';
 import SmallProjectCard from './SmallProjectCard';
-import { projects } from './ProjectsData';
+import { featuredProjectsData } from './ProjectsData';
 
 const FeaturedProjects = () => {
   return (
@@ -15,11 +15,11 @@ const FeaturedProjects = () => {
       </div>
 
       <div className="grid grid-cols-1 md:grid-cols-2 gap-10">
-        {projects.map((project, index) => 
+        {featuredProjectsData.map((project, index) => 
           index === 0 ? (
-            <LargeProjectCard key={index} project={project} index={index} />
+            <LargeProjectCard key={index} project={project} />
           ) : (
-            <SmallProjectCard key={index} project={project} index={index} />
+            <SmallProjectCard key={index} project={project} />
           )
         )}
       </div>
