@@ -12,7 +12,6 @@ import { Badge } from "@/components/ui/badge";
 import { AspectRatio } from "@/components/ui/aspect-ratio";
 import { Button } from "@/components/ui/button";
 import { ChevronDown, ChevronUp } from "lucide-react";
-import { ScrollArea } from "@/components/ui/scroll-area";
 
 interface LargeProjectCardProps {
   project: FeaturedProject;
@@ -105,7 +104,7 @@ const LargeProjectCard = ({ project, reverseLayout = false }: LargeProjectCardPr
           {/* Vertical Image Gallery - follows same side as the carousel above */}
           <div className="md:w-1/2 p-6">
             <h4 className="text-xl font-semibold text-inplast-teal mb-4">Project Gallery</h4>
-            <div className="h-[500px]">
+            <div className="h-auto">
               <Carousel orientation="vertical" className="w-full h-full">
                 <CarouselContent className="h-full">
                   {project.images.map((image, index) => (
@@ -128,63 +127,61 @@ const LargeProjectCard = ({ project, reverseLayout = false }: LargeProjectCardPr
           
           {/* Expanded Text Content - follows same side as the text above */}
           <div className="md:w-1/2 p-6">
-            <ScrollArea className="h-[500px] pr-4">
-              <div className="space-y-6">
-                <section>
-                  <h4 className="text-xl font-semibold text-inplast-teal mb-2">Project Overview</h4>
-                  <p className="text-gray-700">
-                    The {project.title} project represents a significant achievement in industrial equipment 
-                    relocation and modernization. Our team worked diligently to ensure all specifications were 
-                    met while maintaining the highest standards of quality and safety.
-                  </p>
-                </section>
-                
-                <section>
-                  <h4 className="text-xl font-semibold text-inplast-teal mb-2">Technical Challenges</h4>
-                  <p className="text-gray-700">
-                    One of the primary challenges we faced was the complex logistics of transporting sensitive 
-                    equipment across international borders. We developed a comprehensive transportation plan that 
-                    minimized risks and ensured the equipment arrived in optimal condition.
-                  </p>
-                </section>
-                
-                <section>
-                  <h4 className="text-xl font-semibold text-inplast-teal mb-2">Implementation Process</h4>
-                  <p className="text-gray-700">
-                    Our implementation strategy was divided into three phases: disassembly, transport, and 
-                    reinstallation. Each phase was carefully planned and executed by our specialized teams, 
-                    ensuring minimal downtime and maximum efficiency throughout the project lifecycle.
-                  </p>
-                </section>
-                
-                <section>
-                  <h4 className="text-xl font-semibold text-inplast-teal mb-2">Equipment Specifications</h4>
-                  <p className="text-gray-700">
-                    The equipment included cutting-edge technology with precise specifications that required 
-                    expert handling. Our technical team conducted thorough assessments before, during, and 
-                    after relocation to ensure all systems functioned according to manufacturer standards.
-                  </p>
-                </section>
-                
-                <section>
-                  <h4 className="text-xl font-semibold text-inplast-teal mb-2">Client Benefits</h4>
-                  <p className="text-gray-700">
-                    Following project completion, our client experienced a significant increase in production 
-                    efficiency and reduced operational costs. The modernized equipment also improved energy 
-                    efficiency, contributing to the client's sustainability goals and reducing their carbon footprint.
-                  </p>
-                </section>
-                
-                <section>
-                  <h4 className="text-xl font-semibold text-inplast-teal mb-2">Future Considerations</h4>
-                  <p className="text-gray-700">
-                    As part of our commitment to ongoing support, we've developed a maintenance schedule and 
-                    training program for the client's technical staff. This ensures the equipment will continue 
-                    to operate at peak efficiency for years to come, maximizing the return on investment.
-                  </p>
-                </section>
-              </div>
-            </ScrollArea>
+            <div className="space-y-6">
+              <section>
+                <h4 className="text-xl font-semibold text-inplast-teal mb-2">Project Overview</h4>
+                <p className="text-gray-700">
+                  The {project.title} project represents a significant achievement in industrial equipment 
+                  relocation and modernization. Our team worked diligently to ensure all specifications were 
+                  met while maintaining the highest standards of quality and safety.
+                </p>
+              </section>
+              
+              <section>
+                <h4 className="text-xl font-semibold text-inplast-teal mb-2">Technical Challenges</h4>
+                <p className="text-gray-700">
+                  One of the primary challenges we faced was the complex logistics of transporting sensitive 
+                  equipment across international borders. We developed a comprehensive transportation plan that 
+                  minimized risks and ensured the equipment arrived in optimal condition.
+                </p>
+              </section>
+              
+              <section>
+                <h4 className="text-xl font-semibold text-inplast-teal mb-2">Implementation Process</h4>
+                <p className="text-gray-700">
+                  Our implementation strategy was divided into three phases: disassembly, transport, and 
+                  reinstallation. Each phase was carefully planned and executed by our specialized teams, 
+                  ensuring minimal downtime and maximum efficiency throughout the project lifecycle.
+                </p>
+              </section>
+              
+              <section>
+                <h4 className="text-xl font-semibold text-inplast-teal mb-2">Equipment Specifications</h4>
+                <p className="text-gray-700">
+                  The equipment included cutting-edge technology with precise specifications that required 
+                  expert handling. Our technical team conducted thorough assessments before, during, and 
+                  after relocation to ensure all systems functioned according to manufacturer standards.
+                </p>
+              </section>
+              
+              <section>
+                <h4 className="text-xl font-semibold text-inplast-teal mb-2">Client Benefits</h4>
+                <p className="text-gray-700">
+                  Following project completion, our client experienced a significant increase in production 
+                  efficiency and reduced operational costs. The modernized equipment also improved energy 
+                  efficiency, contributing to the client's sustainability goals and reducing their carbon footprint.
+                </p>
+              </section>
+              
+              <section>
+                <h4 className="text-xl font-semibold text-inplast-teal mb-2">Future Considerations</h4>
+                <p className="text-gray-700">
+                  As part of our commitment to ongoing support, we've developed a maintenance schedule and 
+                  training program for the client's technical staff. This ensures the equipment will continue 
+                  to operate at peak efficiency for years to come, maximizing the return on investment.
+                </p>
+              </section>
+            </div>
           </div>
         </div>
       )}
