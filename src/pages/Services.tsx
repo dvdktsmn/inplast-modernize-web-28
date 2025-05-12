@@ -14,13 +14,14 @@ const ServicesPage = () => {
       title: "Complete Equipment Overhaul",
       description: "Restore and modernize your assets. We perform full equipment overhauls to increase longevity, energy efficiency, and operational performance—bringing outdated systems up to today's standards.",
       images: [
-        "/lovable-uploads/ea36f030-bbb3-4a79-9b4d-19773d7a4f0b.png",
-        "/lovable-uploads/d3daa0cf-04fd-4cf1-9b2c-43de5f8b2584.png",
-        "/lovable-uploads/f18a32db-39b1-4f6f-9864-b973b591ee49.png",
-        "/lovable-uploads/c6707c6d-9fb9-4120-a999-876f4136c923.png",
-        "/lovable-uploads/4d009f64-4318-41e1-a401-655154e1c9f0.png",
-        "/lovable-uploads/48a1a098-4ffe-458e-8700-420ccb11f668.png",
-        "/lovable-uploads/76e2c699-612e-4bca-bc82-e4a13aa196e7.png"
+        "/lovable-uploads/68cc1f5f-3a69-40a0-a103-867399eed289.png",
+        "/lovable-uploads/3b0653b5-eb67-44fb-9ccf-b7d0fe8f77d0.png",
+        "/lovable-uploads/8ed38d79-1922-40dd-96e8-e399790a3d96.png",
+        "/lovable-uploads/419a4706-4c5f-4192-866c-44fe76de2ff9.png",
+        "/lovable-uploads/e52ddccb-3501-42dc-a65a-40e7ac740632.png",
+        "/lovable-uploads/c2fc1549-81c9-4c4e-8b4c-f964b765911d.png",
+        "/lovable-uploads/a357439d-7cc2-4384-917a-b9ff4fee2569.png",
+        "/lovable-uploads/5adfd9c1-78e7-46bb-9fcc-614cb352da4b.png"
       ]
     },
     {
