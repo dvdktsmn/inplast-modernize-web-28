@@ -1,4 +1,3 @@
-
 export interface FeaturedProject {
   id: string;
   title: string;
@@ -96,7 +95,10 @@ export const featuredProjectsData: FeaturedProject[] = [
     id: "metalliser-revamping",
     title: "Metalliser Revamp",
     description: "Comprehensive revitalization of an aging metalliser.",
-    images: ["/placeholder.svg", "/placeholder.svg"],
+    images: [
+      "/lovable-uploads/010293e4-1059-43b2-8a41-b7f56abd0649.png", 
+      "/lovable-uploads/af6834c7-d129-43ce-845a-fb3d8e2734c9.png"
+    ],
     isLarge: false
   }
 ];
