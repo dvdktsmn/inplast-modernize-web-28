@@ -5,9 +5,13 @@ import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
 import { Label } from "@/components/ui/label";
 
-const Contact = () => {
+interface ContactProps {
+  isStandalone?: boolean;
+}
+
+const Contact = ({ isStandalone = false }: ContactProps) => {
   return (
-    <section id="contact" className="py-20 bg-white">
+    <section id="contact" className={`py-20 ${isStandalone ? 'bg-gray-50' : 'bg-white'}`}>
       <div className="container mx-auto px-4">
         <div className="text-center mb-16">
           <h2 className="text-3xl font-bold text-gray-800 mb-4">Contact Us</h2>
@@ -49,8 +53,7 @@ const Contact = () => {
           <div className="flex flex-col h-full">
             <div className="flex-1 flex items-center mb-8">
               <img 
-                src = "/placeholder.svg"
-                /*src="/lovable-uploads/129ca3ee-ca07-4fbf-b569-9f108d0b95fd.png" */
+                src="/lovable-uploads/129ca3ee-ca07-4fbf-b569-9f108d0b95fd.png"
                 alt="Manufacturing facility" 
                 className="rounded-lg shadow-xl w-full h-96 object-cover" 
               />

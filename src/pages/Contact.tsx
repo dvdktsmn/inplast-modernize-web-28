@@ -9,7 +9,7 @@ const ContactPage = () => {
     <div className="min-h-screen">
       <Navbar />
       <div className="pt-20">
-        <Contact />
+        <Contact isStandalone={true} />
       </div>
       <Footer />
     </div>
