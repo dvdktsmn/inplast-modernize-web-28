@@ -37,6 +37,12 @@ const Hero = () => {
         <div className="flex flex-col sm:flex-row gap-4 animate-fade-in">
           <Button 
             className="bg-inplast-teal hover:bg-inplast-darkgray text-white px-6 py-4 w-full sm:w-[180px]" 
+            onClick={() => scrollToSection('products')}
+          >
+            Our Products
+          </Button>
+          <Button 
+            className="bg-inplast-teal hover:bg-inplast-darkgray text-white px-6 py-4 w-full sm:w-[180px]" 
             onClick={() => scrollToSection('services')}
           >
             Our Services
