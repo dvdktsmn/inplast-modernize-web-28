@@ -14,7 +14,7 @@ const FeaturedProjects = () => {
       <div className="text-center mb-16">
         <h1 className="text-4xl font-bold text-gray-800 mb-4">Our Projects</h1>
         <p className="text-xl text-gray-600 max-w-3xl mx-auto">
-          Browse our portfolio of successful industrial modernization, relocation, and installation projects from around the world.
+          Discover our portfolio of successful industrial projects from around the world.
         </p>
       </div>
 
