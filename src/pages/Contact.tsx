@@ -56,14 +56,14 @@ const ContactPage = () => {
       
       <main className="flex-grow py-20 pt-24 bg-gray-50">
         <div className="container mx-auto px-4">
-          <div className="text-center mb-16">
+          <div className="text-center mb-8">
             <h1 className="text-4xl font-bold text-gray-800 mb-4">Contact Us</h1>
             <p className="text-xl text-gray-600 max-w-3xl mx-auto">
               Ready to discuss your project? Our engineering experts are ready to help you modernize your production facilities.
             </p>
           </div>
 
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-10 mt-16">
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-10">
             <div className="bg-gray-50 p-8 rounded-lg shadow-md h-full flex flex-col">
               <h3 className="text-2xl font-bold text-gray-800 mb-6">Get In Touch</h3>
               
