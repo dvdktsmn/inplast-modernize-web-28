@@ -19,6 +19,10 @@ const products: Product[] = [
 ];
 
 const ProductCarousel = () => {
+  // Calculate how many rows we need (assuming 4 items per row)
+  const rowCount = Math.ceil(products.length / 4);
+  const rows = Array.from({ length: rowCount }, (_, i) => i);
+  
   return (
     <section id="products" className="py-20 bg-gray-50">
       <div className="container mx-auto px-4">
@@ -31,26 +35,30 @@ const ProductCarousel = () => {
           </p>
         </div>
         <div className="max-w-7xl mx-auto">
-          <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
-            {products.map((product, index) => (
-              <Card key={index} className="border-0 shadow-sm overflow-hidden">
-                <div className="aspect-[4/3] overflow-hidden">
-                  <img
-                    src={product.image}
-                    alt={product.name}
-                    className="w-full h-full object-cover transition-transform duration-300 hover:scale-105"
-                  />
-                </div>
-                <CardContent className="p-4 text-center bg-white">
-                  <Link to="/projects" className="hover:underline">
-                    <h3 className="text-lg font-medium text-inplast-teal">
-                      {product.name}
-                    </h3>
-                  </Link>
-                </CardContent>
-              </Card>
-            ))}
-          </div>
+          {rows.map((rowIndex) => (
+            <div key={`row-${rowIndex}`} className="flex justify-center mb-4">
+              <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
+                {products.slice(rowIndex * 4, (rowIndex + 1) * 4).map((product, index) => (
+                  <Card key={`product-${rowIndex}-${index}`} className="border-0 shadow-sm overflow-hidden">
+                    <div className="aspect-[4/3] overflow-hidden">
+                      <img
+                        src={product.image}
+                        alt={product.name}
+                        className="w-full h-full object-cover transition-transform duration-300 hover:scale-105"
+                      />
+                    </div>
+                    <CardContent className="p-4 text-center bg-white">
+                      <Link to="/projects" className="hover:underline">
+                        <h3 className="text-lg font-medium text-inplast-teal">
+                          {product.name}
+                        </h3>
+                      </Link>
+                    </CardContent>
+                  </Card>
+                ))}
+              </div>
+            </div>
+          ))}
         </div>
       </div>
     </section>
