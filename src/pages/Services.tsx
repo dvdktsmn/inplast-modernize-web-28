@@ -48,11 +48,11 @@ const ServicesPage = () => {
       title: "Equipment Relocation",
       description: "We specialize in the safe and efficient dismantling, relocation and assembly of industrial equipment, including full production lines. Our global project experience ensures your assets arrive safely at their new location.",
       images: [
-        "/lovable-uploads/2e2160f1-1e0e-4120-8ef1-eeea1c4ab067.png",
-        "/lovable-uploads/eee6f781-9dbc-4db7-8c80-3d07b1937711.png",
-        "/lovable-uploads/d1018d24-25f0-4118-ab84-a30d8c5d3b83.png",
-        "/lovable-uploads/ad5f5d26-92e6-4096-98a6-699859421e3f.png",
-        "/lovable-uploads/4feef609-5d90-4401-8274-80e7c09586fd.png"
+        "/lovable-uploads/c22e4bb3-b9fb-43cd-b0f2-550573a5f443.png",
+        "/lovable-uploads/66647945-3588-4d51-9ca0-452fc17469df.png",
+        "/lovable-uploads/768a2ff2-bf72-42c2-84f9-bce62a9cdc34.png",
+        "/lovable-uploads/3d1a36d3-0355-4c6f-bc11-bc36b4d54a2a.png",
+        "/lovable-uploads/0e072492-f758-4d94-8516-a3df563c55d4.png"
       ]
     }
   ];
