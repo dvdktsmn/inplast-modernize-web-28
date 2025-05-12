@@ -103,13 +103,13 @@ export const serviceDetails: ServiceDetails[] = [
       }
     ],
     images: [
-      "/lovable-uploads/37477ea0-fd08-4236-a799-d4edb282d744.png",
-      "/lovable-uploads/6ac5fc62-9f37-48a2-b672-80f564889cc5.png",
-      "/lovable-uploads/4f8a911d-51d1-44fc-a9d3-b22163157dbf.png",
       "/lovable-uploads/d2d69cd4-0766-4486-9a80-b60fc87beae6.png",
-      "/lovable-uploads/af4043e2-9028-40ad-a179-44747b766517.png",
       "/lovable-uploads/d27b654c-f8b6-42c5-8da0-f6b4f1162ccb.png",
-      "/lovable-uploads/600c531c-712d-49aa-82cc-ca5fba294e27.png"
+      "/lovable-uploads/37477ea0-fd08-4236-a799-d4edb282d744.png",
+      "/lovable-uploads/af4043e2-9028-40ad-a179-44747b766517.png",
+      "/lovable-uploads/600c531c-712d-49aa-82cc-ca5fba294e27.png",
+      "/lovable-uploads/6ac5fc62-9f37-48a2-b672-80f564889cc5.png",
+      "/lovable-uploads/4f8a911d-51d1-44fc-a9d3-b22163157dbf.png"
     ]
   },
   {
