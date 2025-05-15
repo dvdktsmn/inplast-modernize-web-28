@@ -1,4 +1,3 @@
-
 import React from 'react';
 import Navbar from '../components/Navbar';
 import Footer from '../components/Footer';
@@ -127,7 +126,6 @@ const ProductsPage = () => {
                         {product.description}
                       </p>
                       <div className="space-y-2">
-                        <h3 className="font-semibold text-gray-800">Key Features:</h3>
                         <ul className="space-y-2">
                           {product.features.map((feature, featureIndex) => (
                             <li key={featureIndex} className="flex items-start">
