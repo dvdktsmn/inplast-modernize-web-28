@@ -11,7 +11,7 @@ interface Product {
 }
 
 const products: Product[] = [
-  { name: "Biax Lines", image: "/lovable-uploads/3c54f29a-ceed-4622-a80e-6ae838235b8f.png" },
+  { name: "Biax Lines", image: "/lovable-uploads/1578a116-7962-49ae-a3ad-3f09928ab06b.png" },
   { name: "Extrusion Systems", image: "/lovable-uploads/69f9e44d-caa4-4361-8d49-190c6120084a.png" },
   { name: "Converting Equipment", image: "/lovable-uploads/f4facf59-8aa8-44a8-a2f3-45407f7dfc4f.png" },
   { name: "Electrical Components and Systems", image: "/lovable-uploads/11e7e270-577f-48ad-b96c-d2396dcd6bc8.png" },
