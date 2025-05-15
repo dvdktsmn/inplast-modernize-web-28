@@ -50,7 +50,7 @@ const Footer = () => {
               */}
               <li><a href="#" className="text-gray-600 hover:text-inplast-teal transition-colors">Visopack</a></li>
               <li><a href="#" className="text-gray-600 hover:text-inplast-teal transition-colors">Moplefan</a></li>
-              <li><a href="#" className="text-gray-600 hover:text-inplast-teal transition-colors">InplastTech</a></li>
+              {/*<li><a href="#" className="text-gray-600 hover:text-inplast-teal transition-colors">InplastTech</a></li>*/}
             </ul>
           </div>
         </div>
