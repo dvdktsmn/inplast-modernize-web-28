@@ -16,78 +16,80 @@ const ProductsPage = () => {
     { 
       name: "Biax Lines", 
       image: "/lovable-uploads/3c54f29a-ceed-4622-a80e-6ae838235b8f.png",
-      description: "Advanced technology for production of biaxially-oriented films with superior mechanical properties.",
+      description: "We support complete installation, overhaul, and modernization of Biax production lines used for manufacturing biaxially oriented films, ensuring precise control, optimal line performance, and energy efficiency.",
       features: [
-        "Multi-layer film production systems",
-        "Automated tension control",
-        "Precision temperature management",
-        "High-speed orientation technology"
+        "Full line relocation, dismantling, and reassembly",
+        "Electrical and control system upgrades",
+        "Motion control improvements",
+        "Energy monitoring and optimization solutions"
       ]
     },
     { 
       name: "Extrusion Systems", 
       image: "/lovable-uploads/69f9e44d-caa4-4361-8d49-190c6120084a.png",
-      description: "Industrial extrusion solutions for plastic processing with exceptional control and productivity.",
+      description: "We provide turnkey installation and upgrade services for extrusion equipment used in plastic film and sheet production, focusing on maintaining performance and extending equipment life.",
       features: [
         "Single and twin-screw extruders",
+        "Mechanical and electrical installation and commissioning",
         "Customizable die systems",
-        "Advanced cooling systems",
-        "Integrated process control"
+        "Retrofitting of extruders with modern control systems",
+        "Complete system condition assessments and refurbishment"
       ]
     },
     { 
       name: "Converting Equipment", 
       image: "/lovable-uploads/f4facf59-8aa8-44a8-a2f3-45407f7dfc4f.png",
-      description: "High-performance converting machinery for efficient material transformation and processing.",
+      description: "We relocate, upgrade, and overhaul converting machinery such as slitters, rewinders, and laminators, enhancing their efficiency, reliability, and integration with downstream systems.",
       features: [
-        "Slitting and rewinding systems",
-        "High-precision cutting machinery",
-        "Multi-layer lamination",
-        "Roll-to-roll processing"
+        "Equipment dismantling and relocation services",
+        "Electrical cabinet modernization and control system upgrades",
+        "SCADA and HMI system implementation for process visibility",
+        "Precision motion control retrofits"
       ]
     },
     { 
       name: "Electrical Components and Systems", 
       image: "/lovable-uploads/11e7e270-577f-48ad-b96c-d2396dcd6bc8.png",
-      description: "Complete electrical solutions integrating sophisticated control systems and power distribution.",
+      description: "We design, install, and upgrade electrical distribution and control systems, supporting safe, reliable, and efficient power delivery across industrial production environments.",
       features: [
-        "Industrial automation components",
-        "Smart control panels",
-        "High-voltage power systems",
+        "Electrical cabinet design and assembly",
+        "Integration of energy efficiency monitoring and reporting",
+        "Retrofitting of legacy systems to current standards",
+        "Full electrical installation for new equipment setups",
         "Safety circuit design"
       ]
     },
     { 
       name: "Motion Control", 
       image: "/lovable-uploads/6075f730-5298-4a9d-a8ae-c4f2a49a4896.png",
-      description: "Precision motion control systems for advanced automation and synchronized industrial processes.",
+      description: "We provide precision motion control solutions for new installations and upgrades, improving the accuracy, speed, and synchronization of industrial machinery.",
       features: [
-        "Servo and stepper motor controls",
-        "Multi-axis synchronization",
-        "Adaptive positioning systems",
-        "High-precision feedback control"
+        "Servo drive and actuator integration",
+        "Motion control system diagnostics and optimization",
+        "Retrofitting outdated motion systems for higher precision",
+        "Complete commissioning and validation"
       ]
     },
     { 
       name: "Software and SCADA Retrofit", 
       image: "/lovable-uploads/547afc9b-beb9-4b1a-b05e-0844c12e35f0.png",
-      description: "Modernization of legacy systems with state-of-the-art supervisory control and data acquisition solutions.",
+      description: "We upgrade and modernize outdated control software and SCADA platforms, providing operators with better control, monitoring, and data insights for improved process efficiency.",
       features: [
-        "Legacy system integration",
+        "Custom software development and control logic upgrades",
         "Real-time monitoring interfaces",
-        "Data analytics and reporting",
-        "Remote access capabilities"
+        "Data integration with existing plant infrastructure",
+        "Operator interface enhancements for ease of use"
       ]
     },
     { 
       name: "MES Systems", 
       image: "/lovable-uploads/2d246b46-3ba2-4cdb-bca5-1e159a6ec659.png",
-      description: "Manufacturing Execution Systems that bridge production planning and control for optimized workflows.",
+      description: "We help implement and integrate MES systems to bridge the gap between production and business systems, providing real-time production monitoring and data-driven decision-making capabilities.",
       features: [
-        "Production tracking and scheduling",
-        "Quality management integration",
-        "Resource allocation optimization",
-        "Performance analytics"
+        "MES installation and configuration",
+        "Integration with SCADA and control systems",
+        "Process and production data reporting",
+        "System validation and operator training"
       ]
     },
   ];
