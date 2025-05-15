@@ -1,3 +1,4 @@
+
 import React from 'react';
 import Navbar from '../components/Navbar';
 import Footer from '../components/Footer';
@@ -12,10 +13,21 @@ interface ProductDetail {
 }
 
 const ProductsPage = () => {
+  // Using the same image paths as defined in ProductCarousel.tsx
+  const productImages = {
+    "Biax Lines": "/lovable-uploads/1578a116-7962-49ae-a3ad-3f09928ab06b.png",
+    "Extrusion Systems": "/lovable-uploads/69f9e44d-caa4-4361-8d49-190c6120084a.png",
+    "Converting Equipment": "/lovable-uploads/f4facf59-8aa8-44a8-a2f3-45407f7dfc4f.png",
+    "Electrical Components and Systems": "/lovable-uploads/11e7e270-577f-48ad-b96c-d2396dcd6bc8.png",
+    "Motion Control": "/lovable-uploads/6075f730-5298-4a9d-a8ae-c4f2a49a4896.png",
+    "Software and SCADA Retrofit": "/lovable-uploads/547afc9b-beb9-4b1a-b05e-0844c12e35f0.png",
+    "MES Systems": "/lovable-uploads/2d246b46-3ba2-4cdb-bca5-1e159a6ec659.png",
+  };
+
   const products: ProductDetail[] = [
     { 
       name: "Biax Lines", 
-      image: "/lovable-uploads/3c54f29a-ceed-4622-a80e-6ae838235b8f.png",
+      image: productImages["Biax Lines"],
       description: "We support complete installation, overhaul, and modernization of Biax production lines used for manufacturing biaxially oriented films, ensuring precise control, optimal line performance, and energy efficiency.",
       features: [
         "Full line relocation, dismantling, and reassembly",
@@ -26,7 +38,7 @@ const ProductsPage = () => {
     },
     { 
       name: "Extrusion Systems", 
-      image: "/lovable-uploads/69f9e44d-caa4-4361-8d49-190c6120084a.png",
+      image: productImages["Extrusion Systems"],
       description: "We provide turnkey installation and upgrade services for extrusion equipment used in plastic film and sheet production, focusing on maintaining performance and extending equipment life.",
       features: [
         "Single and twin-screw extruders",
@@ -38,7 +50,7 @@ const ProductsPage = () => {
     },
     { 
       name: "Converting Equipment", 
-      image: "/lovable-uploads/f4facf59-8aa8-44a8-a2f3-45407f7dfc4f.png",
+      image: productImages["Converting Equipment"],
       description: "We relocate, upgrade, and overhaul converting machinery such as slitters, rewinders, and laminators, enhancing their efficiency, reliability, and integration with downstream systems.",
       features: [
         "Equipment dismantling and relocation services",
@@ -49,7 +61,7 @@ const ProductsPage = () => {
     },
     { 
       name: "Electrical Components and Systems", 
-      image: "/lovable-uploads/11e7e270-577f-48ad-b96c-d2396dcd6bc8.png",
+      image: productImages["Electrical Components and Systems"],
       description: "We design, install, and upgrade electrical distribution and control systems, supporting safe, reliable, and efficient power delivery across industrial production environments.",
       features: [
         "Electrical cabinet design and assembly",
@@ -61,7 +73,7 @@ const ProductsPage = () => {
     },
     { 
       name: "Motion Control", 
-      image: "/lovable-uploads/6075f730-5298-4a9d-a8ae-c4f2a49a4896.png",
+      image: productImages["Motion Control"],
       description: "We provide precision motion control solutions for new installations and upgrades, improving the accuracy, speed, and synchronization of industrial machinery.",
       features: [
         "Servo drive and actuator integration",
@@ -72,7 +84,7 @@ const ProductsPage = () => {
     },
     { 
       name: "Software and SCADA Retrofit", 
-      image: "/lovable-uploads/547afc9b-beb9-4b1a-b05e-0844c12e35f0.png",
+      image: productImages["Software and SCADA Retrofit"],
       description: "We upgrade and modernize outdated control software and SCADA platforms, providing operators with better control, monitoring, and data insights for improved process efficiency.",
       features: [
         "Custom software development and control logic upgrades",
@@ -83,7 +95,7 @@ const ProductsPage = () => {
     },
     { 
       name: "MES Systems", 
-      image: "/lovable-uploads/2d246b46-3ba2-4cdb-bca5-1e159a6ec659.png",
+      image: productImages["MES Systems"],
       description: "We help implement and integrate MES systems to bridge the gap between production and business systems, providing real-time production monitoring and data-driven decision-making capabilities.",
       features: [
         "MES installation and configuration",
