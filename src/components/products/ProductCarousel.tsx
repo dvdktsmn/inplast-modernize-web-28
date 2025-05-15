@@ -79,7 +79,7 @@ const ProductCarousel = () => {
           <div className="flex items-center justify-center">
             <Link to="/products">
               <Button variant="outline" className="text-inplast-teal border-inplast-teal hover:bg-inplast-teal/10">
-                Discover our expertise <ArrowRight className="ml-2" size={16} />
+                Learn more <ArrowRight className="ml-2" size={16} />
               </Button>
             </Link>
           </div>
