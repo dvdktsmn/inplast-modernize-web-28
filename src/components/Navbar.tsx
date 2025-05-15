@@ -57,7 +57,7 @@ const Navbar = () => {
               to="/" 
               className="text-inplast-darkgray hover:text-inplast-teal transition-colors cursor-pointer"
             >
-              Mission
+              Home
             </Link>
           )}
           {isHomePage ? (
