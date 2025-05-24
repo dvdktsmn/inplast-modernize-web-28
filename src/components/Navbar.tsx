@@ -142,7 +142,7 @@ const Navbar = () => {
           )}
           <DropdownMenu>
             <DropdownMenuTrigger asChild>
-              <Button variant="outline" size="icon" className="border-white text-white bg-inplast-orange hover:bg-inplast-blue hover:border-inplast-blue">
+              <Button variant="outline" size="icon" className="border-white text-white bg-inplast-orange border-inplast-orange hover:bg-inplast-blue hover:border-inplast-blue">
                 <Menu className="h-5 w-5" />
               </Button>
             </DropdownMenuTrigger>
