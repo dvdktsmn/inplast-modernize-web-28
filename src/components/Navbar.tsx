@@ -127,7 +127,7 @@ const Navbar = () => {
                 e.preventDefault();
                 scrollToSection('contact');
               }}
-              className="text-white hover:text-inplast-orange transition-colors cursor-pointer"
+              className="text-white hover:text-inplast-orange transition-colors cursor-pointer border-white hover:border-inplast-orange"
             >
               <Button className="bg-inplast-blue hover:bg-inplast-blue text-white hover:text-inplast-orange border-white hover:border-inplast-orange">
               Contact Us
