@@ -129,13 +129,13 @@ const Navbar = () => {
               }}
               className="text-white hover:text-inplast-orange transition-colors cursor-pointer"
             >
-              <Button className="bg-inplast-blue hover:bg-inplast-blue text-white hover:text-inplast-orange">
+              <Button className="bg-inplast-blue hover:bg-inplast-blue text-white hover:text-inplast-orange border-white hover:border-inplast-orange">
               Contact Us
                 </Button>
             </a>
           ) : (
           <Link to="/contact">
-            <Button className="bg-inplast-blue hover:bg-inplast-blue text-white hover:text-inplast-orange">
+            <Button className="bg-inplast-blue hover:bg-inplast-blue text-white hover:text-inplast-orange border-white hover:border-inplast-orange">
               Contact Us
             </Button>
           </Link>
