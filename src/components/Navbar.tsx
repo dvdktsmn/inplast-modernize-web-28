@@ -28,7 +28,7 @@ const Navbar = () => {
   };
   
   return (
-    <div className="fixed top-0 left-0 right-0 bg-white z-50 shadow-md">
+    <div className="fixed top-0 left-0 right-0 bg-inplast-blue z-50 shadow-md">
       <div className="container mx-auto flex justify-between items-center py-2">
         <div className="flex items-center">
           <Link to="/">
@@ -48,14 +48,14 @@ const Navbar = () => {
                 e.preventDefault();
                 scrollToSection('about');
               }}
-              className="text-inplast-darkgray hover:text-inplast-blue transition-colors cursor-pointer"
+              className="text-white hover:text-inplast-orange transition-colors cursor-pointer"
             >
               Mission
             </a>
           ) : (
             <Link 
               to="/" 
-              className="text-inplast-darkgray hover:text-inplast-blue transition-colors cursor-pointer"
+              className="text-white hover:text-inplast-orange transition-colors cursor-pointer"
             >
               Home
             </Link>
@@ -67,14 +67,14 @@ const Navbar = () => {
                 e.preventDefault();
                 scrollToSection('products');
               }}
-              className="text-inplast-darkgray hover:text-inplast-blue transition-colors cursor-pointer"
+              className="text-white hover:text-inplast-orange transition-colors cursor-pointer"
             >
               Products
             </a>
           ) : (
           <Link 
             to="/products"
-            className="text-inplast-darkgray hover:text-inplast-blue transition-colors cursor-pointer"
+            className="text-white hover:text-inplast-orange transition-colors cursor-pointer"
           >
             Products
           </Link>
@@ -86,14 +86,14 @@ const Navbar = () => {
                 e.preventDefault();
                 scrollToSection('services');
               }}
-              className="text-inplast-darkgray hover:text-inplast-blue transition-colors cursor-pointer"
+              className="text-white hover:text-inplast-orange transition-colors cursor-pointer"
             >
               Services
             </a>
           ) : (
           <Link 
             to="/services"
-            className="text-inplast-darkgray hover:text-inplast-blue transition-colors cursor-pointer"
+            className="text-white hover:text-inplast-orange transition-colors cursor-pointer"
           >
             Services
           </Link>
@@ -105,14 +105,14 @@ const Navbar = () => {
                 e.preventDefault();
                 scrollToSection('projects');
               }}
-              className="text-inplast-darkgray hover:text-inplast-blue transition-colors cursor-pointer"
+              className="text-white hover:text-inplast-orange transition-colors cursor-pointer"
             >
               Projects
             </a>
           ) : (
             <Link 
               to="/projects" 
-              className="text-inplast-darkgray hover:text-inplast-blue transition-colors cursor-pointer"
+              className="text-white hover:text-inplast-orange transition-colors cursor-pointer"
             >
               Projects
             </Link>
@@ -127,22 +127,22 @@ const Navbar = () => {
                 e.preventDefault();
                 scrollToSection('contact');
               }}
-              className="text-inplast-darkgray hover:text-inplast-blue transition-colors cursor-pointer"
+              className="text-white hover:text-inplast-orange transition-colors cursor-pointer"
             >
-              <Button className="bg-inplast-blue hover:bg-inplast-orange text-white">
+              <Button className="bg-inplast-orange hover:bg-white hover:text-inplast-blue text-white">
               Contact Us
                 </Button>
             </a>
           ) : (
           <Link to="/contact">
-            <Button className="bg-inplast-blue hover:bg-inplast-orange text-white">
+            <Button className="bg-inplast-orange hover:bg-white hover:text-inplast-blue text-white">
               Contact Us
             </Button>
           </Link>
           )}
           <DropdownMenu>
             <DropdownMenuTrigger asChild>
-              <Button variant="outline" size="icon">
+              <Button variant="outline" size="icon" className="border-white text-white hover:bg-inplast-orange hover:border-inplast-orange">
                 <Menu className="h-5 w-5" />
               </Button>
             </DropdownMenuTrigger>
