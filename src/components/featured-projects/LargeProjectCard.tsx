@@ -87,7 +87,7 @@ const LargeProjectCard = ({ project, reverseLayout = false }: LargeProjectCardPr
         <Button 
           variant="outline" 
           onClick={toggleExpand} 
-          className="w-full max-w-xs text-inplast-teal border-inplast-blue hover:bg-inplast-blue/10"
+          className="w-full max-w-xs text-inplast-blue border-inplast-blue hover:bg-inplast-blue/10"
         >
           {isExpanded ? (
             <>
