@@ -100,7 +100,7 @@ const ContactPage = () => {
                   />
                 </div>
                 
-                <Button type="submit" className="w-full bg-inplast-teal hover:bg-inplast-darkgray text-white">
+                <Button type="submit" className="w-full bg-inplast-blue hover:bg-inplast-darkgray text-white">
                   Send Message
                 </Button>
               </form>
@@ -117,7 +117,7 @@ const ContactPage = () => {
               
               <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
                 <div className="bg-gray-50 p-6 rounded-lg shadow-md">
-                  <h4 className="text-xl font-semibold text-inplast-teal mb-2">Headquarters</h4>
+                  <h4 className="text-xl font-semibold text-inplast-blue mb-2">Headquarters</h4>
                   <p className="text-gray-600">
                     1234 Industry Avenue<br />
                     Warsaw, Poland<br />
@@ -126,7 +126,7 @@ const ContactPage = () => {
                 </div>
                 
                 <div className="bg-gray-50 p-6 rounded-lg shadow-md">
-                  <h4 className="text-xl font-semibold text-inplast-teal mb-2">Contact Info</h4>
+                  <h4 className="text-xl font-semibold text-inplast-blue mb-2">Contact Info</h4>
                   <p className="text-gray-600">
                     Email: info@inplastholding.com<br />
                     Phone: +48 123 456 789

@@ -1,3 +1,4 @@
+
 import React from 'react';
 import Navbar from '../components/Navbar';
 import Footer from '../components/Footer';
@@ -81,7 +82,7 @@ const ServicesPage = () => {
                 
                 <div className="flex flex-col flex-grow">
                   <Link to={`/services/${category.id}`}>
-                    <h3 className="text-2xl font-bold text-inplast-teal hover:underline transition-all mb-4">
+                    <h3 className="text-2xl font-bold text-inplast-blue hover:underline transition-all mb-4">
                       {category.title}
                     </h3>
                   </Link>
@@ -90,7 +91,7 @@ const ServicesPage = () => {
                   
                   <div className="mt-auto">
                     <Link to={`/services/${category.id}`}>
-                      <Button variant="outline" className="text-inplast-teal border-inplast-teal hover:bg-inplast-teal/10">
+                      <Button variant="outline" className="text-inplast-blue border-inplast-blue hover:bg-inplast-blue/10">
                         Learn More <ArrowRight className="ml-2" size={16} />
                       </Button>
                     </Link>
