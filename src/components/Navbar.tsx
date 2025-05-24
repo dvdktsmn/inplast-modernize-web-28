@@ -127,15 +127,15 @@ const Navbar = () => {
                 e.preventDefault();
                 scrollToSection('contact');
               }}
-              className="text-inplast-darkgray hover:text-inplast-teal transition-colors cursor-pointer"
+              className="text-inplast-darkgray hover:text-inplast-blue transition-colors cursor-pointer"
             >
-              <Button className="bg-inplast-teal hover:bg-inplast-darkgray text-white">
+              <Button className="bg-inplast-blue hover:bg-inplast-orange text-white">
               Contact Us
                 </Button>
             </a>
           ) : (
           <Link to="/contact">
-            <Button className="bg-inplast-teal hover:bg-inplast-darkgray text-white">
+            <Button className="bg-inplast-blue hover:bg-inplast-orange text-white">
               Contact Us
             </Button>
           </Link>
