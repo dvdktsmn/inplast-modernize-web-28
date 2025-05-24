@@ -64,9 +64,9 @@ export default {
 					ring: 'hsl(var(--sidebar-ring))'
 				},
 				inplast: {
-					blue: '#2563eb',
-					darkblue: '#1e40af',
-					teal: '#00A4B8', // Color from the Inplast Novex logo
+					blue: '#17345E', // Primary color
+					orange: '#F87116', // Secondary color
+					teal: '#00A4B8', // Keep existing teal for backwards compatibility
 					gray: '#64748b',
 					darkgray: '#334155'
 				}

@@ -14,7 +14,7 @@ const Contact = ({ isStandalone = false }: ContactProps) => {
     <section id="contact" className={`py-20 ${isStandalone ? 'bg-gray-50' : 'bg-white'}`}>
       <div className="container mx-auto px-4">
         <div className="text-center mb-16">
-          <h2 className="text-3xl font-bold text-gray-800 mb-4">Contact Us</h2>
+          <h2 className="text-3xl font-bold text-inplast-blue mb-4">Contact Us</h2>
           <p className="text-xl text-gray-600 max-w-3xl mx-auto">
             Ready to discuss your project? Our engineering experts are ready to help you modernize your production facilities.
           </p>
@@ -22,7 +22,7 @@ const Contact = ({ isStandalone = false }: ContactProps) => {
 
         <div className="grid grid-cols-1 md:grid-cols-2 gap-10 mt-16">
           <div className="bg-gray-50 p-8 rounded-lg shadow-md h-full flex flex-col">
-            <h3 className="text-2xl font-bold text-gray-800 mb-6">Get In Touch</h3>
+            <h3 className="text-2xl font-bold text-inplast-blue mb-6">Get In Touch</h3>
             
             <form className="flex flex-col h-full gap-6">
               <div className="space-y-2">
@@ -44,7 +44,7 @@ const Contact = ({ isStandalone = false }: ContactProps) => {
                 />
               </div>
               
-              <Button type="submit" className="w-full bg-inplast-teal hover:bg-inplast-darkgray text-white">
+              <Button type="submit" className="w-full bg-inplast-blue hover:bg-inplast-orange text-white">
                 Send Message
               </Button>
             </form>
@@ -61,7 +61,7 @@ const Contact = ({ isStandalone = false }: ContactProps) => {
             
             <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
               <div className="bg-gray-50 p-6 rounded-lg shadow-md">
-                <h4 className="text-xl font-semibold text-inplast-teal mb-2">Headquarters</h4>
+                <h4 className="text-xl font-semibold text-inplast-blue mb-2">Headquarters</h4>
                 <p className="text-gray-600">
                   1234 Industry Avenue<br />
                   Warsaw, Poland<br />
@@ -70,7 +70,7 @@ const Contact = ({ isStandalone = false }: ContactProps) => {
               </div>
               
               <div className="bg-gray-50 p-6 rounded-lg shadow-md">
-                <h4 className="text-xl font-semibold text-inplast-teal mb-2">Contact Info</h4>
+                <h4 className="text-xl font-semibold text-inplast-blue mb-2">Contact Info</h4>
                 <p className="text-gray-600">
                   Email: info@inplastholding.com<br />
                   Phone: +48 123 456 789

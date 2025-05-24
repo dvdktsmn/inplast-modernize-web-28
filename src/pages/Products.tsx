@@ -113,7 +113,7 @@ const ProductsPage = () => {
       <main className="flex-grow py-20 pt-24 bg-gray-50">
         <div className="container mx-auto px-4">
           <div className="text-center mb-8">
-            <h1 className="text-4xl font-bold text-gray-800 mb-4">Our Product Expertise</h1>
+            <h1 className="text-4xl font-bold text-inplast-blue mb-4">Our Product Expertise</h1>
             <p className="text-xl text-gray-600 max-w-3xl mx-auto">
               We have extensive experience with a wide range of industrial equipment and systems. 
               Our technical knowledge allows us to deliver comprehensive solutions for diverse manufacturing needs.
@@ -133,7 +133,7 @@ const ProductsPage = () => {
                   </div>
                   <CardContent className="p-6 flex flex-col justify-between">
                     <div>
-                      <h2 className="text-2xl font-bold text-inplast-teal mb-4">
+                      <h2 className="text-2xl font-bold text-inplast-blue mb-4">
                         {product.name}
                       </h2>
                       <p className="text-gray-700 mb-4">
@@ -143,7 +143,7 @@ const ProductsPage = () => {
                         <ul className="space-y-2">
                           {product.features.map((feature, featureIndex) => (
                             <li key={featureIndex} className="flex items-start">
-                              <ArrowRight className="h-5 w-5 text-inplast-teal mr-2 mt-0.5 flex-shrink-0" />
+                              <ArrowRight className="h-5 w-5 text-inplast-orange mr-2 mt-0.5 flex-shrink-0" />
                               <span>{feature}</span>
                             </li>
                           ))}

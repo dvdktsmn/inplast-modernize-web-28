@@ -82,7 +82,7 @@ const SmallProjectCard = ({ project }: SmallProjectCardProps) => {
       )}
       
       <CardHeader className="pb-2">
-        <CardTitle className="text-xl text-inplast-teal">{project.title}</CardTitle>
+        <CardTitle className="text-xl text-inplast-blue">{project.title}</CardTitle>
       </CardHeader>
       
       <CardContent>

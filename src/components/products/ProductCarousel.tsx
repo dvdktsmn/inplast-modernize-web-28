@@ -28,7 +28,7 @@ const ProductCarousel = () => {
   return (
     <div className="container mx-auto px-4">
       <div className="text-center mb-12">
-        <h2 className="text-3xl font-bold text-gray-800 mb-4">
+        <h2 className="text-3xl font-bold text-inplast-blue mb-4">
           Our Know-How Systems and Equipment
         </h2>
         <p className="text-xl text-gray-600 max-w-3xl mx-auto">
@@ -48,7 +48,7 @@ const ProductCarousel = () => {
                 />
               </div>
               <CardContent className="p-4 text-center bg-white">
-                <h3 className="text-lg font-medium text-inplast-teal">
+                <h3 className="text-lg font-medium text-inplast-blue">
                   {product.name}
                 </h3>
               </CardContent>
@@ -68,7 +68,7 @@ const ProductCarousel = () => {
                 />
               </div>
               <CardContent className="p-4 text-center bg-white">
-                <h3 className="text-lg font-medium text-inplast-teal">
+                <h3 className="text-lg font-medium text-inplast-blue">
                   {product.name}
                 </h3>
               </CardContent>
@@ -78,7 +78,7 @@ const ProductCarousel = () => {
           {/* Button in the 4th position - modified to be smaller */}
           <div className="flex items-center justify-center">
             <Link to="/products">
-              <Button variant="outline" className="text-inplast-teal border-inplast-teal hover:bg-inplast-teal/10">
+              <Button variant="outline" className="text-inplast-blue border-inplast-blue hover:bg-inplast-blue/10">
                 Learn more <ArrowRight className="ml-2" size={16} />
               </Button>
             </Link>

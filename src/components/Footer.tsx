@@ -21,36 +21,32 @@ const Footer = () => {
           </div>
           
           <div>
-            <h4 className="text-lg font-semibold text-gray-800 mb-4">Quick Links</h4>
+            <h4 className="text-lg font-semibold text-inplast-blue mb-4">Quick Links</h4>
             <ul className="space-y-2">
-              <li><Link to="/" className="text-gray-600 hover:text-inplast-teal transition-colors">Home</Link></li>
-              <li><Link to="/products" className="text-gray-600 hover:text-inplast-teal transition-colors">Products</Link></li>
-              <li><Link to="/services" className="text-gray-600 hover:text-inplast-teal transition-colors">Services</Link></li>
-              <li><Link to="/projects" className="text-gray-600 hover:text-inplast-teal transition-colors">Projects</Link></li>
-              <li><Link to="/contact" className="text-gray-600 hover:text-inplast-teal transition-colors">Contact</Link></li>
+              <li><Link to="/" className="text-gray-600 hover:text-inplast-orange transition-colors">Home</Link></li>
+              <li><Link to="/products" className="text-gray-600 hover:text-inplast-orange transition-colors">Products</Link></li>
+              <li><Link to="/services" className="text-gray-600 hover:text-inplast-orange transition-colors">Services</Link></li>
+              <li><Link to="/projects" className="text-gray-600 hover:text-inplast-orange transition-colors">Projects</Link></li>
+              <li><Link to="/contact" className="text-gray-600 hover:text-inplast-orange transition-colors">Contact</Link></li>
             </ul>
           </div>
           
           <div>
-            <h4 className="text-lg font-semibold text-gray-800 mb-4">Services</h4>
+            <h4 className="text-lg font-semibold text-inplast-blue mb-4">Services</h4>
             <ul className="space-y-2">
-              <li><Link to="/services/overhaul" className="text-gray-600 hover:text-inplast-teal transition-colors">Complete Equipment Overhaul</Link></li>
-              <li><Link to="/services/engineering" className="text-gray-600 hover:text-inplast-teal transition-colors">Engineering & Control Systems</Link></li>
-              <li><Link to="/services/installation" className="text-gray-600 hover:text-inplast-teal transition-colors">Installation & Commissioning</Link></li>
-              <li><Link to="/services/relocation" className="text-gray-600 hover:text-inplast-teal transition-colors">Equipment Relocation</Link></li>
+              <li><Link to="/services/overhaul" className="text-gray-600 hover:text-inplast-orange transition-colors">Complete Equipment Overhaul</Link></li>
+              <li><Link to="/services/engineering" className="text-gray-600 hover:text-inplast-orange transition-colors">Engineering & Control Systems</Link></li>
+              <li><Link to="/services/installation" className="text-gray-600 hover:text-inplast-orange transition-colors">Installation & Commissioning</Link></li>
+              <li><Link to="/services/relocation" className="text-gray-600 hover:text-inplast-orange transition-colors">Equipment Relocation</Link></li>
             </ul>
           </div>
           
           <div>
-            <h4 className="text-lg font-semibold text-gray-800 mb-4">Group Companies</h4>
+            <h4 className="text-lg font-semibold text-inplast-blue mb-4">Group Companies</h4>
             <ul className="space-y-2">
-              <li><a href="#" className="text-gray-600 hover:text-inplast-teal transition-colors">Inplast Novex</a></li>
-              {/*
-              <li><a href="#" className="text-gray-600 hover:text-inplast-teal transition-colors">Novex</a></li>
-              */}
-              <li><a href="https://visopack.pl" target="_blank" rel="noopener noreferrer" className="text-gray-600 hover:text-inplast-teal transition-colors">Visopack</a></li>
-              <li><a href="https://moplefan-group.com" target="_blank" rel="noopener noreferrer" className="text-gray-600 hover:text-inplast-teal transition-colors">Moplefan</a></li>
-              {/*<li><a href="#" className="text-gray-600 hover:text-inplast-teal transition-colors">InplastTech</a></li>*/}
+              <li><a href="#" className="text-gray-600 hover:text-inplast-orange transition-colors">Inplast Novex</a></li>
+              <li><a href="https://visopack.pl" target="_blank" rel="noopener noreferrer" className="text-gray-600 hover:text-inplast-orange transition-colors">Visopack</a></li>
+              <li><a href="https://moplefan-group.com" target="_blank" rel="noopener noreferrer" className="text-gray-600 hover:text-inplast-orange transition-colors">Moplefan</a></li>
             </ul>
           </div>
         </div>
@@ -61,8 +57,8 @@ const Footer = () => {
           </p>
           
           <div className="flex space-x-4">
-            <a href="#" className="text-gray-600 hover:text-inplast-teal transition-colors">Privacy Policy</a>
-            <a href="#" className="text-gray-600 hover:text-inplast-teal transition-colors">Terms of Service</a>
+            <a href="#" className="text-gray-600 hover:text-inplast-orange transition-colors">Privacy Policy</a>
+            <a href="#" className="text-gray-600 hover:text-inplast-orange transition-colors">Terms of Service</a>
           </div>
         </div>
       </div>

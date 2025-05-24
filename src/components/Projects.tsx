@@ -11,7 +11,7 @@ const Projects = () => {
     <section id="projects" className="py-20 bg-gray-50">
       <div className="container mx-auto px-4">
         <div className="text-center mb-16">
-          <h2 className="text-3xl font-bold text-gray-800 mb-4">Featured Projects</h2>
+          <h2 className="text-3xl font-bold text-inplast-blue mb-4">Featured Projects</h2>
           <p className="text-xl text-gray-600 max-w-3xl mx-auto">
             Explore our successful industrial transformation projects across the globe
           </p>
@@ -21,7 +21,7 @@ const Projects = () => {
         
         <div className="text-center mt-12">
           <Link to="/projects">
-            <Button variant="outline" className="text-inplast-teal border-inplast-teal hover:bg-inplast-teal/10">
+            <Button variant="outline" className="text-inplast-blue border-inplast-blue hover:bg-inplast-blue/10">
               Learn more about our projects <ArrowRight className="ml-2" size={16} />
             </Button>
           </Link>
