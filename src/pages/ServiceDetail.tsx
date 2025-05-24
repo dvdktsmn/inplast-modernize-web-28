@@ -72,7 +72,7 @@ const ServiceDetail = () => {
             <h2 className="text-2xl font-bold text-gray-800 mb-4">Our Services Include:</h2>
             <div className="grid md:grid-cols-2 gap-4">
               {serviceDetail.process.map((item, index) => (
-                <div key={index} className="bg-inplast-orange p-4 rounded-lg">
+                <div key={index} className="bg-gray-50 p-4 rounded-lg">
                   <h3 className="font-bold text-inplast-blue mb-2">{item.title}</h3>
                   <p className="text-gray-700">{item.description}</p>
                 </div>
