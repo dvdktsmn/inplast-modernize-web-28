@@ -106,7 +106,7 @@ const LargeProjectCard = ({ project, reverseLayout = false }: LargeProjectCardPr
         <div className={`border-t border-gray-100 ${reverseLayout ? 'md:flex-row-reverse' : ''} md:flex`}>
           {/* Two-column Image Gallery - follows same side as the carousel above */}
           <div className="md:w-1/2 p-6">
-            <h4 className="text-xl font-semibold text-inplast-teal mb-4">Project Gallery</h4>
+            <h4 className="text-xl font-semibold text-inplast-blue mb-4">Project Gallery</h4>
             <div className="grid grid-cols-2 gap-4">
               {project.images.map((image, index) => (
                 <div 
