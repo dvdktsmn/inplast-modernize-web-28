@@ -73,7 +73,7 @@ const ServiceDetail = () => {
             <div className="grid md:grid-cols-2 gap-4">
               {serviceDetail.process.map((item, index) => (
                 <div key={index} className="bg-gray-50 p-4 rounded-lg">
-                  <h3 className="font-bold text-inplast-teal mb-2">{item.title}</h3>
+                  <h3 className="font-bold text-inplast-blue mb-2">{item.title}</h3>
                   <p className="text-gray-700">{item.description}</p>
                 </div>
               ))}
@@ -94,7 +94,7 @@ const ServiceDetail = () => {
           <div className="bg-white rounded-xl shadow-md overflow-hidden">
             <div className="relative">
               <div className="max-w-5xl mx-auto p-6 lg:p-8">
-                <h1 className="text-3xl md:text-4xl font-bold text-inplast-teal mb-8">
+                <h1 className="text-3xl md:text-4xl font-bold text-inplast-blue mb-8">
                   {serviceDetail.title}
                 </h1>
                 
