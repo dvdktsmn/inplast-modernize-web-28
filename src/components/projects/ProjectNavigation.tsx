@@ -25,7 +25,7 @@ const ProjectNavigation = ({
         variant="outline" 
         size="icon" 
         onClick={goToPrevProject} 
-        className="absolute left-0 top-1/2 -translate-y-1/2 z-10 h-10 w-10 rounded-full -ml-12 bg-white shadow-md hover:bg-inplast-teal hover:text-white"
+        className="absolute left-0 top-1/2 -translate-y-1/2 z-10 h-10 w-10 rounded-full -ml-12 bg-white shadow-md hover:bg-inplast-blue hover:text-white"
       >
         <ArrowLeft className="h-4 w-4" />
         <span className="sr-only">Previous project</span>
@@ -35,7 +35,7 @@ const ProjectNavigation = ({
       <Button 
         variant="outline" 
         size="icon" 
-        className="absolute right-0 top-1/2 -translate-y-1/2 z-10 h-10 w-10 rounded-full -mr-12 bg-white shadow-md hover:bg-inplast-teal hover:text-white" 
+        className="absolute right-0 top-1/2 -translate-y-1/2 z-10 h-10 w-10 rounded-full -mr-12 bg-white shadow-md hover:bg-inplast-blue hover:text-white" 
         onClick={goToNextProject}
       >
         <ArrowRight className="h-4 w-4" />
@@ -51,7 +51,7 @@ const ProjectNavigation = ({
               onClick={() => handleProjectChange(index)} 
               className={`w-3 h-3 rounded-full transition-all ${
                 currentProject === index 
-                  ? 'bg-inplast-teal scale-125' 
+                  ? 'bg-inplast-blue scale-125' 
                   : 'bg-gray-300 hover:bg-gray-400'
               }`} 
               aria-label={`Go to project ${index + 1}`} 

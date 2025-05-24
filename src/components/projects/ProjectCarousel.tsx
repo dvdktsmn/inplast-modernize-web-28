@@ -131,7 +131,7 @@ const ProjectCarousel = ({ projects }: ProjectCarouselProps) => {
             >
               <div className="bg-white rounded-xl overflow-hidden shadow-lg p-6">
                 <Link to="/projects" className="inline-block">
-                  <h3 className="text-2xl font-bold text-inplast-teal mb-1 hover:underline">
+                  <h3 className="text-2xl font-bold text-inplast-blue mb-1 hover:underline">
                     {project.title}
                   </h3>
                 </Link>
