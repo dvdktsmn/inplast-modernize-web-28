@@ -129,20 +129,20 @@ const Navbar = () => {
               }}
               className="text-white hover:text-inplast-orange transition-colors cursor-pointer"
             >
-              <Button className="bg-inplast-blue hover:bg-inplast-orange text-white">
+              <Button className="bg-inplast-blue hover:bg-inplast-blue text-white hover:text-inplast-orange">
               Contact Us
                 </Button>
             </a>
           ) : (
           <Link to="/contact">
-            <Button className="bg-inplast-blue hover:bg-inplast-orange text-white">
+            <Button className="bg-inplast-blue hover:bg-inplast-blue text-white hover:text-inplast-orange">
               Contact Us
             </Button>
           </Link>
           )}
           <DropdownMenu>
             <DropdownMenuTrigger asChild>
-              <Button variant="outline" size="icon" className="border-white text-white hover:bg-inplast-orange hover:border-inplast-orange">
+              <Button variant="outline" size="icon" className="border-white text-white hover:bg-inplast-blue hover:border-inplast-blue">
                 <Menu className="h-5 w-5" />
               </Button>
             </DropdownMenuTrigger>
