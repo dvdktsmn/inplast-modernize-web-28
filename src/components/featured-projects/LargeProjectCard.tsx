@@ -71,7 +71,7 @@ const LargeProjectCard = ({ project, reverseLayout = false }: LargeProjectCardPr
         {/* Project details - 50% width on desktop, full width on mobile */}
         <div className="p-6 md:p-8 md:w-1/2">
           <div className="mb-4">
-            <h3 className="text-3xl font-bold text-inplast-teal">{project.title}</h3>
+            <h3 className="text-3xl font-bold text-inplast-blue">{project.title}</h3>
           </div>
           
           <div className="flex items-center mb-6">
@@ -87,7 +87,7 @@ const LargeProjectCard = ({ project, reverseLayout = false }: LargeProjectCardPr
         <Button 
           variant="outline" 
           onClick={toggleExpand} 
-          className="w-full max-w-xs text-inplast-teal border-inplast-teal hover:bg-inplast-teal/10"
+          className="w-full max-w-xs text-inplast-teal border-inplast-blue hover:bg-inplast-blue/10"
         >
           {isExpanded ? (
             <>
@@ -133,7 +133,7 @@ const LargeProjectCard = ({ project, reverseLayout = false }: LargeProjectCardPr
                 // Original content for BOPP line relocation project
                 <>
                   <section>
-                    <h4 className="text-xl font-semibold text-inplast-teal mb-2">Initial Condition Assessment</h4>
+                    <h4 className="text-xl font-semibold text-inplast-blue mb-2">Initial Condition Assessment</h4>
                     <p className="text-gray-700">
                       The project began with a detailed technical inspection of the BOPP line at its original site. 
                       The team evaluated the condition of extruders, chill rolls, T-dies, tenter frames, rewinders, 
@@ -144,7 +144,7 @@ const LargeProjectCard = ({ project, reverseLayout = false }: LargeProjectCardPr
                   </section>
                   
                   <section>
-                    <h4 className="text-xl font-semibold text-inplast-teal mb-2">Dismantling and Transportation Logistics</h4>
+                    <h4 className="text-xl font-semibold text-inplast-blue mb-2">Dismantling and Transportation Logistics</h4>
                     <p className="text-gray-700">
                       Following the assessment, the team conducted a structured dismantling process. Over 1,200 mechanical, 
                       electrical, and control system components were carefully removed, labeled, and packed. Particular attention 
@@ -156,7 +156,7 @@ const LargeProjectCard = ({ project, reverseLayout = false }: LargeProjectCardPr
                   </section>
                   
                   <section>
-                    <h4 className="text-xl font-semibold text-inplast-teal mb-2">Repairs, Refurbishment and Upgrades at the New Site</h4>
+                    <h4 className="text-xl font-semibold text-inplast-blue mb-2">Repairs, Refurbishment and Upgrades at the New Site</h4>
                     <p className="text-gray-700">
                       Upon arrival at the new facility, the team carried out the planned refurbishment. Worn and obsolete components 
                       were replaced, and mechanical alignments were re-established. Electrical and safety systems were brought up to 
@@ -166,7 +166,7 @@ const LargeProjectCard = ({ project, reverseLayout = false }: LargeProjectCardPr
                   </section>
                   
                   <section>
-                    <h4 className="text-xl font-semibold text-inplast-teal mb-2">Assembly and Software Modernization</h4>
+                    <h4 className="text-xl font-semibold text-inplast-blue mb-2">Assembly and Software Modernization</h4>
                     <p className="text-gray-700">
                       The line was reassembled by the team with precision to restore full functionality. Controls engineers 
                       installed updated PLC and SCADA systems, adding new diagnostics, improved process controls, and modern 
@@ -176,7 +176,7 @@ const LargeProjectCard = ({ project, reverseLayout = false }: LargeProjectCardPr
                   </section>
                   
                   <section>
-                    <h4 className="text-xl font-semibold text-inplast-teal mb-2">Commissioning and Performance Optimization</h4>
+                    <h4 className="text-xl font-semibold text-inplast-blue mb-2">Commissioning and Performance Optimization</h4>
                     <p className="text-gray-700">
                       The commissioning phase included a systematic approach to testing each component and system. Initial runs were 
                       conducted to verify film thickness accuracy, material strength, and quality consistency. The team worked closely 
@@ -185,7 +185,7 @@ const LargeProjectCard = ({ project, reverseLayout = false }: LargeProjectCardPr
                   </section>
                   
                   <section>
-                    <h4 className="text-xl font-semibold text-inplast-teal mb-2">Training and Knowledge Transfer</h4>
+                    <h4 className="text-xl font-semibold text-inplast-blue mb-2">Training and Knowledge Transfer</h4>
                     <p className="text-gray-700">
                       The final phase involved training the client's operational and maintenance staff. The team provided instructions
                       and practical, on-machine training. Topics included safe operation, 
@@ -199,32 +199,32 @@ const LargeProjectCard = ({ project, reverseLayout = false }: LargeProjectCardPr
                 project.expandedContent && (
                   <>
                     <section>
-                      <h4 className="text-xl font-semibold text-inplast-teal mb-2">Initial Assessment and Planning</h4>
+                      <h4 className="text-xl font-semibold text-inplast-blue mb-2">Initial Assessment and Planning</h4>
                       <p className="text-gray-700">{project.expandedContent.initialAssessment}</p>
                     </section>
                     
                     <section>
-                      <h4 className="text-xl font-semibold text-inplast-teal mb-2">Implementation Strategy</h4>
+                      <h4 className="text-xl font-semibold text-inplast-blue mb-2">Implementation Strategy</h4>
                       <p className="text-gray-700">{project.expandedContent.implementation}</p>
                     </section>
                     
                     <section>
-                      <h4 className="text-xl font-semibold text-inplast-teal mb-2">Challenges Encountered</h4>
+                      <h4 className="text-xl font-semibold text-inplast-blue mb-2">Challenges Encountered</h4>
                       <p className="text-gray-700">{project.expandedContent.challenges}</p>
                     </section>
                     
                     <section>
-                      <h4 className="text-xl font-semibold text-inplast-teal mb-2">Solutions Developed</h4>
+                      <h4 className="text-xl font-semibold text-inplast-blue mb-2">Solutions Developed</h4>
                       <p className="text-gray-700">{project.expandedContent.solutions}</p>
                     </section>
                     
                     <section>
-                      <h4 className="text-xl font-semibold text-inplast-teal mb-2">Results and Improvements</h4>
+                      <h4 className="text-xl font-semibold text-inplast-blue mb-2">Results and Improvements</h4>
                       <p className="text-gray-700">{project.expandedContent.results}</p>
                     </section>
                     
                     <section>
-                      <h4 className="text-xl font-semibold text-inplast-teal mb-2">Conclusion and Impact</h4>
+                      <h4 className="text-xl font-semibold text-inplast-blue mb-2">Conclusion and Impact</h4>
                       <p className="text-gray-700">{project.expandedContent.conclusion}</p>
                     </section>
                   </>
