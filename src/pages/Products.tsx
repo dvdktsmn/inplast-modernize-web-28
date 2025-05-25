@@ -124,7 +124,7 @@ const ProductsPage = () => {
             {products.map((product, index) => (
               <Card key={index} className="border-0 shadow-md overflow-hidden h-full">
                 <div className="grid grid-cols-1 h-full">
-                  <div className="overflow-hidden h-64">
+                  <div className="overflow-hidden aspect-video">
                     <img
                       src={product.image}
                       alt={product.name}
