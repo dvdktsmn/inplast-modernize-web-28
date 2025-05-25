@@ -11,13 +11,13 @@ interface Product {
 }
 
 const products: Product[] = [
-  { name: "Biax Lines", image: "/lovable-uploads/1578a116-7962-49ae-a3ad-3f09928ab06b.png" },
-  { name: "Extrusion Systems", image: "/lovable-uploads/69f9e44d-caa4-4361-8d49-190c6120084a.png" },
-  { name: "Converting Equipment", image: "/lovable-uploads/f4facf59-8aa8-44a8-a2f3-45407f7dfc4f.png" },
-  { name: "Electrical Components and Systems", image: "/lovable-uploads/11e7e270-577f-48ad-b96c-d2396dcd6bc8.png" },
-  { name: "Motion Control", image: "/lovable-uploads/6075f730-5298-4a9d-a8ae-c4f2a49a4896.png" },
-  { name: "Software and SCADA Retrofit", image: "/lovable-uploads/547afc9b-beb9-4b1a-b05e-0844c12e35f0.png" },
-  { name: "MES Systems", image: "/lovable-uploads/2d246b46-3ba2-4cdb-bca5-1e159a6ec659.png" },
+  { name: "Biax Lines", image: "/lovable-uploads/14e9bd31-4fd9-4558-9a4b-731f44fce6e2.png" },
+  { name: "Extrusion Systems", image: "/lovable-uploads/3ff7b214-9963-4cd2-96d0-b11838885c28.png" },
+  { name: "Converting Equipment", image: "/lovable-uploads/de929fe4-b5a4-4a48-8301-454cbd7bea35.png" },
+  { name: "Electrical Components and Systems", image: "/lovable-uploads/371c6472-159f-41b3-a97b-4abeff5ccde6.png" },
+  { name: "Motion Control", image: "/lovable-uploads/87f7cb49-1a26-4ce0-82e7-5819631a0cd1.png" },
+  { name: "Software and SCADA Retrofit", image: "/lovable-uploads/d946c718-e590-4932-9e9a-45e34a43ae11.png" },
+  { name: "MES Systems", image: "/placeholder.svg" },
 ];
 
 const ProductCarousel = () => {
