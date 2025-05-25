@@ -50,14 +50,14 @@ const Navbar = () => {
               }}
               className="text-white hover:text-inplast-orange transition-colors cursor-pointer"
             >
-              Mission
+              Миссия
             </a>
           ) : (
             <Link 
               to="/" 
               className="text-white hover:text-inplast-orange transition-colors cursor-pointer"
             >
-              Home
+              Главная
             </Link>
           )}
           {isHomePage ? (
@@ -69,14 +69,14 @@ const Navbar = () => {
               }}
               className="text-white hover:text-inplast-orange transition-colors cursor-pointer"
             >
-              Products
+              Продукция
             </a>
           ) : (
           <Link 
             to="/products"
             className="text-white hover:text-inplast-orange transition-colors cursor-pointer"
           >
-            Products
+            Продукция
           </Link>
           )}
           {isHomePage ? (
@@ -88,14 +88,14 @@ const Navbar = () => {
               }}
               className="text-white hover:text-inplast-orange transition-colors cursor-pointer"
             >
-              Services
+              Услуги
             </a>
           ) : (
           <Link 
             to="/services"
             className="text-white hover:text-inplast-orange transition-colors cursor-pointer"
           >
-            Services
+            Услуги
           </Link>
           )}
           {isHomePage ? (
@@ -107,14 +107,14 @@ const Navbar = () => {
               }}
               className="text-white hover:text-inplast-orange transition-colors cursor-pointer"
             >
-              Projects
+              Проекты
             </a>
           ) : (
             <Link 
               to="/projects" 
               className="text-white hover:text-inplast-orange transition-colors cursor-pointer"
             >
-              Projects
+              Проекты
             </Link>
           )}
         </div>
@@ -130,13 +130,13 @@ const Navbar = () => {
               className="text-white hover:text-inplast-orange transition-colors cursor-pointer border-white hover:border-inplast-orange"
             >
               <Button className="bg-inplast-blue hover:bg-inplast-blue text-white hover:text-inplast-orange border-white hover:border-inplast-orange">
-              Contact Us
+              Связаться с нами
                 </Button>
             </a>
           ) : (
           <Link to="/contact">
             <Button className="bg-inplast-blue hover:bg-inplast-blue text-white hover:text-inplast-orange border-white hover:border-inplast-orange">
-              Contact Us
+              Связаться с нами
             </Button>
           </Link>
           )}
@@ -148,19 +148,19 @@ const Navbar = () => {
             </DropdownMenuTrigger>
             <DropdownMenuContent align="end" className="w-56 bg-white">
               <DropdownMenuItem>
-                <Link to="/" className="w-full">Home</Link>
+                <Link to="/" className="w-full">Главная</Link>
               </DropdownMenuItem>
               <DropdownMenuItem>
-                <Link to="/products" className="w-full">Products</Link>
+                <Link to="/products" className="w-full">Продукция</Link>
               </DropdownMenuItem>
               <DropdownMenuItem>
-                <Link to="/services" className="w-full">Services</Link>
+                <Link to="/services" className="w-full">Услуги</Link>
               </DropdownMenuItem>
               <DropdownMenuItem>
-                <Link to="/projects" className="w-full">Projects</Link>
+                <Link to="/projects" className="w-full">Проекты</Link>
               </DropdownMenuItem>
               <DropdownMenuItem>
-                <Link to="/contact" className="w-full">Contact</Link>
+                <Link to="/contact" className="w-full">Контакты</Link>
               </DropdownMenuItem>
             </DropdownMenuContent>
           </DropdownMenu>
