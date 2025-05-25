@@ -99,7 +99,7 @@ export const featuredProjectsData: FeaturedProject[] = [
     description: "Implementation of new high-efficiency motors and drives, control and SCADA systems.",
     images: [
       
-      "/lovable-uploads/53726012-eb6d-4113-a052-78a0952b83e9.png",
+      
       "/lovable-uploads/6864dcf5-bd5d-4ad8-b67c-35a2ef6b4492.png",
       "/lovable-uploads/f0d79ea5-1ec0-4fa1-a72a-8cac6dd293c8.png",
       "/lovable-uploads/374392c1-66d1-4c15-a8cc-017e405f2547.png",
@@ -107,7 +107,8 @@ export const featuredProjectsData: FeaturedProject[] = [
       "/lovable-uploads/238aaba2-eeb1-4d52-ba98-2cca0d50ae40.png",
       "/lovable-uploads/51fd588d-3809-47da-8365-5d016dcb1223.png",
       "/lovable-uploads/8d75fba7-0633-4b04-a60c-dc13f97ebcbe.png",
-      "/lovable-uploads/3372da09-4199-48b3-889e-dcd4d92501f5.png"
+      "/lovable-uploads/3372da09-4199-48b3-889e-dcd4d92501f5.png",
+      "/lovable-uploads/53726012-eb6d-4113-a052-78a0952b83e9.png"
       
     ],
     isLarge: false
