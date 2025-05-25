@@ -1,3 +1,4 @@
+
 import React from 'react';
 import { Button } from "@/components/ui/button";
 
@@ -24,33 +25,33 @@ const Hero = () => {
       <div className="relative z-10 flex flex-col justify-center items-center h-full container mx-auto text-center px-4 py-8">
         <img 
           src="/lovable-uploads/99a847fd-71f3-4e06-a241-fb9739d1979b.png" 
-          alt="Inplast Novex Logo" 
+          alt="Логотип Inplast Novex" 
           className="h-16 md:h-20 mb-6 animate-fade-in" 
         />
         <h2 className="text-xl md:text-2xl font-medium text-white mb-4 animate-fade-in">
-          Innovation, Engineering, Excellence
+          Инновации, Инжиниринг, Превосходство
         </h2>
         <p className="text-base md:text-lg text-white max-w-2xl mb-8 animate-fade-in">
-          Comprehensive industrial solutions for equipment upgrades, relocation and commissioning
+          Комплексные промышленные решения для модернизации, перемещения и ввода в эксплуатацию оборудования
         </p>
         <div className="flex flex-col sm:flex-row gap-4 animate-fade-in">
           <Button 
             className="bg-inplast-blue hover:bg-inplast-orange text-white px-6 py-4 w-full sm:w-[180px]" 
             onClick={() => scrollToSection('products')}
           >
-            Equipment Expertise
+            Экспертиза оборудования
           </Button>
           <Button 
             className="bg-inplast-blue hover:bg-inplast-orange text-white px-6 py-4 w-full sm:w-[180px]" 
             onClick={() => scrollToSection('services')}
           >
-            Our Services
+            Наши услуги
           </Button>
           <Button 
             className="bg-inplast-blue hover:bg-inplast-orange text-white px-6 py-4 w-full sm:w-[180px]" 
             onClick={() => scrollToSection('projects')}
           >
-            Project Highlights
+            Ключевые проекты
           </Button>
         </div>
       </div>

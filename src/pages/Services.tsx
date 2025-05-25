@@ -11,19 +11,18 @@ const ServicesPage = () => {
   const serviceCategories = [
     {
       id: "overhaul",
-      title: "Equipment Restoration and Upgrade",
-      description: "Restore and modernize your assets. We perform full equipment overhauls to increase longevity, energy efficiency, and operational performance—bringing outdated systems up to today's standards.",
+      title: "Восстановление и модернизация оборудования",
+      description: "Восстановите и модернизируйте ваши активы. Мы выполняем полный капитальный ремонт оборудования для увеличения долговечности, энергоэффективности и операционной производительности — приводя устаревшие системы в соответствие с современными стандартами.",
       images: [
         "/lovable-uploads/2585e457-92bb-4935-988a-2ba961e8fe45.png",
         "/lovable-uploads/ab933664-5aaf-4814-9d9d-4e20cb1782b8.png",
         "/lovable-uploads/0f867536-23a9-44c5-b5ff-0ffee7b38a17.png"
-        
       ]
     },
     {
       id: "engineering",
-      title: "Engineering and Control Systems Upgrade",
-      description: "From design to deployment, our electrical engineering solutions support the safe, smart, and scalable control of your production infrastructure, enhancing efficiency and reducing downtime.",
+      title: "Инжиниринг и модернизация систем управления",
+      description: "От проектирования до внедрения, наши решения электротехнического инжиниринга поддерживают безопасное, интеллектуальное и масштабируемое управление вашей производственной инфраструктурой, повышая эффективность и сокращая простои.",
       images: [
         "/lovable-uploads/1dc4c4dc-881f-465a-b970-fd69ac5845e2.png",
         "/lovable-uploads/99933b14-caab-4d71-8acb-e9670b38d1cf.png",
@@ -33,8 +32,8 @@ const ServicesPage = () => {
     },
     {
       id: "installation",
-      title: "Installation and Commissioning",
-      description: "Ensure seamless operation from day one. Our experts manage the installation and commissioning process end-to-end, offering localized support and global experience.",
+      title: "Установка и ввод в эксплуатацию",
+      description: "Обеспечьте безупречную работу с первого дня. Наши эксперты управляют процессом установки и ввода в эксплуатацию от начала до конца, предлагая локализованную поддержку и глобальный опыт.",
       images: [
         "/lovable-uploads/8527f32f-6f15-4f6b-9bb2-baec7fd5b497.png",
         "/lovable-uploads/2cbd6041-5819-4f3c-afe9-162b2080c7b7.png",
@@ -45,16 +44,16 @@ const ServicesPage = () => {
     },
     {
       id: "relocation",
-      title: "Equipment Relocation",
-      description: "We specialize in the safe and efficient dismantling, relocation and assembly of industrial equipment, including full production lines. Our global project experience ensures your assets arrive safely at their new location.",
+      title: "Перемещение оборудования",
+      description: "Мы специализируемся на безопасном и эффективном демонтаже, перемещении и сборке промышленного оборудования, включая полные производственные линии. Наш глобальный проектный опыт обеспечивает безопасную доставку ваших активов в новое место.",
       images: [
         "/lovable-uploads/d2d69cd4-0766-4486-9a80-b60fc87beae6.png",
-      "/lovable-uploads/d27b654c-f8b6-42c5-8da0-f6b4f1162ccb.png",
-      "/lovable-uploads/37477ea0-fd08-4236-a799-d4edb282d744.png",
-      "/lovable-uploads/af4043e2-9028-40ad-a179-44747b766517.png",
-      "/lovable-uploads/600c531c-712d-49aa-82cc-ca5fba294e27.png",
-      "/lovable-uploads/6ac5fc62-9f37-48a2-b672-80f564889cc5.png",
-      "/lovable-uploads/4f8a911d-51d1-44fc-a9d3-b22163157dbf.png"
+        "/lovable-uploads/d27b654c-f8b6-42c5-8da0-f6b4f1162ccb.png",
+        "/lovable-uploads/37477ea0-fd08-4236-a799-d4edb282d744.png",
+        "/lovable-uploads/af4043e2-9028-40ad-a179-44747b766517.png",
+        "/lovable-uploads/600c531c-712d-49aa-82cc-ca5fba294e27.png",
+        "/lovable-uploads/6ac5fc62-9f37-48a2-b672-80f564889cc5.png",
+        "/lovable-uploads/4f8a911d-51d1-44fc-a9d3-b22163157dbf.png"
       ]
     }
   ];
@@ -66,9 +65,9 @@ const ServicesPage = () => {
       <main className="flex-grow py-20 pt-24 bg-gray-50">
         <div className="container mx-auto px-4">
           <div className="text-center mb-8">
-            <h1 className="text-4xl font-bold text-gray-800 mb-4">Our Services</h1>
+            <h1 className="text-4xl font-bold text-gray-800 mb-4">Наши услуги</h1>
             <p className="text-xl text-gray-600 max-w-3xl mx-auto">
-              Our comprehensive range of industrial services spans from equipment obsolete parts replacement and upgrading to full production line installation and turnkey projects.
+              Наш комплексный спектр промышленных услуг охватывает от замены устаревших деталей оборудования и модернизации до установки полных производственных линий и реализации проектов "под ключ".
            </p>
           </div>
 
@@ -91,7 +90,7 @@ const ServicesPage = () => {
                   <div className="mt-auto">
                     <Link to={`/services/${category.id}`}>
                       <Button variant="outline" className="text-inplast-blue border-inplast-blue hover:bg-inplast-blue/10">
-                        Learn More <ArrowRight className="ml-2" size={16} />
+                        Узнать больше <ArrowRight className="ml-2" size={16} />
                       </Button>
                     </Link>
                   </div>

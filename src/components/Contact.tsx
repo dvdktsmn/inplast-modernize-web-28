@@ -25,8 +25,8 @@ const Contact = ({ isStandalone = false }: ContactProps) => {
     // Basic validation
     if (!name.trim() || !email.trim() || !message.trim()) {
       toast({
-        title: "Error",
-        description: "Please fill out all required fields",
+        title: "Ошибка",
+        description: "Пожалуйста, заполните все обязательные поля",
         variant: "destructive",
       });
       return;
@@ -36,8 +36,8 @@ const Contact = ({ isStandalone = false }: ContactProps) => {
     const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
     if (!emailRegex.test(email)) {
       toast({
-        title: "Error",
-        description: "Please enter a valid email address",
+        title: "Ошибка",
+        description: "Пожалуйста, введите корректный адрес электронной почты",
         variant: "destructive",
       });
       return;
@@ -50,7 +50,7 @@ const Contact = ({ isStandalone = false }: ContactProps) => {
       const templateParams = {
         from_name: name,
         from_email: email,
-        telephone: telephone || 'Not provided',
+        telephone: telephone || 'Не указан',
         message: message,
         to_email: 'dvdktsmn@gmail.com'
       };
@@ -63,8 +63,8 @@ const Contact = ({ isStandalone = false }: ContactProps) => {
       );
       
       toast({
-        title: "Success",
-        description: "Your message has been sent. We'll get back to you soon!",
+        title: "Успешно",
+        description: "Ваше сообщение отправлено. Мы свяжемся с вами в ближайшее время!",
       });
       
       // Reset form
@@ -75,8 +75,8 @@ const Contact = ({ isStandalone = false }: ContactProps) => {
     } catch (error) {
       console.error('Email sending failed:', error);
       toast({
-        title: "Error",
-        description: "Failed to send message. Please try again later.",
+        title: "Ошибка",
+        description: "Не удалось отправить сообщение. Пожалуйста, попробуйте позже.",
         variant: "destructive",
       });
     } finally {
@@ -88,30 +88,30 @@ const Contact = ({ isStandalone = false }: ContactProps) => {
     <section id="contact" className={`py-20 ${isStandalone ? 'bg-gray-50' : 'bg-white'}`}>
       <div className="container mx-auto px-4">
         <div className="text-center mb-16">
-          <h2 className="text-3xl font-bold text-inplast-blue mb-4">Contact Us</h2>
+          <h2 className="text-3xl font-bold text-inplast-blue mb-4">Связаться с нами</h2>
           <p className="text-xl text-gray-600 max-w-3xl mx-auto">
-            Ready to discuss your project? Our engineering experts are ready to help you modernize your production facilities.
+            Готовы обсудить ваш проект? Наши инженерные эксперты готовы помочь вам модернизировать ваши производственные мощности.
           </p>
         </div>
 
         <div className="max-w-6xl mx-auto">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
             <div className="bg-gray-50 p-8 rounded-lg shadow-md">
-              <h3 className="text-2xl font-bold text-inplast-blue mb-6">Get In Touch</h3>
+              <h3 className="text-2xl font-bold text-inplast-blue mb-6">Свяжитесь с нами</h3>
               
               <form className="flex flex-col gap-6" onSubmit={handleSubmit}>
                 <div className="space-y-2">
-                  <Label htmlFor="name">Name *</Label>
+                  <Label htmlFor="name">Имя *</Label>
                   <Input 
                     id="name" 
-                    placeholder="Your Name" 
+                    placeholder="Ваше имя" 
                     value={name}
                     onChange={(e) => setName(e.target.value)}
                   />
                 </div>
                 
                 <div className="space-y-2">
-                  <Label htmlFor="email">Email *</Label>
+                  <Label htmlFor="email">Электронная почта *</Label>
                   <Input 
                     id="email" 
                     type="email" 
@@ -122,7 +122,7 @@ const Contact = ({ isStandalone = false }: ContactProps) => {
                 </div>
                 
                 <div className="space-y-2">
-                  <Label htmlFor="telephone">Telephone</Label>
+                  <Label htmlFor="telephone">Телефон</Label>
                   <Input 
                     id="telephone" 
                     type="tel" 
@@ -133,10 +133,10 @@ const Contact = ({ isStandalone = false }: ContactProps) => {
                 </div>
                 
                 <div className="space-y-2">
-                  <Label htmlFor="message">Message *</Label>
+                  <Label htmlFor="message">Сообщение *</Label>
                   <Textarea 
                     id="message" 
-                    placeholder="Tell us about your project requirements" 
+                    placeholder="Расскажите нам о требованиях к вашему проекту" 
                     className="resize-none min-h-[140px]" 
                     value={message}
                     onChange={(e) => setMessage(e.target.value)}
@@ -148,25 +148,25 @@ const Contact = ({ isStandalone = false }: ContactProps) => {
                   className="w-full bg-inplast-blue hover:bg-inplast-orange text-white"
                   disabled={isSubmitting}
                 >
-                  {isSubmitting ? 'Sending...' : 'Send Message'}
+                  {isSubmitting ? 'Отправка...' : 'Отправить сообщение'}
                 </Button>
               </form>
             </div>
             
             <div className="flex flex-col gap-6">
               <div className="bg-gray-50 p-6 rounded-lg shadow-md">
-                <h4 className="text-xl font-semibold text-inplast-blue mb-2">Headquarters</h4>
+                <h4 className="text-xl font-semibold text-inplast-blue mb-2">Штаб-квартира</h4>
                 <p className="text-gray-600">
-                  87b M.Sklodowskiej-Curie Street<br />
-                  87-100 Torun, Poland
+                  ул. М.Склодовской-Кюри, 87b<br />
+                  87-100 Торунь, Польша
                 </p>
               </div>
               
               <div className="bg-gray-50 p-6 rounded-lg shadow-md">
-                <h4 className="text-xl font-semibold text-inplast-blue mb-2">Contact Info</h4>
+                <h4 className="text-xl font-semibold text-inplast-blue mb-2">Контактная информация</h4>
                 <p className="text-gray-600">
-                  Email: info@inplast-novex.com<br />
-                  Phone: +48 538 421 002
+                  Электронная почта: info@inplast-novex.com<br />
+                  Телефон: +48 538 421 002
                 </p>
               </div>
             </div>

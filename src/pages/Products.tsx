@@ -15,93 +15,93 @@ interface ProductDetail {
 const ProductsPage = () => {
   // Updated image paths to use the new uploaded images
   const productImages = {
-    "Biax Lines": "/lovable-uploads/14e9bd31-4fd9-4558-9a4b-731f44fce6e2.png",
-    "Extrusion Systems": "/lovable-uploads/3ff7b214-9963-4cd2-96d0-b11838885c28.png",
-    "Converting Equipment": "/lovable-uploads/de929fe4-b5a4-4a48-8301-454cbd7bea35.png",
-    "Electrical Components and Systems": "/lovable-uploads/371c6472-159f-41b3-a97b-4abeff5ccde6.png",
-    "Motion Control": "/lovable-uploads/87f7cb49-1a26-4ce0-82e7-5819631a0cd1.png",
-    "Automation and Process Control": "/lovable-uploads/d946c718-e590-4932-9e9a-45e34a43ae11.png",
-    "MES Systems": "/placeholder.svg",
+    "Линии Biax": "/lovable-uploads/14e9bd31-4fd9-4558-9a4b-731f44fce6e2.png",
+    "Экструзионные системы": "/lovable-uploads/3ff7b214-9963-4cd2-96d0-b11838885c28.png",
+    "Перерабатывающее оборудование": "/lovable-uploads/de929fe4-b5a4-4a48-8301-454cbd7bea35.png",
+    "Электрические компоненты и системы": "/lovable-uploads/371c6472-159f-41b3-a97b-4abeff5ccde6.png",
+    "Управление движением": "/lovable-uploads/87f7cb49-1a26-4ce0-82e7-5819631a0cd1.png",
+    "Автоматизация и управление процессами": "/lovable-uploads/d946c718-e590-4932-9e9a-45e34a43ae11.png",
+    "MES системы": "/placeholder.svg",
   };
 
   const products: ProductDetail[] = [
     { 
-      name: "Biax Lines", 
-      image: productImages["Biax Lines"],
-      description: "We support complete installation, overhaul, and modernization of Biax production lines used for manufacturing biaxially oriented films, ensuring precise control, optimal line performance, and energy efficiency.",
+      name: "Линии Biax", 
+      image: productImages["Линии Biax"],
+      description: "Мы обеспечиваем полную установку, капитальный ремонт и модернизацию производственных линий Biax, используемых для изготовления двуосно-ориентированных пленок, обеспечивая точное управление, оптимальную производительность линии и энергоэффективность.",
       features: [
-        "Full line relocation, dismantling, and reassembly",
-        "Electrical and control system upgrades",
-        "Motion control improvements",
-        "Energy monitoring and optimization solutions"
+        "Полное перемещение линии, демонтаж и повторная сборка",
+        "Модернизация электрических и управляющих систем",
+        "Улучшения в управлении движением",
+        "Решения для мониторинга и оптимизации энергопотребления"
       ]
     },
     { 
-      name: "Extrusion Systems", 
-      image: productImages["Extrusion Systems"],
-      description: "We provide turnkey installation and upgrade services for extrusion equipment used in plastic film and sheet production, focusing on maintaining performance and extending equipment life.",
+      name: "Экструзионные системы", 
+      image: productImages["Экструзионные системы"],
+      description: "Мы предоставляем услуги установки и модернизации экструзионного оборудования под ключ, используемого в производстве пластиковых пленок и листов, с акцентом на поддержание производительности и продление срока службы оборудования.",
       features: [
-        "Single and twin-screw extruders",
-        "Mechanical and electrical installation and commissioning",
-        "Customizable die systems",
-        "Retrofitting of extruders with modern control systems",
-        "Complete system condition assessments and refurbishment"
+        "Одно- и двухшнековые экструдеры",
+        "Механическая и электрическая установка и ввод в эксплуатацию",
+        "Настраиваемые системы фильер",
+        "Модернизация экструдеров современными системами управления",
+        "Полная оценка состояния системы и восстановление"
       ]
     },
     { 
-      name: "Converting Equipment", 
-      image: productImages["Converting Equipment"],
-      description: "We relocate, upgrade, and overhaul converting machinery such as slitters, rewinders, and laminators, enhancing their efficiency, reliability, and integration with downstream systems.",
+      name: "Перерабатывающее оборудование", 
+      image: productImages["Перерабатывающее оборудование"],
+      description: "Мы перемещаем, модернизируем и проводим капитальный ремонт перерабатывающих машин, таких как резальные машины, перемотчики и ламинаторы, повышая их эффективность, надежность и интеграцию с последующими системами.",
       features: [
-        "Equipment dismantling and relocation services",
-        "Electrical cabinet modernization and control system upgrades",
-        "SCADA and HMI system implementation for process visibility",
-        "Precision motion control retrofits"
+        "Услуги демонтажа и перемещения оборудования",
+        "Модернизация электрических шкафов и обновление систем управления",
+        "Внедрение систем SCADA и HMI для видимости процессов",
+        "Модернизация прецизионного управления движением"
       ]
     },
     { 
-      name: "Electrical Components and Systems", 
-      image: productImages["Electrical Components and Systems"],
-      description: "We design, install, and upgrade electrical distribution and control systems, supporting safe, reliable, and efficient power delivery across industrial production environments.",
+      name: "Электрические компоненты и системы", 
+      image: productImages["Электрические компоненты и системы"],
+      description: "Мы проектируем, устанавливаем и модернизируем системы электроснабжения и управления, обеспечивая безопасную, надежную и эффективную подачу электроэнергии в промышленных производственных средах.",
       features: [
-        "Electrical cabinet design and assembly",
-        "Integration of energy efficiency monitoring and reporting",
-        "Retrofitting of legacy systems to current standards",
-        "Full electrical installation for new equipment setups",
-        "Safety circuit design"
+        "Проектирование и сборка электрических шкафов",
+        "Интеграция мониторинга и отчетности энергоэффективности",
+        "Модернизация устаревших систем до современных стандартов",
+        "Полная электрическая установка для нового оборудования",
+        "Проектирование цепей безопасности"
       ]
     },
     { 
-      name: "Motion Control", 
-      image: productImages["Motion Control"],
-      description: "We provide precision motion control solutions for new installations and upgrades, improving the accuracy, speed, and synchronization of industrial machinery.",
+      name: "Управление движением", 
+      image: productImages["Управление движением"],
+      description: "Мы предоставляем решения для прецизионного управления движением для новых установок и модернизации, улучшая точность, скорость и синхронизацию промышленного оборудования.",
       features: [
-        "Servo drive and actuator integration",
-        "Motion control system diagnostics and optimization",
-        "Retrofitting outdated motion systems for higher precision",
-        "Complete commissioning and validation"
+        "Интеграция сервоприводов и актуаторов",
+        "Диагностика и оптимизация систем управления движением",
+        "Модернизация устаревших систем движения для повышения точности",
+        "Полный ввод в эксплуатацию и валидация"
       ]
     },
     { 
-      name: "Automation and Process Control", 
-      image: productImages["Automation and Process Control"],
-      description: "We upgrade and modernize outdated control software and SCADA platforms, providing operators with better control, monitoring, and data insights for improved process efficiency.",
+      name: "Автоматизация и управление процессами", 
+      image: productImages["Автоматизация и управление процессами"],
+      description: "Мы модернизируем и обновляем устаревшее программное обеспечение управления и платформы SCADA, предоставляя операторам лучшее управление, мониторинг и информацию о данных для повышения эффективности процессов.",
       features: [
-        "Custom software development and control logic upgrades",
-        "Real-time monitoring interfaces",
-        "Data integration with existing plant infrastructure",
-        "Operator interface enhancements for ease of use"
+        "Разработка пользовательского программного обеспечения и обновления логики управления",
+        "Интерфейсы мониторинга в реальном времени",
+        "Интеграция данных с существующей заводской инфраструктурой",
+        "Улучшения интерфейса оператора для удобства использования"
       ]
     },
     { 
-      name: "MES Systems", 
-      image: productImages["MES Systems"],
-      description: "We help implement and integrate MES systems to bridge the gap between production and business systems, providing real-time production monitoring and data-driven decision-making capabilities.",
+      name: "MES системы", 
+      image: productImages["MES системы"],
+      description: "Мы помогаем внедрять и интегрировать MES системы для преодоления разрыва между производственными и бизнес-системами, обеспечивая мониторинг производства в реальном времени и возможности принятия решений на основе данных.",
       features: [
-        "MES installation and configuration",
-        "Integration with SCADA and control systems",
-        "Process and production data reporting",
-        "System validation and operator training"
+        "Установка и настройка MES",
+        "Интеграция с системами SCADA и управления",
+        "Отчетность по процессам и производственным данным",
+        "Валидация системы и обучение операторов"
       ]
     },
   ];
@@ -113,10 +113,10 @@ const ProductsPage = () => {
       <main className="flex-grow py-20 pt-24 bg-gray-50">
         <div className="container mx-auto px-4">
           <div className="text-center mb-8">
-            <h1 className="text-4xl font-bold text-inplast-blue mb-4">Our Product Expertise</h1>
+            <h1 className="text-4xl font-bold text-inplast-blue mb-4">Наша экспертиза в области продукции</h1>
             <p className="text-xl text-gray-600 max-w-3xl mx-auto">
-              We have extensive experience with a wide range of industrial equipment and systems. 
-              Our technical knowledge allows us to deliver comprehensive solutions for diverse manufacturing needs.
+              У нас есть обширный опыт работы с широким спектром промышленного оборудования и систем. 
+              Наши технические знания позволяют нам предоставлять комплексные решения для различных производственных потребностей.
             </p>
           </div>
 

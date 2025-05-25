@@ -12,37 +12,37 @@ const Footer = () => {
           <div>
             <img 
               src="/lovable-uploads/99a847fd-71f3-4e06-a241-fb9739d1979b.png"
-              alt="Inplast Novex Logo" 
+              alt="Логотип Inplast Novex" 
               className="h-12 mb-4"
             />
             <p className="text-white mb-4">
-              Innovation, Engineering, Excellence in industrial solutions for equipment upgrades, relocation and commissioning
+              Инновации, инжиниринг, превосходство в промышленных решениях для модернизации, перемещения и ввода в эксплуатацию оборудования
             </p>
           </div>
           
           <div>
-            <h4 className="text-lg font-semibold text-white mb-4">Quick Links</h4>
+            <h4 className="text-lg font-semibold text-white mb-4">Быстрые ссылки</h4>
             <ul className="space-y-2">
-              <li><Link to="/" className="text-white hover:text-inplast-orange transition-colors">Home</Link></li>
-              <li><Link to="/products" className="text-white hover:text-inplast-orange transition-colors">Products</Link></li>
-              <li><Link to="/services" className="text-white hover:text-inplast-orange transition-colors">Services</Link></li>
-              <li><Link to="/projects" className="text-white hover:text-inplast-orange transition-colors">Projects</Link></li>
-              <li><Link to="/contact" className="text-white hover:text-inplast-orange transition-colors">Contact</Link></li>
+              <li><Link to="/" className="text-white hover:text-inplast-orange transition-colors">Главная</Link></li>
+              <li><Link to="/products" className="text-white hover:text-inplast-orange transition-colors">Продукция</Link></li>
+              <li><Link to="/services" className="text-white hover:text-inplast-orange transition-colors">Услуги</Link></li>
+              <li><Link to="/projects" className="text-white hover:text-inplast-orange transition-colors">Проекты</Link></li>
+              <li><Link to="/contact" className="text-white hover:text-inplast-orange transition-colors">Контакты</Link></li>
             </ul>
           </div>
           
           <div>
-            <h4 className="text-lg font-semibold text-white mb-4">Services</h4>
+            <h4 className="text-lg font-semibold text-white mb-4">Услуги</h4>
             <ul className="space-y-2">
-              <li><Link to="/services/overhaul" className="text-white hover:text-inplast-orange transition-colors">Complete Equipment Overhaul</Link></li>
-              <li><Link to="/services/engineering" className="text-white hover:text-inplast-orange transition-colors">Engineering & Control Systems</Link></li>
-              <li><Link to="/services/installation" className="text-white hover:text-inplast-orange transition-colors">Installation & Commissioning</Link></li>
-              <li><Link to="/services/relocation" className="text-white hover:text-inplast-orange transition-colors">Equipment Relocation</Link></li>
+              <li><Link to="/services/overhaul" className="text-white hover:text-inplast-orange transition-colors">Полный капитальный ремонт оборудования</Link></li>
+              <li><Link to="/services/engineering" className="text-white hover:text-inplast-orange transition-colors">Инжиниринг и системы управления</Link></li>
+              <li><Link to="/services/installation" className="text-white hover:text-inplast-orange transition-colors">Установка и ввод в эксплуатацию</Link></li>
+              <li><Link to="/services/relocation" className="text-white hover:text-inplast-orange transition-colors">Перемещение оборудования</Link></li>
             </ul>
           </div>
           
           <div>
-            <h4 className="text-lg font-semibold text-white mb-4">Group Companies</h4>
+            <h4 className="text-lg font-semibold text-white mb-4">Группа компаний</h4>
             <ul className="space-y-2">
               <li><a href="#" className="text-white hover:text-inplast-orange transition-colors">Inplast Novex</a></li>
               <li><a href="https://visopack.pl" target="_blank" rel="noopener noreferrer" className="text-white hover:text-inplast-orange transition-colors">Visopack</a></li>
@@ -50,17 +50,6 @@ const Footer = () => {
             </ul>
           </div>
         </div>
-        
-        {/*<div className="border-t border-white/20 mt-12 pt-8 flex flex-col md:flex-row justify-between items-center">
-          <p className="text-white mb-4 md:mb-0">
-            © {currentYear} Inplast Holding. All rights reserved.
-          </p>
-          
-          <div className="flex space-x-4">
-            <a href="#" className="text-white hover:text-inplast-orange transition-colors">Privacy Policy</a>
-            <a href="#" className="text-white hover:text-inplast-orange transition-colors">Terms of Service</a>
-          </div>
-        </div>*/}
       </div>
     </footer>
   );
