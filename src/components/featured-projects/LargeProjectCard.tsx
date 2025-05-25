@@ -242,7 +242,15 @@ const LargeProjectCard = ({ project, reverseLayout = false }: LargeProjectCardPr
                         {renderTextWithBullets(project.expandedContent.initialAssessment || '')}
                       </div>
                     </section>
-                    
+                    <section>
+                    <h4 className="text-xl font-semibold text-inplast-blue mb-2">Training and Knowledge Transfer</h4>
+                    <p className="text-gray-700">
+                      The final phase involved training the client's operational and maintenance staff. The team provided instructions
+                      and practical, on-machine training. Topics included safe operation, 
+                      routine maintenance, troubleshooting, and system optimization. This ensured the client's personnel 
+                      were fully prepared to operate the line independently and safely.
+                    </p>
+                  </section>
                     <section>
                       <div className="space-y-2">
                         <ul className="space-y-1">
