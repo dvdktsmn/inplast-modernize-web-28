@@ -51,7 +51,6 @@ export const featuredProjectsData: FeaturedProject[] = [
     location: "Warsaw, Poland",
     description: "The project involved a comprehensive modernisation of a production line to improve operational efficiency, enhance process control, and extend equipment lifespan. The upgrade encompassed key components across the entire line,  including dosing, extrusion, Chill Roll, MDO, TDO, PRS, winder, and the ATLAS unit. Enhancements included new Siemens STEP 7 automation, upgraded control systems, new electrical cabinets, improved thermal and pneumatic controls, and the integration of advanced measurement technologies. The upgrades aimed to boost operational efficiency, ensure reliable process control, and extend equipment lifespan, positioning the facility for higher performance and future scalability.",
     images: [
-      "/lovable-uploads/58d6f434-7c79-4e4e-b8c9-e60fad6a246d.png",
       "/lovable-uploads/ba87da91-2297-4c7b-9a97-9b18ececd7ef.png",
       "/lovable-uploads/bf7a8d7b-43d2-4cf3-b755-a1e3c0c67570.png",
       "/lovable-uploads/21e2ec87-aad5-45cf-8298-0216c1c693b6.png",
