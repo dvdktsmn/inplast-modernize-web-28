@@ -236,19 +236,6 @@ const LargeProjectCard = ({ project, reverseLayout = false }: LargeProjectCardPr
               ) : project.id === "factory-modernization" ? (
                 // Factory Modernization project with text directly in component
                 <div className="space-y-6">
-                  <section>
-                    <p className="text-gray-700 mb-4">
-                      The project involved a comprehensive modernisation of a production line to improve operational efficiency, enhance process control, and extend equipment lifespan. The upgrade encompassed:
-                    </p>
-                    <ul className="list-none space-y-1 mb-4">
-                      <li className="text-gray-700">• Key components across the entire line</li>
-                      <li className="text-gray-700">• Systems from dosing to winding</li>
-                      <li className="text-gray-700">• Multiple stages addressing specific machinery</li>
-                    </ul>
-                    <p className="text-gray-700">
-                      The modernisation was executed in multiple stages, each addressing specific systems and machinery.
-                    </p>
-                  </section>
                   
                   <section>
                     <h4 className="text-xl font-semibold text-inplast-blue mb-2">1. Dosing System Upgrade</h4>
