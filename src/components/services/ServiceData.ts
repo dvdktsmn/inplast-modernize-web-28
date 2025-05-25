@@ -1,4 +1,3 @@
-
 export interface ServiceDetails {
   id: string;
   title: string;
@@ -166,14 +165,10 @@ export const serviceDetails: ServiceDetails[] = [
     ],
     beforeAfterImages: {
       before: [
-        "/lovable-uploads/472d3798-6911-4d55-aa5b-ab0020bc50bf.png",
-        "/lovable-uploads/9f43e76c-a017-4d34-b836-2bbfbe8afbf9.png",
-        "/lovable-uploads/0f867536-23a9-44c5-b5ff-0ffee7b38a17.png"
+        "/lovable-uploads/be4f94d9-0380-4116-a472-2cd43aa388ae.png"
       ],
       after: [
-        "/lovable-uploads/472d3798-6911-4d55-aa5b-ab0020bc50bf.png",
-        "/lovable-uploads/9f43e76c-a017-4d34-b836-2bbfbe8afbf9.png",
-        "/lovable-uploads/0f867536-23a9-44c5-b5ff-0ffee7b38a17.png"
+        "/lovable-uploads/be4f94d9-0380-4116-a472-2cd43aa388ae.png"
       ]
     }
   },
