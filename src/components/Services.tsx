@@ -9,9 +9,9 @@ const Services = () => {
         <div className="text-center mb-16">
           <h2 className="text-3xl font-bold text-inplast-blue mb-4">Our Services</h2>
           <p className="text-xl text-gray-600 max-w-3xl mx-auto">
-            Our comprehensive range of industrial services spans from equipment modernization and upgrading to full production line installation and turnkey projects.
+            Our comprehensive range of industrial services spans from equipment obsolete parts replacement and upgrading to full production line installation and turnkey projects.
           </p>
-        </div>
+          </div>
 
         <div className="mt-16">
           <ServicesList />
