@@ -306,7 +306,7 @@ const LargeProjectCard = ({ project, reverseLayout = false }: LargeProjectCardPr
                   </section>
                   
                   <section>
-                    <h4 className="text-xl font-semibold text-inplast-blue mb-2">4. MDO (Machine Direction Orientation - Brueckner) Overhaul</h4>
+                    <h4 className="text-xl font-semibold text-inplast-blue mb-2">4. MDO (Machine Direction Orientation) Overhaul</h4>
                     <p className="text-gray-700 mb-2">A complete overhaul of the MDO included:</p>
                     <ul className="space-y-2">
                       <li className="flex items-start">
@@ -317,15 +317,11 @@ const LargeProjectCard = ({ project, reverseLayout = false }: LargeProjectCardPr
                         <ArrowRight className="h-5 w-5 text-inplast-orange mr-2 mt-0.5 flex-shrink-0" />
                         <span>Installation of advanced temperature control systems and pneumatics</span>
                       </li>
-                      <li className="flex items-start">
-                        <ArrowRight className="h-5 w-5 text-inplast-orange mr-2 mt-0.5 flex-shrink-0" />
-                        <span>Piping upgrades</span>
-                      </li>
                     </ul>
                   </section>
                   
                   <section>
-                    <h4 className="text-xl font-semibold text-inplast-blue mb-2">5. TDO (Transverse Direction Orientation - Brueckner) Servicing</h4>
+                    <h4 className="text-xl font-semibold text-inplast-blue mb-2">5. TDO (Transverse Direction Orientation) Servicing</h4>
                     <p className="text-gray-700 mb-2">The TDO underwent a full service with:</p>
                     <ul className="space-y-2">
                       <li className="flex items-start">
@@ -352,7 +348,7 @@ const LargeProjectCard = ({ project, reverseLayout = false }: LargeProjectCardPr
                   </section>
                   
                   <section>
-                    <h4 className="text-xl font-semibold text-inplast-blue mb-2">6. PRS (KAMPF) System Overhaul</h4>
+                    <h4 className="text-xl font-semibold text-inplast-blue mb-2">6. PRS System Overhaul</h4>
                     <p className="text-gray-700 mb-2">PRS system improvements featured:</p>
                     <ul className="space-y-2">
                       <li className="flex items-start">
@@ -394,8 +390,8 @@ const LargeProjectCard = ({ project, reverseLayout = false }: LargeProjectCardPr
                   </section>
                   
                   <section>
-                    <h4 className="text-xl font-semibold text-inplast-blue mb-2">8. ATLAS System Modernisation</h4>
-                    <p className="text-gray-700 mb-2">The ATLAS unit was thoroughly overhauled and upgraded with:</p>
+                    <h4 className="text-xl font-semibold text-inplast-blue mb-2">8. ATLAS Primary Slitter Modernisation</h4>
+                    <p className="text-gray-700 mb-2">The ATLAS primary slitter was thoroughly overhauled and upgraded with:</p>
                     <ul className="space-y-2">
                       <li className="flex items-start">
                         <ArrowRight className="h-5 w-5 text-inplast-orange mr-2 mt-0.5 flex-shrink-0" />
