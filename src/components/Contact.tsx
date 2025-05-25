@@ -1,15 +1,59 @@
 
-import React from 'react';
+import React, { useState } from 'react';
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
 import { Label } from "@/components/ui/label";
+import { useToast } from "@/hooks/use-toast";
 
 interface ContactProps {
   isStandalone?: boolean;
 }
 
 const Contact = ({ isStandalone = false }: ContactProps) => {
+  const [name, setName] = useState('');
+  const [email, setEmail] = useState('');
+  const [telephone, setTelephone] = useState('');
+  const [message, setMessage] = useState('');
+  const { toast } = useToast();
+
+  const handleSubmit = (e: React.FormEvent) => {
+    e.preventDefault();
+    
+    // Basic validation
+    if (!name.trim() || !email.trim() || !message.trim()) {
+      toast({
+        title: "Error",
+        description: "Please fill out all required fields",
+        variant: "destructive",
+      });
+      return;
+    }
+    
+    // Simple email validation
+    const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+    if (!emailRegex.test(email)) {
+      toast({
+        title: "Error",
+        description: "Please enter a valid email address",
+        variant: "destructive",
+      });
+      return;
+    }
+    
+    // Mock form submission
+    toast({
+      title: "Success",
+      description: "Your message has been sent. We'll get back to you soon!",
+    });
+    
+    // Reset form
+    setName('');
+    setEmail('');
+    setTelephone('');
+    setMessage('');
+  };
+
   return (
     <section id="contact" className={`py-20 ${isStandalone ? 'bg-gray-50' : 'bg-white'}`}>
       <div className="container mx-auto px-4">
@@ -24,23 +68,47 @@ const Contact = ({ isStandalone = false }: ContactProps) => {
           <div className="bg-gray-50 p-8 rounded-lg shadow-md h-full flex flex-col">
             <h3 className="text-2xl font-bold text-inplast-blue mb-6">Get In Touch</h3>
             
-            <form className="flex flex-col h-full gap-6">
+            <form className="flex flex-col h-full gap-6" onSubmit={handleSubmit}>
               <div className="space-y-2">
-                <Label htmlFor="name">Name</Label>
-                <Input id="name" placeholder="Your Name" />
+                <Label htmlFor="name">Name *</Label>
+                <Input 
+                  id="name" 
+                  placeholder="Your Name" 
+                  value={name}
+                  onChange={(e) => setName(e.target.value)}
+                />
               </div>
               
               <div className="space-y-2">
-                <Label htmlFor="email">Email</Label>
-                <Input id="email" type="email" placeholder="your.email@company.com" />
+                <Label htmlFor="email">Email *</Label>
+                <Input 
+                  id="email" 
+                  type="email" 
+                  placeholder="your.email@company.com" 
+                  value={email}
+                  onChange={(e) => setEmail(e.target.value)}
+                />
+              </div>
+              
+              <div className="space-y-2">
+                <Label htmlFor="telephone">Telephone</Label>
+                <Input 
+                  id="telephone" 
+                  type="tel" 
+                  placeholder="+48 123 456 789" 
+                  value={telephone}
+                  onChange={(e) => setTelephone(e.target.value)}
+                />
               </div>
               
               <div className="flex flex-col flex-grow">
-                <Label htmlFor="message" className="mb-2">Message</Label>
+                <Label htmlFor="message" className="mb-2">Message *</Label>
                 <Textarea 
                   id="message" 
                   placeholder="Tell us about your project requirements" 
                   className="flex-grow resize-none" 
+                  value={message}
+                  onChange={(e) => setMessage(e.target.value)}
                 />
               </div>
               

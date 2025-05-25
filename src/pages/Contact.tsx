@@ -11,6 +11,7 @@ import { useToast } from "@/hooks/use-toast";
 const ContactPage = () => {
   const [name, setName] = useState('');
   const [email, setEmail] = useState('');
+  const [telephone, setTelephone] = useState('');
   const [message, setMessage] = useState('');
   const { toast } = useToast();
 
@@ -21,7 +22,7 @@ const ContactPage = () => {
     if (!name.trim() || !email.trim() || !message.trim()) {
       toast({
         title: "Error",
-        description: "Please fill out all fields",
+        description: "Please fill out all required fields",
         variant: "destructive",
       });
       return;
@@ -47,6 +48,7 @@ const ContactPage = () => {
     // Reset form
     setName('');
     setEmail('');
+    setTelephone('');
     setMessage('');
   };
 
@@ -69,7 +71,7 @@ const ContactPage = () => {
               
               <form className="flex flex-col h-full gap-6" onSubmit={handleSubmit}>
                 <div className="space-y-2">
-                  <Label htmlFor="name">Name</Label>
+                  <Label htmlFor="name">Name *</Label>
                   <Input 
                     id="name" 
                     placeholder="Your Name" 
@@ -79,7 +81,7 @@ const ContactPage = () => {
                 </div>
                 
                 <div className="space-y-2">
-                  <Label htmlFor="email">Email</Label>
+                  <Label htmlFor="email">Email *</Label>
                   <Input 
                     id="email" 
                     type="email" 
@@ -89,8 +91,19 @@ const ContactPage = () => {
                   />
                 </div>
                 
+                <div className="space-y-2">
+                  <Label htmlFor="telephone">Telephone</Label>
+                  <Input 
+                    id="telephone" 
+                    type="tel" 
+                    placeholder="+48 123 456 789" 
+                    value={telephone}
+                    onChange={(e) => setTelephone(e.target.value)}
+                  />
+                </div>
+                
                 <div className="flex flex-col flex-grow">
-                  <Label htmlFor="message" className="mb-2">Message</Label>
+                  <Label htmlFor="message" className="mb-2">Message *</Label>
                   <Textarea 
                     id="message" 
                     placeholder="Tell us about your project requirements" 
