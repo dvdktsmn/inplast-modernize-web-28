@@ -49,7 +49,7 @@ export const featuredProjectsData: FeaturedProject[] = [
     id: "factory-modernization",
     title: "Factory Modernization",
     location: "Warsaw, Poland",
-    description: "Full overhaul and modernization of outdated equipment to increase production efficiency by 35%. This comprehensive project included updating control systems, implementing energy-efficient solutions, and optimizing production flow. Our team worked closely with the client to minimize production interruption while delivering a state-of-the-art facility that meets current industry standards.",
+    description: "The project involved a comprehensive modernisation of a production line to improve operational efficiency, enhance process control, and extend equipment lifespan. The upgrade encompassed key components across the entire line,  including dosing, extrusion, Chill Roll, MDO, TDO, PRS, winder, and the ATLAS unit. Enhancements included new Siemens STEP 7 automation, upgraded control systems, new electrical cabinets, improved thermal and pneumatic controls, and the integration of advanced measurement technologies. The upgrades aimed to boost operational efficiency, ensure reliable process control, and extend equipment lifespan, positioning the facility for higher performance and future scalability.",
     images: [
       "/lovable-uploads/58d6f434-7c79-4e4e-b8c9-e60fad6a246d.png",
       "/placeholder.svg",
