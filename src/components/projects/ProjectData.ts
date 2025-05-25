@@ -67,7 +67,7 @@ export const projectsData: Project[] = [
   // Added small projects from featuredProjectsData
   {
     title: "Extruder Retrofitting",
-    location: "Various Locations",
+    location: "",
     image: "/lovable-uploads/6a402cc3-f2e6-4dcf-aac5-98513623017f.png",
     description: "Complete overhaul of heating, cooling, and lubrication systems for a polypropylene extruder.",
     galleryImages: [
@@ -77,7 +77,7 @@ export const projectsData: Project[] = [
   },
   {
     title: "Electrical System Upgrade",
-    location: "Multiple Sites",
+    location: "",
     image: "/lovable-uploads/7559cfc1-a938-4092-b12b-10a9bbfbf6b1.png",
     description: "Implementation of new high-efficiency motors and drives, control and SCADA systems.",
     galleryImages: [
@@ -89,7 +89,7 @@ export const projectsData: Project[] = [
   },
   {
     title: "Chill Roll Retrofit",
-    location: "European Facility",
+    location: "",
     image: "/lovable-uploads/f8e1cb0f-f78d-4b8d-af60-0b3975a34974.png",
     description: "Replacement of conventional gearmotor with direct torque motor.",
     galleryImages: [
@@ -99,7 +99,7 @@ export const projectsData: Project[] = [
   },
   {
     title: "Metalliser Revamp",
-    location: "Industrial Zone",
+    location: "",
     image: "/lovable-uploads/010293e4-1059-43b2-8a41-b7f56abd0649.png",
     description: "Comprehensive revitalization of an aging metalliser.",
     galleryImages: [
