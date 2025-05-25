@@ -119,17 +119,16 @@ const ContactPage = () => {
                 <div className="bg-gray-50 p-6 rounded-lg shadow-md">
                   <h4 className="text-xl font-semibold text-inplast-blue mb-2">Headquarters</h4>
                   <p className="text-gray-600">
-                    1234 Industry Avenue<br />
-                    Warsaw, Poland<br />
-                    00-001
+                    87b M.Sklodowskiej-Curie Street<br />
+                    87-100 Torun, Poland
                   </p>
                 </div>
                 
                 <div className="bg-gray-50 p-6 rounded-lg shadow-md">
                   <h4 className="text-xl font-semibold text-inplast-blue mb-2">Contact Info</h4>
                   <p className="text-gray-600">
-                    Email: info@inplastholding.com<br />
-                    Phone: +48 123 456 789
+                    Email: info@inplast-novex.com<br />
+                    Phone: +48 538 421 002
                   </p>
                 </div>
               </div>
