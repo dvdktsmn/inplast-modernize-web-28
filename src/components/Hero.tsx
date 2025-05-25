@@ -12,7 +12,7 @@ const Hero = () => {
   };
   
   return (
-    <div className="relative h-[62.5vh] overflow-hidden">
+    <div className="relative h-[50vh] overflow-hidden">
       <div 
         className="absolute inset-0 bg-cover bg-center bg-no-repeat" 
         style={{
