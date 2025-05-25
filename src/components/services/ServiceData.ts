@@ -118,7 +118,7 @@ export const serviceDetails: ServiceDetails[] = [
   },
   {
     id: "overhaul",
-    title: "Complete Equipment Overhaul",
+    title: "Equipment Restoration and Upgrade",
     description: "Restore and modernize your assets. We perform full equipment overhauls to increase longevity, energy efficiency, and operational performance—bringing outdated systems up to today's standards.",
     fullDescription: [
       "Maximize the value and performance of your existing assets with our comprehensive equipment overhaul and upgrade services. We help you extend equipment lifespan, improve operational efficiency, and meet current production standards without the need for full replacement. Our approach combines deep technical expertise with a structured process to minimize downtime and ensure consistent results.",

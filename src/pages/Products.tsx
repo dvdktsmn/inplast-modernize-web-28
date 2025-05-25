@@ -20,7 +20,7 @@ const ProductsPage = () => {
     "Converting Equipment": "/lovable-uploads/de929fe4-b5a4-4a48-8301-454cbd7bea35.png",
     "Electrical Components and Systems": "/lovable-uploads/371c6472-159f-41b3-a97b-4abeff5ccde6.png",
     "Motion Control": "/lovable-uploads/87f7cb49-1a26-4ce0-82e7-5819631a0cd1.png",
-    "Software and SCADA Retrofit": "/lovable-uploads/d946c718-e590-4932-9e9a-45e34a43ae11.png",
+    "Automation and Process Control": "/lovable-uploads/d946c718-e590-4932-9e9a-45e34a43ae11.png",
     "MES Systems": "/placeholder.svg",
   };
 
@@ -83,8 +83,8 @@ const ProductsPage = () => {
       ]
     },
     { 
-      name: "Software and SCADA Retrofit", 
-      image: productImages["Software and SCADA Retrofit"],
+      name: "Automation and Process Control", 
+      image: productImages["Automation and Process Control"],
       description: "We upgrade and modernize outdated control software and SCADA platforms, providing operators with better control, monitoring, and data insights for improved process efficiency.",
       features: [
         "Custom software development and control logic upgrades",
