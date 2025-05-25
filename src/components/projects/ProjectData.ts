@@ -11,7 +11,7 @@ export interface Project {
 export const projectsData: Project[] = [
   {
     title: "BOPP Line Relocation",
-    location: "Hefei, China to Europe",
+    location: "From China to Europe",
     image: "/lovable-uploads/4c257c37-8c64-4c31-bcea-916d3639fd25.png",
     description: "Complete disassembly, transportation, refurbishment and reinstallation of a large-scale BOPP production line across continents.",
     galleryImages: ["/lovable-uploads/1578a116-7962-49ae-a3ad-3f09928ab06b.png",
@@ -33,7 +33,7 @@ export const projectsData: Project[] = [
   }, 
   {
     title: "Factory Modernization",
-    location: "Warsaw, Poland",
+    location: "Poland",
     image: "/lovable-uploads/58d6f434-7c79-4e4e-b8c9-e60fad6a246d.png",
     description: "Full overhaul and modernization of outdated equipment to increase production efficiency.",
     galleryImages: [
