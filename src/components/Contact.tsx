@@ -1,4 +1,3 @@
-
 import React, { useState } from 'react';
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
@@ -94,11 +93,11 @@ const Contact = ({ isStandalone = false }: ContactProps) => {
           </p>
         </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-10 mt-16">
-          <div className="bg-gray-50 p-8 rounded-lg shadow-md h-full flex flex-col">
+        <div className="max-w-2xl mx-auto">
+          <div className="bg-gray-50 p-8 rounded-lg shadow-md mb-10">
             <h3 className="text-2xl font-bold text-inplast-blue mb-6">Get In Touch</h3>
             
-            <form className="flex flex-col h-full gap-6" onSubmit={handleSubmit}>
+            <form className="flex flex-col gap-6" onSubmit={handleSubmit}>
               <div className="space-y-2">
                 <Label htmlFor="name">Name *</Label>
                 <Input 
@@ -131,12 +130,12 @@ const Contact = ({ isStandalone = false }: ContactProps) => {
                 />
               </div>
               
-              <div className="flex flex-col flex-grow">
-                <Label htmlFor="message" className="mb-2">Message *</Label>
+              <div className="space-y-2">
+                <Label htmlFor="message">Message *</Label>
                 <Textarea 
                   id="message" 
                   placeholder="Tell us about your project requirements" 
-                  className="flex-grow resize-none min-h-[140px]" 
+                  className="resize-none min-h-[140px]" 
                   value={message}
                   onChange={(e) => setMessage(e.target.value)}
                 />
@@ -152,31 +151,21 @@ const Contact = ({ isStandalone = false }: ContactProps) => {
             </form>
           </div>
           
-          <div className="flex flex-col h-full">
-            <div className="flex-1 flex items-center mb-8">
-              <img 
-                src="/lovable-uploads/129ca3ee-ca07-4fbf-b569-9f108d0b95fd.png"
-                alt="Manufacturing facility" 
-                className="rounded-lg shadow-xl w-full h-96 object-cover" 
-              />
+          <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
+            <div className="bg-gray-50 p-6 rounded-lg shadow-md">
+              <h4 className="text-xl font-semibold text-inplast-blue mb-2">Headquarters</h4>
+              <p className="text-gray-600">
+                87b M.Sklodowskiej-Curie Street<br />
+                87-100 Torun, Poland
+              </p>
             </div>
             
-            <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
-              <div className="bg-gray-50 p-6 rounded-lg shadow-md">
-                <h4 className="text-xl font-semibold text-inplast-blue mb-2">Headquarters</h4>
-                <p className="text-gray-600">
-                  87b M.Sklodowskiej-Curie Street<br />
-                  87-100 Torun, Poland
-                </p>
-              </div>
-              
-              <div className="bg-gray-50 p-6 rounded-lg shadow-md">
-                <h4 className="text-xl font-semibold text-inplast-blue mb-2">Contact Info</h4>
-                <p className="text-gray-600">
-                  Email: info@inplast-novex.com<br />
-                  Phone: +48 538 421 002
-                </p>
-              </div>
+            <div className="bg-gray-50 p-6 rounded-lg shadow-md">
+              <h4 className="text-xl font-semibold text-inplast-blue mb-2">Contact Info</h4>
+              <p className="text-gray-600">
+                Email: info@inplast-novex.com<br />
+                Phone: +48 538 421 002
+              </p>
             </div>
           </div>
         </div>
