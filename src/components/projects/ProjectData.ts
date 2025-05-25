@@ -37,7 +37,7 @@ export const projectsData: Project[] = [
     image: "/lovable-uploads/58d6f434-7c79-4e4e-b8c9-e60fad6a246d.png",
     description: "Full overhaul and modernization of outdated equipment to increase production efficiency.",
     galleryImages: [
-      "/lovable-uploads/9f927459-d47b-40a5-bdac-57a022b86652.png",
+      "/lovable-uploads/58d6f434-7c79-4e4e-b8c9-e60fad6a246d.png",
       "/lovable-uploads/ba87da91-2297-4c7b-9a97-9b18ececd7ef.png",
       "/lovable-uploads/bf7a8d7b-43d2-4cf3-b755-a1e3c0c67570.png",
       "/lovable-uploads/21e2ec87-aad5-45cf-8298-0216c1c693b6.png",
@@ -53,7 +53,7 @@ export const projectsData: Project[] = [
       "/lovable-uploads/67ada82f-d761-4d32-8d79-315378083e21.png",
       "/lovable-uploads/b9ea7181-6b86-4f81-a20b-a882b3ccf1c0.png",
       "/lovable-uploads/08e3016f-5343-4fb4-b14d-0147ded54c4c.png",
-      
+      "/lovable-uploads/9f927459-d47b-40a5-bdac-57a022b86652.png",
       "/lovable-uploads/a60bbd12-1131-48e2-82f5-a4b6baaacb8a.png",
       "/lovable-uploads/ec183a71-991a-4061-8ef2-6ca5e274ed93.png",
       "/lovable-uploads/82c95d55-6eff-4522-b34d-24ca97e04e03.png",
@@ -67,7 +67,7 @@ export const projectsData: Project[] = [
   // Added small projects from featuredProjectsData
   {
     title: "Extruder Retrofitting",
-    location: "",
+    location: "Various Locations",
     image: "/lovable-uploads/6a402cc3-f2e6-4dcf-aac5-98513623017f.png",
     description: "Complete overhaul of heating, cooling, and lubrication systems for a polypropylene extruder.",
     galleryImages: [
@@ -77,7 +77,7 @@ export const projectsData: Project[] = [
   },
   {
     title: "Electrical System Upgrade",
-    location: "",
+    location: "Multiple Sites",
     image: "/lovable-uploads/7559cfc1-a938-4092-b12b-10a9bbfbf6b1.png",
     description: "Implementation of new high-efficiency motors and drives, control and SCADA systems.",
     galleryImages: [
@@ -89,7 +89,7 @@ export const projectsData: Project[] = [
   },
   {
     title: "Chill Roll Retrofit",
-    location: "",
+    location: "European Facility",
     image: "/lovable-uploads/f8e1cb0f-f78d-4b8d-af60-0b3975a34974.png",
     description: "Replacement of conventional gearmotor with direct torque motor.",
     galleryImages: [
@@ -99,7 +99,7 @@ export const projectsData: Project[] = [
   },
   {
     title: "Metalliser Revamp",
-    location: "",
+    location: "Industrial Zone",
     image: "/lovable-uploads/010293e4-1059-43b2-8a41-b7f56abd0649.png",
     description: "Comprehensive revitalization of an aging metalliser.",
     galleryImages: [
