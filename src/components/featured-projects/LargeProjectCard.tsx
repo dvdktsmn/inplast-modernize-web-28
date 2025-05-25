@@ -40,6 +40,45 @@ const LargeProjectCard = ({ project, reverseLayout = false }: LargeProjectCardPr
       carouselApi.scrollTo(activeImageIndex);
     }
   }, [carouselApi, lightboxOpen, activeImageIndex]);
+
+  // Function to render text with bullet points
+  const renderTextWithBullets = (text: string) => {
+    // Split by new lines and process each line
+    const lines = text.split('\n');
+    const elements: JSX.Element[] = [];
+    
+    lines.forEach((line, index) => {
+      if (line.trim().startsWith('•')) {
+        // This is a bullet point
+        elements.push(
+          <li key={index} className="ml-4 text-gray-700">
+            {line.replace('•', '').trim()}
+          </li>
+        );
+      } else if (line.trim() === '') {
+        // Empty line - add spacing
+        elements.push(<br key={index} />);
+      } else {
+        // Regular text or heading
+        if (line.match(/^\d+\./)) {
+          // This looks like a numbered heading
+          elements.push(
+            <h5 key={index} className="text-lg font-semibold text-inplast-blue mt-4 mb-2">
+              {line}
+            </h5>
+          );
+        } else {
+          elements.push(
+            <p key={index} className="text-gray-700 mb-2">
+              {line}
+            </p>
+          );
+        }
+      }
+    });
+    
+    return elements;
+  };
   
   return (
     <div className="bg-white rounded-xl shadow-lg overflow-hidden">
@@ -195,39 +234,55 @@ const LargeProjectCard = ({ project, reverseLayout = false }: LargeProjectCardPr
                   </section>
                 </>
               ) : (
-                // Placeholder content for Factory Modernization project
+                // Factory Modernization project with new structured content
                 project.expandedContent && (
-                  <>
+                  <div className="space-y-6">
                     <section>
-                      <h4 className="text-xl font-semibold text-inplast-blue mb-2">Initial Assessment and Planning</h4>
-                      <p className="text-gray-700">{project.expandedContent.initialAssessment}</p>
+                      <div className="space-y-2">
+                        {renderTextWithBullets(project.expandedContent.initialAssessment || '')}
+                      </div>
                     </section>
                     
                     <section>
-                      <h4 className="text-xl font-semibold text-inplast-blue mb-2">Implementation Strategy</h4>
-                      <p className="text-gray-700">{project.expandedContent.implementation}</p>
+                      <div className="space-y-2">
+                        <ul className="space-y-1">
+                          {renderTextWithBullets(project.expandedContent.implementation || '')}
+                        </ul>
+                      </div>
                     </section>
                     
                     <section>
-                      <h4 className="text-xl font-semibold text-inplast-blue mb-2">Challenges Encountered</h4>
-                      <p className="text-gray-700">{project.expandedContent.challenges}</p>
+                      <div className="space-y-2">
+                        <ul className="space-y-1">
+                          {renderTextWithBullets(project.expandedContent.challenges || '')}
+                        </ul>
+                      </div>
                     </section>
                     
                     <section>
-                      <h4 className="text-xl font-semibold text-inplast-blue mb-2">Solutions Developed</h4>
-                      <p className="text-gray-700">{project.expandedContent.solutions}</p>
+                      <div className="space-y-2">
+                        <ul className="space-y-1">
+                          {renderTextWithBullets(project.expandedContent.solutions || '')}
+                        </ul>
+                      </div>
                     </section>
                     
                     <section>
-                      <h4 className="text-xl font-semibold text-inplast-blue mb-2">Results and Improvements</h4>
-                      <p className="text-gray-700">{project.expandedContent.results}</p>
+                      <div className="space-y-2">
+                        <ul className="space-y-1">
+                          {renderTextWithBullets(project.expandedContent.results || '')}
+                        </ul>
+                      </div>
                     </section>
                     
                     <section>
-                      <h4 className="text-xl font-semibold text-inplast-blue mb-2">Conclusion and Impact</h4>
-                      <p className="text-gray-700">{project.expandedContent.conclusion}</p>
+                      <div className="space-y-2">
+                        <ul className="space-y-1">
+                          {renderTextWithBullets(project.expandedContent.conclusion || '')}
+                        </ul>
+                      </div>
                     </section>
-                  </>
+                  </div>
                 )
               )}
             </div>
