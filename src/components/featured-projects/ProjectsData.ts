@@ -22,7 +22,7 @@ export const featuredProjectsData: FeaturedProject[] = [
   {
     id: "bopp-line-relocation",
     title: "BOPP Line Relocation with Refurbishment and Upgrades",
-    location: "Hefei, China to Europe",
+    location: "From China to Europe",
     description: "Complete disassembly, relocation, and reinstallation of a large-scale BOPP production line across continents. The project involved complex logistics planning, specialized transportation solutions, and comprehensive reinstallation services. Our team managed every aspect from initial site assessment to final commissioning, ensuring minimal downtime and optimal performance at the new location.",
     images: [
       "/lovable-uploads/1578a116-7962-49ae-a3ad-3f09928ab06b.png",
@@ -48,7 +48,7 @@ export const featuredProjectsData: FeaturedProject[] = [
   {
     id: "factory-modernization",
     title: "Factory Modernization",
-    location: "Warsaw, Poland",
+    location: "Poland",
     description: "The project involved a comprehensive modernisation of a production line to improve operational efficiency, enhance process control, and extend equipment lifespan. The upgrade encompassed key components across the entire line,  including dosing, extrusion, Chill Roll, MDO, TDO, PRS, winder, and the ATLAS unit. Enhancements included new Siemens STEP 7 automation, upgraded control systems, new electrical cabinets, improved thermal and pneumatic controls, and the integration of advanced measurement technologies. The upgrades aimed to boost operational efficiency, ensure reliable process control, and extend equipment lifespan, positioning the facility for higher performance and future scalability.",
     images: [
       "/lovable-uploads/9f927459-d47b-40a5-bdac-57a022b86652.png",
