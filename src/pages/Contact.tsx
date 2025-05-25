@@ -7,15 +7,17 @@ import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
 import { Label } from "@/components/ui/label";
 import { useToast } from "@/hooks/use-toast";
+import emailjs from '@emailjs/browser';
 
 const ContactPage = () => {
   const [name, setName] = useState('');
   const [email, setEmail] = useState('');
   const [telephone, setTelephone] = useState('');
   const [message, setMessage] = useState('');
+  const [isSubmitting, setIsSubmitting] = useState(false);
   const { toast } = useToast();
 
-  const handleSubmit = (e: React.FormEvent) => {
+  const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
     
     // Basic validation
@@ -39,17 +41,45 @@ const ContactPage = () => {
       return;
     }
     
-    // Mock form submission
-    toast({
-      title: "Success",
-      description: "Your message has been sent. We'll get back to you soon!",
-    });
+    setIsSubmitting(true);
     
-    // Reset form
-    setName('');
-    setEmail('');
-    setTelephone('');
-    setMessage('');
+    try {
+      // Send email using EmailJS
+      const templateParams = {
+        from_name: name,
+        from_email: email,
+        telephone: telephone || 'Not provided',
+        message: message,
+        to_email: 'dvdktsmn@gmail.com'
+      };
+
+      await emailjs.send(
+        'service_default', // You'll need to replace with your EmailJS service ID
+        'template_default', // You'll need to replace with your EmailJS template ID
+        templateParams,
+        'your_public_key' // You'll need to replace with your EmailJS public key
+      );
+
+      toast({
+        title: "Success",
+        description: "Your message has been sent. We'll get back to you soon!",
+      });
+      
+      // Reset form
+      setName('');
+      setEmail('');
+      setTelephone('');
+      setMessage('');
+    } catch (error) {
+      console.error('Email sending failed:', error);
+      toast({
+        title: "Error",
+        description: "Failed to send message. Please try again later.",
+        variant: "destructive",
+      });
+    } finally {
+      setIsSubmitting(false);
+    }
   };
 
   return (
@@ -107,14 +137,18 @@ const ContactPage = () => {
                   <Textarea 
                     id="message" 
                     placeholder="Tell us about your project requirements" 
-                    className="flex-grow resize-none"
+                    className="flex-grow resize-none min-h-[140px]"
                     value={message}
                     onChange={(e) => setMessage(e.target.value)}
                   />
                 </div>
                 
-                <Button type="submit" className="w-full bg-inplast-blue hover:bg-inplast-darkgray text-white">
-                  Send Message
+                <Button 
+                  type="submit" 
+                  className="w-full bg-inplast-blue hover:bg-inplast-darkgray text-white"
+                  disabled={isSubmitting}
+                >
+                  {isSubmitting ? 'Sending...' : 'Send Message'}
                 </Button>
               </form>
             </div>
