@@ -147,8 +147,8 @@ export const featuredProjectsData: FeaturedProject[] = [
       "/lovable-uploads/d9d32c68-3d20-4969-ae42-dc4d8b43b12c.png",
       "/lovable-uploads/7672fa9d-9288-4cd0-b2a6-6793922d48c4.png",
       "/lovable-uploads/91406cc8-6669-4afa-aac9-4fbf1b7db70b.png",
-      "/lovable-uploads/36c75e94-7202-41f1-89fd-6cca618a42e0.png",
-      "/lovable-uploads/6d9f657a-3441-40cb-8b78-2706594cbc73.png"
+      "/lovable-uploads/36c75e94-7202-41f1-89fd-6cca618a42e0.png"
+      
     ],
     isLarge: false
   }
