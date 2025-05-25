@@ -56,12 +56,12 @@ const Contact = ({ isStandalone = false }: ContactProps) => {
       };
 
       await emailjs.send(
-        'service_default', // You'll need to replace with your EmailJS service ID
-        'template_default', // You'll need to replace with your EmailJS template ID
+        'service_8mjcvn8', // You'll need to replace with your EmailJS service ID
+        'template_zby8cjo', // You'll need to replace with your EmailJS template ID
         templateParams,
-        'your_public_key' // You'll need to replace with your EmailJS public key
+        'XGQj7vpCRTP4TlGX7' // You'll need to replace with your EmailJS public key
       );
-
+      
       toast({
         title: "Success",
         description: "Your message has been sent. We'll get back to you soon!",
