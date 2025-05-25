@@ -238,58 +238,54 @@ const LargeProjectCard = ({ project, reverseLayout = false }: LargeProjectCardPr
                 project.expandedContent && (
                   <div className="space-y-6">
                     <section>
-                      <div className="space-y-2">
-                        {renderTextWithBullets(project.expandedContent.initialAssessment || '')}
-                      </div>
-                    </section>
-                    <section>
-                    <h4 className="text-xl font-semibold text-inplast-blue mb-2">Training and Knowledge Transfer</h4>
+                    <h4 className="text-xl font-semibold text-inplast-blue mb-2">1. Dosing System Upgrade</h4>
                     <p className="text-gray-700">
-                      The final phase involved training the client's operational and maintenance staff. The team provided instructions
-                      and practical, on-machine training. Topics included safe operation, 
-                      routine maintenance, troubleshooting, and system optimization. This ensured the client's personnel 
-                      were fully prepared to operate the line independently and safely.
+                      The dosing section was enhanced with:\n• A new Siemens STEP 7 automation system\n• Installation of new power cables and drying system\n• Replacement of electrical cabinets\n• Integration of new load cells for improved measurement accuracy
                     </p>
                   </section>
                     <section>
-                      <div className="space-y-2">
-                        <ul className="space-y-1">
-                          {renderTextWithBullets(project.expandedContent.implementation || '')}
-                        </ul>
-                      </div>
-                    </section>
-                    
+                    <h4 className="text-xl font-semibold text-inplast-blue mb-2">2. Extrusion System Refurbishment</h4>
+                    <p className="text-gray-700">
+                   Two phases of extrusion upgrades included:\n• New heaters and cooling system\n• Installation of new control valves and clutches\n• Overhaul of motors\n• Improved heating control via Siemens power modules and Meusburger temperature controllers\n• Replacement of cabling and thermocouples
+                    </p>
+                  </section>
                     <section>
-                      <div className="space-y-2">
-                        <ul className="space-y-1">
-                          {renderTextWithBullets(project.expandedContent.challenges || '')}
-                        </ul>
-                      </div>
-                    </section>
-                    
+                    <h4 className="text-xl font-semibold text-inplast-blue mb-2">3. Chill Roll (Brueckner) Rebuild</h4>
+                    <p className="text-gray-700">
+                      The Chill Roll unit was fully rebuilt with:\n• New controls and piping\n• Flow control valves and polished roll surfaces\n• New heat exchangers for efficient thermal management
+                    </p>
+                  </section>
                     <section>
-                      <div className="space-y-2">
-                        <ul className="space-y-1">
-                          {renderTextWithBullets(project.expandedContent.solutions || '')}
-                        </ul>
-                      </div>
-                    </section>
-                    
+                    <h4 className="text-xl font-semibold text-inplast-blue mb-2">4. MDO (Machine Direction Orientation - Brueckner) Overhaul</h4>
+                    <p className="text-gray-700">
+                      A complete overhaul of the MDO included:\n• Replacement of bearings, belts, and rollers\n• Installation of advanced temperature control systems and pneumatics\n• Piping upgrades
+                    </p>
+                  </section>
                     <section>
-                      <div className="space-y-2">
-                        <ul className="space-y-1">
-                          {renderTextWithBullets(project.expandedContent.results || '')}
-                        </ul>
-                      </div>
-                    </section>
-                    
+                    <h4 className="text-xl font-semibold text-inplast-blue mb-2">5. TDO (Transverse Direction Orientation - Brueckner) Servicing</h4>
+                    <p className="text-gray-700">
+                      The TDO underwent a full service with:\n• Chain track overhaul\n• New power and control cabling\n• Replacement of thermocouples and overhaul of fan motors and gearboxes\n• Installation of new electrical cabinets and Siemens control systems\n• New fan motor drives
+                    </p>
+                  </section>
                     <section>
-                      <div className="space-y-2">
-                        <ul className="space-y-1">
-                          {renderTextWithBullets(project.expandedContent.conclusion || '')}
-                        </ul>
-                      </div>
-                    </section>
+                    <h4 className="text-xl font-semibold text-inplast-blue mb-2">6. PRS (KAMPF) System Overhaul</h4>
+                    <p className="text-gray-700">
+                    PRS system improvements featured:\n• Refurbished rolls and new bearings\n• Upgraded corona treatment (2 bottom, 1 top coronas)\n• Rebuilt generators and new transformers\n• Installation of new electrodes and pneumatics\n• Introduction of an NDC infrared automatic thickness control system
+                    </p>
+                  </section>
+                    <section>
+                    <h4 className="text-xl font-semibold text-inplast-blue mb-2">7. Winder Refurbishment</h4>
+                    <p className="text-gray-700">
+                      Both winding units were fully refurbished:\n• New Siemens STEP 7 control systems\n• Installation of new electrical cabinets
+                    </p>
+                  </section>
+                    <section>
+                    <h4 className="text-xl font-semibold text-inplast-blue mb-2">8. ATLAS System Modernisation</h4>
+                    <p className="text-gray-700">
+                   The ATLAS unit was thoroughly overhauled and upgraded with:\n• New bearings and positioning motors\n• New electrical cabinets, pneumatics, and hydraulic controls\n• Updated cabling and Siemens STEP 7 control system
+                    </p>
+                  </section>
+                    
                   </div>
                 )
               )}
