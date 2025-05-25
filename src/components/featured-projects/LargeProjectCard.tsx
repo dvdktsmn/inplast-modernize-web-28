@@ -287,7 +287,7 @@ const LargeProjectCard = ({ project, reverseLayout = false }: LargeProjectCardPr
                   </section>
                   
                   <section>
-                    <h4 className="text-xl font-semibold text-inplast-blue mb-2">3. Chill Roll (Brueckner) Rebuild</h4>
+                    <h4 className="text-xl font-semibold text-inplast-blue mb-2">3. Chill Roll Rebuild</h4>
                     <p className="text-gray-700 mb-2">The Chill Roll unit was fully rebuilt with:</p>
                     <ul className="space-y-2">
                       <li className="flex items-start">
