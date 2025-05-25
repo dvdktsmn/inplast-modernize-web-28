@@ -207,8 +207,8 @@ const LargeProjectCard = ({ project, reverseLayout = false }: LargeProjectCardPr
                   <section>
                     <h4 className="text-xl font-semibold text-inplast-blue mb-2">Assembly and Software Modernization</h4>
                     <p className="text-gray-700">
-                      The line was reassembled by the team with precision to restore full functionality. Controls engineers 
-                      installed updated PLC and SCADA systems, adding new diagnostics, improved process controls, and modern 
+                      The line was reassembled by the team with precision to restore full functionality. Engineers fully replaced
+                      the electrical and control systems and installed updated PLC and SCADA systems, adding new diagnostics, improved process controls, and modern 
                       operator interfaces. These upgrades provided the client with better monitoring and operational capabilities 
                       for future production.
                     </p>
