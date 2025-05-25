@@ -237,30 +237,6 @@ const LargeProjectCard = ({ project, reverseLayout = false }: LargeProjectCardPr
                 // Factory Modernization project with orange arrow bullet points
                 <div className="space-y-6">
                   <section>
-                    <p className="text-gray-700 mb-4">
-                      The project involved a comprehensive modernisation of a production line to improve operational efficiency, enhance process control, and extend equipment lifespan. The upgrade encompassed key components across the entire line, from dosing to winding systems. The modernisation was executed in multiple stages, each addressing specific systems and machinery:
-                    </p>
-                    <ul className="space-y-2">
-                      <li className="flex items-start">
-                        <ArrowRight className="h-5 w-5 text-inplast-orange mr-2 mt-0.5 flex-shrink-0" />
-                        <span>Comprehensive system-wide modernisation approach</span>
-                      </li>
-                      <li className="flex items-start">
-                        <ArrowRight className="h-5 w-5 text-inplast-orange mr-2 mt-0.5 flex-shrink-0" />
-                        <span>Multi-stage implementation for minimal production disruption</span>
-                      </li>
-                      <li className="flex items-start">
-                        <ArrowRight className="h-5 w-5 text-inplast-orange mr-2 mt-0.5 flex-shrink-0" />
-                        <span>Focus on operational efficiency and process control enhancement</span>
-                      </li>
-                      <li className="flex items-start">
-                        <ArrowRight className="h-5 w-5 text-inplast-orange mr-2 mt-0.5 flex-shrink-0" />
-                        <span>Equipment lifespan extension through strategic upgrades</span>
-                      </li>
-                    </ul>
-                  </section>
-                  
-                  <section>
                     <h4 className="text-xl font-semibold text-inplast-blue mb-2">1. Dosing System Upgrade</h4>
                     <p className="text-gray-700 mb-2">The dosing section was enhanced with:</p>
                     <ul className="space-y-2">
