@@ -1,4 +1,3 @@
-
 import React, { useState } from 'react';
 import { Button } from "@/components/ui/button";
 import { Link, useLocation } from 'react-router-dom';
@@ -32,11 +31,9 @@ const Navbar = () => {
       <div className="container mx-auto flex justify-between items-center py-2">
         <div className="flex items-center">
           <Link to="/">
-            <img 
-              src="/lovable-uploads/99a847fd-71f3-4e06-a241-fb9739d1979b.png" 
-              alt="Inplast Novex Logo" 
-              className="h-12 mr-3"
-            />
+            <div className="text-white font-bold text-xl mr-3 py-3">
+              BPL Engineering
+            </div>
           </Link>
         </div>
         
