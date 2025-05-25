@@ -81,7 +81,6 @@ export const projectsData: Project[] = [
     image: "/lovable-uploads/7559cfc1-a938-4092-b12b-10a9bbfbf6b1.png",
     description: "Implementation of new high-efficiency motors and drives, control and SCADA systems.",
     galleryImages: [
-      "/lovable-uploads/7559cfc1-a938-4092-b12b-10a9bbfbf6b1.png",
       "/lovable-uploads/53726012-eb6d-4113-a052-78a0952b83e9.png",
       "/lovable-uploads/6864dcf5-bd5d-4ad8-b67c-35a2ef6b4492.png",
       "/lovable-uploads/f0d79ea5-1ec0-4fa1-a72a-8cac6dd293c8.png"
