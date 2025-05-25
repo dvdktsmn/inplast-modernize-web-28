@@ -58,14 +58,7 @@ export const featuredProjectsData: FeaturedProject[] = [
     ],
     isLarge: true,
     tags: ["Modernization", "Efficiency Improvement", "Control Systems"],
-    expandedContent: {
-      initialAssessment: "The project involved a comprehensive modernisation of a production line with the following objectives:\n• Improve operational efficiency\n• Enhance process control\n• Extend equipment lifespan\n\nThe upgrade encompassed key components across the entire line, from dosing to winding systems. The modernisation was executed in multiple stages, each addressing specific systems and machinery.",
-      implementation: "1. Dosing System Upgrade\n\nThe dosing section was enhanced with:\n• A new Siemens STEP 7 automation system\n• Installation of new power cables and drying system\n• Replacement of electrical cabinets\n• Integration of new load cells for improved measurement accuracy\n\n2. Extrusion System Refurbishment\n\nTwo phases of extrusion upgrades included:\n• New heaters and cooling system\n• Installation of new control valves and clutches\n• Overhaul of motors\n• Improved heating control via Siemens power modules and Meusburger temperature controllers\n• Replacement of cabling and thermocouples",
-      challenges: "3. Chill Roll (Brueckner) Rebuild\n\nThe Chill Roll unit was fully rebuilt with:\n• New controls and piping\n• Flow control valves and polished roll surfaces\n• New heat exchangers for efficient thermal management\n\n4. MDO (Machine Direction Orientation - Brueckner) Overhaul\n\nA complete overhaul of the MDO included:\n• Replacement of bearings, belts, and rollers\n• Installation of advanced temperature control systems and pneumatics\n• Piping upgrades",
-      solutions: "5. TDO (Transverse Direction Orientation - Brueckner) Servicing\n\nThe TDO underwent a full service with:\n• Chain track overhaul\n• New power and control cabling\n• Replacement of thermocouples and overhaul of fan motors and gearboxes\n• Installation of new electrical cabinets and Siemens control systems\n• New fan motor drives\n\n6. PRS (KAMPF) System Overhaul\n\nPRS system improvements featured:\n• Refurbished rolls and new bearings\n• Upgraded corona treatment (2 bottom, 1 top coronas)\n• Rebuilt generators and new transformers\n• Installation of new electrodes and pneumatics\n• Introduction of an NDC infrared automatic thickness control system",
-      results: "7. Winder Refurbishment\n\nBoth winding units were fully refurbished:\n• New Siemens STEP 7 control systems\n• Installation of new electrical cabinets",
-      conclusion: "8. ATLAS System Modernisation\n\nThe ATLAS unit was thoroughly overhauled and upgraded with:\n• New bearings and positioning motors\n• New electrical cabinets, pneumatics, and hydraulic controls\n• Updated cabling and Siemens STEP 7 control system"
-    }
+    
   },
   
   // Small Projects
