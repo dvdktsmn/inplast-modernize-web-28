@@ -233,59 +233,121 @@ const LargeProjectCard = ({ project, reverseLayout = false }: LargeProjectCardPr
                     </p>
                   </section>
                 </>
+              ) : project.id === "factory-modernization" ? (
+                // Factory Modernization project with text directly in component
+                <div className="space-y-6">
+                  <section>
+                    <p className="text-gray-700 mb-4">
+                      The project involved a comprehensive modernisation of a production line to improve operational efficiency, enhance process control, and extend equipment lifespan. The upgrade encompassed:
+                    </p>
+                    <ul className="list-none space-y-1 mb-4">
+                      <li className="text-gray-700">• Key components across the entire line</li>
+                      <li className="text-gray-700">• Systems from dosing to winding</li>
+                      <li className="text-gray-700">• Multiple stages addressing specific machinery</li>
+                    </ul>
+                    <p className="text-gray-700">
+                      The modernisation was executed in multiple stages, each addressing specific systems and machinery.
+                    </p>
+                  </section>
+                  
+                  <section>
+                    <h4 className="text-xl font-semibold text-inplast-blue mb-2">1. Dosing System Upgrade</h4>
+                    <p className="text-gray-700 mb-2">The dosing section was enhanced with:</p>
+                    <ul className="list-none space-y-1">
+                      <li className="text-gray-700">• A new Siemens STEP 7 automation system</li>
+                      <li className="text-gray-700">• Installation of new power cables and drying system</li>
+                      <li className="text-gray-700">• Replacement of electrical cabinets</li>
+                      <li className="text-gray-700">• Integration of new load cells for improved measurement accuracy</li>
+                    </ul>
+                  </section>
+                  
+                  <section>
+                    <h4 className="text-xl font-semibold text-inplast-blue mb-2">2. Extrusion System Refurbishment</h4>
+                    <p className="text-gray-700 mb-2">Two phases of extrusion upgrades included:</p>
+                    <ul className="list-none space-y-1">
+                      <li className="text-gray-700">• New heaters and cooling system</li>
+                      <li className="text-gray-700">• Installation of new control valves and clutches</li>
+                      <li className="text-gray-700">• Overhaul of motors</li>
+                      <li className="text-gray-700">• Improved heating control via Siemens power modules and Meusburger temperature controllers</li>
+                      <li className="text-gray-700">• Replacement of cabling and thermocouples</li>
+                    </ul>
+                  </section>
+                  
+                  <section>
+                    <h4 className="text-xl font-semibold text-inplast-blue mb-2">3. Chill Roll (Brueckner) Rebuild</h4>
+                    <p className="text-gray-700 mb-2">The Chill Roll unit was fully rebuilt with:</p>
+                    <ul className="list-none space-y-1">
+                      <li className="text-gray-700">• New controls and piping</li>
+                      <li className="text-gray-700">• Flow control valves and polished roll surfaces</li>
+                      <li className="text-gray-700">• New heat exchangers for efficient thermal management</li>
+                    </ul>
+                  </section>
+                  
+                  <section>
+                    <h4 className="text-xl font-semibold text-inplast-blue mb-2">4. MDO (Machine Direction Orientation - Brueckner) Overhaul</h4>
+                    <p className="text-gray-700 mb-2">A complete overhaul of the MDO included:</p>
+                    <ul className="list-none space-y-1">
+                      <li className="text-gray-700">• Replacement of bearings, belts, and rollers</li>
+                      <li className="text-gray-700">• Installation of advanced temperature control systems and pneumatics</li>
+                      <li className="text-gray-700">• Piping upgrades</li>
+                    </ul>
+                  </section>
+                  
+                  <section>
+                    <h4 className="text-xl font-semibold text-inplast-blue mb-2">5. TDO (Transverse Direction Orientation - Brueckner) Servicing</h4>
+                    <p className="text-gray-700 mb-2">The TDO underwent a full service with:</p>
+                    <ul className="list-none space-y-1">
+                      <li className="text-gray-700">• Chain track overhaul</li>
+                      <li className="text-gray-700">• New power and control cabling</li>
+                      <li className="text-gray-700">• Replacement of thermocouples and overhaul of fan motors and gearboxes</li>
+                      <li className="text-gray-700">• Installation of new electrical cabinets and Siemens control systems</li>
+                      <li className="text-gray-700">• New fan motor drives</li>
+                    </ul>
+                  </section>
+                  
+                  <section>
+                    <h4 className="text-xl font-semibold text-inplast-blue mb-2">6. PRS (KAMPF) System Overhaul</h4>
+                    <p className="text-gray-700 mb-2">PRS system improvements featured:</p>
+                    <ul className="list-none space-y-1">
+                      <li className="text-gray-700">• Refurbished rolls and new bearings</li>
+                      <li className="text-gray-700">• Upgraded corona treatment (2 bottom, 1 top coronas)</li>
+                      <li className="text-gray-700">• Rebuilt generators and new transformers</li>
+                      <li className="text-gray-700">• Installation of new electrodes and pneumatics</li>
+                      <li className="text-gray-700">• Introduction of an NDC infrared automatic thickness control system</li>
+                    </ul>
+                  </section>
+                  
+                  <section>
+                    <h4 className="text-xl font-semibold text-inplast-blue mb-2">7. Winder Refurbishment</h4>
+                    <p className="text-gray-700 mb-2">Both winding units were fully refurbished:</p>
+                    <ul className="list-none space-y-1">
+                      <li className="text-gray-700">• New Siemens STEP 7 control systems</li>
+                      <li className="text-gray-700">• Installation of new electrical cabinets</li>
+                    </ul>
+                  </section>
+                  
+                  <section>
+                    <h4 className="text-xl font-semibold text-inplast-blue mb-2">8. ATLAS System Modernisation</h4>
+                    <p className="text-gray-700 mb-2">The ATLAS unit was thoroughly overhauled and upgraded with:</p>
+                    <ul className="list-none space-y-1">
+                      <li className="text-gray-700">• New bearings and positioning motors</li>
+                      <li className="text-gray-700">• New electrical cabinets, pneumatics, and hydraulic controls</li>
+                      <li className="text-gray-700">• Updated cabling and Siemens STEP 7 control system</li>
+                    </ul>
+                  </section>
+                </div>
               ) : (
-                // Factory Modernization project with new structured content
+                // Default fallback for other projects
                 project.expandedContent && (
                   <div className="space-y-6">
-                    <section>
-                    <h4 className="text-xl font-semibold text-inplast-blue mb-2">1. Dosing System Upgrade</h4>
-                    <p className="text-gray-700">
-                      The dosing section was enhanced with:\n• A new Siemens STEP 7 automation system\n• Installation of new power cables and drying system\n• Replacement of electrical cabinets\n• Integration of new load cells for improved measurement accuracy
-                    </p>
-                  </section>
-                    <section>
-                    <h4 className="text-xl font-semibold text-inplast-blue mb-2">2. Extrusion System Refurbishment</h4>
-                    <p className="text-gray-700">
-                   Two phases of extrusion upgrades included:\n• New heaters and cooling system\n• Installation of new control valves and clutches\n• Overhaul of motors\n• Improved heating control via Siemens power modules and Meusburger temperature controllers\n• Replacement of cabling and thermocouples
-                    </p>
-                  </section>
-                    <section>
-                    <h4 className="text-xl font-semibold text-inplast-blue mb-2">3. Chill Roll (Brueckner) Rebuild</h4>
-                    <p className="text-gray-700">
-                      The Chill Roll unit was fully rebuilt with:\n• New controls and piping\n• Flow control valves and polished roll surfaces\n• New heat exchangers for efficient thermal management
-                    </p>
-                  </section>
-                    <section>
-                    <h4 className="text-xl font-semibold text-inplast-blue mb-2">4. MDO (Machine Direction Orientation - Brueckner) Overhaul</h4>
-                    <p className="text-gray-700">
-                      A complete overhaul of the MDO included:\n• Replacement of bearings, belts, and rollers\n• Installation of advanced temperature control systems and pneumatics\n• Piping upgrades
-                    </p>
-                  </section>
-                    <section>
-                    <h4 className="text-xl font-semibold text-inplast-blue mb-2">5. TDO (Transverse Direction Orientation - Brueckner) Servicing</h4>
-                    <p className="text-gray-700">
-                      The TDO underwent a full service with:\n• Chain track overhaul\n• New power and control cabling\n• Replacement of thermocouples and overhaul of fan motors and gearboxes\n• Installation of new electrical cabinets and Siemens control systems\n• New fan motor drives
-                    </p>
-                  </section>
-                    <section>
-                    <h4 className="text-xl font-semibold text-inplast-blue mb-2">6. PRS (KAMPF) System Overhaul</h4>
-                    <p className="text-gray-700">
-                    PRS system improvements featured:\n• Refurbished rolls and new bearings\n• Upgraded corona treatment (2 bottom, 1 top coronas)\n• Rebuilt generators and new transformers\n• Installation of new electrodes and pneumatics\n• Introduction of an NDC infrared automatic thickness control system
-                    </p>
-                  </section>
-                    <section>
-                    <h4 className="text-xl font-semibold text-inplast-blue mb-2">7. Winder Refurbishment</h4>
-                    <p className="text-gray-700">
-                      Both winding units were fully refurbished:\n• New Siemens STEP 7 control systems\n• Installation of new electrical cabinets
-                    </p>
-                  </section>
-                    <section>
-                    <h4 className="text-xl font-semibold text-inplast-blue mb-2">8. ATLAS System Modernisation</h4>
-                    <p className="text-gray-700">
-                   The ATLAS unit was thoroughly overhauled and upgraded with:\n• New bearings and positioning motors\n• New electrical cabinets, pneumatics, and hydraulic controls\n• Updated cabling and Siemens STEP 7 control system
-                    </p>
-                  </section>
-                    
+                    {Object.entries(project.expandedContent).map(([key, value], index) => (
+                      <section key={index}>
+                        <h4 className="text-xl font-semibold text-inplast-blue mb-2 capitalize">
+                          {key.replace(/([A-Z])/g, ' $1').trim()}
+                        </h4>
+                        <div>{renderTextWithBullets(value || '')}</div>
+                      </section>
+                    ))}
                   </div>
                 )
               )}
