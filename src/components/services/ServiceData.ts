@@ -1,3 +1,4 @@
+
 export interface ServiceDetails {
   id: string;
   title: string;
@@ -18,44 +19,44 @@ export interface ServiceDetails {
 export const serviceDetails: ServiceDetails[] = [
   {
     id: "installation",
-    title: "Installation and Commissioning",
-    description: "Ensure seamless operation from day one. Our experts manage the installation and commissioning process end-to-end, offering localized support and global experience.",
+    title: "Установка и ввод в эксплуатацию",
+    description: "Обеспечьте безупречную работу с первого дня. Наши эксперты управляют процессом установки и ввода в эксплуатацию от начала до конца, предлагая локализованную поддержку и глобальный опыт.",
     fullDescription: [
-      "Successful industrial operations depend on the flawless installation and commissioning of equipment and systems. We provide comprehensive turnkey solutions—from full project design and planning to equipment overhaul and final commissioning—ensuring your operations are running at peak performance from day one.",
-      "Our experience across industries allows us to deliver seamless project execution with minimal disruption to your business.",
-      "From start to finish, we deliver reliable installation and commissioning services designed to optimize your production capabilities and support long-term operational excellence."
+      "Успешная промышленная деятельность зависит от безупречной установки и ввода в эксплуатацию оборудования и систем. Мы предоставляем комплексные решения под ключ — от полного проектирования и планирования проекта до капитального ремонта оборудования и окончательного ввода в эксплуатацию — обеспечивая работу ваших операций на пиковой производительности с первого дня.",
+      "Наш опыт в различных отраслях позволяет нам обеспечивать безупречное выполнение проектов с минимальными нарушениями для вашего бизнеса.",
+      "От начала до конца мы предоставляем надежные услуги по установке и вводу в эксплуатацию, направленные на оптимизацию ваших производственных возможностей и поддержку долгосрочного операционного совершенства."
     ],
     benefits: [
-      "Reduced downtime and faster time to production",
-      "Expert handling of complex integration challenges",
-      "Comprehensive testing and validation protocols",
-      "Full documentation and operator training",
-      "Post-installation support and troubleshooting"
+      "Сокращение времени простоя и ускорение времени до производства",
+      "Экспертное решение сложных интеграционных задач",
+      "Комплексные протоколы тестирования и валидации",
+      "Полная документация и обучение операторов",
+      "Постустановочная поддержка и устранение неполадок"
     ],
     process: [
       {
-        title: "Turnkey Project Execution",
-        description: "We manage every stage of your project, from initial concept and engineering to complete installation and operational handover."
+        title: "Выполнение проектов под ключ",
+        description: "Мы управляем каждым этапом вашего проекта, от первоначальной концепции и инжиниринга до полной установки и передачи в эксплуатацию."
       },
       {
-        title: "Full System Design and Engineering",
-        description: "Our experts design fully customized system layouts, electrical and mechanical schematics, and control architectures to meet your unique operational requirements."
+        title: "Полное проектирование и инжиниринг систем",
+        description: "Наши эксперты проектируют полностью настроенные схемы систем, электрические и механические чертежи, а также архитектуры управления для удовлетворения ваших уникальных операционных требований."
       },
       {
-        title: "Equipment Installation",
-        description: "Precise mechanical and electrical installation of all machinery and support systems, carried out to international safety and quality standards."
+        title: "Установка оборудования",
+        description: "Точная механическая и электрическая установка всего оборудования и вспомогательных систем, выполненная в соответствии с международными стандартами безопасности и качества."
       },
       {
-        title: "Control System Integration",
-        description: "We integrate advanced control and automation systems to ensure optimal machine performance and smooth coordination across your production lines."
+        title: "Интеграция систем управления",
+        description: "Мы интегрируем передовые системы управления и автоматизации для обеспечения оптимальной производительности оборудования и плавной координации в ваших производственных линиях."
       },
       {
-        title: "Equipment Overhaul and Upgrades",
-        description: "Our team refurbishes, upgrades, or retrofits your existing equipment to extend its lifespan, improve reliability, and adapt to new production demands."
+        title: "Капитальный ремонт и модернизация оборудования",
+        description: "Наша команда восстанавливает, модернизирует или модифицирует ваше существующее оборудование для продления срока службы, повышения надежности и адаптации к новым производственным требованиям."
       },
       {
-        title: "Commissioning and Operator Training",
-        description: "We carry out thorough functional testing, calibration, and system verification, and provide comprehensive training to your personnel for safe and efficient operation."
+        title: "Ввод в эксплуатацию и обучение операторов",
+        description: "Мы проводим тщательное функциональное тестирование, калибровку и верификацию систем, а также предоставляем комплексное обучение вашему персоналу для безопасной и эффективной эксплуатации."
       }
     ],
     images: [
@@ -68,42 +69,42 @@ export const serviceDetails: ServiceDetails[] = [
   },
   {
     id: "relocation",
-    title: "Equipment Relocation",
-    description: "We specialize in the safe and efficient dismantling, relocation and assembly of industrial equipment, including full production lines. Our global project experience ensures your assets arrive safely at their new location.",
+    title: "Перемещение оборудования",
+    description: "Мы специализируемся на безопасном и эффективном демонтаже, перемещении и сборке промышленного оборудования, включая полные производственные линии. Наш глобальный проектный опыт обеспечивает безопасную доставку ваших активов в новое место.",
     fullDescription: [
-      "Relocating industrial equipment demands precision, expertise, and meticulous planning. Our comprehensive equipment relocation services ensure minimal downtime and maximum efficiency, whether you're moving a single machine or an entire facility."
+      "Перемещение промышленного оборудования требует точности, экспертизы и тщательного планирования. Наши комплексные услуги по перемещению оборудования обеспечивают минимальное время простоя и максимальную эффективность, независимо от того, перемещаете ли вы один станок или целое предприятие."
     ],
     benefits: [
-      "Minimized production downtime during transition",
-      "Expert handling of complex logistics challenges",
-      "Comprehensive project management from start to finish",
-      "Preservation of equipment integrity during transport",
-      "Improved layout and workflow optimization at the new location"
+      "Минимизированное время простоя производства во время перехода",
+      "Экспертное решение сложных логистических задач",
+      "Комплексное управление проектом от начала до конца",
+      "Сохранение целостности оборудования во время транспортировки",
+      "Улучшенная планировка и оптимизация рабочего процесса в новом месте"
     ],
     process: [
       {
-        title: "Dismantling",
-        description: "Expert disassembly of machinery and equipment, ensuring safe handling and preparation for transport."
+        title: "Демонтаж",
+        description: "Экспертная разборка оборудования и машин, обеспечивающая безопасное обращение и подготовку к транспортировке."
       },
       {
-        title: "Seaworthy Packaging",
-        description: "Robust packaging solutions that protect your equipment against environmental factors during maritime transit."
+        title: "Морская упаковка",
+        description: "Надежные упаковочные решения, защищающие ваше оборудование от воздействия окружающей среды во время морской перевозки."
       },
       {
-        title: "Oversized Equipment Handling",
-        description: "Specialized techniques and equipment to manage the relocation of large or heavy machinery safely and efficiently."
+        title: "Обработка крупногабаритного оборудования",
+        description: "Специализированные методы и оборудование для безопасного и эффективного управления перемещением крупных или тяжелых машин."
       },
       {
-        title: "Transportation Logistics",
-        description: "Coordinated logistics planning to ensure timely and secure delivery of equipment to its new location."
+        title: "Транспортная логистика",
+        description: "Координированное планирование логистики для обеспечения своевременной и безопасной доставки оборудования в новое место."
       },
       {
-        title: "Reassembly and Alignment at New Location",
-        description: "Comprehensive reassembly of machinery by experienced technicians, including mechanical, electrical, and control system reconnections, precision alignment, and functional testing to ensure full operational readiness."
+        title: "Повторная сборка и выравнивание в новом месте",
+        description: "Комплексная повторная сборка оборудования опытными техниками, включая механические, электрические подключения и подключения систем управления, точное выравнивание и функциональное тестирование для обеспечения полной готовности к эксплуатации."
       },
       {
-        title: "Installation and Commissioning",
-        description: "Final setup and fine-tuning of systems so your equipment is fully integrated and ready for immediate production."
+        title: "Установка и ввод в эксплуатацию",
+        description: "Окончательная настройка и точная настройка систем, чтобы ваше оборудование было полностью интегрировано и готово к немедленному производству."
       }
     ],
     images: [
@@ -118,44 +119,44 @@ export const serviceDetails: ServiceDetails[] = [
   },
   {
     id: "overhaul",
-    title: "Equipment Restoration and Upgrade",
-    description: "Restore and modernize your assets. We perform full equipment overhauls to increase longevity, energy efficiency, and operational performance—bringing outdated systems up to today's standards.",
+    title: "Восстановление и модернизация оборудования",
+    description: "Восстановите и модернизируйте ваши активы. Мы выполняем полный капитальный ремонт оборудования для увеличения долговечности, энергоэффективности и операционной производительности — приводя устаревшие системы в соответствие с современными стандартами.",
     fullDescription: [
-      "Maximize the value and performance of your existing assets with our comprehensive equipment overhaul and upgrade services. We help you extend equipment lifespan, improve operational efficiency, and meet current production standards without the need for full replacement. Our approach combines deep technical expertise with a structured process to minimize downtime and ensure consistent results.",
-      "We combine deep mechanical expertise with advanced engineering capabilities to thoroughly assess, repair, refurbish, and upgrade your production equipment.",
-      "Every overhaul project is customized to address your specific needs, whether it's addressing worn components, upgrading control systems, or improving overall performance metrics."
+      "Максимизируйте ценность и производительность ваших существующих активов с помощью наших комплексных услуг по капитальному ремонту и модернизации оборудования. Мы помогаем вам продлить срок службы оборудования, повысить операционную эффективность и соответствовать современным производственным стандартам без необходимости полной замены. Наш подход сочетает глубокую техническую экспертизу со структурированным процессом для минимизации простоев и обеспечения стабильных результатов.",
+      "Мы сочетаем глубокую механическую экспертизу с передовыми инженерными возможностями для тщательной оценки, ремонта, восстановления и модернизации вашего производственного оборудования.",
+      "Каждый проект капитального ремонта настраивается для решения ваших конкретных потребностей, будь то устранение изношенных компонентов, модернизация систем управления или улучшение общих показателей производительности."
     ],
     benefits: [
-      "Extended equipment lifespan at a fraction of replacement cost",
-      "Improved operational reliability and reduced maintenance needs",
-      "Enhanced energy efficiency and reduced operational costs",
-      "Modernized controls and improved safety features",
-      "Minimal disruption compared to complete replacement"
+      "Продленный срок службы оборудования за долю стоимости замены",
+      "Улучшенная операционная надежность и сниженные потребности в обслуживании",
+      "Повышенная энергоэффективность и сниженные операционные расходы",
+      "Модернизированные средства управления и улучшенные функции безопасности",
+      "Минимальные нарушения по сравнению с полной заменой"
     ],
     process: [
       {
-        title: "Condition Assessment and Diagnostics",
-        description: "Comprehensive evaluation of current equipment condition, performance metrics, and failure points."
+        title: "Оценка состояния и диагностика",
+        description: "Комплексная оценка текущего состояния оборудования, показателей производительности и точек отказа."
       },
       {
-        title: "Disassembly & Inspection",
-        description: "Methodical disassembly and detailed inspection of all components and subsystems."
+        title: "Разборка и проверка",
+        description: "Методичная разборка и детальная проверка всех компонентов и подсистем."
       },
       {
-        title: "Retrofitting and Modernization",
-        description: "Precision repair, replacement of worn components, and implementation of approved upgrades."
+        title: "Модернизация и обновление",
+        description: "Точный ремонт, замена изношенных компонентов и внедрение одобренных модернизаций."
       },
       {
-        title: "Reassembly & Testing",
-        description: "Careful reassembly with new components and comprehensive testing of all systems."
+        title: "Повторная сборка и тестирование",
+        description: "Тщательная повторная сборка с новыми компонентами и комплексное тестирование всех систем."
       },
       {
-        title: "Performance Validation",
-        description: "Rigorous validation of performance improvements against baseline metrics and targets."
+        title: "Валидация производительности",
+        description: "Строгая валидация улучшений производительности в сравнении с базовыми метриками и целями."
       },
       {
-        title :"Ongoing Support and Optimization",
-        description: "We offer continued technical support, preventive maintenance recommendations, and process optimization services to maintain peak performance over time."
+        title: "Постоянная поддержка и оптимизация",
+        description: "Мы предлагаем постоянную техническую поддержку, рекомендации по профилактическому обслуживанию и услуги по оптимизации процессов для поддержания пиковой производительности с течением времени."
       }
     ],
     images: [
@@ -174,47 +175,47 @@ export const serviceDetails: ServiceDetails[] = [
   },
   {
     id: "engineering",
-    title: "Engineering and Control Systems Upgrade",
-    description: "From design to deployment, our electrical engineering solutions support the safe, smart, and scalable control of your production infrastructure, enhancing efficiency and reducing downtime.",
+    title: "Инжиниринг и модернизация систем управления",
+    description: "От проектирования до внедрения, наши решения электротехнического инжиниринга поддерживают безопасное, интеллектуальное и масштабируемое управление вашей производственной инфраструктурой, повышая эффективность и сокращая простои.",
     fullDescription: [
-      "In today's industrial landscape, performance, reliability, and energy efficiency are critical to staying competitive. Whether you operate in film production, packaging, or other manufacturing sectors, upgrading your engineering and control systems is essential to maximize uptime, optimize processes, and meet modern safety and quality standards.",
-      "Our comprehensive Engineering and Control Systems Upgrade services provide complete modernization solutions—from electrical and mechanical upgrades to advanced automation and software development. We partner closely with you to tailor solutions that integrate seamlessly with your existing equipment and operational goals."
+      "В современном промышленном ландшафте производительность, надежность и энергоэффективность критически важны для сохранения конкурентоспособности. Независимо от того, работаете ли вы в производстве пленки, упаковке или других производственных секторах, модернизация ваших инженерных и управляющих систем является необходимой для максимизации времени работы, оптимизации процессов и соответствия современным стандартам безопасности и качества.",
+      "Наши комплексные услуги по модернизации инженерных и управляющих систем предоставляют полные решения по модернизации — от электрических и механических модернизаций до передовой автоматизации и разработки программного обеспечения. Мы тесно сотрудничаем с вами для адаптации решений, которые плавно интегрируются с вашим существующим оборудованием и операционными целями."
     ],
     benefits: [
-      "Improved process control and production consistency",
-      "Enhanced data collection and performance analytics",
-      "Reduced downtime through predictive maintenance capabilities",
-      "Simplified operator interfaces and improved troubleshooting",
-      "Scalable architecture that supports future expansion"
+      "Улучшенное управление процессами и стабильность производства",
+      "Расширенные возможности сбора данных и аналитики производительности",
+      "Сокращение простоев благодаря возможностям прогнозирующего обслуживания",
+      "Упрощенные операторские интерфейсы и улучшенное устранение неполадок",
+      "Масштабируемая архитектура, поддерживающая будущее расширение"
     ],
     process: [
       {
-        title: "Electrical Cabinet Design and Assembly",
-        description: "Custom electrical cabinet design and professional assembly for your specific control requirements."
+        title: "Проектирование и сборка электрических шкафов",
+        description: "Индивидуальное проектирование электрических шкафов и профессиональная сборка для ваших конкретных требований управления."
       },
       {
-        title: "Control Systems Integration",
-        description: "We integrate modern PLCs and automation technologies to streamline and enhance your production processes."
+        title: "Интеграция систем управления",
+        description: "Мы интегрируем современные ПЛК и технологии автоматизации для оптимизации и улучшения ваших производственных процессов."
       },
       {
-        title: "Mechanical Systems Upgrades",
-        description: "Upgrade and retrofit mechanical components to improve equipment reliability and performance."
+        title: "Модернизация механических систем",
+        description: "Модернизация и дооснащение механических компонентов для улучшения надежности и производительности оборудования."
       },
       {
-        title: "Motion Control Solutions",
-        description: "Precision motion control implementations for better accuracy and speed."
+        title: "Решения для управления движением",
+        description: "Внедрение систем точного управления движением для лучшей точности и скорости."
       },
       {
-        title: "Custom Software Development",
-        description: "Tailored software solutions designed for your specific operational needs."
+        title: "Разработка индивидуального программного обеспечения",
+        description: "Индивидуальные программные решения, разработанные для ваших конкретных операционных потребностей."
       },
       {
-        title: "SCADA & HMI Systems",
-        description: "We design advanced monitoring and control interfaces for improved operator efficiency."
+        title: "Системы SCADA и HMI",
+        description: "Мы проектируем передовые интерфейсы мониторинга и управления для повышения эффективности операторов."
       },
       {
-        title: "Energy Efficiency Monitoring and Control",
-        description: "Systems to track and optimize energy usage across your production environment."
+        title: "Мониторинг и управление энергоэффективностью",
+        description: "Системы для отслеживания и оптимизации использования энергии в вашей производственной среде."
       }
     ],
     images: [
