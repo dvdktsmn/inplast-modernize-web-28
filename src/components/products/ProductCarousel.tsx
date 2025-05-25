@@ -11,13 +11,13 @@ interface Product {
 }
 
 const products: Product[] = [
-  { name: "Biax Lines", image: "/lovable-uploads/14e9bd31-4fd9-4558-9a4b-731f44fce6e2.png" },
-  { name: "Extrusion Systems", image: "/lovable-uploads/3ff7b214-9963-4cd2-96d0-b11838885c28.png" },
-  { name: "Converting Equipment", image: "/lovable-uploads/de929fe4-b5a4-4a48-8301-454cbd7bea35.png" },
-  { name: "Electrical Components and Systems", image: "/lovable-uploads/371c6472-159f-41b3-a97b-4abeff5ccde6.png" },
-  { name: "Motion Control", image: "/lovable-uploads/87f7cb49-1a26-4ce0-82e7-5819631a0cd1.png" },
-  { name: "Automation and Process Control", image: "/lovable-uploads/d946c718-e590-4932-9e9a-45e34a43ae11.png" },
-  { name: "MES Systems", image: "/placeholder.svg" },
+  { name: "Линии Biax", image: "/lovable-uploads/14e9bd31-4fd9-4558-9a4b-731f44fce6e2.png" },
+  { name: "Экструзионные системы", image: "/lovable-uploads/3ff7b214-9963-4cd2-96d0-b11838885c28.png" },
+  { name: "Перерабатывающее оборудование", image: "/lovable-uploads/de929fe4-b5a4-4a48-8301-454cbd7bea35.png" },
+  { name: "Электрические компоненты и системы", image: "/lovable-uploads/371c6472-159f-41b3-a97b-4abeff5ccde6.png" },
+  { name: "Управление движением", image: "/lovable-uploads/87f7cb49-1a26-4ce0-82e7-5819631a0cd1.png" },
+  { name: "Автоматизация и управление процессами", image: "/lovable-uploads/d946c718-e590-4932-9e9a-45e34a43ae11.png" },
+  { name: "MES-системы", image: "/placeholder.svg" },
 ];
 
 const ProductCarousel = () => {
@@ -29,10 +29,10 @@ const ProductCarousel = () => {
     <div className="container mx-auto px-4">
       <div className="text-center mb-12">
         <h2 className="text-3xl font-bold text-inplast-blue mb-4">
-          Our Know-How Systems and Equipment
+          Наши системы и оборудование Know-How
         </h2>
         <p className="text-xl text-gray-600 max-w-3xl mx-auto">
-          Explore the equipment types we service with proven expertise.      
+          Ознакомьтесь с типами оборудования, которое мы обслуживаем с проверенной экспертизой.      
         </p>
       </div>
       <div className="max-w-7xl mx-auto">
@@ -79,7 +79,7 @@ const ProductCarousel = () => {
           <div className="flex items-center justify-center">
             <Link to="/products">
               <Button variant="outline" className="text-inplast-blue border-inplast-blue hover:bg-inplast-blue/10">
-                Learn more <ArrowRight className="ml-2" size={16} />
+                Узнать больше <ArrowRight className="ml-2" size={16} />
               </Button>
             </Link>
           </div>
