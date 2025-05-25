@@ -11,7 +11,7 @@ const ServicesPage = () => {
   const serviceCategories = [
     {
       id: "overhaul",
-      title: "Complete Equipment Overhaul",
+      title: "Equipment Restoration and Upgrade",
       description: "Restore and modernize your assets. We perform full equipment overhauls to increase longevity, energy efficiency, and operational performance—bringing outdated systems up to today's standards.",
       images: [
         "/lovable-uploads/2585e457-92bb-4935-988a-2ba961e8fe45.png",
