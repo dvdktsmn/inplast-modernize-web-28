@@ -10,11 +10,9 @@ const Footer = () => {
       <div className="container mx-auto px-4">
         <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
           <div>
-            <img 
-              src="/lovable-uploads/99a847fd-71f3-4e06-a241-fb9739d1979b.png"
-              alt="Логотип Inplast Novex" 
-              className="h-12 mb-4"
-            />
+            <div className="text-white font-bold text-2xl mb-4">
+              BPL Engineering
+            </div>
             <p className="text-white mb-4">
               Инновации, инжиниринг, превосходство в промышленных решениях для модернизации, перемещения и ввода в эксплуатацию оборудования
             </p>
@@ -44,7 +42,7 @@ const Footer = () => {
           <div>
             <h4 className="text-lg font-semibold text-white mb-4">Группа компаний</h4>
             <ul className="space-y-2">
-              <li><a href="#" className="text-white hover:text-inplast-orange transition-colors">Inplast Novex</a></li>
+              <li><a href="#" className="text-white hover:text-inplast-orange transition-colors">BPL Engineering</a></li>
               <li><a href="https://visopack.pl" target="_blank" rel="noopener noreferrer" className="text-white hover:text-inplast-orange transition-colors">Visopack</a></li>
               <li><a href="https://moplefan-group.com" target="_blank" rel="noopener noreferrer" className="text-white hover:text-inplast-orange transition-colors">Moplefan</a></li>
             </ul>

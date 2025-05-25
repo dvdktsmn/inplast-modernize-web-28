@@ -23,11 +23,9 @@ const Hero = () => {
       ></div>
       
       <div className="relative z-10 flex flex-col justify-center items-center h-full container mx-auto text-center px-4 py-8">
-        <img 
-          src="/lovable-uploads/99a847fd-71f3-4e06-a241-fb9739d1979b.png" 
-          alt="Логотип Inplast Novex" 
-          className="h-16 md:h-20 mb-6 animate-fade-in" 
-        />
+        <div className="text-white font-bold text-3xl md:text-4xl mb-6 animate-fade-in">
+          BPL Engineering
+        </div>
         <h2 className="text-xl md:text-2xl font-medium text-white mb-4 animate-fade-in">
           Инновации, Инжиниринг, Превосходство
         </h2>
