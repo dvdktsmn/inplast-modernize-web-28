@@ -21,9 +21,9 @@ export const featuredProjectsData: FeaturedProject[] = [
   // Large Projects
   {
     id: "bopp-line-relocation",
-    title: "BOPP Line Relocation with Refurbishment and Upgrades",
-    location: "From China to Europe",
-    description: "Complete disassembly, relocation, and reinstallation of a large-scale BOPP production line across continents. The project involved complex logistics planning, specialized transportation solutions, and comprehensive reinstallation services. Our team managed every aspect from initial site assessment to final commissioning, ensuring minimal downtime and optimal performance at the new location.",
+    title: "Перемещение линии BOPP с восстановлением и модернизацией",
+    location: "Из Китая в Европу",
+    description: "Полная разборка, перемещение и переустановка крупномасштабной производственной линии BOPP между континентами. Проект включал сложное планирование логистики, специализированные транспортные решения и комплексные услуги по переустановке. Наша команда управляла всеми аспектами от первоначальной оценки объекта до окончательного ввода в эксплуатацию, обеспечивая минимальное время простоя и оптимальную производительность в новом месте.",
     images: [
       "/lovable-uploads/1578a116-7962-49ae-a3ad-3f09928ab06b.png",
       "/lovable-uploads/91e587fb-4c00-46b1-80d1-bd90c401bc95.png",
@@ -47,13 +47,13 @@ export const featuredProjectsData: FeaturedProject[] = [
       
     ],
     isLarge: true,
-    tags: ["Equipment Relocation", "Production Line", "Cross-Continental"]
+    tags: ["Перемещение оборудования", "Производственная линия", "Межконтинентальное"]
   },
   {
     id: "factory-modernization",
-    title: "Factory Modernization",
-    location: "Poland",
-    description: "The project involved a comprehensive modernisation of a production line to improve operational efficiency, enhance process control, and extend equipment lifespan. The upgrade encompassed key components across the entire line,  including dosing, extrusion, Chill Roll, MDO, TDO, PRS, winder, and the ATLAS primary slitter. Enhancements included new Siemens STEP 7 automation, upgraded control systems, new electrical cabinets, improved thermal and pneumatic controls, and the integration of advanced measurement technologies. The upgrades aimed to boost operational efficiency, ensure reliable process control, and extend equipment lifespan, positioning the facility for higher performance and future scalability.",
+    title: "Модернизация завода",
+    location: "Польша",
+    description: "Проект включал комплексную модернизацию производственной линии для повышения операционной эффективности, улучшения управления процессами и продления срока службы оборудования. Модернизация охватывала ключевые компоненты по всей линии, включая дозирование, экструзию, охлаждающий валок, MDO, TDO, PRS, намотчик и первичный резчик ATLAS. Улучшения включали новую автоматизацию Siemens STEP 7, модернизированные системы управления, новые электрические шкафы, улучшенное тепловое и пневматическое управление, а также интеграцию передовых измерительных технологий. Модернизация была направлена на повышение операционной эффективности, обеспечение надежного управления процессами и продление срока службы оборудования, подготовив предприятие к более высокой производительности и будущей масштабируемости.",
     images: [
       "/lovable-uploads/9f927459-d47b-40a5-bdac-57a022b86652.png",
       "/lovable-uploads/ba87da91-2297-4c7b-9a97-9b18ececd7ef.png",
@@ -82,15 +82,15 @@ export const featuredProjectsData: FeaturedProject[] = [
       "/lovable-uploads/1e5f3b8c-5b87-4db5-a288-82ab5a568a47.png"
     ],
     isLarge: true,
-    tags: ["Modernization", "Efficiency Improvement", "Control Systems"],
+    tags: ["Модернизация", "Повышение эффективности", "Системы управления"],
     
   },
   
   // Small Projects
   {
     id: "extruder-retrofit",
-    title: "Extruder Retrofitting",
-    description: "Complete overhaul of heating, cooling, and lubrication systems for a polypropylene extruder.",
+    title: "Модернизация экструдера",
+    description: "Полный капитальный ремонт систем нагрева, охлаждения и смазки для экструдера полипропилена.",
     images: [
       "/lovable-uploads/6a402cc3-f2e6-4dcf-aac5-98513623017f.png",
       "/lovable-uploads/ff1b2119-4abb-48ea-ad6a-b913342ae6eb.png" 
@@ -99,8 +99,8 @@ export const featuredProjectsData: FeaturedProject[] = [
   },
   {
     id: "electrical-system-upgrade",
-    title: "Electrical System Upgrade",
-    description: "Implementation of new high-efficiency motors and drives, control and SCADA systems.",
+    title: "Модернизация электрических систем",
+    description: "Внедрение новых высокоэффективных двигателей и приводов, систем управления и SCADA.",
     images: [
       
       
@@ -119,8 +119,8 @@ export const featuredProjectsData: FeaturedProject[] = [
   },
   {
     id: "chill-roll-retrofit",
-    title: "Chill Roll Retrofit",
-    description: "Replacement of conventional gearmotor with direct torque motor.",
+    title: "Модернизация охлаждающего валка",
+    description: "Замена обычного мотор-редуктора на двигатель прямого крутящего момента.",
     images: [
       "/lovable-uploads/f8e1cb0f-f78d-4b8d-af60-0b3975a34974.png",
       "/lovable-uploads/9ce0fd86-9dce-439d-acea-50311e1d8369.png"
@@ -129,8 +129,8 @@ export const featuredProjectsData: FeaturedProject[] = [
   },
   {
     id: "metalliser-revamping",
-    title: "Metalliser Revamp",
-    description: "Comprehensive revitalization of an aging metalliser.",
+    title: "Модернизация металлизатора",
+    description: "Комплексное восстановление устаревшего металлизатора.",
     images: [
       "/lovable-uploads/010293e4-1059-43b2-8a41-b7f56abd0649.png", 
       "/lovable-uploads/af6834c7-d129-43ce-845a-fb3d8e2734c9.png"
@@ -139,8 +139,8 @@ export const featuredProjectsData: FeaturedProject[] = [
   },
   {
     id: "coater-relocation",
-    title: "Coater Relocation",
-    description: "Disassembly and relocation of a film coater",
+    title: "Перемещение установки покрытия",
+    description: "Разборка и перемещение установки покрытия пленки",
     images: [
       "/lovable-uploads/12363ffc-ae49-4992-b6cb-1682ee038aae.png",
       "/lovable-uploads/25745b7f-1d0a-418a-8768-521c1fb3ca28.png",

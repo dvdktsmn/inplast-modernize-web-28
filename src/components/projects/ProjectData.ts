@@ -11,10 +11,10 @@ export interface Project {
 
 export const projectsData: Project[] = [
   {
-    title: "BOPP Line Relocation",
-    location: "From China to Europe",
+    title: "Перемещение линии BOPP",
+    location: "Из Китая в Европу",
     image: "/lovable-uploads/4c257c37-8c64-4c31-bcea-916d3639fd25.png",
-    description: "Complete disassembly, transportation, refurbishment and reinstallation of a large-scale BOPP production line across continents.",
+    description: "Полная разборка, транспортировка, восстановление и переустановка крупномасштабной производственной линии BOPP между континентами.",
     galleryImages: [
       "/lovable-uploads/1578a116-7962-49ae-a3ad-3f09928ab06b.png",
       "/lovable-uploads/91e587fb-4c00-46b1-80d1-bd90c401bc95.png",
@@ -37,10 +37,10 @@ export const projectsData: Project[] = [
       "/lovable-uploads/e36799dd-059e-4bc0-bca0-9bd4f837bd9b.png",]
   }, 
   {
-    title: "Factory Modernization",
-    location: "Poland",
+    title: "Модернизация завода",
+    location: "Польша",
     image: "/lovable-uploads/58d6f434-7c79-4e4e-b8c9-e60fad6a246d.png",
-    description: "Full overhaul and modernization of outdated equipment to increase production efficiency.",
+    description: "Полный капитальный ремонт и модернизация устаревшего оборудования для повышения эффективности производства.",
     galleryImages: [
       "/lovable-uploads/9f927459-d47b-40a5-bdac-57a022b86652.png",
       "/lovable-uploads/ba87da91-2297-4c7b-9a97-9b18ececd7ef.png",
@@ -69,22 +69,21 @@ export const projectsData: Project[] = [
       "/lovable-uploads/1e5f3b8c-5b87-4db5-a288-82ab5a568a47.png"
     ]
   },
-  // Added small projects from featuredProjectsData
   {
-    title: "Extruder Retrofitting",
+    title: "Модернизация экструдера",
     location: "",
     image: "/lovable-uploads/6a402cc3-f2e6-4dcf-aac5-98513623017f.png",
-    description: "Complete overhaul of heating, cooling, and lubrication systems for a polypropylene extruder.",
+    description: "Полный капитальный ремонт систем нагрева, охлаждения и смазки для экструдера полипропилена.",
     galleryImages: [
       "/lovable-uploads/6a402cc3-f2e6-4dcf-aac5-98513623017f.png",
       "/lovable-uploads/ff1b2119-4abb-48ea-ad6a-b913342ae6eb.png"
     ]
   },
   {
-    title: "Electrical System Upgrade",
+    title: "Модернизация электрических систем",
     location: "",
     image: "/lovable-uploads/7559cfc1-a938-4092-b12b-10a9bbfbf6b1.png",
-    description: "Implementation of new high-efficiency motors and drives, control and SCADA systems.",
+    description: "Внедрение новых высокоэффективных двигателей и приводов, систем управления и SCADA.",
     galleryImages: [
      
       "/lovable-uploads/6864dcf5-bd5d-4ad8-b67c-35a2ef6b4492.png",
@@ -99,30 +98,30 @@ export const projectsData: Project[] = [
     ]
   },
   {
-    title: "Chill Roll Retrofit",
+    title: "Модернизация охлаждающего валка",
     location: "",
     image: "/lovable-uploads/f8e1cb0f-f78d-4b8d-af60-0b3975a34974.png",
-    description: "Replacement of conventional gearmotor with direct torque motor.",
+    description: "Замена обычного мотор-редуктора на двигатель прямого крутящего момента.",
     galleryImages: [
       "/lovable-uploads/f8e1cb0f-f78d-4b8d-af60-0b3975a34974.png",
       "/lovable-uploads/9ce0fd86-9dce-439d-acea-50311e1d8369.png"
     ]
   },
   {
-    title: "Metalliser Revamp",
+    title: "Модернизация металлизатора",
     location: "",
     image: "/lovable-uploads/010293e4-1059-43b2-8a41-b7f56abd0649.png",
-    description: "Comprehensive revitalization of an aging metalliser.",
+    description: "Комплексное восстановление устаревшего металлизатора.",
     galleryImages: [
       "/lovable-uploads/010293e4-1059-43b2-8a41-b7f56abd0649.png", 
       "/lovable-uploads/af6834c7-d129-43ce-845a-fb3d8e2734c9.png"
     ]
   },
   {
-    title: "Coater Relocation",
+    title: "Перемещение установки покрытия",
     location: "",
     image: "/lovable-uploads/12363ffc-ae49-4992-b6cb-1682ee038aae.png",
-    description: "Disassembly and relocation of a film coater",
+    description: "Разборка и перемещение установки покрытия пленки",
     galleryImages: [
       "/lovable-uploads/12363ffc-ae49-4992-b6cb-1682ee038aae.png",
       "/lovable-uploads/25745b7f-1d0a-418a-8768-521c1fb3ca28.png",
@@ -132,24 +131,4 @@ export const projectsData: Project[] = [
       "/lovable-uploads/36c75e94-7202-41f1-89fd-6cca618a42e0.png"
     ]
   }
-  /* Commented out projects
-  {
-    title: "Equipment Installation",
-    location: "Bucharest, Romania",
-    image: "/lovable-uploads/11e7e270-577f-48ad-b96c-d2396dcd6bc8.png",
-    description: "Installation and commissioning of a new production line in a newly constructed facility."
-  },
-  {
-    title: "Precision Machinery Transport",
-    location: "Berlin, Germany",
-    image: "/lovable-uploads/cff828aa-5bb4-4bdd-b226-da4108c92879.png",
-    description: "Specialized transport solutions for sensitive industrial equipment across European borders."
-  },
-  {
-    title: "Control System Upgrade",
-    location: "Helsinki, Finland",
-    image: "/lovable-uploads/69f9e44d-caa4-4361-8d49-190c6120084a.png",
-    description: "Complete electrical and automation system upgrade for an aging manufacturing plant."
-  }
-  */
 ];
