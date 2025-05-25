@@ -48,6 +48,23 @@ const Footer = () => {
             </ul>
           </div>
         </div>
+        
+        {/* Legal Section */}
+        <div className="border-t border-white/20 mt-8 pt-6">
+          <div className="flex flex-col md:flex-row justify-between items-center text-sm text-white">
+            <p className="mb-4 md:mb-0">
+              © {currentYear} BPL Engineering. Все права защищены.
+            </p>
+            <div className="flex space-x-6">
+              <Link to="/privacy-policy" className="hover:text-inplast-orange transition-colors">
+                Политика конфиденциальности
+              </Link>
+              <Link to="/terms-of-service" className="hover:text-inplast-orange transition-colors">
+                Условия использования
+              </Link>
+            </div>
+          </div>
+        </div>
       </div>
     </footer>
   );
