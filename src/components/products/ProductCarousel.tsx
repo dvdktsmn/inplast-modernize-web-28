@@ -16,7 +16,7 @@ const products: Product[] = [
   { name: "Converting Equipment", image: "/lovable-uploads/de929fe4-b5a4-4a48-8301-454cbd7bea35.png" },
   { name: "Electrical Components and Systems", image: "/lovable-uploads/371c6472-159f-41b3-a97b-4abeff5ccde6.png" },
   { name: "Motion Control", image: "/lovable-uploads/87f7cb49-1a26-4ce0-82e7-5819631a0cd1.png" },
-  { name: "Software and SCADA Retrofit", image: "/lovable-uploads/d946c718-e590-4932-9e9a-45e34a43ae11.png" },
+  { name: "Automation and Process Control", image: "/lovable-uploads/d946c718-e590-4932-9e9a-45e34a43ae11.png" },
   { name: "MES Systems", image: "/placeholder.svg" },
 ];
 
