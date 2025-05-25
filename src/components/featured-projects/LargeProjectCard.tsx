@@ -241,8 +241,7 @@ const LargeProjectCard = ({ project, reverseLayout = false }: LargeProjectCardPr
                     <h4 className="text-xl font-semibold text-inplast-blue mb-2">1. Dosing System Upgrade</h4>
                     <p className="text-gray-700 mb-2">The dosing section was enhanced with:</p>
                     <ul className="list-none space-y-1">
-                      <ArrowRight className="h-5 w-5 text-inplast-orange mr-2 mt-0.5 flex-shrink-0" />
-                      <li className="text-gray-700">• A new Siemens STEP 7 automation system</li>
+                      <li className="text-gray-700"><ArrowRight className="h-5 w-5 text-inplast-orange mr-2 mt-0.5 flex-shrink-0" />• A new Siemens STEP 7 automation system</li>
                       <li className="text-gray-700">• Installation of new power cables and drying system</li>
                       <li className="text-gray-700">• Replacement of electrical cabinets</li>
                       <li className="text-gray-700">• Integration of new load cells for improved measurement accuracy</li>
