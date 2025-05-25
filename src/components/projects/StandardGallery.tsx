@@ -15,7 +15,7 @@ const StandardGallery = ({ galleryImages }: StandardGalleryProps) => {
             <CarouselContent>
               {galleryImages.map((image, i) => (
                 <CarouselItem key={i} className="md:basis-1/2">
-                  <div className="h-64 overflow-hidden rounded-md p-2">
+                  <div className="h-80 overflow-hidden rounded-md p-2">
                     <img src={image} alt={`Project photo ${i + 1}`} className="w-full h-full object-cover" />
                   </div>
                 </CarouselItem>
