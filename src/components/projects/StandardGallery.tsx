@@ -8,14 +8,14 @@ interface StandardGalleryProps {
 
 const StandardGallery = ({ galleryImages }: StandardGalleryProps) => {
   return (
-    <div className="mt-8">
-      <div className="bg-white rounded-xl overflow-hidden shadow-md p-4">
-        <div className="relative">
-          <Carousel className="w-full">
-            <CarouselContent>
+    <div className="h-full">
+      <div className="bg-white rounded-xl overflow-hidden shadow-md p-4 h-full">
+        <div className="relative h-full">
+          <Carousel className="w-full h-full">
+            <CarouselContent className="h-full">
               {galleryImages.map((image, i) => (
-                <CarouselItem key={i} className="md:basis-1/2">
-                  <div className="aspect-video overflow-hidden rounded-md p-2">
+                <CarouselItem key={i} className="md:basis-1/2 h-full">
+                  <div className="aspect-video overflow-hidden rounded-md p-2 h-full">
                     <img src={image} alt={`Project photo ${i + 1}`} className="w-full h-full object-cover" />
                   </div>
                 </CarouselItem>
