@@ -26,7 +26,6 @@ const ServicesPage = () => {
       description: "From design to deployment, our electrical engineering solutions support the safe, smart, and scalable control of your production infrastructure, enhancing efficiency and reducing downtime.",
       images: [
         "/lovable-uploads/1dc4c4dc-881f-465a-b970-fd69ac5845e2.png",
-        "/lovable-uploads/5726c4a7-6f1a-44a2-8387-c6c8f4507772.png",
         "/lovable-uploads/99933b14-caab-4d71-8acb-e9670b38d1cf.png",
         "/lovable-uploads/2d246b46-3ba2-4cdb-bca5-1e159a6ec659.png",
         "/lovable-uploads/ce79528d-6a07-4b95-a327-f26d29ae5163.png"
