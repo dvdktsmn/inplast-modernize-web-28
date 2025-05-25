@@ -136,5 +136,20 @@ export const featuredProjectsData: FeaturedProject[] = [
       "/lovable-uploads/af6834c7-d129-43ce-845a-fb3d8e2734c9.png"
     ],
     isLarge: false
+  },
+  {
+    id: "coater-relocation",
+    title: "Coater Relocation",
+    description: "Disassembly and relocation of a film coater",
+    images: [
+      "/lovable-uploads/12363ffc-ae49-4992-b6cb-1682ee038aae.png",
+      "/lovable-uploads/25745b7f-1d0a-418a-8768-521c1fb3ca28.png",
+      "/lovable-uploads/d9d32c68-3d20-4969-ae42-dc4d8b43b12c.png",
+      "/lovable-uploads/7672fa9d-9288-4cd0-b2a6-6793922d48c4.png",
+      "/lovable-uploads/91406cc8-6669-4afa-aac9-4fbf1b7db70b.png",
+      "/lovable-uploads/36c75e94-7202-41f1-89fd-6cca618a42e0.png",
+      "/lovable-uploads/6d9f657a-3441-40cb-8b78-2706594cbc73.png"
+    ],
+    isLarge: false
   }
 ];
