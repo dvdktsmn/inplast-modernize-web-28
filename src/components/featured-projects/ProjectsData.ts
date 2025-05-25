@@ -39,8 +39,12 @@ export const featuredProjectsData: FeaturedProject[] = [
       "/lovable-uploads/bc1579f4-de79-45ae-a4c4-ec4693e5c62a.png", 
       "/lovable-uploads/2d5b85a9-b9b4-4e9a-bc12-88a3fcb6cd5b.png",
       "/lovable-uploads/0edc4beb-8484-4ee5-8225-1d22abd35d55.png",
+      "/lovable-uploads/6864dcf5-bd5d-4ad8-b67c-35a2ef6b4492.png",
+      "/lovable-uploads/f0d79ea5-1ec0-4fa1-a72a-8cac6dd293c8.png",
+      "/lovable-uploads/374392c1-66d1-4c15-a8cc-017e405f2547.png",
+      "/lovable-uploads/54648c53-c95b-41d6-94a0-a737d55b8f6b.png",
       "/lovable-uploads/e36799dd-059e-4bc0-bca0-9bd4f837bd9b.png",
-      "/lovable-uploads/25b7ff67-2316-4830-9bea-17c18382f88f.png"
+      
     ],
     isLarge: true,
     tags: ["Equipment Relocation", "Production Line", "Cross-Continental"]
