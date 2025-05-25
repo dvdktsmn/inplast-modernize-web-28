@@ -11,7 +11,7 @@ import {
 } from "@/components/ui/carousel";
 import { AspectRatio } from "@/components/ui/aspect-ratio";
 import { Button } from "@/components/ui/button";
-import { ChevronDown, ChevronUp, X } from "lucide-react";
+import { ChevronDown, ChevronUp, X, ArrowRight } from "lucide-react";
 import { Dialog, DialogContent } from "@/components/ui/dialog";
 
 interface LargeProjectCardProps {
@@ -234,92 +234,205 @@ const LargeProjectCard = ({ project, reverseLayout = false }: LargeProjectCardPr
                   </section>
                 </>
               ) : project.id === "factory-modernization" ? (
-                // Factory Modernization project with text directly in component
+                // Factory Modernization project with orange arrow bullet points
                 <div className="space-y-6">
+                  <section>
+                    <p className="text-gray-700 mb-4">
+                      The project involved a comprehensive modernisation of a production line to improve operational efficiency, enhance process control, and extend equipment lifespan. The upgrade encompassed key components across the entire line, from dosing to winding systems. The modernisation was executed in multiple stages, each addressing specific systems and machinery:
+                    </p>
+                    <ul className="space-y-2">
+                      <li className="flex items-start">
+                        <ArrowRight className="h-5 w-5 text-inplast-orange mr-2 mt-0.5 flex-shrink-0" />
+                        <span>Comprehensive system-wide modernisation approach</span>
+                      </li>
+                      <li className="flex items-start">
+                        <ArrowRight className="h-5 w-5 text-inplast-orange mr-2 mt-0.5 flex-shrink-0" />
+                        <span>Multi-stage implementation for minimal production disruption</span>
+                      </li>
+                      <li className="flex items-start">
+                        <ArrowRight className="h-5 w-5 text-inplast-orange mr-2 mt-0.5 flex-shrink-0" />
+                        <span>Focus on operational efficiency and process control enhancement</span>
+                      </li>
+                      <li className="flex items-start">
+                        <ArrowRight className="h-5 w-5 text-inplast-orange mr-2 mt-0.5 flex-shrink-0" />
+                        <span>Equipment lifespan extension through strategic upgrades</span>
+                      </li>
+                    </ul>
+                  </section>
                   
                   <section>
                     <h4 className="text-xl font-semibold text-inplast-blue mb-2">1. Dosing System Upgrade</h4>
                     <p className="text-gray-700 mb-2">The dosing section was enhanced with:</p>
-                    <ul className="list-none space-y-1">
-                      <li className="text-gray-700">• A new Siemens STEP 7 automation system</li>
-                      <li className="text-gray-700">• Installation of new power cables and drying system</li>
-                      <li className="text-gray-700">• Replacement of electrical cabinets</li>
-                      <li className="text-gray-700">• Integration of new load cells for improved measurement accuracy</li>
+                    <ul className="space-y-2">
+                      <li className="flex items-start">
+                        <ArrowRight className="h-5 w-5 text-inplast-orange mr-2 mt-0.5 flex-shrink-0" />
+                        <span>A new Siemens STEP 7 automation system</span>
+                      </li>
+                      <li className="flex items-start">
+                        <ArrowRight className="h-5 w-5 text-inplast-orange mr-2 mt-0.5 flex-shrink-0" />
+                        <span>Installation of new power cables and drying system</span>
+                      </li>
+                      <li className="flex items-start">
+                        <ArrowRight className="h-5 w-5 text-inplast-orange mr-2 mt-0.5 flex-shrink-0" />
+                        <span>Replacement of electrical cabinets</span>
+                      </li>
+                      <li className="flex items-start">
+                        <ArrowRight className="h-5 w-5 text-inplast-orange mr-2 mt-0.5 flex-shrink-0" />
+                        <span>Integration of new load cells for improved measurement accuracy</span>
+                      </li>
                     </ul>
                   </section>
                   
                   <section>
                     <h4 className="text-xl font-semibold text-inplast-blue mb-2">2. Extrusion System Refurbishment</h4>
                     <p className="text-gray-700 mb-2">Two phases of extrusion upgrades included:</p>
-                    <ul className="list-none space-y-1">
-                      <li className="text-gray-700">• New heaters and cooling system</li>
-                      <li className="text-gray-700">• Installation of new control valves and clutches</li>
-                      <li className="text-gray-700">• Overhaul of motors</li>
-                      <li className="text-gray-700">• Improved heating control via Siemens power modules and Meusburger temperature controllers</li>
-                      <li className="text-gray-700">• Replacement of cabling and thermocouples</li>
+                    <ul className="space-y-2">
+                      <li className="flex items-start">
+                        <ArrowRight className="h-5 w-5 text-inplast-orange mr-2 mt-0.5 flex-shrink-0" />
+                        <span>New heaters and cooling system</span>
+                      </li>
+                      <li className="flex items-start">
+                        <ArrowRight className="h-5 w-5 text-inplast-orange mr-2 mt-0.5 flex-shrink-0" />
+                        <span>Installation of new control valves and clutches</span>
+                      </li>
+                      <li className="flex items-start">
+                        <ArrowRight className="h-5 w-5 text-inplast-orange mr-2 mt-0.5 flex-shrink-0" />
+                        <span>Overhaul of motors</span>
+                      </li>
+                      <li className="flex items-start">
+                        <ArrowRight className="h-5 w-5 text-inplast-orange mr-2 mt-0.5 flex-shrink-0" />
+                        <span>Improved heating control via Siemens power modules and Meusburger temperature controllers</span>
+                      </li>
+                      <li className="flex items-start">
+                        <ArrowRight className="h-5 w-5 text-inplast-orange mr-2 mt-0.5 flex-shrink-0" />
+                        <span>Replacement of cabling and thermocouples</span>
+                      </li>
                     </ul>
                   </section>
                   
                   <section>
                     <h4 className="text-xl font-semibold text-inplast-blue mb-2">3. Chill Roll (Brueckner) Rebuild</h4>
                     <p className="text-gray-700 mb-2">The Chill Roll unit was fully rebuilt with:</p>
-                    <ul className="list-none space-y-1">
-                      <li className="text-gray-700">• New controls and piping</li>
-                      <li className="text-gray-700">• Flow control valves and polished roll surfaces</li>
-                      <li className="text-gray-700">• New heat exchangers for efficient thermal management</li>
+                    <ul className="space-y-2">
+                      <li className="flex items-start">
+                        <ArrowRight className="h-5 w-5 text-inplast-orange mr-2 mt-0.5 flex-shrink-0" />
+                        <span>New controls and piping</span>
+                      </li>
+                      <li className="flex items-start">
+                        <ArrowRight className="h-5 w-5 text-inplast-orange mr-2 mt-0.5 flex-shrink-0" />
+                        <span>Flow control valves and polished roll surfaces</span>
+                      </li>
+                      <li className="flex items-start">
+                        <ArrowRight className="h-5 w-5 text-inplast-orange mr-2 mt-0.5 flex-shrink-0" />
+                        <span>New heat exchangers for efficient thermal management</span>
+                      </li>
                     </ul>
                   </section>
                   
                   <section>
                     <h4 className="text-xl font-semibold text-inplast-blue mb-2">4. MDO (Machine Direction Orientation - Brueckner) Overhaul</h4>
                     <p className="text-gray-700 mb-2">A complete overhaul of the MDO included:</p>
-                    <ul className="list-none space-y-1">
-                      <li className="text-gray-700">• Replacement of bearings, belts, and rollers</li>
-                      <li className="text-gray-700">• Installation of advanced temperature control systems and pneumatics</li>
-                      <li className="text-gray-700">• Piping upgrades</li>
+                    <ul className="space-y-2">
+                      <li className="flex items-start">
+                        <ArrowRight className="h-5 w-5 text-inplast-orange mr-2 mt-0.5 flex-shrink-0" />
+                        <span>Replacement of bearings, belts, and rollers</span>
+                      </li>
+                      <li className="flex items-start">
+                        <ArrowRight className="h-5 w-5 text-inplast-orange mr-2 mt-0.5 flex-shrink-0" />
+                        <span>Installation of advanced temperature control systems and pneumatics</span>
+                      </li>
+                      <li className="flex items-start">
+                        <ArrowRight className="h-5 w-5 text-inplast-orange mr-2 mt-0.5 flex-shrink-0" />
+                        <span>Piping upgrades</span>
+                      </li>
                     </ul>
                   </section>
                   
                   <section>
                     <h4 className="text-xl font-semibold text-inplast-blue mb-2">5. TDO (Transverse Direction Orientation - Brueckner) Servicing</h4>
                     <p className="text-gray-700 mb-2">The TDO underwent a full service with:</p>
-                    <ul className="list-none space-y-1">
-                      <li className="text-gray-700">• Chain track overhaul</li>
-                      <li className="text-gray-700">• New power and control cabling</li>
-                      <li className="text-gray-700">• Replacement of thermocouples and overhaul of fan motors and gearboxes</li>
-                      <li className="text-gray-700">• Installation of new electrical cabinets and Siemens control systems</li>
-                      <li className="text-gray-700">• New fan motor drives</li>
+                    <ul className="space-y-2">
+                      <li className="flex items-start">
+                        <ArrowRight className="h-5 w-5 text-inplast-orange mr-2 mt-0.5 flex-shrink-0" />
+                        <span>Chain track overhaul</span>
+                      </li>
+                      <li className="flex items-start">
+                        <ArrowRight className="h-5 w-5 text-inplast-orange mr-2 mt-0.5 flex-shrink-0" />
+                        <span>New power and control cabling</span>
+                      </li>
+                      <li className="flex items-start">
+                        <ArrowRight className="h-5 w-5 text-inplast-orange mr-2 mt-0.5 flex-shrink-0" />
+                        <span>Replacement of thermocouples and overhaul of fan motors and gearboxes</span>
+                      </li>
+                      <li className="flex items-start">
+                        <ArrowRight className="h-5 w-5 text-inplast-orange mr-2 mt-0.5 flex-shrink-0" />
+                        <span>Installation of new electrical cabinets and Siemens control systems</span>
+                      </li>
+                      <li className="flex items-start">
+                        <ArrowRight className="h-5 w-5 text-inplast-orange mr-2 mt-0.5 flex-shrink-0" />
+                        <span>New fan motor drives</span>
+                      </li>
                     </ul>
                   </section>
                   
                   <section>
                     <h4 className="text-xl font-semibold text-inplast-blue mb-2">6. PRS (KAMPF) System Overhaul</h4>
                     <p className="text-gray-700 mb-2">PRS system improvements featured:</p>
-                    <ul className="list-none space-y-1">
-                      <li className="text-gray-700">• Refurbished rolls and new bearings</li>
-                      <li className="text-gray-700">• Upgraded corona treatment (2 bottom, 1 top coronas)</li>
-                      <li className="text-gray-700">• Rebuilt generators and new transformers</li>
-                      <li className="text-gray-700">• Installation of new electrodes and pneumatics</li>
-                      <li className="text-gray-700">• Introduction of an NDC infrared automatic thickness control system</li>
+                    <ul className="space-y-2">
+                      <li className="flex items-start">
+                        <ArrowRight className="h-5 w-5 text-inplast-orange mr-2 mt-0.5 flex-shrink-0" />
+                        <span>Refurbished rolls and new bearings</span>
+                      </li>
+                      <li className="flex items-start">
+                        <ArrowRight className="h-5 w-5 text-inplast-orange mr-2 mt-0.5 flex-shrink-0" />
+                        <span>Upgraded corona treatment (2 bottom, 1 top coronas)</span>
+                      </li>
+                      <li className="flex items-start">
+                        <ArrowRight className="h-5 w-5 text-inplast-orange mr-2 mt-0.5 flex-shrink-0" />
+                        <span>Rebuilt generators and new transformers</span>
+                      </li>
+                      <li className="flex items-start">
+                        <ArrowRight className="h-5 w-5 text-inplast-orange mr-2 mt-0.5 flex-shrink-0" />
+                        <span>Installation of new electrodes and pneumatics</span>
+                      </li>
+                      <li className="flex items-start">
+                        <ArrowRight className="h-5 w-5 text-inplast-orange mr-2 mt-0.5 flex-shrink-0" />
+                        <span>Introduction of an NDC infrared automatic thickness control system</span>
+                      </li>
                     </ul>
                   </section>
                   
                   <section>
                     <h4 className="text-xl font-semibold text-inplast-blue mb-2">7. Winder Refurbishment</h4>
                     <p className="text-gray-700 mb-2">Both winding units were fully refurbished:</p>
-                    <ul className="list-none space-y-1">
-                      <li className="text-gray-700">• New Siemens STEP 7 control systems</li>
-                      <li className="text-gray-700">• Installation of new electrical cabinets</li>
+                    <ul className="space-y-2">
+                      <li className="flex items-start">
+                        <ArrowRight className="h-5 w-5 text-inplast-orange mr-2 mt-0.5 flex-shrink-0" />
+                        <span>New Siemens STEP 7 control systems</span>
+                      </li>
+                      <li className="flex items-start">
+                        <ArrowRight className="h-5 w-5 text-inplast-orange mr-2 mt-0.5 flex-shrink-0" />
+                        <span>Installation of new electrical cabinets</span>
+                      </li>
                     </ul>
                   </section>
                   
                   <section>
                     <h4 className="text-xl font-semibold text-inplast-blue mb-2">8. ATLAS System Modernisation</h4>
                     <p className="text-gray-700 mb-2">The ATLAS unit was thoroughly overhauled and upgraded with:</p>
-                    <ul className="list-none space-y-1">
-                      <li className="text-gray-700">• New bearings and positioning motors</li>
-                      <li className="text-gray-700">• New electrical cabinets, pneumatics, and hydraulic controls</li>
-                      <li className="text-gray-700">• Updated cabling and Siemens STEP 7 control system</li>
+                    <ul className="space-y-2">
+                      <li className="flex items-start">
+                        <ArrowRight className="h-5 w-5 text-inplast-orange mr-2 mt-0.5 flex-shrink-0" />
+                        <span>New bearings and positioning motors</span>
+                      </li>
+                      <li className="flex items-start">
+                        <ArrowRight className="h-5 w-5 text-inplast-orange mr-2 mt-0.5 flex-shrink-0" />
+                        <span>New electrical cabinets, pneumatics, and hydraulic controls</span>
+                      </li>
+                      <li className="flex items-start">
+                        <ArrowRight className="h-5 w-5 text-inplast-orange mr-2 mt-0.5 flex-shrink-0" />
+                        <span>Updated cabling and Siemens STEP 7 control system</span>
+                      </li>
                     </ul>
                   </section>
                 </div>
