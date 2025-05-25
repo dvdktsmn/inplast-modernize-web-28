@@ -70,7 +70,12 @@ export const featuredProjectsData: FeaturedProject[] = [
       "/lovable-uploads/9f927459-d47b-40a5-bdac-57a022b86652.png",
       "/lovable-uploads/a60bbd12-1131-48e2-82f5-a4b6baaacb8a.png",
       "/lovable-uploads/ec183a71-991a-4061-8ef2-6ca5e274ed93.png",
-      "/lovable-uploads/82c95d55-6eff-4522-b34d-24ca97e04e03.png"
+      "/lovable-uploads/82c95d55-6eff-4522-b34d-24ca97e04e03.png",
+      "/lovable-uploads/3b7f8553-3c14-42a7-972b-0af6e4e520d5.png",
+      "/lovable-uploads/744937aa-c05a-41f4-a826-b8375f3641e7.png",
+      "/lovable-uploads/74e8f240-e481-4082-b9a5-7a91b20df85e.png",
+      "/lovable-uploads/a678a1b6-cfd8-4473-91fe-a5a91d9265ba.png",
+      "/lovable-uploads/1e5f3b8c-5b87-4db5-a288-82ab5a568a47.png"
     ],
     isLarge: true,
     tags: ["Modernization", "Efficiency Improvement", "Control Systems"],

@@ -1,4 +1,3 @@
-
 export interface Project {
   title: string;
   location: string;
@@ -37,7 +36,33 @@ export const projectsData: Project[] = [
     location: "Warsaw, Poland",
     image: "/lovable-uploads/58d6f434-7c79-4e4e-b8c9-e60fad6a246d.png",
     description: "Full overhaul and modernization of outdated equipment to increase production efficiency.",
-    galleryImages: ["/placeholder.svg", "/placeholder.svg", "/placeholder.svg", "/placeholder.svg"]
+    galleryImages: [
+      "/lovable-uploads/58d6f434-7c79-4e4e-b8c9-e60fad6a246d.png",
+      "/lovable-uploads/ba87da91-2297-4c7b-9a97-9b18ececd7ef.png",
+      "/lovable-uploads/bf7a8d7b-43d2-4cf3-b755-a1e3c0c67570.png",
+      "/lovable-uploads/21e2ec87-aad5-45cf-8298-0216c1c693b6.png",
+      "/lovable-uploads/bbf0def7-12af-47d8-b444-015dd2bcf3ab.png",
+      "/lovable-uploads/85750ad2-a092-4aaf-acd8-ec8f12f8d5e4.png",
+      "/lovable-uploads/f448c1fa-49c2-4267-9ad8-f87780686fcd.png",
+      "/lovable-uploads/b581c274-6e6f-45c4-ac1b-88397b92a6ed.png",
+      "/lovable-uploads/5d685e7e-6aaa-4fd9-bb14-95f6ed1b073f.png",
+      "/lovable-uploads/fb916f67-2b30-413b-8f60-4fdc8fbf8730.png",
+      "/lovable-uploads/56064b64-1862-4d7e-83cf-376c6479ced6.png",
+      "/lovable-uploads/d77a0f62-a202-496d-a2fb-2fd5cc4134ef.png",
+      "/lovable-uploads/747e71d3-7977-4763-85af-f7b62b71dec8.png",
+      "/lovable-uploads/67ada82f-d761-4d32-8d79-315378083e21.png",
+      "/lovable-uploads/b9ea7181-6b86-4f81-a20b-a882b3ccf1c0.png",
+      "/lovable-uploads/08e3016f-5343-4fb4-b14d-0147ded54c4c.png",
+      "/lovable-uploads/9f927459-d47b-40a5-bdac-57a022b86652.png",
+      "/lovable-uploads/a60bbd12-1131-48e2-82f5-a4b6baaacb8a.png",
+      "/lovable-uploads/ec183a71-991a-4061-8ef2-6ca5e274ed93.png",
+      "/lovable-uploads/82c95d55-6eff-4522-b34d-24ca97e04e03.png",
+      "/lovable-uploads/3b7f8553-3c14-42a7-972b-0af6e4e520d5.png",
+      "/lovable-uploads/744937aa-c05a-41f4-a826-b8375f3641e7.png",
+      "/lovable-uploads/74e8f240-e481-4082-b9a5-7a91b20df85e.png",
+      "/lovable-uploads/a678a1b6-cfd8-4473-91fe-a5a91d9265ba.png",
+      "/lovable-uploads/1e5f3b8c-5b87-4db5-a288-82ab5a568a47.png"
+    ]
   },
   // Added small projects from featuredProjectsData
   {
