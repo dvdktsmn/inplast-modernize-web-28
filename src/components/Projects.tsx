@@ -19,7 +19,7 @@ const Projects = () => {
 
         <ProjectCarousel projects={projectsData} />
         
-        <div className="text-center mt-2">
+        <div className="text-center mt-8">
           <Link to="/projects">
             <Button variant="outline" className="text-inplast-blue border-inplast-blue hover:bg-inplast-blue/10">
               Learn more about our projects <ArrowRight className="ml-2" size={16} />
