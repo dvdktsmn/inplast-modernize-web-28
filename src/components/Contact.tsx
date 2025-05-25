@@ -95,7 +95,7 @@ const Contact = ({ isStandalone = false }: ContactProps) => {
                 <Input 
                   id="telephone" 
                   type="tel" 
-                  placeholder="+48 123 456 789" 
+                  placeholder="+0 123 456 789" 
                   value={telephone}
                   onChange={(e) => setTelephone(e.target.value)}
                 />
