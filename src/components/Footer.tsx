@@ -33,7 +33,7 @@ const Footer = () => {
             <h4 className="text-lg font-semibold text-white mb-4">Услуги</h4>
             <ul className="space-y-2">
               <li><Link to="/services/overhaul" className="text-white hover:text-inplast-orange transition-colors">Восстановление и модернизация оборудования</Link></li>
-              <li><Link to="/services/engineering" className="text-white hover:text-inplast-orange transition-colors">Инжиниринг и системы управления</Link></li>
+              <li><Link to="/services/engineering" className="text-white hover:text-inplast-orange transition-colors">Инжиниринг и модернизация систем управления</Link></li>
               <li><Link to="/services/installation" className="text-white hover:text-inplast-orange transition-colors">Монтаж и ввод в эксплуатацию</Link></li>
               <li><Link to="/services/relocation" className="text-white hover:text-inplast-orange transition-colors">Перемещение оборудования</Link></li>
             </ul>

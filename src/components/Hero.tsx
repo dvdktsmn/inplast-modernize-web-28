@@ -37,7 +37,7 @@ const Hero = () => {
             className="bg-inplast-blue hover:bg-inplast-orange text-white px-6 py-4 w-full sm:w-[180px]" 
             onClick={() => scrollToSection('products')}
           >
-            Экспертиза оборудования
+            Области экспертизы
           </Button>
           <Button 
             className="bg-inplast-blue hover:bg-inplast-orange text-white px-6 py-4 w-full sm:w-[180px]" 
