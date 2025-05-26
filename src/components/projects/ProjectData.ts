@@ -38,7 +38,7 @@ export const projectsData: Project[] = [
   }, 
   {
     title: "Модернизация завода",
-    location: "Польша",
+    location: "Европа",
     image: "/lovable-uploads/58d6f434-7c79-4e4e-b8c9-e60fad6a246d.png",
     description: "Полный капитальный ремонт и модернизация устаревшего оборудования для повышения эффективности производства.",
     galleryImages: [
