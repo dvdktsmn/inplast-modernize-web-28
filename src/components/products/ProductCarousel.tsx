@@ -29,10 +29,10 @@ const ProductCarousel = () => {
     <div className="container mx-auto px-4">
       <div className="text-center mb-12">
         <h2 className="text-3xl font-bold text-inplast-blue mb-4">
-          Наши системы и оборудование Know-How
+          Области нашей технической и технологической экспертизы
         </h2>
         <p className="text-xl text-gray-600 max-w-3xl mx-auto">
-          Ознакомьтесь с типами оборудования, которое мы обслуживаем с проверенной экспертизой.      
+          ОУ нас есть обширный опыт работы с широким спектром промышленного оборудования и систем. Наши технические знания позволяют нам предоставлять комплексные решения для различных производственных потребностей.
         </p>
       </div>
       <div className="max-w-7xl mx-auto">
