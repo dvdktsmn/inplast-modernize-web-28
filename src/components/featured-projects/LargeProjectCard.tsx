@@ -174,62 +174,49 @@ const LargeProjectCard = ({ project, reverseLayout = false }: LargeProjectCardPr
                   <section>
                     <h4 className="text-xl font-semibold text-inplast-blue mb-2">Первоначальная оценка состояния</h4>
                     <p className="text-gray-700">
-                      Проект начался с детальной технической инспекции линии BOPP на её первоначальном месте. 
-                      Команда оценила состояние экструдеров, охлаждающих валков, Т-штампов, рамочных растяжных машин, перематывающих устройств 
-                      и связанных вспомогательных систем. Ключевые компоненты были проверены на механическую целостность и износ. 
-                      Эта оценка легла в основу стратегии демонтажа и плана восстановления, обеспечивая безопасную транспортировку 
-                      оборудования и эффективную переустановку.
+                      Проект начался с детальной технической инспекции линии BOPP на её первоначальном месте эксплуатации. Команда оценила состояние экструдеров, охлаждающих валков, фильеры, узлов продольного и поперечного растяжения, перематывающих устройств и связанных вспомогательных систем. Ключевые компоненты были проверены на механическую целостность и износ. Эта оценка легла в основу стратегии демонтажа и плана восстановления и модернизации, обеспечивая безопасную транспортировку оборудования и эффективную переустановку.
                     </p>
                   </section>
                   
                   <section>
                     <h4 className="text-xl font-semibold text-inplast-blue mb-2">Демонтаж и логистика транспортировки</h4>
                     <p className="text-gray-700">
-                      После оценки команда провела структурированный процесс демонтажа. Более 1200 механических, 
-                      электрических компонентов и компонентов систем управления были аккуратно демонтированы, маркированы и упакованы. Особое внимание 
-                      было уделено критически важным деталям, таким как узлы растяжения пленки и прецизионные валки. Этап транспортировки включал 
-                      значительное логистическое планирование из-за размера оборудования. Команда управляла безопасной транспортировкой компонентов морским 
-                      фрахтом и автомобильным транспортом, координируя работу с таможенными и регулирующими органами для минимизации задержек. 
-                      Все методы упаковки и крепления соответствовали международным стандартам для предотвращения повреждений при транспортировке.
+                      После оценки команда провела структурированный процесс демонтажа. Тысячи механических и электрических компонентов, элементов систем управления были аккуратно демонтированы, маркированы и упакованы. Особое внимание было уделено критически важным деталям, таким как узлы растяжения пленки и прецизионные валки. Этап транспортировки включал значительное логистическое планирование из-за размера оборудования. Команда управляла безопасной транспортировкой компонентов морским фрахтом и автомобильным транспортом, координируя работу с таможенными и регулирующими органами для минимизации задержек. Все методы упаковки и крепления соответствовали международным стандартам для предотвращения повреждений при транспортировке.
                     </p>
                   </section>
                   
                   <section>
                     <h4 className="text-xl font-semibold text-inplast-blue mb-2">Ремонт, восстановление и модернизация на новом объекте</h4>
                     <p className="text-gray-700">
-                      По прибытии на новое предприятие команда выполнила запланированное восстановление. Изношенные и устаревшие компоненты 
-                      были заменены, и механические выравнивания были восстановлены. Электрические системы и системы безопасности были приведены в соответствие с 
-                      современными стандартами. Энергосберегающие улучшения и современные технологии автоматизации были 
-                      интегрированы для повышения эффективности и надежности линии.
+                      По прибытии на новое предприятие команда выполнила запланированное восстановление. Изношенные и устаревшие компоненты были заменены, проведено полное восстановление геометрических характеристик с центровкой и выставлением параллельности. Электрические системы и системы безопасности были приведены в соответствие с современными стандартами. Энергосберегающие улучшения и современные технологии автоматизации были интегрированы для повышения эффективности и надежности линии.
                     </p>
                   </section>
                   
                   <section>
                     <h4 className="text-xl font-semibold text-inplast-blue mb-2">Сборка и модернизация программного обеспечения</h4>
                     <p className="text-gray-700">
-                      Линия была собрана командой с точностью для восстановления полной функциональности. Инженеры полностью заменили
-                      электрические системы и системы управления и установили обновленные системы PLC и SCADA, добавив новую диагностику, улучшенное управление процессами и современные 
-                      интерфейсы оператора. Эти модернизации предоставили клиенту лучшие возможности мониторинга и управления 
-                      для будущего производства.
+                      Линия была собрана с высокой точностью для восстановления полной функциональности. Инженеры полностью заменили электрические системы и системы управления и установили обновленные системы PLC и SCADA, добавив новую систему само-диагностики, улучшенное управление процессами и современные интерфейсы оператора. Эти модернизации предоставили клиенту лучшие возможности мониторинга и управления для будущего производства.
                     </p>
                   </section>
                   
                   <section>
                     <h4 className="text-xl font-semibold text-inplast-blue mb-2">Ввод в эксплуатацию и оптимизация производительности</h4>
                     <p className="text-gray-700">
-                      Этап ввода в эксплуатацию включал систематический подход к тестированию каждого компонента и системы. Первоначальные запуски были 
-                      проведены для проверки точности толщины пленки, прочности материала и постоянства качества. Команда тесно работала 
-                      с клиентом для выполнения точных корректировок для обеспечения соответствия линии международным производственным стандартам для продукции BOPP пленки.
+                      Этап ввода в эксплуатацию включал последовательный и системный подход к разработке программы пусконаладочных испытаний и последующего тестирования каждого компонента, каждой системы и всей линии целиком. Первоначальные запуски были проведены для проверки точности толщины пленки, прочности материала и постоянства качества. Команда тесно работала с клиентом для выполнения корректировок с целью обеспечения соответствия рабочих характеристик линии международным производственным стандартам для линий по производству BOPP плёнки.
                     </p>
                   </section>
                   
                   <section>
                     <h4 className="text-xl font-semibold text-inplast-blue mb-2">Обучение и передача знаний</h4>
                     <p className="text-gray-700">
-                      Заключительный этап включал обучение операционного и технического персонала клиента. Команда предоставила инструкции
-                      и практическое обучение на оборудовании. Темы включали безопасную эксплуатацию, 
-                      рутинное техническое обслуживание, устранение неполадок и оптимизацию системы. Это обеспечило полную готовность персонала клиента 
-                      к независимой и безопасной эксплуатации линии.
+                      Заключительный этап включал обучение операционного и технического персонала клиента. Команда предоставила инструкции и практическое обучение на оборудовании. Темы включали безопасную эксплуатацию, рутинное техническое обслуживание, устранение неполадок и оптимизацию системы. Это обеспечило полную готовность персонала клиента к независимой и безопасной эксплуатации линии.
+                    </p>
+                  </section>
+
+                  <section>
+                    <h4 className="text-xl font-semibold text-inplast-blue mb-2">Постоянная поддержка</h4>
+                    <p className="text-gray-700">
+                      По завершении этапа ввода в эксплуатацию с обучением персонала продолжилась совместная работа по поддержанию исправного состояния оборудования в рамках удалённой и выездной технической поддержки, поставки запасных частей и расходных материалов. В рамках совместных с клиентом рабочих столов предлагаются потенциальные доработки и последующие модернизации линии.
                     </p>
                   </section>
                 </>
@@ -238,7 +225,7 @@ const LargeProjectCard = ({ project, reverseLayout = false }: LargeProjectCardPr
                 <div className="space-y-6">
                   <section>
                     <h4 className="text-xl font-semibold text-inplast-blue mb-2">1. Модернизация системы дозирования</h4>
-                    <p className="text-gray-700 mb-2">Секция дозирования была улучшена с:</p>
+                    <p className="text-gray-700 mb-2">Секция дозирования была полностью реконструирована:</p>
                     <ul className="space-y-2">
                       <li className="flex items-start">
                         <ArrowRight className="h-5 w-5 text-inplast-orange mr-2 mt-0.5 flex-shrink-0" />
@@ -246,7 +233,7 @@ const LargeProjectCard = ({ project, reverseLayout = false }: LargeProjectCardPr
                       </li>
                       <li className="flex items-start">
                         <ArrowRight className="h-5 w-5 text-inplast-orange mr-2 mt-0.5 flex-shrink-0" />
-                        <span>Установкой новых силовых кабелей и системы сушки</span>
+                        <span>Установкой новых силовых кабелей и систем сушки</span>
                       </li>
                       <li className="flex items-start">
                         <ArrowRight className="h-5 w-5 text-inplast-orange mr-2 mt-0.5 flex-shrink-0" />
@@ -254,7 +241,11 @@ const LargeProjectCard = ({ project, reverseLayout = false }: LargeProjectCardPr
                       </li>
                       <li className="flex items-start">
                         <ArrowRight className="h-5 w-5 text-inplast-orange mr-2 mt-0.5 flex-shrink-0" />
-                        <span>Интеграцией новых тензометрических датчиков для повышения точности измерений</span>
+                        <span>Интеграцией новых тензометрических преобразователей для повышения точности измерений и автоматической калибровки дозаторов</span>
+                      </li>
+                      <li className="flex items-start">
+                        <ArrowRight className="h-5 w-5 text-inplast-orange mr-2 mt-0.5 flex-shrink-0" />
+                        <span>Внедрением дополнительных дозирующих устройств с существенным увеличением ассортиментного состава сырьевых компонентов для выпуска более сложных продуктов</span>
                       </li>
                     </ul>
                   </section>
@@ -287,8 +278,8 @@ const LargeProjectCard = ({ project, reverseLayout = false }: LargeProjectCardPr
                   </section>
                   
                   <section>
-                    <h4 className="text-xl font-semibold text-inplast-blue mb-2">3. Восстановление охлаждающего валка</h4>
-                    <p className="text-gray-700 mb-2">Узел охлаждающего валка был полностью восстановлен с:</p>
+                    <h4 className="text-xl font-semibold text-inplast-blue mb-2">3. Восстановление каст-формирующей машины</h4>
+                    <p className="text-gray-700 mb-2">Каст-формирующая машина была полностью восстановлена с:</p>
                     <ul className="space-y-2">
                       <li className="flex items-start">
                         <ArrowRight className="h-5 w-5 text-inplast-orange mr-2 mt-0.5 flex-shrink-0" />
@@ -302,31 +293,35 @@ const LargeProjectCard = ({ project, reverseLayout = false }: LargeProjectCardPr
                         <ArrowRight className="h-5 w-5 text-inplast-orange mr-2 mt-0.5 flex-shrink-0" />
                         <span>Новыми теплообменниками для эффективного теплового управления</span>
                       </li>
+                      <li className="flex items-start">
+                        <ArrowRight className="h-5 w-5 text-inplast-orange mr-2 mt-0.5 flex-shrink-0" />
+                        <span>Измененной системой распределения потоков охлаждающей среды</span>
+                      </li>
                     </ul>
                   </section>
                   
                   <section>
                     <h4 className="text-xl font-semibold text-inplast-blue mb-2">4. Капитальный ремонт MDO (машинное ориентирование)</h4>
-                    <p className="text-gray-700 mb-2">Полный капитальный ремонт MDO включал:</p>
+                    <p className="text-gray-700 mb-2">Капитальный ремонт MDO включал:</p>
                     <ul className="space-y-2">
                       <li className="flex items-start">
                         <ArrowRight className="h-5 w-5 text-inplast-orange mr-2 mt-0.5 flex-shrink-0" />
-                        <span>Замену подшипников, ремней и валков</span>
+                        <span>Замену всех вращающихся узлов, ремней и валков</span>
                       </li>
                       <li className="flex items-start">
                         <ArrowRight className="h-5 w-5 text-inplast-orange mr-2 mt-0.5 flex-shrink-0" />
-                        <span>Установку передовых систем температурного контроля и пневматики</span>
+                        <span>Установку передовых систем температурного контроля и пневматических узлов</span>
                       </li>
                     </ul>
                   </section>
                   
                   <section>
-                    <h4 className="text-xl font-semibold text-inplast-blue mb-2">5. Обслуживание TDO (поперечное ориентирование)</h4>
+                    <h4 className="text-xl font-semibold text-inplast-blue mb-2">5. Капитальный ремонт TDO (поперечное ориентирование)</h4>
                     <p className="text-gray-700 mb-2">TDO прошел полное обслуживание с:</p>
                     <ul className="space-y-2">
                       <li className="flex items-start">
                         <ArrowRight className="h-5 w-5 text-inplast-orange mr-2 mt-0.5 flex-shrink-0" />
-                        <span>Капитальным ремонтом цепной гусеницы</span>
+                        <span>Капитальным ремонтом цепной тянущей системы</span>
                       </li>
                       <li className="flex items-start">
                         <ArrowRight className="h-5 w-5 text-inplast-orange mr-2 mt-0.5 flex-shrink-0" />
@@ -334,15 +329,19 @@ const LargeProjectCard = ({ project, reverseLayout = false }: LargeProjectCardPr
                       </li>
                       <li className="flex items-start">
                         <ArrowRight className="h-5 w-5 text-inplast-orange mr-2 mt-0.5 flex-shrink-0" />
-                        <span>Заменой термопар и капитальным ремонтом вентиляторных двигателей и редукторов</span>
+                        <span>Заменой измерительных преобразователей и капитальным ремонтом вентиляторов, электродвигателей и редукторов</span>
                       </li>
                       <li className="flex items-start">
                         <ArrowRight className="h-5 w-5 text-inplast-orange mr-2 mt-0.5 flex-shrink-0" />
-                        <span>Установкой новых электрических шкафов и систем управления Siemens</span>
+                        <span>Установкой новых электрических шкафов и систем управления на базе Siemens</span>
                       </li>
                       <li className="flex items-start">
                         <ArrowRight className="h-5 w-5 text-inplast-orange mr-2 mt-0.5 flex-shrink-0" />
                         <span>Новыми приводами вентиляторных двигателей</span>
+                      </li>
+                      <li className="flex items-start">
+                        <ArrowRight className="h-5 w-5 text-inplast-orange mr-2 mt-0.5 flex-shrink-0" />
+                        <span>Установкой новых систем (охлаждение клипп с контролем их температуры, контроля уровня угарного газа в печи TDO и прочих)</span>
                       </li>
                     </ul>
                   </section>
@@ -353,7 +352,7 @@ const LargeProjectCard = ({ project, reverseLayout = false }: LargeProjectCardPr
                     <ul className="space-y-2">
                       <li className="flex items-start">
                         <ArrowRight className="h-5 w-5 text-inplast-orange mr-2 mt-0.5 flex-shrink-0" />
-                        <span>Восстановленные валки и новые подшипники</span>
+                        <span>Восстановленные валки и новые узлы вращения</span>
                       </li>
                       <li className="flex items-start">
                         <ArrowRight className="h-5 w-5 text-inplast-orange mr-2 mt-0.5 flex-shrink-0" />
@@ -361,11 +360,15 @@ const LargeProjectCard = ({ project, reverseLayout = false }: LargeProjectCardPr
                       </li>
                       <li className="flex items-start">
                         <ArrowRight className="h-5 w-5 text-inplast-orange mr-2 mt-0.5 flex-shrink-0" />
-                        <span>Восстановленные генераторы и новые трансформаторы</span>
+                        <span>Восстановленные и новые генераторы, а также новые трансформаторы</span>
                       </li>
                       <li className="flex items-start">
                         <ArrowRight className="h-5 w-5 text-inplast-orange mr-2 mt-0.5 flex-shrink-0" />
-                        <span>Установку новых электродов и пневматики</span>
+                        <span>Установку полностью модернизированной пневматической системы</span>
+                      </li>
+                      <li className="flex items-start">
+                        <ArrowRight className="h-5 w-5 text-inplast-orange mr-2 mt-0.5 flex-shrink-0" />
+                        <span>Модернизацию и перенос системы обрезки кромки</span>
                       </li>
                       <li className="flex items-start">
                         <ArrowRight className="h-5 w-5 text-inplast-orange mr-2 mt-0.5 flex-shrink-0" />
@@ -386,24 +389,32 @@ const LargeProjectCard = ({ project, reverseLayout = false }: LargeProjectCardPr
                         <ArrowRight className="h-5 w-5 text-inplast-orange mr-2 mt-0.5 flex-shrink-0" />
                         <span>Установкой новых электрических шкафов</span>
                       </li>
+                      <li className="flex items-start">
+                        <ArrowRight className="h-5 w-5 text-inplast-orange mr-2 mt-0.5 flex-shrink-0" />
+                        <span>Проведена полная механическая переработка узла с изготовлением новых элементов по собственно разработанной конструкторской документации</span>
+                      </li>
                     </ul>
                   </section>
                   
                   <section>
-                    <h4 className="text-xl font-semibold text-inplast-blue mb-2">8. Модернизация первичного резчика ATLAS</h4>
-                    <p className="text-gray-700 mb-2">Первичный резчик ATLAS был тщательно восстановлен и модернизирован с:</p>
+                    <h4 className="text-xl font-semibold text-inplast-blue mb-2">8. Модернизация первичной резки ATLAS</h4>
+                    <p className="text-gray-700 mb-2">Первичная резка ATLAS была тщательно восстановлена и модернизирована:</p>
                     <ul className="space-y-2">
                       <li className="flex items-start">
                         <ArrowRight className="h-5 w-5 text-inplast-orange mr-2 mt-0.5 flex-shrink-0" />
-                        <span>Новыми подшипниками и позиционными двигателями</span>
+                        <span>Полностью новая система управления и электрических приводов с переходом на Siemens TIA Portal и реализацией новых функций по автоматическому позиционированию станций</span>
                       </li>
                       <li className="flex items-start">
                         <ArrowRight className="h-5 w-5 text-inplast-orange mr-2 mt-0.5 flex-shrink-0" />
-                        <span>Новыми электрическими шкафами, пневматикой и гидравлическими системами управления</span>
+                        <span>Новые узлы вращения и позиционные двигатели</span>
                       </li>
                       <li className="flex items-start">
                         <ArrowRight className="h-5 w-5 text-inplast-orange mr-2 mt-0.5 flex-shrink-0" />
-                        <span>Обновленными кабелями и системой управления Siemens STEP 7</span>
+                        <span>Новые электрические шкафы, пневматическая и гидравлическая системы управления</span>
+                      </li>
+                      <li className="flex items-start">
+                        <ArrowRight className="h-5 w-5 text-inplast-orange mr-2 mt-0.5 flex-shrink-0" />
+                        <span>Полностью заменены кабельные, пневматические и гидравлические линии</span>
                       </li>
                     </ul>
                   </section>
