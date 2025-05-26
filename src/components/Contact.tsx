@@ -64,7 +64,7 @@ const Contact = ({ isStandalone = false }: ContactProps) => {
       
       toast({
         title: "Успешно",
-        description: "Ваше сообщение отправлено. Мы свяжемся с вами в ближайшее время!",
+        description: "Ваше сообщение отправлено. Мы свяжемся с Вами в ближайшее время!",
       });
       
       // Reset form
@@ -90,7 +90,7 @@ const Contact = ({ isStandalone = false }: ContactProps) => {
         <div className="text-center mb-16">
           <h2 className="text-3xl font-bold text-inplast-blue mb-4">Связаться с нами</h2>
           <p className="text-xl text-gray-600 max-w-3xl mx-auto">
-            Готовы обсудить ваш проект? Наши инженерные эксперты готовы помочь вам модернизировать ваши производственные мощности.
+            Готовы обсудить Ваш проект? Наши инженерные эксперты готовы помочь Вам модернизировать Ваши производственные мощности.
           </p>
         </div>
 
@@ -155,18 +155,18 @@ const Contact = ({ isStandalone = false }: ContactProps) => {
             
             <div className="flex flex-col gap-6">
               <div className="bg-gray-50 p-6 rounded-lg shadow-md">
-                <h4 className="text-xl font-semibold text-inplast-blue mb-2">Штаб-квартира</h4>
+                <h4 className="text-xl font-semibold text-inplast-blue mb-2">Центральный офис</h4>
                 <p className="text-gray-600">
-                  ул. М.Склодовской-Кюри, 87b<br />
-                  87-100 Торунь, Польша
+                  ул. 2-я Кабельная, д.2, строение 5, 4 этаж, помещение 10<br />
+                  111024, г. Москва
                 </p>
               </div>
               
               <div className="bg-gray-50 p-6 rounded-lg shadow-md">
                 <h4 className="text-xl font-semibold text-inplast-blue mb-2">Контактная информация</h4>
                 <p className="text-gray-600">
-                  Электронная почта: info@inplast-novex.com<br />
-                  Телефон: +48 538 421 002
+                  Электронная почта: info@bpleng.ru<br />
+                  Телефон: +7 (495) 974-22-11, доб. 149
                 </p>
               </div>
             </div>
