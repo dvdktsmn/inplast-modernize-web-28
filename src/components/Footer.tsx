@@ -14,7 +14,7 @@ const Footer = () => {
               BPL Engineering
             </div>
             <p className="text-white mb-4">
-              Инновации, инжиниринг, превосходство в промышленных решениях для модернизации, перемещения и ввода в эксплуатацию оборудования
+              Комплексные промышленные решения для модернизации, перемещения и ввода в эксплуатацию оборудования
             </p>
           </div>
           
@@ -22,7 +22,7 @@ const Footer = () => {
             <h4 className="text-lg font-semibold text-white mb-4">Быстрые ссылки</h4>
             <ul className="space-y-2">
               <li><Link to="/" className="text-white hover:text-inplast-orange transition-colors">Главная</Link></li>
-              <li><Link to="/products" className="text-white hover:text-inplast-orange transition-colors">Продукция</Link></li>
+              <li><Link to="/products" className="text-white hover:text-inplast-orange transition-colors">Оборудование</Link></li>
               <li><Link to="/services" className="text-white hover:text-inplast-orange transition-colors">Услуги</Link></li>
               <li><Link to="/projects" className="text-white hover:text-inplast-orange transition-colors">Проекты</Link></li>
               <li><Link to="/contact" className="text-white hover:text-inplast-orange transition-colors">Контакты</Link></li>
@@ -32,9 +32,9 @@ const Footer = () => {
           <div>
             <h4 className="text-lg font-semibold text-white mb-4">Услуги</h4>
             <ul className="space-y-2">
-              <li><Link to="/services/overhaul" className="text-white hover:text-inplast-orange transition-colors">Полный капитальный ремонт оборудования</Link></li>
+              <li><Link to="/services/overhaul" className="text-white hover:text-inplast-orange transition-colors">Восстановление и модернизация оборудования</Link></li>
               <li><Link to="/services/engineering" className="text-white hover:text-inplast-orange transition-colors">Инжиниринг и системы управления</Link></li>
-              <li><Link to="/services/installation" className="text-white hover:text-inplast-orange transition-colors">Установка и ввод в эксплуатацию</Link></li>
+              <li><Link to="/services/installation" className="text-white hover:text-inplast-orange transition-colors">Монтаж и ввод в эксплуатацию</Link></li>
               <li><Link to="/services/relocation" className="text-white hover:text-inplast-orange transition-colors">Перемещение оборудования</Link></li>
             </ul>
           </div>

@@ -23,12 +23,12 @@ const Hero = () => {
       ></div>
       
       <div className="relative z-10 flex flex-col justify-center items-center h-full container mx-auto text-center px-4 py-8">
-        <div className="text-white font-bold text-3xl md:text-4xl mb-6 animate-fade-in">
+        <div className="text-white font-bold text-5xl md:text-4xl mb-6 animate-fade-in">
           BPL Engineering
         </div>
-        <h2 className="text-xl md:text-2xl font-medium text-white mb-4 animate-fade-in">
+        {/*<h2 className="text-xl md:text-2xl font-medium text-white mb-4 animate-fade-in">
           Инновации, Инжиниринг, Превосходство
-        </h2>
+        </h2>*/}
         <p className="text-base md:text-lg text-white max-w-2xl mb-8 animate-fade-in">
           Комплексные промышленные решения для модернизации, перемещения и ввода в эксплуатацию оборудования
         </p>
