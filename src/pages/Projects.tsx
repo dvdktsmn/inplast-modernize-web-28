@@ -14,7 +14,7 @@ const ProjectsPage = () => {
           <div className="text-center mb-2">
             <h1 className="text-4xl font-bold text-inplast-blue mb-4">Ключевые проекты компании: крупные кейсы</h1>
             <p className="text-xl text-gray-600 max-w-3xl mx-auto">
-              Ознакомьтесь с нашими успешными проектами промышленной трансформации по всему миру
+              Ознакомьтесь с нашими завершенными промышленными проектами, демонстрирующими наш опыт по всему миру.
             </p>
           </div>
 
