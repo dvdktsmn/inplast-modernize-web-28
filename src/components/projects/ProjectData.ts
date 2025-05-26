@@ -12,9 +12,9 @@ export interface Project {
 export const projectsData: Project[] = [
   {
     title: "Перемещение линии BOPP",
-    location: "Из Китая в Европу",
+    location: "Из Китая в Россию",
     image: "/lovable-uploads/4c257c37-8c64-4c31-bcea-916d3639fd25.png",
-    description: "Полная разборка, транспортировка, восстановление и переустановка крупномасштабной производственной линии BOPP между континентами.",
+    description: "Полная разборка, транспортировка, восстановление, модернизация и ввод в эксплуатацию комплексной производственной линии BOPP между континентами.",
     galleryImages: [
       "/lovable-uploads/1578a116-7962-49ae-a3ad-3f09928ab06b.png",
       "/lovable-uploads/91e587fb-4c00-46b1-80d1-bd90c401bc95.png",
@@ -70,10 +70,10 @@ export const projectsData: Project[] = [
     ]
   },
   {
-    title: "Модернизация экструдера",
+    title: "Модернизация системы экструзии",
     location: "",
     image: "/lovable-uploads/6a402cc3-f2e6-4dcf-aac5-98513623017f.png",
-    description: "Полный капитальный ремонт систем нагрева, охлаждения и смазки для экструдера полипропилена.",
+    description: "Капитальный ремонт механического оборудования, систем управления, систем нагрева и охлаждения, системы смазки для экструдеров полимеров.",
     galleryImages: [
       "/lovable-uploads/6a402cc3-f2e6-4dcf-aac5-98513623017f.png",
       "/lovable-uploads/ff1b2119-4abb-48ea-ad6a-b913342ae6eb.png"
@@ -98,10 +98,10 @@ export const projectsData: Project[] = [
     ]
   },
   {
-    title: "Модернизация охлаждающего валка",
+    title: "Модернизация охлаждающего вала комплексной линии по производству БОПП плёнок",
     location: "",
     image: "/lovable-uploads/f8e1cb0f-f78d-4b8d-af60-0b3975a34974.png",
-    description: "Замена обычного мотор-редуктора на двигатель прямого крутящего момента.",
+    description: "Замена систем охлаждения и системы управления, замена привода на базе мотор-редуктора на точный высоко моментный двигатель прямого подключения.",
     galleryImages: [
       "/lovable-uploads/f8e1cb0f-f78d-4b8d-af60-0b3975a34974.png",
       "/lovable-uploads/9ce0fd86-9dce-439d-acea-50311e1d8369.png"
@@ -111,17 +111,17 @@ export const projectsData: Project[] = [
     title: "Модернизация металлизатора",
     location: "",
     image: "/lovable-uploads/010293e4-1059-43b2-8a41-b7f56abd0649.png",
-    description: "Комплексное восстановление устаревшего металлизатора.",
+    description: "Комплексное восстановление устаревшего вакуумного металлизатора для достижения современных уровней производительности и качества выпускаемой продукции.",
     galleryImages: [
       "/lovable-uploads/010293e4-1059-43b2-8a41-b7f56abd0649.png", 
       "/lovable-uploads/af6834c7-d129-43ce-845a-fb3d8e2734c9.png"
     ]
   },
   {
-    title: "Перемещение установки покрытия",
+    title: "Перемещение установки покрытия (коутера)",
     location: "",
     image: "/lovable-uploads/12363ffc-ae49-4992-b6cb-1682ee038aae.png",
-    description: "Разборка и перемещение установки покрытия пленки",
+    description: "Разборка и перемещение установки покрытия пленки с последующей модернизацией и запуском в эксплуатацию.",
     galleryImages: [
       "/lovable-uploads/12363ffc-ae49-4992-b6cb-1682ee038aae.png",
       "/lovable-uploads/25745b7f-1d0a-418a-8768-521c1fb3ca28.png",
