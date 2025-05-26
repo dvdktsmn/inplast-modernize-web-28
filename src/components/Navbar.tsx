@@ -66,14 +66,14 @@ const Navbar = () => {
               }}
               className="text-white hover:text-inplast-orange transition-colors cursor-pointer"
             >
-              Продукция
+              Оборудование
             </a>
           ) : (
           <Link 
             to="/products"
             className="text-white hover:text-inplast-orange transition-colors cursor-pointer"
           >
-            Продукция
+            Оборудование
           </Link>
           )}
           {isHomePage ? (
@@ -148,7 +148,7 @@ const Navbar = () => {
                 <Link to="/" className="w-full">Главная</Link>
               </DropdownMenuItem>
               <DropdownMenuItem>
-                <Link to="/products" className="w-full">Продукция</Link>
+                <Link to="/products" className="w-full">Оборудование</Link>
               </DropdownMenuItem>
               <DropdownMenuItem>
                 <Link to="/services" className="w-full">Услуги</Link>
