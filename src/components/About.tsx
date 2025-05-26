@@ -16,11 +16,28 @@ const About = () => {
             </p>
             <p className="text-lg text-gray-600 mb-6">
               Наши услуги включают:<br/>
-индивидуальное проектирование электрических и механических систем и оборудования;<br/>
-интеграцию современных систем управления и автоматизации;<br/>
-реализацию  систем прецизионного управления движением;<br/>
-демонтаж, логистику  и повторную сборку оборудования;<br/>
-реализацию систем мониторинга технологической и энергетической эффективности.
+              <ul className="space-y-2">
+                      <li className="flex items-start">
+                        <ArrowRight className="h-5 w-5 text-inplast-orange mr-2 mt-0.5 flex-shrink-0" />
+                        <span>индивидуальное проектирование электрических и механических систем и оборудования;</span>
+                      </li>
+                      <li className="flex items-start">
+                        <ArrowRight className="h-5 w-5 text-inplast-orange mr-2 mt-0.5 flex-shrink-0" />
+                        <span>интеграцию современных систем управления и автоматизации;</span>
+                      </li>
+                      <li className="flex items-start">
+                        <ArrowRight className="h-5 w-5 text-inplast-orange mr-2 mt-0.5 flex-shrink-0" />
+                        <span>реализацию  систем прецизионного управления движением;</span>
+                      </li>
+                      <li className="flex items-start">
+                        <ArrowRight className="h-5 w-5 text-inplast-orange mr-2 mt-0.5 flex-shrink-0" />
+                        <span>демонтаж, логистику  и повторную сборку оборудования;</span>
+                      </li>
+                <li className="flex items-start">
+                        <ArrowRight className="h-5 w-5 text-inplast-orange mr-2 mt-0.5 flex-shrink-0" />
+                        <span>реализацию систем мониторинга технологической и энергетической эффективности.</span>
+                      </li>
+                    </ul>
 </p>
 
             <p className="text-lg text-gray-600">
