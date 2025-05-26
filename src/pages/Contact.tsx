@@ -91,7 +91,7 @@ const ContactPage = () => {
           <div className="text-center mb-8">
             <h1 className="text-4xl font-bold text-gray-800 mb-4">Связаться с нами</h1>
             <p className="text-xl text-gray-600 max-w-3xl mx-auto">
-              Готовы обсудить ваш проект? Наши инженерные эксперты готовы помочь вам модернизировать ваши производственные мощности.
+              Готовы обсудить Ваш проект? Наши инженерные эксперты готовы помочь Вам модернизировать Ваши производственные мощности.
             </p>
           </div>
 
@@ -127,7 +127,7 @@ const ContactPage = () => {
                     <Input 
                       id="telephone" 
                       type="tel" 
-                      placeholder="+0 123 456 789" 
+                      placeholder="+7 123 4567890" 
                       value={telephone}
                       onChange={(e) => setTelephone(e.target.value)}
                     />
@@ -137,7 +137,7 @@ const ContactPage = () => {
                     <Label htmlFor="message">Сообщение *</Label>
                     <Textarea 
                       id="message" 
-                      placeholder="Расскажите нам о требованиях к вашему проекту" 
+                      placeholder="Расскажите нам о Вашем проекте" 
                       className="resize-none min-h-[140px]"
                       value={message}
                       onChange={(e) => setMessage(e.target.value)}
@@ -156,18 +156,18 @@ const ContactPage = () => {
               
               <div className="flex flex-col gap-6">
                 <div className="bg-gray-50 p-6 rounded-lg shadow-md">
-                  <h4 className="text-xl font-semibold text-inplast-blue mb-2">Штаб-квартира</h4>
+                  <h4 className="text-xl font-semibold text-inplast-blue mb-2">Центральный офис</h4>
                   <p className="text-gray-600">
-                    ул. М.Склодовской-Кюри, 87b<br />
-                    87-100 Торунь, Польша
+                    ул. 2-я Кабельная, д.2, строение 5, 4 этаж, помещение 10<br />
+                    111024, г. Москва
                   </p>
                 </div>
                 
                 <div className="bg-gray-50 p-6 rounded-lg shadow-md">
                   <h4 className="text-xl font-semibold text-inplast-blue mb-2">Контактная информация</h4>
                   <p className="text-gray-600">
-                    Электронная почта: info@inplast-novex.com<br />
-                    Телефон: +48 538 421 002
+                    Электронная почта: info@bpleng.ru<br />
+                    Телефон: +7 (495) 974-22-11, доб. 149
                   </p>
                 </div>
               </div>

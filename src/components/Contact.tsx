@@ -126,7 +126,7 @@ const Contact = ({ isStandalone = false }: ContactProps) => {
                   <Input 
                     id="telephone" 
                     type="tel" 
-                    placeholder="+0 123 456 789" 
+                    placeholder="+7 123 4567890" 
                     value={telephone}
                     onChange={(e) => setTelephone(e.target.value)}
                   />
@@ -136,7 +136,7 @@ const Contact = ({ isStandalone = false }: ContactProps) => {
                   <Label htmlFor="message">Сообщение *</Label>
                   <Textarea 
                     id="message" 
-                    placeholder="Расскажите нам о требованиях к вашему проекту" 
+                    placeholder="Расскажите нам о Вашем проекте" 
                     className="resize-none min-h-[140px]" 
                     value={message}
                     onChange={(e) => setMessage(e.target.value)}
