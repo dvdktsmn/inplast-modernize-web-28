@@ -52,7 +52,7 @@ const Contact = ({ isStandalone = false }: ContactProps) => {
         from_email: email,
         telephone: telephone || 'Не указан',
         message: message,
-        to_email: 'dvdktsmn@gmail.com'
+        to_email: 'daweed.xd@gmail.com'
       };
 
       await emailjs.send(
