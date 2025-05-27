@@ -1,3 +1,4 @@
+
 import React, { useState, useEffect, useRef } from 'react';
 import useEmblaCarousel from 'embla-carousel-react';
 import ProjectNavigation from './ProjectNavigation';
@@ -119,7 +120,7 @@ const ProjectCarousel = ({ projects }: ProjectCarouselProps) => {
   }, [emblaApi, currentProject, projects.length]); // Added currentProject and projects.length as dependencies
   
   return (
-    <div className="max-w-7xl mx-auto relative px-2 md:px-0">
+    <div className="max-w-7xl mx-auto relative px-2 md:px-4 xl:px-0">
       {/* Main carousel for project transitions */}
       <div ref={emblaRef} className="overflow-hidden">
         <div className="flex">
@@ -128,7 +129,7 @@ const ProjectCarousel = ({ projects }: ProjectCarouselProps) => {
               key={index} 
               className={`flex-[0_0_100%] min-w-0 transition-opacity duration-500 ${currentProject === index ? 'opacity-100' : 'opacity-0'}`}
             >
-              <div className="bg-white rounded-xl overflow-hidden shadow-lg p-4 md:p-8 min-h-[540px] mx-2 md:mx-0">
+              <div className="bg-white rounded-xl overflow-hidden shadow-lg p-4 md:p-8 min-h-[400px] md:min-h-[540px] mx-2 md:mx-0 flex flex-col">
                 <Link to="/projects" className="inline-block">
                   <h3 className="text-xl md:text-2xl font-bold text-inplast-blue mb-1 hover:underline">
                     {project.title}
@@ -142,7 +143,9 @@ const ProjectCarousel = ({ projects }: ProjectCarouselProps) => {
                 </p>
                 
                 {/* Dynamic content based on project type */}
-                <ProjectContent project={project} index={index} />
+                <div className="flex-grow">
+                  <ProjectContent project={project} index={index} />
+                </div>
               </div>
             </div>
           ))}

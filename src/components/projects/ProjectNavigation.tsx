@@ -20,22 +20,22 @@ const ProjectNavigation = ({
 }: ProjectNavigationProps) => {
   return (
     <>
-      {/* Left arrow */}
+      {/* Left arrow - always visible on desktop with better positioning */}
       <Button 
         variant="outline" 
         size="icon" 
         onClick={goToPrevProject} 
-        className="absolute left-0 md:-left-12 top-1/2 -translate-y-1/2 z-10 h-8 w-8 md:h-10 md:w-10 rounded-full bg-white shadow-md hover:bg-inplast-blue hover:text-white"
+        className="absolute left-2 md:left-4 xl:-left-12 top-1/2 -translate-y-1/2 z-10 h-8 w-8 md:h-10 md:w-10 rounded-full bg-white shadow-md hover:bg-inplast-blue hover:text-white"
       >
         <ArrowLeft className="h-3 w-3 md:h-4 md:w-4" />
         <span className="sr-only">Previous project</span>
       </Button>
       
-      {/* Right arrow */}
+      {/* Right arrow - always visible on desktop with better positioning */}
       <Button 
         variant="outline" 
         size="icon" 
-        className="absolute right-0 md:-right-12 top-1/2 -translate-y-1/2 z-10 h-8 w-8 md:h-10 md:w-10 rounded-full bg-white shadow-md hover:bg-inplast-blue hover:text-white" 
+        className="absolute right-2 md:right-4 xl:-right-12 top-1/2 -translate-y-1/2 z-10 h-8 w-8 md:h-10 md:w-10 rounded-full bg-white shadow-md hover:bg-inplast-blue hover:text-white" 
         onClick={goToNextProject}
       >
         <ArrowRight className="h-3 w-3 md:h-4 md:w-4" />
