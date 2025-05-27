@@ -32,7 +32,7 @@ const Hero = () => {
         <p className="text-sm md:text-lg text-white max-w-2xl mb-6 md:mb-8 animate-fade-in leading-relaxed">
           Комплексные промышленные решения для модернизации, перемещения и ввода в эксплуатацию оборудования
         </p>
-        <div className="flex flex-col sm:flex-row gap-3 md:gap-4 animate-fade-in w-full max-w-md sm:max-w-none">
+        <div className="flex flex-col sm:flex-row gap-3 md:gap-4 animate-fade-in items-center justify-center w-full max-w-md sm:max-w-none">
           <Button 
             className="bg-inplast-blue hover:bg-inplast-orange text-white px-4 md:px-6 py-3 md:py-4 w-full sm:w-[180px] text-sm md:text-base" 
             onClick={() => scrollToSection('products')}
