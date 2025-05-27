@@ -1,4 +1,3 @@
-
 import React, { useState, useEffect, useRef } from 'react';
 import { FeaturedProject } from './ProjectsData';
 import { 
@@ -441,18 +440,9 @@ const LargeProjectCard = ({ project, reverseLayout = false }: LargeProjectCardPr
 
       {/* Full-screen Image Lightbox */}
       <Dialog open={lightboxOpen} onOpenChange={setLightboxOpen}>
-        <DialogContent className="max-w-4xl w-[90vw] max-h-[85vh] h-[85vh] p-4 bg-white">
-          <div className="relative w-full h-full">
-            <Button 
-              variant="outline" 
-              size="icon" 
-              className="absolute top-2 right-2 z-50 bg-white/80 hover:bg-white border-gray-300 text-gray-700"
-              onClick={() => setLightboxOpen(false)}
-            >
-              <X className="h-6 w-6" />
-            </Button>
-            
-            <div className="w-full h-full pt-12">
+        <DialogContent className="max-w-5xl w-[95vw] h-[90vh] p-0 bg-white border-none overflow-hidden">
+          <div className="relative w-full h-full flex flex-col">
+            <div className="flex-1 min-h-0">
               <Carousel 
                 className="w-full h-full" 
                 setApi={setCarouselApi} 
@@ -463,12 +453,13 @@ const LargeProjectCard = ({ project, reverseLayout = false }: LargeProjectCardPr
               >
                 <CarouselContent className="h-full -ml-0">
                   {project.images.map((image, index) => (
-                    <CarouselItem key={`lightbox-${index}`} className="h-full pl-0 flex items-center justify-center">
+                    <CarouselItem key={`lightbox-${index}`} className="h-full pl-0">
                       <div className="w-full h-full flex items-center justify-center p-4">
                         <img 
                           src={image} 
                           alt={`${project.title} - крупный вид ${index + 1}`}
                           className="max-w-full max-h-full object-contain rounded-lg shadow-lg"
+                          style={{ maxHeight: 'calc(90vh - 2rem)' }}
                         />
                       </div>
                     </CarouselItem>
