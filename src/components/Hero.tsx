@@ -22,7 +22,7 @@ const Hero = () => {
         }}
       ></div>
       
-      <div className="relative z-10 flex flex-col justify-center items-center h-full max-w-4xl mx-auto text-center px-4 py-8">
+      <div className="relative z-10 flex flex-col justify-center items-center h-full container mx-auto text-center px-4 py-8">
         <div className="text-white font-bold text-5xl md:text-4xl mb-6 animate-fade-in">
           BPL Engineering
         </div>
