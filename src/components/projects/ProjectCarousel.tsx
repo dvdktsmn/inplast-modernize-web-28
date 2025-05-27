@@ -119,7 +119,7 @@ const ProjectCarousel = ({ projects }: ProjectCarouselProps) => {
   }, [emblaApi, currentProject, projects.length]); // Added currentProject and projects.length as dependencies
   
   return (
-    <div className="max-w-6xl mx-auto relative">
+    <div className="max-w-7xl mx-auto relative">
       {/* Main carousel for project transitions */}
       <div ref={emblaRef} className="overflow-hidden">
         <div className="flex">
