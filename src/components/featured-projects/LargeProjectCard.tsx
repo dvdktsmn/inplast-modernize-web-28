@@ -460,11 +460,7 @@ const LargeProjectCard = ({ project, reverseLayout = false }: LargeProjectCardPr
                       <img 
                         src={image} 
                         alt={`${project.title} - крупный вид ${index + 1}`}
-                        className="max-h-[calc(100vh-8rem)] max-w-[calc(100vw-2rem)] object-contain"
-                        style={{ 
-                          maxHeight: 'calc(100vh - 8rem)', 
-                          maxWidth: 'calc(100vw - 2rem)' 
-                        }}
+                        className="max-h-full max-w-full object-contain"
                       />
                     </div>
                   </CarouselItem>
