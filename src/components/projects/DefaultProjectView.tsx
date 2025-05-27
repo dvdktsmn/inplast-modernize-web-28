@@ -10,7 +10,7 @@ const DefaultProjectView = ({ image, title }: DefaultProjectViewProps) => {
   return (
     <div className="mt-8">
       <div className="bg-white rounded-xl overflow-hidden shadow-md">
-        <div className="h-80 overflow-hidden">
+        <div className="aspect-video overflow-hidden">
           <img src={image} alt={title} className="w-full h-full object-cover" />
         </div>
       </div>
