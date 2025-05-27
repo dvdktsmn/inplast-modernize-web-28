@@ -8,7 +8,7 @@ import { ArrowRight } from 'lucide-react';
 
 const Projects = () => {
   return (
-    <section id="projects" className="py-20 bg-gray-50">
+    <section id="projects" className="py-20 bg-gray-50 overflow-hidden">
       <div className="container mx-auto px-4">
         <div className="text-center mb-16">
           <h2 className="text-3xl font-bold text-inplast-blue mb-4">Ключевые проекты компании: крупные кейсы</h2>
@@ -17,7 +17,9 @@ const Projects = () => {
           </p>
         </div>
 
-        <ProjectCarousel projects={projectsData} />
+        <div className="w-full overflow-hidden">
+          <ProjectCarousel projects={projectsData} />
+        </div>
         
         <div className="text-center mt-12">
           <Link to="/projects">
