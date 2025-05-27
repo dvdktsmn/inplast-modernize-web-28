@@ -1,3 +1,4 @@
+
 import React, { useState, useEffect, useRef } from 'react';
 import { FeaturedProject } from './ProjectsData';
 import { 
@@ -391,8 +392,8 @@ const LargeProjectCard = ({ project, reverseLayout = false }: LargeProjectCardPr
                       <li className="flex items-start">
                         <ArrowRight className="h-5 w-5 text-inplast-orange mr-2 mt-0.5 flex-shrink-0" />
                         <span>Проведена полная механическая переработка узла с изготовлением новых элементов по собственно разработанной конструкторской документации</span>
-                      </ul>
-                    </li>
+                      </li>
+                    </ul>
                   </section>
                   
                   <section>
