@@ -119,7 +119,7 @@ const ProjectCarousel = ({ projects }: ProjectCarouselProps) => {
   }, [emblaApi, currentProject, projects.length]); // Added currentProject and projects.length as dependencies
   
   return (
-    <div className="max-w-7xl mx-auto relative">
+    <div className="max-w-7xl mx-auto relative px-2 md:px-0">
       {/* Main carousel for project transitions */}
       <div ref={emblaRef} className="overflow-hidden">
         <div className="flex">
@@ -128,16 +128,16 @@ const ProjectCarousel = ({ projects }: ProjectCarouselProps) => {
               key={index} 
               className={`flex-[0_0_100%] min-w-0 transition-opacity duration-500 ${currentProject === index ? 'opacity-100' : 'opacity-0'}`}
             >
-              <div className="bg-white rounded-xl overflow-hidden shadow-lg p-8 min-h-[540px]">
+              <div className="bg-white rounded-xl overflow-hidden shadow-lg p-4 md:p-8 min-h-[540px] mx-2 md:mx-0">
                 <Link to="/projects" className="inline-block">
-                  <h3 className="text-2xl font-bold text-inplast-blue mb-1 hover:underline">
+                  <h3 className="text-xl md:text-2xl font-bold text-inplast-blue mb-1 hover:underline">
                     {project.title}
                   </h3>
                 </Link>
                 <p className="text-sm text-gray-500 mb-4">
                   {project.location}
                 </p>
-                <p className="text-gray-600 mb-4">
+                <p className="text-gray-600 mb-4 text-sm md:text-base">
                   {project.description}
                 </p>
                 
