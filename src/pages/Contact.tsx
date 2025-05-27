@@ -50,7 +50,7 @@ const ContactPage = () => {
         from_email: email,
         telephone: telephone || 'Не указан',
         message: message,
-        to_email: 'dvdktsmn@gmail.com'
+        to_email: 'info@bpleng.ru'
       };
 
       await emailjs.send(
