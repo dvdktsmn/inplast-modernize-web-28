@@ -1,4 +1,3 @@
-
 import React, { useState, useEffect, useRef } from 'react';
 import { FeaturedProject } from './ProjectsData';
 import { 
@@ -392,8 +391,8 @@ const LargeProjectCard = ({ project, reverseLayout = false }: LargeProjectCardPr
                       <li className="flex items-start">
                         <ArrowRight className="h-5 w-5 text-inplast-orange mr-2 mt-0.5 flex-shrink-0" />
                         <span>Проведена полная механическая переработка узла с изготовлением новых элементов по собственно разработанной конструкторской документации</span>
-                      </li>
-                    </ul>
+                      </ul>
+                    </li>
                   </section>
                   
                   <section>
@@ -441,7 +440,7 @@ const LargeProjectCard = ({ project, reverseLayout = false }: LargeProjectCardPr
 
       {/* Full-screen Image Lightbox */}
       <Dialog open={lightboxOpen} onOpenChange={setLightboxOpen}>
-        <DialogContent className="max-w-[95vw] w-[95vw] max-h-[95vh] h-[95vh] p-0 bg-white border-none">
+        <DialogContent className="max-w-[90vw] w-[90vw] max-h-[90vh] h-[90vh] p-4 bg-white border-none">
           <div className="relative w-full h-full flex items-center justify-center">
             <Button 
               variant="outline" 
@@ -456,11 +455,11 @@ const LargeProjectCard = ({ project, reverseLayout = false }: LargeProjectCardPr
               <CarouselContent className="h-full">
                 {project.images.map((image, index) => (
                   <CarouselItem key={`lightbox-${index}`} className="h-full flex items-center justify-center">
-                    <div className="relative w-full h-full flex items-center justify-center p-4">
+                    <div className="relative w-full h-full flex items-center justify-center">
                       <img 
                         src={image} 
                         alt={`${project.title} - крупный вид ${index + 1}`}
-                        className="max-h-[calc(95vh-2rem)] max-w-[calc(95vw-2rem)] object-contain"
+                        className="max-h-[calc(90vh-4rem)] max-w-[calc(90vw-4rem)] object-contain"
                       />
                     </div>
                   </CarouselItem>
