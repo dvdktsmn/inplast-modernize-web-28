@@ -128,7 +128,7 @@ const ProjectCarousel = ({ projects }: ProjectCarouselProps) => {
               key={index} 
               className={`flex-[0_0_100%] min-w-0 transition-opacity duration-500 ${currentProject === index ? 'opacity-100' : 'opacity-0'}`}
             >
-              <div className="bg-white rounded-xl overflow-hidden shadow-lg p-8 min-h-[480px]">
+              <div className="bg-white rounded-xl overflow-hidden shadow-lg p-8 h-[540px]">
                 <Link to="/projects" className="inline-block">
                   <h3 className="text-2xl font-bold text-inplast-blue mb-1 hover:underline">
                     {project.title}
