@@ -1,4 +1,3 @@
-
 import React, { useState, useEffect, useRef } from 'react';
 import { FeaturedProject } from './ProjectsData';
 import { 
@@ -392,8 +391,8 @@ const LargeProjectCard = ({ project, reverseLayout = false }: LargeProjectCardPr
                       <li className="flex items-start">
                         <ArrowRight className="h-5 w-5 text-inplast-orange mr-2 mt-0.5 flex-shrink-0" />
                         <span>Проведена полная механическая переработка узла с изготовлением новых элементов по собственно разработанной конструкторской документации</span>
-                      </li>
-                    </ul>
+                      </ul>
+                    </li>
                   </section>
                   
                   <section>
@@ -460,7 +459,11 @@ const LargeProjectCard = ({ project, reverseLayout = false }: LargeProjectCardPr
                       <img 
                         src={image} 
                         alt={`${project.title} - крупный вид ${index + 1}`}
-                        className="max-h-full max-w-full object-contain"
+                        className="max-h-[calc(100vh-8rem)] max-w-[calc(100vw-2rem)] object-contain"
+                        style={{ 
+                          maxHeight: 'calc(100vh - 8rem)', 
+                          maxWidth: 'calc(100vw - 2rem)' 
+                        }}
                       />
                     </div>
                   </CarouselItem>
