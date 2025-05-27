@@ -1,3 +1,4 @@
+
 import React, { useState, useEffect, useRef } from 'react';
 import { FeaturedProject } from './ProjectsData';
 import { 
@@ -440,34 +441,43 @@ const LargeProjectCard = ({ project, reverseLayout = false }: LargeProjectCardPr
 
       {/* Full-screen Image Lightbox */}
       <Dialog open={lightboxOpen} onOpenChange={setLightboxOpen}>
-        <DialogContent className="max-w-5xl w-full max-h-[80vh] h-[80vh] p-2 bg-white border-none">
-          <div className="relative w-full h-full flex items-center justify-center">
+        <DialogContent className="max-w-4xl w-[90vw] max-h-[85vh] h-[85vh] p-4 bg-white">
+          <div className="relative w-full h-full">
             <Button 
               variant="outline" 
               size="icon" 
-              className="absolute top-2 right-2 z-50 bg-white hover:bg-gray-100 border-gray-300 text-gray-700"
+              className="absolute top-2 right-2 z-50 bg-white/80 hover:bg-white border-gray-300 text-gray-700"
               onClick={() => setLightboxOpen(false)}
             >
               <X className="h-6 w-6" />
             </Button>
             
-            <Carousel className="w-full h-full" setApi={setCarouselApi} opts={{ loop: true }}>
-              <CarouselContent className="h-full">
-                {project.images.map((image, index) => (
-                  <CarouselItem key={`lightbox-${index}`} className="h-full flex items-center justify-center">
-                    <div className="relative w-full h-full flex items-center justify-center p-8">
-                      <img 
-                        src={image} 
-                        alt={`${project.title} - крупный вид ${index + 1}`}
-                        className="max-h-full max-w-full object-contain"
-                      />
-                    </div>
-                  </CarouselItem>
-                ))}
-              </CarouselContent>
-              <CarouselPrevious className="left-2 bg-white hover:bg-gray-100 border-gray-300 text-gray-700" />
-              <CarouselNext className="right-2 bg-white hover:bg-gray-100 border-gray-300 text-gray-700" />
-            </Carousel>
+            <div className="w-full h-full pt-12">
+              <Carousel 
+                className="w-full h-full" 
+                setApi={setCarouselApi} 
+                opts={{ 
+                  loop: true,
+                  startIndex: activeImageIndex 
+                }}
+              >
+                <CarouselContent className="h-full -ml-0">
+                  {project.images.map((image, index) => (
+                    <CarouselItem key={`lightbox-${index}`} className="h-full pl-0 flex items-center justify-center">
+                      <div className="w-full h-full flex items-center justify-center p-4">
+                        <img 
+                          src={image} 
+                          alt={`${project.title} - крупный вид ${index + 1}`}
+                          className="max-w-full max-h-full object-contain rounded-lg shadow-lg"
+                        />
+                      </div>
+                    </CarouselItem>
+                  ))}
+                </CarouselContent>
+                <CarouselPrevious className="left-4 bg-white/80 hover:bg-white border-gray-300 text-gray-700 shadow-lg" />
+                <CarouselNext className="right-4 bg-white/80 hover:bg-white border-gray-300 text-gray-700 shadow-lg" />
+              </Carousel>
+            </div>
           </div>
         </DialogContent>
       </Dialog>
