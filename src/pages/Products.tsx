@@ -21,7 +21,7 @@ const ProductsPage = () => {
     "Электрические компоненты и системы": "/lovable-uploads/371c6472-159f-41b3-a97b-4abeff5ccde6.png",
     "Управление движением": "/lovable-uploads/87f7cb49-1a26-4ce0-82e7-5819631a0cd1.png",
     "Автоматизация и управление процессами": "/lovable-uploads/d946c718-e590-4932-9e9a-45e34a43ae11.png",
-    "MES системы": "/placeholder.svg",
+    "MES системы": "/lovable-uploads/a1178a61-ff1b-42c6-9ed1-a70e4207f0a4.png",
   };
 
   const products: ProductDetail[] = [

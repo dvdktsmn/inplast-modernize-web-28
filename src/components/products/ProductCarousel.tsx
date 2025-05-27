@@ -17,7 +17,7 @@ const products: Product[] = [
   { name: "Электрические компоненты и системы", image: "/lovable-uploads/371c6472-159f-41b3-a97b-4abeff5ccde6.png" },
   { name: "Управление движением", image: "/lovable-uploads/87f7cb49-1a26-4ce0-82e7-5819631a0cd1.png" },
   { name: "Автоматизация и управление процессами", image: "/lovable-uploads/d946c718-e590-4932-9e9a-45e34a43ae11.png" },
-  { name: "MES-системы", image: "/placeholder.svg" },
+  { name: "MES-системы", image: "/lovable-uploads/a1178a61-ff1b-42c6-9ed1-a70e4207f0a4.png" },
 ];
 
 const ProductCarousel = () => {
