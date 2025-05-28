@@ -71,14 +71,14 @@ const Navbar = () => {
               }}
               className="text-white hover:text-inplast-orange transition-colors cursor-pointer"
             >
-              Оборудование
+              Экспертиза
             </a>
           ) : (
           <Link 
             to="/products"
             className="text-white hover:text-inplast-orange transition-colors cursor-pointer"
           >
-            Оборудование
+            Экспертиза
           </Link>
           )}
           {isHomePage ? (
