@@ -38,19 +38,19 @@ const Hero = () => {
             className="bg-inplast-blue hover:bg-inplast-orange text-white px-4 md:px-6 py-3 md:py-4 w-full sm:w-[180px] text-sm md:text-base" 
             onClick={() => scrollToSection('products')}
           >
-            Области экспертизы
+            Экспертиза
           </Button>
           <Button 
             className="bg-inplast-blue hover:bg-inplast-orange text-white px-4 md:px-6 py-3 md:py-4 w-full sm:w-[180px] text-sm md:text-base" 
             onClick={() => scrollToSection('services')}
           >
-            Наши услуги
+            Услуги
           </Button>
           <Button 
             className="bg-inplast-blue hover:bg-inplast-orange text-white px-4 md:px-6 py-3 md:py-4 w-full sm:w-[180px] text-sm md:text-base" 
             onClick={() => scrollToSection('projects')}
           >
-            Ключевые проекты
+            Проекты
           </Button>
         </div>
       </div>
