@@ -11,8 +11,8 @@ const Projects = () => {
     <section id="projects" className="py-20 bg-gray-50">
       <div className="container mx-auto px-4 md:px-4">
         <div className="text-center mb-16">
-          <h2 className="text-2xl md:text-3xl font-bold text-inplast-blue mb-4">Ключевые проекты нашей компании</h2>
-          <p className="text-lg md:text-xl text-gray-600 max-w-3xl mx-auto px-2 md:px-0">
+          <h2 className="text-3xl md:text-3xl font-bold text-inplast-blue mb-4">Ключевые проекты нашей компании</h2>
+          <p className="text-xl md:text-xl text-gray-600 max-w-3xl mx-auto px-2 md:px-0">
             Ознакомьтесь с нашими реализованными проектами промышленной трансформации по всему миру.
           </p>
         </div>
