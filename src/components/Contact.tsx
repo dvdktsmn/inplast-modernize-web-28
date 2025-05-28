@@ -90,7 +90,7 @@ const Contact = ({ isStandalone = false }: ContactProps) => {
         <div className="text-center mb-16">
           <h2 className="text-3xl font-bold text-inplast-blue mb-4">Связаться с нами</h2>
           <p className="text-xl text-gray-600 max-w-3xl mx-auto">
-            Готовы обсудить Ваш проект? Наши инженерные эксперты готовы помочь Вам модернизировать Ваши производственные мощности.
+            Наши эксперты ответят на любые ваши вопросы и готовы помочь модернизировать ваши производственные мощности.
           </p>
         </div>
 
