@@ -52,7 +52,7 @@ const Navbar = () => {
               }}
               className="text-white hover:text-inplast-orange transition-colors cursor-pointer"
             >
-              Миссия
+              О нас
             </a>
           ) : (
             <Link 
