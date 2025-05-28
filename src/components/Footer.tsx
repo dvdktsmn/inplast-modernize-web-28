@@ -14,7 +14,7 @@ const Footer = () => {
               BPL Engineering
             </div>
             <p className="text-white mb-4">
-              Комплексные промышленные решения для модернизации, перемещения и ввода в эксплуатацию оборудования
+              Комплексные решения оптимизации и управления системами для промышленных производств
             </p>
           </div>
           
@@ -22,7 +22,7 @@ const Footer = () => {
             <h4 className="text-lg font-semibold text-white mb-4">Быстрые ссылки</h4>
             <ul className="space-y-2">
               <li><Link to="/" className="text-white hover:text-inplast-orange transition-colors">Главная</Link></li>
-              <li><Link to="/products" className="text-white hover:text-inplast-orange transition-colors">Оборудование</Link></li>
+              <li><Link to="/products" className="text-white hover:text-inplast-orange transition-colors">Экспертиза</Link></li>
               <li><Link to="/services" className="text-white hover:text-inplast-orange transition-colors">Услуги</Link></li>
               <li><Link to="/projects" className="text-white hover:text-inplast-orange transition-colors">Проекты</Link></li>
               <li><Link to="/contact" className="text-white hover:text-inplast-orange transition-colors">Контакты</Link></li>
