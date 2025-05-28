@@ -153,7 +153,7 @@ const Navbar = () => {
                 <Link to="/" className="w-full">Главная</Link>
               </DropdownMenuItem>
               <DropdownMenuItem>
-                <Link to="/products" className="w-full">Оборудование</Link>
+                <Link to="/products" className="w-full">Экспертиза</Link>
               </DropdownMenuItem>
               <DropdownMenuItem>
                 <Link to="/services" className="w-full">Услуги</Link>
