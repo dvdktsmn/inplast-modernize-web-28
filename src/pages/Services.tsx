@@ -65,7 +65,7 @@ const ServicesPage = () => {
       <main className="flex-grow py-20 pt-24 bg-gray-50">
         <div className="container mx-auto px-4">
           <div className="text-center mb-8">
-            <h1 className="text-4xl font-bold text-gray-800 mb-4">Наши услуги</h1>
+            <h1 className="text-4xl font-bold text-gray-800 mb-4">Услуги</h1>
             <p className="text-xl text-gray-600 max-w-3xl mx-auto">
               Мы предоставляем полный спектр промышленных услуг от капитального ремонта и замены устаревших деталей оборудования с его модернизацией до установки комплексных производственных линий и реализации проектов "под ключ".
            </p>
