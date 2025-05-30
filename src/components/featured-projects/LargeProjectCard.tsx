@@ -90,7 +90,7 @@ const LargeProjectCard = ({ project, reverseLayout = false }: LargeProjectCardPr
               {project.images.map((image, index) => (
                 <CarouselItem key={index}>
                   <div className="relative h-64 md:h-96 w-full">
-                    <AspectRatio ratio={16 / 9} className="h-full">
+                    <AspectRatio ratio={16 / 9}>
                       <img 
                         src={image} 
                         alt={`${project.title} - изображение ${index + 1}`}
@@ -107,7 +107,7 @@ const LargeProjectCard = ({ project, reverseLayout = false }: LargeProjectCardPr
         </div>
         
         {/* Project details - 50% width on desktop, full width on mobile */}
-        <div className="p-6 md:p-8 md:w-1/2">
+        <div className="p-6 md:p-8 md:w-1/2 flex flex-col>
           <div className="mb-4">
             <h3 className="text-3xl font-bold text-inplast-blue">{project.title}</h3>
           </div>
