@@ -89,7 +89,7 @@ const LargeProjectCard = ({ project, reverseLayout = false }: LargeProjectCardPr
             <CarouselContent>
               {project.images.map((image, index) => (
                 <CarouselItem key={index}>
-                  <div className="relative h-64 md:h-96 w-full">
+                  <div className="relative w-full">
                     <AspectRatio ratio={16 / 9}>
                       <img 
                         src={image} 
