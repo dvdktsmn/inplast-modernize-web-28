@@ -1,3 +1,4 @@
+
 import React, { useState, useEffect, useRef } from 'react';
 import { FeaturedProject } from './ProjectsData';
 import { 
@@ -89,7 +90,7 @@ const LargeProjectCard = ({ project, reverseLayout = false }: LargeProjectCardPr
             <CarouselContent>
               {project.images.map((image, index) => (
                 <CarouselItem key={index}>
-                  <div className="relative h-64 md:h-96 w-full">
+                  <div className="relative h-64 md:h-80 w-full">
                     <AspectRatio ratio={16 / 9} className="h-full">
                       <img 
                         src={image} 
@@ -107,7 +108,7 @@ const LargeProjectCard = ({ project, reverseLayout = false }: LargeProjectCardPr
         </div>
         
         {/* Project details - 50% width on desktop, full width on mobile */}
-        <div className="p-6 md:p-8 md:w-1/2">
+        <div className="p-6 md:p-8 md:w-1/2 flex flex-col">
           <div className="mb-4">
             <h3 className="text-3xl font-bold text-inplast-blue">{project.title}</h3>
           </div>
@@ -116,27 +117,27 @@ const LargeProjectCard = ({ project, reverseLayout = false }: LargeProjectCardPr
             <span className="text-gray-600 font-medium">{project.location}</span>
           </div>
           
-          <p className="text-gray-700 mb-6 leading-relaxed">{project.description}</p>
+          <p className="text-gray-700 mb-6 leading-relaxed flex-grow">{project.description}</p>
+          
+          {/* Read More Button - moved inside the text section */}
+          <div className="mt-auto">
+            <Button 
+              variant="outline" 
+              onClick={toggleExpand} 
+              className="w-full text-inplast-blue border-inplast-blue hover:bg-inplast-blue/10"
+            >
+              {isExpanded ? (
+                <>
+                  Читать меньше <ChevronUp className="ml-2 h-4 w-4" />
+                </>
+              ) : (
+                <>
+                  Читать больше <ChevronDown className="ml-2 h-4 w-4" />
+                </>
+              )}
+            </Button>
+          </div>
         </div>
-      </div>
-
-      {/* Read More Button - full width */}
-      <div className="px-6 py-4 border-t border-gray-100 flex justify-center">
-        <Button 
-          variant="outline" 
-          onClick={toggleExpand} 
-          className="w-full max-w-xs text-inplast-blue border-inplast-blue hover:bg-inplast-blue/10"
-        >
-          {isExpanded ? (
-            <>
-              Читать меньше <ChevronUp className="ml-2 h-4 w-4" />
-            </>
-          ) : (
-            <>
-              Читать больше <ChevronDown className="ml-2 h-4 w-4" />
-            </>
-          )}
-        </Button>
       </div>
 
       {/* Expanded Content */}
@@ -440,7 +441,7 @@ const LargeProjectCard = ({ project, reverseLayout = false }: LargeProjectCardPr
 
       {/* Full-screen Image Lightbox */}
       <Dialog open={lightboxOpen} onOpenChange={setLightboxOpen}>
-        <DialogContent className="max-w-5xl w-[95vw] h-[90vh] p-0 bg-white border-none overflow-hidden">
+        <DialogContent className="max-w-5xl w-[95vw] h-[80vh] p-0 bg-white border-none overflow-hidden">
           <div className="relative w-full h-full flex flex-col">
             <div className="flex-1 min-h-0">
               <Carousel 
@@ -459,7 +460,7 @@ const LargeProjectCard = ({ project, reverseLayout = false }: LargeProjectCardPr
                           src={image} 
                           alt={`${project.title} - крупный вид ${index + 1}`}
                           className="max-w-full max-h-full object-contain rounded-lg shadow-lg"
-                          style={{ maxHeight: 'calc(90vh - 2rem)' }}
+                          style={{ maxHeight: 'calc(80vh - 2rem)' }}
                         />
                       </div>
                     </CarouselItem>
