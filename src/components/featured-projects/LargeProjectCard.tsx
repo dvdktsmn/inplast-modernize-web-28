@@ -1,3 +1,4 @@
+
 import React, { useState, useEffect, useRef } from 'react';
 import { FeaturedProject } from './ProjectsData';
 import { 
@@ -89,7 +90,7 @@ const LargeProjectCard = ({ project, reverseLayout = false }: LargeProjectCardPr
             <CarouselContent>
               {project.images.map((image, index) => (
                 <CarouselItem key={index}>
-                  <div className="relative w-full">
+                  <div className="relative h-64 md:h-96 w-full">
                     <AspectRatio ratio={16 / 9}>
                       <img 
                         src={image} 
@@ -107,7 +108,7 @@ const LargeProjectCard = ({ project, reverseLayout = false }: LargeProjectCardPr
         </div>
         
         {/* Project details - 50% width on desktop, full width on mobile */}
-        <div className="p-6 md:p-8 md:w-1/2 flex flex-col>
+        <div className="p-6 md:p-8 md:w-1/2 flex flex-col">
           <div className="mb-4">
             <h3 className="text-3xl font-bold text-inplast-blue">{project.title}</h3>
           </div>
@@ -440,7 +441,7 @@ const LargeProjectCard = ({ project, reverseLayout = false }: LargeProjectCardPr
 
       {/* Full-screen Image Lightbox */}
       <Dialog open={lightboxOpen} onOpenChange={setLightboxOpen}>
-        <DialogContent className="max-w-5xl w-[95vw] h-[90vh] p-0 bg-white border-none overflow-hidden">
+        <DialogContent className="max-w-5xl w-[95vw] h-[80vh] p-0 bg-white border-none overflow-hidden">
           <div className="relative w-full h-full flex flex-col">
             <div className="flex-1 min-h-0">
               <Carousel 
@@ -459,7 +460,7 @@ const LargeProjectCard = ({ project, reverseLayout = false }: LargeProjectCardPr
                           src={image} 
                           alt={`${project.title} - крупный вид ${index + 1}`}
                           className="max-w-full max-h-full object-contain rounded-lg shadow-lg"
-                          style={{ maxHeight: 'calc(90vh - 2rem)' }}
+                          style={{ maxHeight: 'calc(80vh - 2rem)' }}
                         />
                       </div>
                     </CarouselItem>
