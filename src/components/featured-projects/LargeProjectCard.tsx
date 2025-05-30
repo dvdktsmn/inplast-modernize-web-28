@@ -86,7 +86,7 @@ const LargeProjectCard = ({ project, reverseLayout = false }: LargeProjectCardPr
       <div className={`${reverseLayout ? 'md:flex-row-reverse' : ''} md:flex`}>
         {/* Image Carousel - 50% width on desktop, full width on mobile */}
         <div className="md:w-1/2">
-          <Carousel className="w-full h-full">
+          <Carousel className="w-full">
             <CarouselContent>
               {project.images.map((image, index) => (
                 <CarouselItem key={index}>
