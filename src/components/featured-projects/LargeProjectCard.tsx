@@ -117,7 +117,7 @@ const LargeProjectCard = ({ project, reverseLayout = false }: LargeProjectCardPr
             <span className="text-gray-600 font-medium">{project.location}</span>
           </div>
           
-          <p className="text-gray-700 mb-6 leading-relaxed">{project.description}</p>
+          <p className="text-gray-700 leading-relaxed flex-grow">{project.description}</p>
         </div>
       </div>
 
