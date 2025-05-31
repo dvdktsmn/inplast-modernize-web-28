@@ -134,7 +134,7 @@ const SmallProjectCard = ({ project }: SmallProjectCardProps) => {
                           src={image} 
                           alt={`${project.title} - крупный вид ${index + 1}`}
                           className="max-w-full max-h-full object-contain rounded-lg shadow-lg"
-                          style={{ maxHeight: 'calc(80vh - 2rem)' }}
+                          style={{ maxHeight: 'calc(90vh - 2rem)' }}
                         />
                       </div>
                     </CarouselItem>
