@@ -49,8 +49,7 @@ const ContactPage = () => {
         from_name: name,
         from_email: email,
         telephone: telephone || 'Не указан',
-        message: message,
-        to_email: 'info@bpleng.ru'
+        message: message
       };
 
       await emailjs.send(
@@ -62,7 +61,7 @@ const ContactPage = () => {
 
       toast({
         title: "Успешно",
-        description: "Ваше сообщение отправлено. Мы свяжемся с вами в ближайшее время!",
+        description: "Ваше сообщение отправлено. Мы свяжемся с Вами в ближайшее время!",
       });
       
       // Reset form

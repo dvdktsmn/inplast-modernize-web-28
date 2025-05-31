@@ -51,8 +51,7 @@ const Contact = ({ isStandalone = false }: ContactProps) => {
         from_name: name,
         from_email: email,
         telephone: telephone || 'Не указан',
-        message: message,
-        to_email: 'info@bpleng.ru'
+        message: message
       };
 
       await emailjs.send(
