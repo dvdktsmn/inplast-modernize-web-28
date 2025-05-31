@@ -1,4 +1,3 @@
-
 import React, { useState, useEffect } from 'react';
 import { FeaturedProject } from './ProjectsData';
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
@@ -123,8 +122,9 @@ const SmallProjectCard = ({ project }: SmallProjectCardProps) => {
                 className="w-full h-full"
                 opts={{ 
                   loop: true,
-                  startIndex: selectedImageIndex 
+                  startIndex: activeImageIndex 
                 }}
+                setApi={setCarouselApi}
               >
                 <CarouselContent className="h-full -ml-0">
                   {project.images.map((image, index) => (

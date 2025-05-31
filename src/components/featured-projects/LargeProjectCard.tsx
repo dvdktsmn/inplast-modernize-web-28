@@ -1,4 +1,3 @@
-
 import React, { useState, useEffect, useRef } from 'react';
 import { FeaturedProject } from './ProjectsData';
 import { 
@@ -448,8 +447,9 @@ const LargeProjectCard = ({ project, reverseLayout = false }: LargeProjectCardPr
                 className="w-full h-full"
                 opts={{ 
                   loop: true,
-                  startIndex: selectedImageIndex 
+                  startIndex: activeImageIndex 
                 }}
+                setApi={setCarouselApi}
               >
                 <CarouselContent className="h-full -ml-0">
                   {project.images.map((image, index) => (
